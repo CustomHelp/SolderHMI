@@ -341,14 +341,6 @@
   <data name="Main_btnSettings" xml:space="preserve">
     <value>Nastavenia</value>
   </data>
-  <data name="Main_cbManuals" xml:space="preserve">
-    <value>Manuals</value>
-    <comment>X</comment>
-  </data>
-  <data name="Main_cbVideoInstructions" xml:space="preserve">
-    <value>Video-Instructions</value>
-    <comment>X</comment>
-  </data>
   <data name="Main_InitNotFinished" xml:space="preserve">
     <value>Init. nedokončené</value>
   </data>

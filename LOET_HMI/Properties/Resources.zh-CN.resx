@@ -339,12 +339,6 @@
   <data name="Main_btnSettings" xml:space="preserve">
     <value>设定值</value>
   </data>
-  <data name="Main_cbManuals" xml:space="preserve">
-    <value>Manuals</value>
-  </data>
-  <data name="Main_cbVideoInstructions" xml:space="preserve">
-    <value>Video-Instructions</value>
-  </data>
   <data name="Main_InitNotFinished" xml:space="preserve">
     <value>初始化未完成</value>
   </data>

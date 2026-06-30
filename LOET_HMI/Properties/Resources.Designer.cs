@@ -726,23 +726,7 @@ namespace LOET_HMI.Properties {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized string similar to Manuals.
-        /// </summary>
-        public static string Main_cbManuals {
-            get {
-                return ResourceManager.GetString("Main_cbManuals", resourceCulture);
-            }
-        }
         
-        /// <summary>
-        ///   Looks up a localized string similar to Video-Instructions.
-        /// </summary>
-        public static string Main_cbVideoInstructions {
-            get {
-                return ResourceManager.GetString("Main_cbVideoInstructions", resourceCulture);
-            }
-        }
         
         /// <summary>
         ///   Looks up a localized string similar to Init. not finished.

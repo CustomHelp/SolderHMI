@@ -840,12 +840,6 @@
   <data name="PgMsgArch_SelectedMsg" xml:space="preserve">
     <value>Selected message</value>
   </data>
-  <data name="Main_cbManuals" xml:space="preserve">
-    <value>Manuals</value>
-  </data>
-  <data name="Main_cbVideoInstructions" xml:space="preserve">
-    <value>Video-Instructions</value>
-  </data>
   <data name="UcDevOnOff_PushButton" xml:space="preserve">
     <value>Push button</value>
   </data>

@@ -341,12 +341,6 @@
   <data name="Main_btnSettings" xml:space="preserve">
     <value>Paramètres</value>
   </data>
-  <data name="Main_cbManuals" xml:space="preserve">
-    <value>Instructions d'utilisation</value>
-  </data>
-  <data name="Main_cbVideoInstructions" xml:space="preserve">
-    <value>Video-Instructions</value>
-  </data>
   <data name="Main_InitNotFinished" xml:space="preserve">
     <value>Init. Inachevé</value>
   </data>

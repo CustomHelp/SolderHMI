@@ -339,12 +339,6 @@
   <data name="Main_btnSettings" xml:space="preserve">
     <value>إعدادات</value>
   </data>
-  <data name="Main_cbManuals" xml:space="preserve">
-    <value>Manuals</value>
-  </data>
-  <data name="Main_cbVideoInstructions" xml:space="preserve">
-    <value>Video-Instructions</value>
-  </data>
   <data name="Main_InitNotFinished" xml:space="preserve">
     <value>فيه. لم تنته</value>
   </data>
