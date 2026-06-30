@@ -467,7 +467,7 @@
     <Compile Include="UserControls\Parameters\UcInOutsDatagrid.xaml.cs">
       <DependentUpon>UcInOutsDatagrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UcNavWorksp.xaml.cs">
+    <Compile Include="UserControls\Navigation\UcNavWorksp.xaml.cs">
       <DependentUpon>UcNavWorksp.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Status\UcStateBlock.xaml.cs">
@@ -815,7 +815,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\UcNavWorksp.xaml">
+    <Page Include="UserControls\Navigation\UcNavWorksp.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
