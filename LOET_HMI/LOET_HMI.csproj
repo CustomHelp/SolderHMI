@@ -1025,55 +1025,6 @@
     <Resource Include="Resources\Warning.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="UserControls\Display UCs\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\000_CHP\001_MsgAndPanel\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\000_CHP\009_Counter\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\000_CHP\010_Order\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\000_CHP\020_Button\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\100_Device\101_Axis\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\100_Device\102_Cylinder\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\100_Device\105_Sensor\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\100_Device\120_DeviceOnOff\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\200_Parameter_Settings\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\700_Logging\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\800_User\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\900_General\901_Lamp\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\900_General\910_Value\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\900_General\920_BarValue\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\900_General\980_Container\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\000_CHP\001_MsgAndPanel\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\000_CHP\009_Counter\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\000_CHP\010_Order\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\000_CHP\020_Button\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\100_Device\101_Axis\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\100_Device\102_Cylinder\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\100_Device\105_Sensor\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\100_Device\120_DeviceOnOff\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\200_Parameter_Settings\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\700_Logging\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\800_User\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\900_General\901_Lamp\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\900_General\910_Value\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\900_General\920_BarValue\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\900_General\980_Container\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\000_CHP\001_MsgAndPanel\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\000_CHP\009_Counter\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\000_CHP\010_Order\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\000_CHP\020_Button\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\100_Device\101_Axis\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\100_Device\102_Cylinder\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\100_Device\105_Sensor\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\100_Device\120_DeviceOnOff\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\200_Parameter_Settings\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\700_Logging\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\800_User\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\900_General\901_Lamp\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\900_General\910_Value\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\900_General\920_BarValue\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\900_General\980_Container\" />
-    <Folder Include="_NEUE_ORDNERSTRUKTUR\4_PROJECT\" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\Windows_logo_-_2012_2.png" />
     <Resource Include="Images\WinLogo_226771.png" />
     <Resource Include="Images\x-button-icon-20.png" />
