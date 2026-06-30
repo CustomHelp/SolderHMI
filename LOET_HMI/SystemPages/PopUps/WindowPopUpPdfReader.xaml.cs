@@ -25,9 +25,20 @@ namespace LOET_HMI.SystemPages.PopUps
         private int currentPage = 0;
         private double zoom = 1.0;
 
+        // Drag-Panning (Touch ist global als Maus promotet -> Maus-Drag verschiebt den Ausschnitt).
+        private bool isPanning;
+        private System.Windows.Point panStartPoint;
+        private double panStartHOffset;
+        private double panStartVOffset;
+
         public WindowPopUpPdfReader(string filePath)
         {
             InitializeComponent();
+
+            // Drag-Panning auf dem ScrollViewer aktivieren.
+            scrollViewer.PreviewMouseLeftButtonDown += ScrollViewer_PreviewMouseLeftButtonDown;
+            scrollViewer.PreviewMouseMove += ScrollViewer_PreviewMouseMove;
+            scrollViewer.PreviewMouseLeftButtonUp += ScrollViewer_PreviewMouseLeftButtonUp;
 
             try
             {
@@ -127,12 +138,13 @@ namespace LOET_HMI.SystemPages.PopUps
 
         private void ZoomInButton_Click(object sender, RoutedEventArgs e)
         {
-            SetZoom(zoom * ZoomStep);
+            // Zoom-Richtung gemaess Praxis-Feedback umgedreht.
+            SetZoom(zoom / ZoomStep);
         }
 
         private void ZoomOutButton_Click(object sender, RoutedEventArgs e)
         {
-            SetZoom(zoom / ZoomStep);
+            SetZoom(zoom * ZoomStep);
         }
 
         private void SetZoom(double newZoom)
@@ -142,6 +154,39 @@ namespace LOET_HMI.SystemPages.PopUps
             if (Math.Abs(newZoom - zoom) < 0.0001) return;
             zoom = newZoom;
             RenderPage();
+        }
+
+        // ----- Drag-Panning -----
+        private void ScrollViewer_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            panStartPoint = e.GetPosition(scrollViewer);
+            panStartHOffset = scrollViewer.HorizontalOffset;
+            panStartVOffset = scrollViewer.VerticalOffset;
+            isPanning = true;
+            scrollViewer.CaptureMouse();
+            scrollViewer.Cursor = Cursors.ScrollAll;
+        }
+
+        private void ScrollViewer_PreviewMouseMove(object sender, MouseEventArgs e)
+        {
+            if (!isPanning)
+            {
+                return;
+            }
+            System.Windows.Point p = e.GetPosition(scrollViewer);
+            scrollViewer.ScrollToHorizontalOffset(panStartHOffset - (p.X - panStartPoint.X));
+            scrollViewer.ScrollToVerticalOffset(panStartVOffset - (p.Y - panStartPoint.Y));
+        }
+
+        private void ScrollViewer_PreviewMouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            if (!isPanning)
+            {
+                return;
+            }
+            isPanning = false;
+            scrollViewer.ReleaseMouseCapture();
+            scrollViewer.Cursor = Cursors.Arrow;
         }
 
         private void CloseBtn_Click(object sender, RoutedEventArgs e)
