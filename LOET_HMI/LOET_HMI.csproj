@@ -112,6 +112,12 @@
     <Reference Include="Vlc.DotNet.Wpf, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
       <HintPath>..\packages\Vlc.DotNet.Wpf.3.1.0\lib\net45\Vlc.DotNet.Wpf.dll</HintPath>
     </Reference>
+    <Reference Include="ExcelDataReader">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -269,6 +275,9 @@
     </Compile>
     <Compile Include="SystemPages\PopUps\WindowPopUpManualReader.xaml.cs">
       <DependentUpon>WindowPopUpManualReader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpExcelReader.xaml.cs">
+      <DependentUpon>WindowPopUpExcelReader.xaml</DependentUpon>
     </Compile>
     <Compile Include="SystemPages\PopUps\WindowPopUpVideoPlayer.xaml.cs">
       <DependentUpon>WindowPopUpVideoPlayer.xaml</DependentUpon>
@@ -648,6 +657,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SystemPages\PopUps\WindowPopUpManualReader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpExcelReader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
