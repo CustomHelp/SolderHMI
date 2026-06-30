@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.UI.Xaml.2.4.3\build\Microsoft.UI.Xaml.props" Condition="Exists('..\packages\Microsoft.UI.Xaml.2.4.3\build\Microsoft.UI.Xaml.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -415,9 +415,6 @@
     <Compile Include="UserControls\Button\UcButton.xaml.cs">
       <DependentUpon>UcButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Alt\Cylinder.xaml.cs">
-      <DependentUpon>Cylinder.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\UcMessage.xaml.cs">
       <DependentUpon>UcMessage.xaml</DependentUpon>
     </Compile>
@@ -491,7 +488,6 @@
     <Compile Include="UserControls\Frank\UcValue.xaml.cs">
       <DependentUpon>UcValue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Alt\TextBoxNewRecipe.cs" />
     <Compile Include="UserControls\HOPA Devices\UcBeckhoffAxis.xaml.cs">
       <DependentUpon>UcBeckhoffAxis.xaml</DependentUpon>
     </Compile>
@@ -509,15 +505,6 @@
     </Compile>
     <Compile Include="UserControls\UcNavWorksp.xaml.cs">
       <DependentUpon>UcNavWorksp.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Alt\UcSettingDINT.xaml.cs">
-      <DependentUpon>UcSettingDINT.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Alt\UcSettingDINT_RENA.xaml.cs">
-      <DependentUpon>UcSettingDINT_RENA.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Alt\UcSettingString.xaml.cs">
-      <DependentUpon>UcSettingString.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Sonstiges\UcStateBlock.xaml.cs">
       <DependentUpon>UcStateBlock.xaml</DependentUpon>
@@ -756,10 +743,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\Alt\Cylinder.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UserControls\Button\UcButtonHandmenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -892,10 +875,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\Alt\TextBoxNewRecipe.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UserControls\HOPA Devices\UcBeckhoffAxis.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -917,18 +896,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls\UcNavWorksp.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UserControls\Alt\UcSettingDINT.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UserControls\Alt\UcSettingDINT_RENA.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UserControls\Alt\UcSettingString.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
