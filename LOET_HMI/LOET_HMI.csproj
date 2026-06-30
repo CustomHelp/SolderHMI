@@ -896,17 +896,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\PressWerkzeug2_90Grad.png" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\PressWerkzeug2_90Grad.tif" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug3.PNG" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug4.png" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug5.png" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug6.jpg" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug6.png" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug7Paint.png" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\PW.png" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Rena_Logo.PNG" />
-    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Rena_Logo2.PNG" />
+    <Resource Include="UserControls\Devices\_Images\PressWerkzeug2_90Grad.png" />
+    <Resource Include="UserControls\Devices\_Images\PressWerkzeug2_90Grad.tif" />
+    <Resource Include="UserControls\Devices\_Images\Presswerkzeug3.PNG" />
+    <Resource Include="UserControls\Devices\_Images\Presswerkzeug4.png" />
+    <Resource Include="UserControls\Devices\_Images\Presswerkzeug5.png" />
+    <Resource Include="UserControls\Devices\_Images\Presswerkzeug6.jpg" />
+    <Resource Include="UserControls\Devices\_Images\Presswerkzeug6.png" />
+    <Resource Include="UserControls\Devices\_Images\Presswerkzeug7Paint.png" />
+    <Resource Include="UserControls\Devices\_Images\PW.png" />
+    <Resource Include="UserControls\Devices\_Images\Rena_Logo.PNG" />
+    <Resource Include="UserControls\Devices\_Images\Rena_Logo2.PNG" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Arrow Down.png" />
