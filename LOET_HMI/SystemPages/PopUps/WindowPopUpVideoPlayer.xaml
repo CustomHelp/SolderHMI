@@ -32,7 +32,7 @@
 
                 <Rectangle x:Name="RectLogo"  Grid.Row="0" Margin=" 10,-50,10,10"  Width="180"  HorizontalAlignment="Right"    >
                     <Rectangle.Fill>
-                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/CHP.png" Stretch="Uniform" />
+                        <ImageBrush ImageSource="/LOET_HMI;component/Images/CUSTOMHELP_Logo-links_lila.png" Stretch="Uniform" />
                     </Rectangle.Fill>
                 </Rectangle>
 

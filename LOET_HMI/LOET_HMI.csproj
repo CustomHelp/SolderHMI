@@ -1011,6 +1011,7 @@
   <ItemGroup>
     <Resource Include="Images\Windows_logo_-_2012_2.png" />
     <Resource Include="Images\CUSTOMHELP_Logo-links_lila.png" />
+    <Resource Include="Images\WinLogo_226771.png" />
     <Resource Include="Images\x-button-icon-20.png" />
     <Resource Include="Images\x-button-icon-20_2.png" />
     <Resource Include="Images\Windows_logo_-_2012.png" />
