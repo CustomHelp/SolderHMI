@@ -391,7 +391,7 @@
     <Compile Include="UserControls\Status\UcOverviewDispl.xaml.cs">
       <DependentUpon>UcOverviewDispl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UcParamDataGrid.xaml.cs">
+    <Compile Include="UserControls\Parameters\UcParamDataGrid.xaml.cs">
       <DependentUpon>UcParamDataGrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrHeater.xaml.cs">
@@ -433,7 +433,7 @@
     <Compile Include="UserControls\RENA - Graphical UCs\UcGrSensorDigital.xaml.cs">
       <DependentUpon>UcGrSensorDigital.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\UcGrSettingAnalogDINT.xaml.cs">
+    <Compile Include="UserControls\Parameters\UcGrSettingAnalogDINT.xaml.cs">
       <DependentUpon>UcGrSettingAnalogDINT.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Graphical UCs\UcPipeTriangle.xaml.cs">
@@ -464,7 +464,7 @@
     <Compile Include="UserControls\HOPA Devices\UcDeviceOnOff.xaml.cs">
       <DependentUpon>UcDeviceOnOff.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Sonstiges\UcInOutsDatagrid.xaml.cs">
+    <Compile Include="UserControls\Parameters\UcInOutsDatagrid.xaml.cs">
       <DependentUpon>UcInOutsDatagrid.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UcNavWorksp.xaml.cs">
@@ -715,7 +715,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\UcParamDataGrid.xaml">
+    <Page Include="UserControls\Parameters\UcParamDataGrid.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -771,7 +771,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\UcGrSettingAnalogDINT.xaml">
+    <Page Include="UserControls\Parameters\UcGrSettingAnalogDINT.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -811,7 +811,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\RENA - Sonstiges\UcInOutsDatagrid.xaml">
+    <Page Include="UserControls\Parameters\UcInOutsDatagrid.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
