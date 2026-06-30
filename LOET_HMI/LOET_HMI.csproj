@@ -276,7 +276,7 @@
     <Compile Include="UserControls\Buttons\UcButtonHandmenu.xaml.cs">
       <DependentUpon>UcButtonHandmenu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HOPA Devices\UcCylinderMin.xaml.cs">
+    <Compile Include="UserControls\Devices\Cylinder\UcCylinderMin.xaml.cs">
       <DependentUpon>UcCylinderMin.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HOPA Devices\UcSensBOOL.xaml.cs">
@@ -421,10 +421,10 @@
     <Compile Include="UserControls\RENA - Graphical UCs\Uc4-3HydrValveAndAnSens.xaml.cs">
       <DependentUpon>Uc4-3HydrValveAndAnSens.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\UcGrCylControl.xaml.cs">
+    <Compile Include="UserControls\Devices\Cylinder\UcGrCylControl.xaml.cs">
       <DependentUpon>UcGrCylControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\UcGrCylinder.xaml.cs">
+    <Compile Include="UserControls\Devices\Cylinder\UcGrCylinder.xaml.cs">
       <DependentUpon>UcGrCylinder.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Graphical UCs\UcGrSensorAnalog.xaml.cs">
@@ -439,7 +439,7 @@
     <Compile Include="UserControls\RENA - Graphical UCs\UcPipeTriangle.xaml.cs">
       <DependentUpon>UcPipeTriangle.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\UcPnCylControl.xaml.cs">
+    <Compile Include="UserControls\Devices\Cylinder\UcPnCylControl.xaml.cs">
       <DependentUpon>UcPnCylControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Graphical UCs\UcValveFunctions.cs" />
@@ -458,7 +458,7 @@
     <Compile Include="UserControls\Common\UcContainer.xaml.cs">
       <DependentUpon>UcContainer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HOPA Devices\UcCylinder.xaml.cs">
+    <Compile Include="UserControls\Devices\Cylinder\UcCylinder.xaml.cs">
       <DependentUpon>UcCylinder.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HOPA Devices\UcDeviceOnOff.xaml.cs">
@@ -675,7 +675,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\HOPA Devices\UcCylinderMin.xaml">
+    <Page Include="UserControls\Devices\Cylinder\UcCylinderMin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -755,11 +755,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\UcGrCylControl.xaml">
+    <Page Include="UserControls\Devices\Cylinder\UcGrCylControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\UcGrCylinder.xaml">
+    <Page Include="UserControls\Devices\Cylinder\UcGrCylinder.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -779,7 +779,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\UcPnCylControl.xaml">
+    <Page Include="UserControls\Devices\Cylinder\UcPnCylControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -803,7 +803,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\HOPA Devices\UcCylinder.xaml">
+    <Page Include="UserControls\Devices\Cylinder\UcCylinder.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
