@@ -458,17 +458,11 @@
       <DependentUpon>UcPnCylControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Graphical UCs\UcValveFunctions.cs" />
-    <Compile Include="UserControls\Frank\UcBarValue.xaml.cs">
-      <DependentUpon>UcBarValue.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\Frank\UcLamp.xaml.cs">
       <DependentUpon>UcLamp.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Frank\UcLampText.xaml.cs">
       <DependentUpon>UcLampText.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Frank\UcStationButton.xaml.cs">
-      <DependentUpon>UcStationButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Frank\UcValue.xaml.cs">
       <DependentUpon>UcValue.xaml</DependentUpon>
@@ -824,19 +818,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\Frank\UcBarValue.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="UserControls\Frank\UcLamp.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
     <Page Include="UserControls\Frank\UcLampText.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UserControls\Frank\UcStationButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
