@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.UI.Xaml.2.4.3\build\Microsoft.UI.Xaml.props" Condition="Exists('..\packages\Microsoft.UI.Xaml.2.4.3\build\Microsoft.UI.Xaml.props')" />
+  <Import Project="..\packages\PdfiumViewer.Native.x86.v8-xfa.2018.4.8.256\Build\PdfiumViewer.Native.x86.v8-xfa.props" Condition="Exists('..\packages\PdfiumViewer.Native.x86.v8-xfa.2018.4.8.256\Build\PdfiumViewer.Native.x86.v8-xfa.props')" />
+  <Import Project="..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\Build\PdfiumViewer.Native.x86_64.v8-xfa.props" Condition="Exists('..\packages\PdfiumViewer.Native.x86_64.v8-xfa.2018.4.8.256\Build\PdfiumViewer.Native.x86_64.v8-xfa.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -117,6 +119,9 @@
     </Reference>
     <Reference Include="ExcelDataReader.DataSet">
       <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfiumViewer">
+      <HintPath>..\packages\PdfiumViewer.2.13.0.0\lib\net20\PdfiumViewer.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -278,6 +283,9 @@
     </Compile>
     <Compile Include="SystemPages\PopUps\WindowPopUpExcelReader.xaml.cs">
       <DependentUpon>WindowPopUpExcelReader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpPdfReader.xaml.cs">
+      <DependentUpon>WindowPopUpPdfReader.xaml</DependentUpon>
     </Compile>
     <Compile Include="SystemPages\PopUps\WindowPopUpVideoPlayer.xaml.cs">
       <DependentUpon>WindowPopUpVideoPlayer.xaml</DependentUpon>
@@ -661,6 +669,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SystemPages\PopUps\WindowPopUpExcelReader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpPdfReader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
