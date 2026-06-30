@@ -289,7 +289,7 @@
     <Compile Include="UserControls\TimeControl.xaml.cs">
       <DependentUpon>TimeControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UcAnimationBusy.xaml.cs">
+    <Compile Include="UserControls\Status\UcAnimationBusy.xaml.cs">
       <DependentUpon>UcAnimationBusy.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UcCounter.xaml.cs">
@@ -313,7 +313,7 @@
     <Compile Include="UserControls\LOET\RFID_WT\UcRFID_WT.xaml.cs">
       <DependentUpon>UcRFID_WT.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UcValueInOut.xaml.cs">
+    <Compile Include="UserControls\Status\UcValueInOut.xaml.cs">
       <DependentUpon>UcValueInOut.xaml</DependentUpon>
     </Compile>
     <Compile Include="XAML Converter\DropDownParamConverter.cs" />
@@ -385,10 +385,10 @@
     <Compile Include="UserControls\Buttons\UcButton.xaml.cs">
       <DependentUpon>UcButton.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UcMessage.xaml.cs">
+    <Compile Include="UserControls\Status\UcMessage.xaml.cs">
       <DependentUpon>UcMessage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Sonstiges\UcOverviewDispl.xaml.cs">
+    <Compile Include="UserControls\Status\UcOverviewDispl.xaml.cs">
       <DependentUpon>UcOverviewDispl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UcParamDataGrid.xaml.cs">
@@ -443,13 +443,13 @@
       <DependentUpon>UcPnCylControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Graphical UCs\UcValveFunctions.cs" />
-    <Compile Include="UserControls\Frank\UcLamp.xaml.cs">
+    <Compile Include="UserControls\Status\UcLamp.xaml.cs">
       <DependentUpon>UcLamp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Frank\UcLampText.xaml.cs">
+    <Compile Include="UserControls\Status\UcLampText.xaml.cs">
       <DependentUpon>UcLampText.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Frank\UcValue.xaml.cs">
+    <Compile Include="UserControls\Status\UcValue.xaml.cs">
       <DependentUpon>UcValue.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HOPA Devices\UcBeckhoffAxis.xaml.cs">
@@ -470,7 +470,7 @@
     <Compile Include="UserControls\UcNavWorksp.xaml.cs">
       <DependentUpon>UcNavWorksp.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Sonstiges\UcStateBlock.xaml.cs">
+    <Compile Include="UserControls\Status\UcStateBlock.xaml.cs">
       <DependentUpon>UcStateBlock.xaml</DependentUpon>
     </Compile>
     <Compile Include="XAML Converter\EnumOrderStateConverter.cs" />
@@ -691,7 +691,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\UcAnimationBusy.xaml">
+    <Page Include="UserControls\Status\UcAnimationBusy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -707,11 +707,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\UcMessage.xaml">
+    <Page Include="UserControls\Status\UcMessage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\RENA - Sonstiges\UcOverviewDispl.xaml">
+    <Page Include="UserControls\Status\UcOverviewDispl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -783,15 +783,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\Frank\UcLamp.xaml">
+    <Page Include="UserControls\Status\UcLamp.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\Frank\UcLampText.xaml">
+    <Page Include="UserControls\Status\UcLampText.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\Frank\UcValue.xaml">
+    <Page Include="UserControls\Status\UcValue.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -819,7 +819,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Sonstiges\UcStateBlock.xaml">
+    <Page Include="UserControls\Status\UcStateBlock.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -839,7 +839,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\UcValueInOut.xaml">
+    <Page Include="UserControls\Status\UcValueInOut.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
