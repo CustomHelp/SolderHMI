@@ -295,7 +295,7 @@
     <Compile Include="UserControls\UcCounter.xaml.cs">
       <DependentUpon>UcCounter.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LiveCharts\UcLineChart.xaml.cs">
+    <Compile Include="UserControls\Charts\UcLineChart.xaml.cs">
       <DependentUpon>UcLineChart.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\LOET\RFID_WT\UcWTVariant.xaml.cs">
@@ -699,7 +699,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\LiveCharts\UcLineChart.xaml">
+    <Page Include="UserControls\Charts\UcLineChart.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
