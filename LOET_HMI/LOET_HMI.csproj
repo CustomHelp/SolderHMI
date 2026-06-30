@@ -279,9 +279,6 @@
     <Compile Include="SystemPages\PopUps\WindowPopUpLogo.xaml.cs">
       <DependentUpon>WindowPopUpLogo.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SystemPages\PopUps\WindowPopUpManualReader.xaml.cs">
-      <DependentUpon>WindowPopUpManualReader.xaml</DependentUpon>
-    </Compile>
     <Compile Include="SystemPages\PopUps\WindowPopUpExcelReader.xaml.cs">
       <DependentUpon>WindowPopUpExcelReader.xaml</DependentUpon>
     </Compile>
@@ -662,10 +659,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SystemPages\PopUps\WindowPopUpLogo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SystemPages\PopUps\WindowPopUpManualReader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
