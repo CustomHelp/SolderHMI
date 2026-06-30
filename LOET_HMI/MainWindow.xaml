@@ -102,13 +102,11 @@
                     <ColumnDefinition Width="220"/>
                 </Grid.ColumnDefinitions>
 
-                <ComboBox x:Name="manualCB" IsEditable="False" IsReadOnly="True" SelectedIndex="0" Grid.Column="0" Margin="20,5" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="ManualCB_SelectionChanged">
-                    <ComboBoxItem Visibility="Collapsed" Content="{x:Static prop:Resources.Main_cbManuals}" />
-                </ComboBox>
+                <!-- Links: Kategorie-Auswahl (Videos + Dokument-Kategorien) -->
+                <ComboBox x:Name="categoryCB" IsEditable="False" IsReadOnly="True" Grid.Column="0" Margin="20,5" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="CategoryCB_SelectionChanged" />
 
-                <ComboBox x:Name="videoCB" IsEditable="False" IsReadOnly="True" SelectedIndex="0" Grid.Column="2" Margin="20,5" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="VideoCB_SelectionChanged">
-                    <ComboBoxItem Visibility="Collapsed" Content="{x:Static prop:Resources.Main_cbVideoInstructions}"/>
-                </ComboBox>
+                <!-- Rechts: Datei-Auswahl innerhalb der gewaehlten Kategorie -->
+                <ComboBox x:Name="fileCB" IsEditable="False" IsReadOnly="True" Grid.Column="2" Margin="20,5" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="FileCB_SelectionChanged" />
             </Grid>
 
             <Button x:Name="btnLoginInMain" Content="Login"   

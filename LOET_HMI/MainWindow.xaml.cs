@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -227,8 +227,7 @@ namespace LOET_HMI
                 SetWindowSize();
                 LoadDisplays();
                 SetLanguage();
-                SetVideos();
-                SetManuals();
+                SetCategories();
             }
             catch (Exception ex)
             {
@@ -1542,33 +1541,115 @@ namespace LOET_HMI
             }
         }
 
-        #region ComboBox Behandlung (Bedienungsanleitungen und Videos) 
-        private void VideoCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        #region Kategorie-/Datei-Dropdowns (Dokumentenanzeige: PDF / Excel / Video)
+        /// <summary>Fuellt das Kategorie-Dropdown (links) mit "Videos" + den Dokument-Kategorien.</summary>
+        private void SetCategories()
         {
-            //try
-            //{
-
-            var cb = sender as ComboBox;
-            var item = cb.SelectedItem as ComboBoxItem;
-            if (item != null)
+            categoryCB.Items.Clear();
+            foreach (string category in DocumentationPaths.Categories)
             {
-                if (item.Content.ToString() != "" && item.Content.ToString() != Properties.Resources.Main_cbVideoInstructions)//"Video-Instructions")
+                ComboBoxItem item = new ComboBoxItem();
+                item.Content = category;
+                item.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#66509B"));
+                item.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
+                categoryCB.Items.Add(item);
+            }
+            categoryCB.SelectedIndex = -1;
+            fileCB.Items.Clear();
+            fileCB.IsEnabled = false;
+        }
+
+        /// <summary>Kategorie gewaehlt -> Datei-Dropdown (rechts) passend fuellen.</summary>
+        private void CategoryCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem item = categoryCB.SelectedItem as ComboBoxItem;
+            if (item == null)
+            {
+                return;
+            }
+            SetFilesForCategory(item.Content.ToString());
+        }
+
+        /// <summary>Fuellt das Datei-Dropdown mit den Dateien der Kategorie (Anzeige ohne Endung).</summary>
+        private void SetFilesForCategory(string category)
+        {
+            fileCB.Items.Clear();
+            fileCB.IsEnabled = true;
+            try
+            {
+                string path = DocumentationPaths.GetCategoryPath(category);
+                if (!Directory.Exists(path))
                 {
-                    string playablePath = GlobalVar.videoPath + item.Content.ToString() + ".mov";//".mp4";
-                    WindowPopUpVideoPlayer player = new WindowPopUpVideoPlayer(playablePath);
+                    return;
+                }
+
+                bool isVideo = DocumentationPaths.IsVideoCategory(category);
+                foreach (FileInfo file in new DirectoryInfo(path).GetFiles())
+                {
+                    string ext = file.Extension.ToLowerInvariant();
+                    bool supported = isVideo ? (ext == ".mov")
+                                             : (ext == ".pdf" || ext == ".xls" || ext == ".xlsx");
+                    if (!supported)
+                    {
+                        continue;
+                    }
+
+                    ComboBoxItem cbI = new ComboBoxItem();
+                    cbI.Content = System.IO.Path.GetFileNameWithoutExtension(file.Name);
+                    cbI.Tag = file.FullName; // vollstaendiger Pfad zum Oeffnen
+                    cbI.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#66509B"));
+                    cbI.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
+                    fileCB.Items.Add(cbI);
+                }
+            }
+            catch
+            {
+                // Ordner ggf. leer/nicht lesbar -> Dropdown bleibt leer.
+            }
+            fileCB.SelectedIndex = -1;
+        }
+
+        /// <summary>Datei gewaehlt -> je nach Dateityp den passenden Viewer oeffnen.</summary>
+        private void FileCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBoxItem item = fileCB.SelectedItem as ComboBoxItem;
+            if (item == null || item.Tag == null)
+            {
+                return;
+            }
+
+            string fullPath = item.Tag.ToString();
+            string ext = System.IO.Path.GetExtension(fullPath).ToLowerInvariant();
+
+            try
+            {
+                if (ext == ".pdf")
+                {
+                    new WindowPopUpPdfReader(fullPath).Show();
+                }
+                else if (ext == ".xls" || ext == ".xlsx")
+                {
+                    new WindowPopUpExcelReader(fullPath).Show();
+                }
+                else if (ext == ".mov")
+                {
+                    WindowPopUpVideoPlayer player = new WindowPopUpVideoPlayer(fullPath);
                     player.Show();
                     player.Closed += Player_Closed;
                     player.Loaded += Player_Loaded;
-                    videoCB.SelectedIndex = 0;
                 }
             }
-
-            GlobalFunc.PopUp_SetMainWBackgrNormal();
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Error occurred while trying to load the video", "Video-Exception", MessageBoxButton.OK, MessageBoxImage.Error);
-            //}
+            catch (Exception ex)
+            {
+                MessageBox.Show("Die Datei konnte nicht geoeffnet werden:\n" + ex.Message,
+                    "Dokumentenanzeige", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                // Auswahl zuruecksetzen, damit dieselbe Datei erneut gewaehlt werden kann.
+                fileCB.SelectedIndex = -1;
+                GlobalFunc.PopUp_SetMainWBackgrNormal();
+            }
         }
 
         private void Player_Loaded(object sender, RoutedEventArgs e)
@@ -1579,102 +1660,6 @@ namespace LOET_HMI
         private void Player_Closed(object sender, EventArgs e)
         {
             GlobalFunc.PopUp_SetMainWBackgrNormal();
-        }
-
-        private void ManualCB_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var cb = sender as ComboBox;
-            var item = cb.SelectedItem as ComboBoxItem;
-            if (item != null)
-            {
-                if (item.Content.ToString() != "" && item.Content.ToString() != Properties.Resources.Main_cbManuals)
-                {
-                    string playablePath = GlobalVar.manualPath + item.Content.ToString();// + ".pdf";
-                    WindowPopUpManualReader reader = new WindowPopUpManualReader(playablePath);
-                    reader.Show();
-                    manualCB.SelectedIndex = 0;
-                }
-            }
-        }
-
-        private void SetVideos()
-        {
-            if (GlobalVar.videoExists == true)
-            {
-                videoCB.Items.Clear();
-                ComboBoxItem header = new ComboBoxItem();
-                header.Content = Properties.Resources.Main_cbVideoInstructions; //"Video-Instructions"; //Properties.Resources.CB_VideoInstructions;
-                header.Visibility = Visibility.Collapsed;
-                videoCB.Items.Add(header);
-                try
-                {
-                    DirectoryInfo d = new DirectoryInfo(GlobalVar.videoPath);
-                    FileInfo[] files = d.GetFiles();
-
-                    foreach (FileInfo file in files)
-                    {
-                        ComboBoxItem cbI = new ComboBoxItem();
-                        cbI.Content = file.Name.Substring(0, file.Name.Length - 4);
-                        cbI.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#66509B"));
-                        cbI.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
-                        //cbI.Style = (Style)Application.Current.Resources["ComboBoxItemStyleCHP"];
-                        videoCB.Items.Add(cbI);
-                    }
-                }
-                catch
-                {
-
-                }
-
-                videoCB.Items.Refresh();
-                videoCB.SelectedIndex = 0;
-            }
-            else
-            {
-                videoCB.Visibility = Visibility.Hidden;
-                videoCB.IsEnabled = false;
-            }
-        }
-
-
-        private void SetManuals()
-        {
-            if (GlobalVar.manualExists == true)
-            {
-                manualCB.Items.Clear();
-                ComboBoxItem header = new ComboBoxItem();
-                header.Content = Properties.Resources.Main_cbManuals;
-                header.Visibility = Visibility.Collapsed;
-                manualCB.Items.Add(header);
-                try
-                {
-                    DirectoryInfo d = new DirectoryInfo(GlobalVar.manualPath);
-                    //FileInfo[] files = d.GetFiles();                  //FileInfo für PDFs, DirectoryInfo für Ordner mit Bildern
-                    DirectoryInfo[] folders = d.GetDirectories();
-
-                    foreach (DirectoryInfo file in folders)
-                    {
-                        ComboBoxItem cbI = new ComboBoxItem();
-                        cbI.Content = file.Name;
-                        cbI.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#66509B"));
-                        cbI.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
-                        //cbI.Style = (Style)Application.Current.Resources["ComboBoxItemStyleCHP"];
-                        manualCB.Items.Add(cbI);
-                    }
-                }
-                catch
-                {
-
-                }
-
-                manualCB.Items.Refresh();
-                manualCB.SelectedIndex = 0;
-            }
-            else
-            {
-                manualCB.Visibility = Visibility.Hidden;
-                manualCB.IsEnabled = false;
-            }
         }
         #endregion
 
