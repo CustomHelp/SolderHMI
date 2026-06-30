@@ -95,19 +95,17 @@
             </Grid>
 
 
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="220"/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition Width="220"/>
-                </Grid.ColumnDefinitions>
-
-                <!-- Links: Kategorie-Auswahl (Videos + Dokument-Kategorien) -->
-                <ComboBox x:Name="categoryCB" IsEditable="False" IsReadOnly="True" Grid.Column="0" Margin="20,5" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="CategoryCB_SelectionChanged" />
-
-                <!-- Rechts: Datei-Auswahl innerhalb der gewaehlten Kategorie -->
-                <ComboBox x:Name="fileCB" IsEditable="False" IsReadOnly="True" Grid.Column="2" Margin="20,5" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="FileCB_SelectionChanged" />
-            </Grid>
+            <!-- Kategorie- und Datei-Dropdown nebeneinander, je mit Beschriftung darueber -->
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0">
+                <StackPanel Orientation="Vertical" Margin="0,0,15,0">
+                    <TextBlock Text="Category" Foreground="White" FontSize="11" Margin="2,0,0,0"/>
+                    <ComboBox x:Name="categoryCB" IsEditable="False" IsReadOnly="True" Width="220" Height="24" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="CategoryCB_SelectionChanged" />
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Text="Item" Foreground="White" FontSize="11" Margin="2,0,0,0"/>
+                    <ComboBox x:Name="fileCB" IsEditable="False" IsReadOnly="True" Width="220" Height="24" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="FileCB_SelectionChanged" />
+                </StackPanel>
+            </StackPanel>
 
             <Button x:Name="btnLoginInMain" Content="Login"   
                     Grid.Row="1" Grid.Column="2" Margin="2" Background="Transparent" Foreground="White" BorderThickness="0" 
