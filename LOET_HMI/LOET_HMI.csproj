@@ -394,10 +394,10 @@
     <Compile Include="UserControls\Parameters\UcParamDataGrid.xaml.cs">
       <DependentUpon>UcParamDataGrid.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrHeater.xaml.cs">
+    <Compile Include="UserControls\Devices\OnOff\UcGrHeater.xaml.cs">
       <DependentUpon>UcGrHeater.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrPumpe.xaml.cs">
+    <Compile Include="UserControls\Devices\OnOff\UcGrPumpe.xaml.cs">
       <DependentUpon>UcGrPumpe.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Devices\Valves\UcGrValve.xaml.cs">
@@ -461,7 +461,7 @@
     <Compile Include="UserControls\Devices\Cylinder\UcCylinder.xaml.cs">
       <DependentUpon>UcCylinder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HOPA Devices\UcDeviceOnOff.xaml.cs">
+    <Compile Include="UserControls\Devices\OnOff\UcDeviceOnOff.xaml.cs">
       <DependentUpon>UcDeviceOnOff.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Parameters\UcInOutsDatagrid.xaml.cs">
@@ -719,11 +719,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrHeater.xaml">
+    <Page Include="UserControls\Devices\OnOff\UcGrHeater.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrPumpe.xaml">
+    <Page Include="UserControls\Devices\OnOff\UcGrPumpe.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -807,7 +807,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\HOPA Devices\UcDeviceOnOff.xaml">
+    <Page Include="UserControls\Devices\OnOff\UcDeviceOnOff.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
