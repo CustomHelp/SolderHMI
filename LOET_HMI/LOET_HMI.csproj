@@ -350,11 +350,8 @@
     <Compile Include="PLC_Com_Classes\StButton.cs" />
     <Compile Include="PLC_Com_Classes\StCylinder.cs" />
     <Compile Include="PLC_Com_Classes\StDeviceOnOff.cs" />
-    <Compile Include="PLC_Com_Classes\Nicht verwendet %28HOMS, REEB%29\StFluidValve.cs" />
-    <Compile Include="PLC_Com_Classes\Nicht verwendet %28HOMS, REEB%29\StGrCylinderHMI.cs" />
     <Compile Include="PLC_Com_Classes\StPanelDialog.cs" />
     <Compile Include="PLC_Com_Classes\StSensor.cs" />
-    <Compile Include="PLC_Com_Classes\Nicht verwendet %28HOMS, REEB%29\ST_MessageWindow.cs" />
     <Compile Include="SystemPages\PopUps\Parameter\Window_CopyParamSet.xaml.cs">
       <DependentUpon>Window_CopyParamSet.xaml</DependentUpon>
     </Compile>
