@@ -452,7 +452,7 @@
     <Compile Include="UserControls\Status\UcValue.xaml.cs">
       <DependentUpon>UcValue.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HOPA Devices\UcBeckhoffAxis.xaml.cs">
+    <Compile Include="UserControls\Devices\Axis\UcBeckhoffAxis.xaml.cs">
       <DependentUpon>UcBeckhoffAxis.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Common\UcContainer.xaml.cs">
@@ -795,7 +795,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\HOPA Devices\UcBeckhoffAxis.xaml">
+    <Page Include="UserControls\Devices\Axis\UcBeckhoffAxis.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
