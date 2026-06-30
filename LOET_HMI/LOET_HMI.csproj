@@ -226,9 +226,6 @@
     <Compile Include="Displays\PgCHPManFunc.xaml.cs">
       <DependentUpon>PgCHPManFunc.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Displays\OverviewTemplateTest.xaml.cs">
-      <DependentUpon>OverviewTemplateTest.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Displays\100_Machine\PgMessageArchiv.xaml.cs">
       <DependentUpon>PgMessageArchiv.xaml</DependentUpon>
     </Compile>
@@ -541,10 +538,6 @@
     <Page Include="Displays\PgCHPManFunc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Displays\OverviewTemplateTest.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Displays\100_Machine\PgMessageArchiv.xaml">
       <SubType>Designer</SubType>
