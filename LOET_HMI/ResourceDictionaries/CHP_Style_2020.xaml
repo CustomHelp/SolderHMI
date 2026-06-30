@@ -171,8 +171,8 @@
                     <ControlTemplate.Triggers>
                         <!-- Mouse-Over Farben -->
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="myBorder" Property="BorderBrush" Value="#FF4788c8" />
-                            <Setter Property="Foreground" Value="#FF4788c8" />
+                            <Setter TargetName="myBorder" Property="BorderBrush" Value="{StaticResource Brand_Secondary}" />
+                            <Setter Property="Foreground" Value="{StaticResource Brand_Secondary}" />
                             <Setter Property="Background" Value="{StaticResource Brand_Primary}" />
                         </Trigger>
 
@@ -1389,7 +1389,7 @@
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="myBorder" Property="BorderBrush" Value="Gray" />
                             <Setter Property="Foreground" Value="Gray" />
-                            <Setter Property="Background" Value="DodgerBlue" />
+                            <Setter Property="Background" Value="{StaticResource Brand_Secondary}" />
                         </Trigger>
 
                         <!-- Animation -->
@@ -1820,8 +1820,8 @@
                     <ControlTemplate.Triggers>
                         <!-- Mouse-Over Farben -->
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="myBorder" Property="BorderBrush" Value="#FF4788c8" />
-                            <Setter Property="Foreground" Value="#FF4788c8" />
+                            <Setter TargetName="myBorder" Property="BorderBrush" Value="{StaticResource Brand_Secondary}" />
+                            <Setter Property="Foreground" Value="{StaticResource Brand_Secondary}" />
                         </Trigger>
 
                         <!-- Disabled Farben -->
@@ -1934,8 +1934,8 @@
                     <ControlTemplate.Triggers>
                         <!-- Mouse-Over Farben -->
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="myBorder" Property="BorderBrush" Value="#FF4788c8" />
-                            <Setter Property="Foreground" Value="#FF4788c8" />
+                            <Setter TargetName="myBorder" Property="BorderBrush" Value="{StaticResource Brand_Secondary}" />
+                            <Setter Property="Foreground" Value="{StaticResource Brand_Secondary}" />
                             <Setter Property="Opacity" Value="0.5" />
                         </Trigger>
                         
@@ -1968,17 +1968,17 @@
     <SolidColorBrush x:Key="ComboBox.Static.ForeGround" Color="White"/>
     <SolidColorBrush x:Key="ComboBox.MouseOver.Glyph" Color="#FF000000"/>
     <LinearGradientBrush x:Key="ComboBox.MouseOver.Background" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="#66509B" Offset="0.0"/>
-        <GradientStop Color="#66509B" Offset="1.0"/>
+        <GradientStop Color="{StaticResource Brand_SecondaryColor}" Offset="0.0"/>
+        <GradientStop Color="{StaticResource Brand_SecondaryColor}" Offset="1.0"/>
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="ComboBox.MouseOver.Border" Color="#66509B"/>
-    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Background" Color="#66509B"/>
-    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Border" Color="#66509B"/>
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Border" Color="{StaticResource Brand_SecondaryColor}"/>
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Background" Color="{StaticResource Brand_SecondaryColor}"/>
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Border" Color="{StaticResource Brand_SecondaryColor}"/>
     <LinearGradientBrush x:Key="ComboBox.MouseOver.Editable.Button.Background" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="#66509B" Offset="0.0"/>
-        <GradientStop Color="#66509B" Offset="1.0"/>
+        <GradientStop Color="{StaticResource Brand_SecondaryColor}" Offset="0.0"/>
+        <GradientStop Color="{StaticResource Brand_SecondaryColor}" Offset="1.0"/>
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Button.Border" Color="#66509B"/>
+    <SolidColorBrush x:Key="ComboBox.MouseOver.Editable.Button.Border" Color="{StaticResource Brand_SecondaryColor}"/>
     <SolidColorBrush x:Key="ComboBox.Pressed.Glyph" Color="#FF000000"/>
     <LinearGradientBrush x:Key="ComboBox.Pressed.Background" EndPoint="0,1" StartPoint="0,0">
         <GradientStop Color="#FFDAECFC" Offset="0.0"/>
