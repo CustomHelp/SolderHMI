@@ -286,7 +286,7 @@
     <Compile Include="UserControls\LOET\KROSY\UcStation.xaml.cs">
       <DependentUpon>UcStation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\TimeControl.xaml.cs">
+    <Compile Include="UserControls\Common\TimeControl.xaml.cs">
       <DependentUpon>TimeControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Status\UcAnimationBusy.xaml.cs">
@@ -307,7 +307,7 @@
     <Compile Include="UserControls\LOET\UcHU5000.xaml.cs">
       <DependentUpon>UcHU5000.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UcTimePickerCHP.xaml.cs">
+    <Compile Include="UserControls\Common\UcTimePickerCHP.xaml.cs">
       <DependentUpon>UcTimePickerCHP.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\LOET\RFID_WT\UcRFID_WT.xaml.cs">
@@ -455,7 +455,7 @@
     <Compile Include="UserControls\HOPA Devices\UcBeckhoffAxis.xaml.cs">
       <DependentUpon>UcBeckhoffAxis.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UcContainer.xaml.cs">
+    <Compile Include="UserControls\Common\UcContainer.xaml.cs">
       <DependentUpon>UcContainer.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HOPA Devices\UcCylinder.xaml.cs">
@@ -687,7 +687,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\TimeControl.xaml">
+    <Page Include="UserControls\Common\TimeControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -799,7 +799,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\UcContainer.xaml">
+    <Page Include="UserControls\Common\UcContainer.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -831,7 +831,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\UcTimePickerCHP.xaml">
+    <Page Include="UserControls\Common\UcTimePickerCHP.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
