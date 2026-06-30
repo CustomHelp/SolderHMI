@@ -17,7 +17,7 @@
     <SolidColorBrush x:Key="Brand_Secondary" Color="{StaticResource Brand_SecondaryColor}" />
     <!-- ============================================================= -->
 
-    <SolidColorBrush x:Key="CHP_ColorBrush" Color="#66509B" />
+    <SolidColorBrush x:Key="CHP_ColorBrush" Color="{StaticResource Brand_PrimaryColor}" />
 
 
     <ControlTemplate x:Key="GlobButtonTempl">
@@ -173,7 +173,7 @@
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="myBorder" Property="BorderBrush" Value="#FF4788c8" />
                             <Setter Property="Foreground" Value="#FF4788c8" />
-                            <Setter Property="Background" Value="Purple" />
+                            <Setter Property="Background" Value="{StaticResource Brand_Primary}" />
                         </Trigger>
 
                         <!-- Animation -->
@@ -277,7 +277,7 @@
                         <Rectangle Grid.Row="0" Height="120"  >
                             <Rectangle.Fill>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#66509B" Offset="0.368"/>
+                                    <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="0.368"/>
                                     <GradientStop Color="#DAD4E8" Offset="1"/>
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
@@ -891,7 +891,8 @@
     <Color x:Key="DateTimePickBtnColor">#FF686868</Color>
 
     <!-- Allgemeine Farben-->
-    <Color x:Key="CHPColor">#FF9933FF</Color>
+    <!-- CHPColor entfaellt: LED-Gradient nutzt jetzt zentral Brand_PrimaryColor -->
+    <Color x:Key="CHPColor">#FF782182</Color>
     <SolidColorBrush x:Key="CHPStandartFontColor" Color="Black"/>
     <SolidColorBrush x:Key="CHPStandartRectColor" Color="Black"/>
     <!-- State_Normal manuell anpassen! -->
@@ -1454,7 +1455,7 @@
     <!--********************* LED *********************-->
 
     <RadialGradientBrush x:Key="Background_LEDCHP" Center="0.673,0.246" GradientOrigin="0.673,0.246" >
-        <GradientStop Color="{StaticResource CHPColor}"  Offset="1"/>
+        <GradientStop Color="{StaticResource Brand_PrimaryColor}"  Offset="1"/>
         <GradientStop Color="#CCE6E6E6"/>
     </RadialGradientBrush>
 
@@ -1956,12 +1957,12 @@
     <!--ComboBox Style-->
 
     <LinearGradientBrush x:Key="ComboBox.Static.Background" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="#66509B" Offset="0.0"/>
-        <GradientStop Color="#66509B" Offset="1.0"/>
+        <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="0.0"/>
+        <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="1.0"/>
     </LinearGradientBrush>
-    <SolidColorBrush x:Key="ComboBox.Static.Border" Color="#66509B"/>
-    <SolidColorBrush x:Key="ComboBox.Static.Editable.Background" Color="#66509B"/>
-    <SolidColorBrush x:Key="ComboBox.Static.Editable.Border" Color="#66509B"/>
+    <SolidColorBrush x:Key="ComboBox.Static.Border" Color="{StaticResource Brand_PrimaryColor}"/>
+    <SolidColorBrush x:Key="ComboBox.Static.Editable.Background" Color="{StaticResource Brand_PrimaryColor}"/>
+    <SolidColorBrush x:Key="ComboBox.Static.Editable.Border" Color="{StaticResource Brand_PrimaryColor}"/>
     <SolidColorBrush x:Key="ComboBox.Static.Editable.Button.Background" Color="Transparent"/>
     <SolidColorBrush x:Key="ComboBox.Static.Editable.Button.Border" Color="Transparent"/>
     <SolidColorBrush x:Key="ComboBox.Static.ForeGround" Color="White"/>
