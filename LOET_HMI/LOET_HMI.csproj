@@ -400,7 +400,7 @@
     <Compile Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrPumpe.xaml.cs">
       <DependentUpon>UcGrPumpe.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrValve.xaml.cs">
+    <Compile Include="UserControls\Devices\Valves\UcGrValve.xaml.cs">
       <DependentUpon>UcGrValve.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcDosingTank.xaml.cs">
@@ -409,7 +409,7 @@
     <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcEmergencyStop.xaml.cs">
       <DependentUpon>UcEmergencyStop.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcPressureReducingValve.xaml.cs">
+    <Compile Include="UserControls\Devices\Valves\UcPressureReducingValve.xaml.cs">
       <DependentUpon>UcPressureReducingValve.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcSwitchSymbol.xaml.cs">
@@ -418,7 +418,7 @@
     <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcTank.xaml.cs">
       <DependentUpon>UcTank.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\Uc4-3HydrValveAndAnSens.xaml.cs">
+    <Compile Include="UserControls\Devices\Valves\Uc4-3HydrValveAndAnSens.xaml.cs">
       <DependentUpon>Uc4-3HydrValveAndAnSens.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Devices\Cylinder\UcGrCylControl.xaml.cs">
@@ -442,7 +442,7 @@
     <Compile Include="UserControls\Devices\Cylinder\UcPnCylControl.xaml.cs">
       <DependentUpon>UcPnCylControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\UcValveFunctions.cs" />
+    <Compile Include="UserControls\Devices\Valves\UcValveFunctions.cs" />
     <Compile Include="UserControls\Status\UcLamp.xaml.cs">
       <DependentUpon>UcLamp.xaml</DependentUpon>
     </Compile>
@@ -727,7 +727,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrValve.xaml">
+    <Page Include="UserControls\Devices\Valves\UcGrValve.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -739,7 +739,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcPressureReducingValve.xaml">
+    <Page Include="UserControls\Devices\Valves\UcPressureReducingValve.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -751,7 +751,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\Uc4-3HydrValveAndAnSens.xaml">
+    <Page Include="UserControls\Devices\Valves\Uc4-3HydrValveAndAnSens.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
