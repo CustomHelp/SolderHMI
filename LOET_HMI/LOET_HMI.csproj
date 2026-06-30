@@ -279,7 +279,7 @@
     <Compile Include="UserControls\Devices\Cylinder\UcCylinderMin.xaml.cs">
       <DependentUpon>UcCylinderMin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\HOPA Devices\UcSensBOOL.xaml.cs">
+    <Compile Include="UserControls\Devices\Sensors\UcSensBOOL.xaml.cs">
       <DependentUpon>UcSensBOOL.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\LOET\LOET_RFID.cs" />
@@ -427,10 +427,10 @@
     <Compile Include="UserControls\Devices\Cylinder\UcGrCylinder.xaml.cs">
       <DependentUpon>UcGrCylinder.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\UcGrSensorAnalog.xaml.cs">
+    <Compile Include="UserControls\Devices\Sensors\UcGrSensorAnalog.xaml.cs">
       <DependentUpon>UcGrSensorAnalog.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\UcGrSensorDigital.xaml.cs">
+    <Compile Include="UserControls\Devices\Sensors\UcGrSensorDigital.xaml.cs">
       <DependentUpon>UcGrSensorDigital.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Parameters\UcGrSettingAnalogDINT.xaml.cs">
@@ -679,7 +679,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\HOPA Devices\UcSensBOOL.xaml">
+    <Page Include="UserControls\Devices\Sensors\UcSensBOOL.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -763,11 +763,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\UcGrSensorAnalog.xaml">
+    <Page Include="UserControls\Devices\Sensors\UcGrSensorAnalog.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\UcGrSensorDigital.xaml">
+    <Page Include="UserControls\Devices\Sensors\UcGrSensorDigital.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
