@@ -282,8 +282,8 @@
     <Compile Include="UserControls\Devices\Sensors\UcSensBOOL.xaml.cs">
       <DependentUpon>UcSensBOOL.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LOET\LOET_RFID.cs" />
-    <Compile Include="UserControls\LOET\KROSY\UcStation.xaml.cs">
+    <Compile Include="UserControls\Project_LOET\LOET_RFID.cs" />
+    <Compile Include="UserControls\Project_LOET\KROSY\UcStation.xaml.cs">
       <DependentUpon>UcStation.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Common\TimeControl.xaml.cs">
@@ -298,19 +298,19 @@
     <Compile Include="UserControls\Charts\UcLineChart.xaml.cs">
       <DependentUpon>UcLineChart.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LOET\RFID_WT\UcWTVariant.xaml.cs">
+    <Compile Include="UserControls\Project_LOET\RFID_WT\UcWTVariant.xaml.cs">
       <DependentUpon>UcWTVariant.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LOET\RFID_IND\UcRFID_IND.xaml.cs">
+    <Compile Include="UserControls\Project_LOET\RFID_IND\UcRFID_IND.xaml.cs">
       <DependentUpon>UcRFID_IND.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LOET\UcHU5000.xaml.cs">
+    <Compile Include="UserControls\Project_LOET\UcHU5000.xaml.cs">
       <DependentUpon>UcHU5000.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Common\UcTimePickerCHP.xaml.cs">
       <DependentUpon>UcTimePickerCHP.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\LOET\RFID_WT\UcRFID_WT.xaml.cs">
+    <Compile Include="UserControls\Project_LOET\RFID_WT\UcRFID_WT.xaml.cs">
       <DependentUpon>UcRFID_WT.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Status\UcValueInOut.xaml.cs">
@@ -683,7 +683,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\LOET\KROSY\UcStation.xaml">
+    <Page Include="UserControls\Project_LOET\KROSY\UcStation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -703,7 +703,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\LOET\UcHU5000.xaml">
+    <Page Include="UserControls\Project_LOET\UcHU5000.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -823,11 +823,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\LOET\RFID_WT\UcWTVariant.xaml">
+    <Page Include="UserControls\Project_LOET\RFID_WT\UcWTVariant.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\LOET\RFID_IND\UcRFID_IND.xaml">
+    <Page Include="UserControls\Project_LOET\RFID_IND\UcRFID_IND.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -835,7 +835,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\LOET\RFID_WT\UcRFID_WT.xaml">
+    <Page Include="UserControls\Project_LOET\RFID_WT\UcRFID_WT.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
