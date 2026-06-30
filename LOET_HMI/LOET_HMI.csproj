@@ -403,19 +403,19 @@
     <Compile Include="UserControls\Devices\Valves\UcGrValve.xaml.cs">
       <DependentUpon>UcGrValve.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcDosingTank.xaml.cs">
+    <Compile Include="UserControls\Devices\Passive\UcDosingTank.xaml.cs">
       <DependentUpon>UcDosingTank.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcEmergencyStop.xaml.cs">
+    <Compile Include="UserControls\Devices\Passive\UcEmergencyStop.xaml.cs">
       <DependentUpon>UcEmergencyStop.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Devices\Valves\UcPressureReducingValve.xaml.cs">
       <DependentUpon>UcPressureReducingValve.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcSwitchSymbol.xaml.cs">
+    <Compile Include="UserControls\Devices\Passive\UcSwitchSymbol.xaml.cs">
       <DependentUpon>UcSwitchSymbol.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcTank.xaml.cs">
+    <Compile Include="UserControls\Devices\Passive\UcTank.xaml.cs">
       <DependentUpon>UcTank.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Devices\Valves\Uc4-3HydrValveAndAnSens.xaml.cs">
@@ -436,7 +436,7 @@
     <Compile Include="UserControls\Parameters\UcGrSettingAnalogDINT.xaml.cs">
       <DependentUpon>UcGrSettingAnalogDINT.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\RENA - Graphical UCs\UcPipeTriangle.xaml.cs">
+    <Compile Include="UserControls\Devices\Passive\UcPipeTriangle.xaml.cs">
       <DependentUpon>UcPipeTriangle.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Devices\Cylinder\UcPnCylControl.xaml.cs">
@@ -731,11 +731,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcDosingTank.xaml">
+    <Page Include="UserControls\Devices\Passive\UcDosingTank.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcEmergencyStop.xaml">
+    <Page Include="UserControls\Devices\Passive\UcEmergencyStop.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -743,11 +743,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcSwitchSymbol.xaml">
+    <Page Include="UserControls\Devices\Passive\UcSwitchSymbol.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcTank.xaml">
+    <Page Include="UserControls\Devices\Passive\UcTank.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -775,7 +775,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\RENA - Graphical UCs\UcPipeTriangle.xaml">
+    <Page Include="UserControls\Devices\Passive\UcPipeTriangle.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
