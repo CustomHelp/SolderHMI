@@ -273,7 +273,7 @@
     <Compile Include="SystemPages\PopUps\WindowPopUpVideoPlayer.xaml.cs">
       <DependentUpon>WindowPopUpVideoPlayer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Button\UcButtonHandmenu.xaml.cs">
+    <Compile Include="UserControls\Buttons\UcButtonHandmenu.xaml.cs">
       <DependentUpon>UcButtonHandmenu.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\HOPA Devices\UcCylinderMin.xaml.cs">
@@ -382,7 +382,7 @@
     <Compile Include="Displays\900_Settings\PgUserManagement.xaml.cs">
       <DependentUpon>PgUserManagement.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\Button\UcButton.xaml.cs">
+    <Compile Include="UserControls\Buttons\UcButton.xaml.cs">
       <DependentUpon>UcButton.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UcMessage.xaml.cs">
@@ -667,11 +667,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\Button\UcButton.xaml">
+    <Page Include="UserControls\Buttons\UcButton.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UserControls\Button\UcButtonHandmenu.xaml">
+    <Page Include="UserControls\Buttons\UcButtonHandmenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
