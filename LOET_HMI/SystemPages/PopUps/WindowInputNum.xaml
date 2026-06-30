@@ -1,0 +1,108 @@
+﻿<Window x:Class= "LOET_HMI.SystemPages.PopUps.Window_InputNum"
+        Name   = "Window_InputNumeric"
+        
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOET_HMI.SystemPages.PopUps"
+        mc:Ignorable="d"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:t="clr-namespace:System.Windows;assembly=PresentationFramework"
+        FontSize="14"
+        Title="{Binding SettingName}"   
+        
+        SizeToContent="WidthAndHeight" ResizeMode="NoResize"
+        
+        xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+                
+        WindowStyle="ToolWindow"  DataContext="" KeyDown="Window_InputNumeric_KeyDown" Loaded="Window_InputNumeric_Loaded" Unloaded="Window_InputNumeric_Unloaded">
+
+    <Window.Resources>
+        <Thickness x:Key="myGlobalMargin" Left="2" Top="2" Right="2" Bottom ="2" ></Thickness>
+        <sys:Double x:Key="myGlobalBtnHeight">30</sys:Double>
+        <!-- Hierfür oben hinzugefügt:    xmlns:sys="clr-namespace:System;assembly=mscorlib"       -->
+        <!-- Verweis durch: {StaticResource myGlobalBtnHeight}      -->
+        <t:GridLength x:Key="myGlobalGridHeight">40*</t:GridLength>
+        <!-- Hierfür oben hinzugefügt:    xmlns:t="clr-namespace:System.Windows;assembly=PresentationFramework"-->
+
+    </Window.Resources>
+
+
+    <Grid Margin="6,6,6,6" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" FocusManager.IsFocusScope="True"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="28"/>
+            <!--
+            <RowDefinition Height="{StaticResource myGlobalGridHeight}"/>
+            <RowDefinition Height="{StaticResource myGlobalGridHeight}"/>
+            <RowDefinition Height="{StaticResource myGlobalGridHeight}"/>
+            <RowDefinition Height="{StaticResource myGlobalGridHeight}"/>
+            -->
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+
+        <TextBox Name="txtAnswer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" VerticalAlignment="Top" Height="23" Margin="{StaticResource myGlobalMargin}"  ></TextBox>
+
+        <!--
+        <TextBlock  Grid.Row="0" Grid.Column="4" Margin="{StaticResource myGlobalMargin}" VerticalAlignment="Center"  >
+            <Run Text="{Binding Unit}" />
+        </TextBlock>
+        -->
+
+        <TextBlock  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Top" Height="23" Margin="5,5,1.667,0" Grid.RowSpan="2"  >
+            <Run Text="Min: "/>
+            <Run Text="{Binding Min_lim}"/>
+        </TextBlock>
+
+        <TextBlock  Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" VerticalAlignment="Top" Height="23" Margin="5,5,1.667,0" Grid.RowSpan="2" >             
+            <Run Text="Max: "/>
+            <Run Text="{Binding Max_lim}"/>
+        </TextBlock>
+
+        <Button Name="btnOK"    Content="OK"    Grid.Row="5" Grid.Column="4" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="0,2,2,2" HorizontalAlignment="Right" VerticalAlignment="Stretch"  IsDefault="True" Click="BtnOK_Click" PreviewTouchDown="BtnOK_PreviewTouchDown" />
+        <Button Name="btnESC"   Content="ESC"   Grid.Row="4" Grid.Column="4" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Click="BtnESC_Click"  PreviewTouchDown="BtnESC_PreviewTouchDown"   IsCancel="True"/>
+        <Button Name="btnClear" Content="Clear" Grid.Row="3" Grid.Column="4" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Click="BtnClear_Click"  PreviewTouchDown="BtnClear_PreviewTouchDown" />
+        <Button Name="btnBack"  Content="Back"  Grid.Row="2" Grid.Column="4" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Click="BtnBack_Click" PreviewTouchDown="BtnBack_PreviewTouchDown"  
+                                                                                                                                                                                                                                                                                                        
+
+                
+                
+                >
+            
+        </Button>
+
+
+        <Button Name="btn9" Content="9" Grid.Row="2" Grid.Column="2" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+        <Button Name="btn8" Content="8" Grid.Row="2" Grid.Column="1" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+        <Button Name="btn7" Content="7" Grid.Row="2" Grid.Column="0" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+                                                                                                                                                                                                                             
+        <Button Name="btn6" Content="6" Grid.Row="3" Grid.Column="2" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+        <Button Name="btn5" Content="5" Grid.Row="3" Grid.Column="1" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+        <Button Name="btn4" Content="4" Grid.Row="3" Grid.Column="0" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+                                                                                                                                                                                                                             
+        <Button Name="btn3" Content="3" Grid.Row="4" Grid.Column="2" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+        <Button Name="btn2" Content="2" Grid.Row="4" Grid.Column="1" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+        <Button Name="btn1" Content="1" Grid.Row="4" Grid.Column="0" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+
+        <Button Name="btnSep"  Content="."   Grid.Row="5" Grid.Column="2" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+        <Button Name="btnSign" Content="+/-" Grid.Row="5" Grid.Column="1" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="BtnSign_Click" PreviewTouchDown="BtnSign_PreviewTouchDown"/>
+        <Button Name="btn0"    Content="0"   Grid.Row="5" Grid.Column="0" Style="{StaticResource VirtualKeyboardButtonStyle}" Margin="{StaticResource myGlobalMargin}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  />
+
+
+
+    </Grid>
+</Window>

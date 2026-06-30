@@ -1,0 +1,32 @@
+﻿<Page x:Class="LOET_HMI.Displays._999_Project._20_Global.PgSt20_ManFunc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LOET_HMI.Displays._999_Project._20_Global"
+      xmlns:usercontrols="clr-namespace:LOET_HMI.UserControls"
+      mc:Ignorable="d" 
+      d:DesignHeight="{StaticResource frameHeight}" d:DesignWidth="{StaticResource frameWidth}"
+      Loaded="PgStat_Loaded" Unloaded="PgStat_Unloaded"
+      x:Name="pgStat"
+      Title="PgSt20_ManFunc">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/LOET_HMI;component/Images/Handmenu_ST20.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <usercontrols:UcCylinder x:Name="cylElem1" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[0]}" Margin="1150,632,200,10" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+        <usercontrols:UcCylinder x:Name="cylElem2" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[1]}" Margin="845,632,505,10" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+        <usercontrols:UcCylinder x:Name="cylElem3" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[2]}" Margin="1340,429,10,213" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+        <usercontrols:UcCylinder x:Name="cylElem4" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[3]}" Margin="884,10,466,632" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+        <usercontrols:UcCylinder x:Name="cylElem5" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[4]}" Margin="884,199,466,443" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+        <usercontrols:UcCylinder x:Name="cylElem6" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[5]}" Margin="10,632,1340,10" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+        <usercontrols:UcCylinder x:Name="cylElem7" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[6]}" Margin="250,129,1100,513" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+        <usercontrols:UcCylinder x:Name="cylElem8" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[7]}" Margin="1340,10,10,632" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+        <usercontrols:UcCylinder x:Name="cylElem9" DpCylinderHMI="{Binding ElementName=pgStat, Path=CylList[8]}" Margin="1340,199,10,443" Style="{DynamicResource CHPUserControl}"></usercontrols:UcCylinder>
+
+        <Button x:Name="resetMeasuremet" Click="ResetMeasuremet_Click" Style="{StaticResource noHoverStyleNoImage}" Content="Reset Festo Measurement" Width="300" Height="100" FontSize="18" 
+                FontWeight="Bold" Background="Orange" Foreground="White" Margin="250,314,1100,408"/>
+    </Grid>
+</Page>

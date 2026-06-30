@@ -1,0 +1,47 @@
+﻿<Window x:Class="LOET_HMI.Window_DeleteUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOET_HMI"
+        mc:Ignorable="d"
+        Title="{x:Static prop:Resources.UserAdmin_btnDeleteUser}"
+        
+        Height="350" Width="500"
+        Style="{StaticResource RENA_PopUpStlye}" 
+        WindowStartupLocation="CenterScreen" 
+        xmlns:prop="clr-namespace:LOET_HMI.Properties"
+        >
+
+    <Grid>
+
+        
+        <StackPanel x:Name="StackStatus" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Width="370"  >
+            <TextBlock x:Name="tblName"  Margin="00,10,0,00" Text="Name:"                                                  Style="{StaticResource RENA_TextBlockStyleLARGE_PopUp}"  TextAlignment="Center" />
+            <TextBlock x:Name="Wirklich" Margin="00,10,0,20" Text="{x:Static prop:Resources.DlgUser_txtReallyDelete}"   Style="{StaticResource RENA_TextBlockStyleLARGE_PopUp}" HorizontalAlignment="Center"/>
+
+            <!-- 
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button x:Name="BtnOk"      Content="OK" Click="BtnOk_Click"  Style="{StaticResource RENA_ButtonStyle_PopUp}"  />
+                <Button x:Name="BtnCancel" Content="Abbrechen" Click="BtnCancel_Click"   Style="{StaticResource RENA_ButtonStyle_PopUp}"  />
+            </StackPanel>
+            -->
+
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <Button x:Name="BtnOk"      Grid.Column="0" Content="{x:Static prop:Resources.Btn_OK}"     IsDefault="True" Click="BtnOk_Click"   Style="{StaticResource RENA_ButtonStyle_PopUp}"   />
+                <Button x:Name="BtnCancel"  Grid.Column="1" Content="{x:Static prop:Resources.Btn_Cancel}" IsCancel="True" Click="BtnCancel_Click"  Style="{StaticResource RENA_ButtonStyle_PopUp}" />
+            </Grid>
+
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Window>

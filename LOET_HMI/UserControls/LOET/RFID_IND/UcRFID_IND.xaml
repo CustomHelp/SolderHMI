@@ -1,0 +1,74 @@
+﻿<UserControl xmlns:LOET_HMI="clr-namespace:LOET_HMI"  x:Class="LOET_HMI.UserControls.UcRFID_IND"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LOET_HMI.UserControls"
+             mc:Ignorable="d" 
+             xmlns:prop="clr-namespace:LOET_HMI.Properties"           
+             xmlns:uc="clr-namespace:LOET_HMI.UserControls"
+
+             x:Name="ucRFID_IND" Loaded="UcRFID_IND_Loaded" Unloaded="UcRFID_IND_Unloaded"
+             >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="Col0" Width="700" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+         
+        <Rectangle x:Name="rectBackground" Grid.RowSpan="30" Grid.ColumnSpan="30" Fill="LightGray" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+        <Grid Grid.Row="0" HorizontalAlignment="Center" Margin="0,10,0,10" >
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="Row0Header" Height="30"/>
+                <RowDefinition Height="{Binding ElementName=Row0Header, Path=Height}" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto" MinWidth="130"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0"  Style="{StaticResource tblockStyle_RFID_LOET_Header}">
+                <Run Text="{x:Static prop:Resources.ProjRFID_Inductor}"   />
+                <Run Text="{x:Static prop:Resources.ProjRFID_Number}"   />
+            </TextBlock>
+            <TextBlock x:Name="tblDataversion" Grid.Column="0" Grid.Row="1" Text="{x:Static prop:Resources.ProjRFID_Dataversion}"  Style="{StaticResource tblockStyle_RFID_LOET_Header}"/>
+            <TextBlock x:Name="tblIndPresent"    Grid.Column="0" Grid.Row="2"   Style="{StaticResource tblockStyle_RFID_LOET_Header}">
+                <Run Text="{x:Static prop:Resources.ProjRFID_Inductor}"   />
+                <Run Text="{x:Static prop:Resources.ProjRFID_Present}"   />                
+            </TextBlock>
+
+            <TextBox         x:Name="tbIndNumber"    Grid.Column="1" Grid.Row="0" Style="{StaticResource    tboxStyle_RFID_LOET_Heaer}" />
+            <TextBox         x:Name="tbDataversion"  Grid.Column="1" Grid.Row="1" Style="{StaticResource    tboxStyle_RFID_LOET_Heaer}" />
+            <LOET_HMI:UcLamp x:Name="lampIndPresent" Grid.Column="1" Grid.Row="2" Margin="0,-2,0,-2"  />
+        </Grid>
+
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+            <Button x:Name="btnSetReadData" Content="{x:Static prop:Resources.ProjWT_btnSetReadData}" Style="{StaticResource btnStyle_RFID_LOET_Header}" Click="BtnSetReadData_Click" />
+            <Button x:Name="btnClearAll" Content="{x:Static prop:Resources.ProjWT_btnClearAll}" Style="{StaticResource btnStyle_RFID_LOET_Header}" Click="BtnClearAll_Click" />
+        </StackPanel>
+        
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Right">
+            <Button x:Name="btnWrite"    Content="{x:Static prop:Resources.ProjWT_btnWrite}" Style="{StaticResource btnStyle_RFID_LOET_Header}" IsEnabled="{Binding ElementName=ucRFID_IND, Path=ucReadDataLink.DpRFIDStruct.bWriteAllowed}" Click="BtnWrite_Click"  />
+        </StackPanel>
+        
+        
+        
+        <!-- 
+        <Separator  Grid.ColumnSpan="2" Grid.Row="1" Margin="10,0,10,0">
+            <Separator.LayoutTransform>
+                <RotateTransform Angle="0" />
+            </Separator.LayoutTransform>
+        </Separator>
+        -->
+        
+    </Grid>
+</UserControl>

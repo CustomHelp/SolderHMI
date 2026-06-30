@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="LOET_HMI.UserControls.Display_UCs.UcOverviewDispl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LOET_HMI.UserControls.Display_UCs"
+             xmlns:t="clr-namespace:System.Windows;assembly=PresentationFramework"
+
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    <UserControl.Resources>
+        <Thickness  x:Key="PageOverviewGlobMargin" Left="10" Top="5" Right="10" Bottom="5" />
+
+        <!-- 2 Groupbox-Style erstellen, die auf RENA_GroupBox_Style basieren. Dadurch können zusätzlich die Groupbox-Breiten je nach Spalte durch die hier definierten Width-Properties gesteuert werden-->
+        <Style x:Key="RENAGroupBoxStyle_PgOvervColumn0" TargetType="GroupBox" BasedOn="{StaticResource RENA_GroupBox_Style}">
+            <Setter Property="Width" Value="200" />
+        </Style>
+        <Style x:Key="RENAGroupBoxStyle_PgOvervColumn1" TargetType="GroupBox" BasedOn="{StaticResource RENA_GroupBox_Style}">
+            <Setter Property="Width" Value="200" />
+        </Style>
+
+        <t:GridLength x:Key="myGlobalGridHeight">24</t:GridLength>
+        <!-- Hierfür oben hinzugefügt:    xmlns:t="clr-namespace:System.Windows;assembly=PresentationFramework"-->
+
+        <Thickness x:Key="myGlobalMargin" Left="2" Top="2" Right="2" Bottom ="2" ></Thickness>
+
+        <Style  TargetType="TextBlock">
+            <Setter Property="Text" Value="30"/>
+            <Setter Property="Foreground" Value="#FF013F84"/>
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"  />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <GroupBox Margin="{StaticResource PageOverviewGlobMargin}" Style="{StaticResource RENAGroupBoxStyle_PgOvervColumn0}" Header="Status" Height="150" >
+                <StackPanel>
+                    <Label  x:Name="labelState1"     Background="Yellow" Margin="1,1,1,1" Content="On" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                    <Label  x:Name="labelState2"     Background="Green"  Foreground="White"  Margin="1,10,1,1" Content="Automatic" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Margin="{StaticResource PageOverviewGlobMargin}" Style="{StaticResource RENAGroupBoxStyle_PgOvervColumn0}" Header="Modul infos"   Height="250">
+
+            </GroupBox>
+        </StackPanel>
+
+
+        <StackPanel Grid.Column="1" Margin="{StaticResource PageOverviewGlobMargin}">
+
+            <GroupBox Style="{StaticResource RENAGroupBoxStyle_PgOvervColumn1}" Header="Axis"  Height="113"  VerticalAlignment="Top"  Margin="0,0,-2,0" >
+                <TextBlock Text="Actual position:" Margin="10,10,0,0"/>
+            </GroupBox>
+
+            <GroupBox Style="{StaticResource RENAGroupBoxStyle_PgOvervColumn1}" Header="State"  VerticalAlignment="Stretch"  >
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="{StaticResource myGlobalGridHeight}"/>
+                        <RowDefinition Height="{StaticResource myGlobalGridHeight}"/>
+                        <RowDefinition Height="{StaticResource myGlobalGridHeight}"/>
+                        <RowDefinition Height="{StaticResource myGlobalGridHeight}"/>
+                    </Grid.RowDefinitions>
+
+                    <CheckBox x:Name="cbReady" Grid.Row="0" Grid.Column="0" Style="{StaticResource RENA_CheckboxStyle_LED}" Margin="{StaticResource myGlobalMargin}" IsHitTestVisible="False" Focusable="false" />
+                    <!-- IsHitTestVisible="False" Focusable="false"  verwenden, damit das Checkbox Read-Only ist, d.h. weder durch Mausclick noch durch Tastatur geändert werden können -->
+                    <TextBlock Grid.Row="0" Grid.Column="1" Text="Ready" Background="#FFE5E5E5" />
+
+                    <CheckBox x:Name="cbPowerOn" Grid.Row="1" Grid.Column="0" Style="{StaticResource RENA_CheckboxStyle_LED}" Margin="{StaticResource myGlobalMargin}" IsHitTestVisible="False" Focusable="false" />
+                    <TextBlock Grid.Row="1" Grid.Column="1" Text="Power is on" />
+
+                    <CheckBox x:Name="cbError" Grid.Row="2" Grid.Column="0" Style="{StaticResource RENA_CheckboxStyle_LED}" Margin="{StaticResource myGlobalMargin}" />
+                    <TextBlock Grid.Row="2" Grid.Column="1" Text="Error" />
+
+                    <CheckBox x:Name="cbSafetySTOActive" Grid.Row="3" Grid.Column="0" Style="{StaticResource RENA_CheckboxStyle_LED}" Margin="{StaticResource myGlobalMargin}" />
+                    <TextBlock Grid.Row="3" Grid.Column="1" Text="Safety STO is active" />
+
+
+                </Grid>
+
+            </GroupBox>
+
+
+        </StackPanel>
+        
+        <!-- 
+        <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="122,147,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Height="20"/>
+        -->
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,116 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:LOET_HMI"
+                    xmlns:uc="clr-namespace:LOET_HMI.UserControls"
+                    >
+
+
+    <!-- ************************************************************************* -->
+    <!-- *************************** Kopfzeilen **********************************-->
+    <!-- ************************************************************************* -->
+    <Style TargetType="{x:Type TextBlock}" x:Key="tblockStyle_RFID_LOET_Header"  >
+        <Setter Property="Margin"   Value="10,0,0,0" />
+        <Setter Property="FontSize" Value="18" />
+    </Style>
+
+    <Style TargetType="{x:Type TextBox}" x:Key="tboxStyle_RFID_LOET_Heaer"   >
+        <Setter Property="Margin"   Value="10,1,10,1" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+
+    <Style TargetType="{x:Type Button}" x:Key="btnStyle_RFID_LOET_Header"  >
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Width" Value="120" />
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Margin" Value="10,10,10,0" />
+    </Style>
+
+
+    <!-- ************************************************************************* -->
+    <!-- *************************** RFID-Tabellen ******************************* -->
+    <!-- ************************************************************************* -->
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="tblockStyle_RFID_LOET_Entries" >
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin"   Value="10,2,0,0"  />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Height" Value="25" />
+    </Style>
+
+    <Style TargetType="{x:Type TextBox}"  x:Key="tboxStyle_RFID_LOET_Entries" >
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin"   Value="10,1,10,1" />
+        <Setter Property="TextAlignment" Value="Center" />
+        <Setter Property="HorizontalContentAlignment" Value="Center" />
+        <Setter Property="VerticalContentAlignment" Value="Center" />
+        <Setter Property="Height" Value="25" />
+    </Style>
+
+    <Style TargetType="{x:Type ToggleButton}" x:Key="togbtnStyle_local_RFID_LOET_Entries" BasedOn="{StaticResource SwitchTypeToggleButton}">
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Width"  Value="45" />
+    </Style>
+
+    <Style TargetType="local:UcLamp" x:Key="lampStyle_RFID_LOET_Entries" >
+        <Setter Property="Margin" Value="0,0,0,0" />
+    </Style>
+
+    <Style TargetType="{x:Type StackPanel}"  x:Key="spStyle_RFID_LOET">
+        <Setter Property="Margin" Value="0,0,0,10" />
+    </Style>
+
+    <!-- ************************************************************************* -->
+    <!-- *************************** KROSY-Controls ****************************** -->
+    <!-- ************************************************************************* -->
+
+    <!--DependencyProperties im Style zuweisen:-->
+    <!---> Erst Setter auf Property Template--> 
+    <!---> Value -> ControlTemplate -> hier drin alles zuweisen-->
+    <!---> Definition der DP bleibt gleich wie sonst auch immer-->
+    <!--https://stackoverflow.com/questions/59261779/how-to-put-the-a-dependency-property-in-resource-dictionary-for-the-purpose-of-r-->
+    <Style TargetType="{x:Type uc:UcValueInOut}"
+           x:Key="ucValueInOutStyle_LOET">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type uc:UcValueInOut}">
+                    <uc:UcValueInOut UCHeight="60"
+                                     UCLabelHorizAlignment="Left"
+                                     UCMode="Read"
+                                     UCWidthValue="50"
+                                     UCWidthLabel="40"
+                                     UCDistanceValueLabel="10"
+                                     />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="tblockStyle_RFID_LOET_Entries_KROSY" BasedOn="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="Margin"   Value="10,2,0,0"  />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Height" Value="25" />
+        <Setter Property="Width" Value="110" />
+    </Style>
+
+
+    <Style TargetType="{x:Type TextBox}" x:Key="tboxStyle_RFID_LOET_Entries_KROSY" BasedOn="{StaticResource tboxStyle_RFID_LOET_Entries}">
+        <Setter Property="Width" Value="110" />
+        <Setter Property="IsReadOnly" Value="True" />
+        <Setter Property="Background" Value="Gray" />
+    </Style>
+
+    <Style TargetType="local:UcLamp" x:Key="lampStyle_RFID_LOET_Entries_KROSY" BasedOn="{StaticResource lampStyle_RFID_LOET_Entries}" >
+        <Setter Property="Margin" Value="55,0,0,0" />
+    </Style>
+
+    <Style TargetType="{x:Type GroupBox}" x:Key="groupboxStyle_KROSY" BasedOn="{StaticResource RENA_GroupBox_Style}">
+        <Setter Property="Margin" Value="0,10,0,10" />
+        <Setter Property="Background" Value="LightGray" />
+        <Setter Property="Width" Value="250" />
+    </Style>
+
+</ResourceDictionary>

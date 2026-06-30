@@ -1,0 +1,111 @@
+﻿<UserControl x:Class="LOET_HMI.UserControls.Graphical_UCs.Uc4_3HydrValveAndAnSens"
+             x:Name="UcHydVandAnSens"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LOET_HMI.UserControls.Graphical_UCs"
+             xmlns:UCs="clr-namespace:LOET_HMI.UserControls.Graphical_UCs"
+             mc:Ignorable="d" 
+              Loaded="UserControl_Loaded" Unloaded="UcHydVandAnSens_Unloaded">
+
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="col0ContainerCylLift1" Width="60"/>
+            <ColumnDefinition x:Name="col1ContainerCylLift1" Width="{Binding ElementName=col0ContainerCylLift1, Path=Width}"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="row0ContainerCylLift1" Height="27"/>
+            <RowDefinition x:Name="row1ContainerCylLift1" Height="65"/>
+            <RowDefinition x:Name="row2ContainerCylLift1" Height="auto"/>
+            <RowDefinition x:Name="row3ContainerCylLift1" Height="55"/>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.RowSpan="4" Grid.ColumnSpan="2" Stroke="Black" >
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF818181" Offset="1"/>
+                    <GradientStop Color="#FFB2B2B2"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBlock x:Name="tbHeader" Grid.Row="0" Grid.ColumnSpan="2" Text="[header]" Style="{StaticResource RENA_GraphicContainerHeaderStyle}" />
+
+
+
+
+        <!-- Analoger Sensor Anfang-->
+        <Grid   Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Width="70" HorizontalAlignment="Center" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.RowSpan="2"  >
+                <Rectangle.Style >
+                    <Style  TargetType="{x:Type Rectangle}" BasedOn="{StaticResource UcGrSensorRectOvalStyle}" >
+                        
+
+                        
+                    </Style>
+                </Rectangle.Style>
+            </Rectangle>
+
+            <Line Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Stretch" Stroke="Black" StrokeThickness="1" VerticalAlignment="Center" X1="0" Y1="0" X2="100" Y2="0" Stretch="Uniform"  />
+
+            <TextBlock x:Name="tbRectUp"    Grid.Row="0"  Style="{StaticResource UcGrSensorTextBlockStyleOval}" />
+            <TextBlock x:Name="tbRectDown"  Grid.Row="1" Style="{StaticResource UcGrSensorTextBlockStyleOval}" />
+
+            <Border  Grid.Row="2" Style="{StaticResource UcGrSensorBorderStyle}">
+                <TextBlock x:Name="tbValue"  Style="{StaticResource UcGrSensorTextBlockStyleRect}"  >
+                    <!-- 
+                    <Run Text="{Binding ElementName=UcHydVandAnSens, Path=DpHydCylContr.lrAnSensValHMI,  StringFormat=N3}"/>            
+                    -->
+                </TextBlock>
+            </Border>
+
+        </Grid>
+        <!-- Analoger Sensor Ende-->
+
+
+
+
+
+        <Grid Grid.Row="2" Grid.Column="0"  Grid.ColumnSpan="2" Height="22" Visibility="Collapsed" >
+            <TextBlock Text="Setpoint:" VerticalAlignment="Center" />
+        </Grid>
+
+
+        <!--  
+        <Grid x:Name="gridValveLeft" Grid.Row="3" Grid.Column="0" Width="auto" Height="auto" Margin="8,0,8,0">
+            <UCs:UcGrValve x:Name="ValveLeft"   HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="46" Width="45" 
+                       DpValveHMI="{Binding ElementName=UcHydVandAnSens, Path=DpDevValveLeft}" Margin="0,0,0,-5" />
+
+            <Rectangle x:Name="rectValveLeft" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Transparent" MouseDown="RectValveLeft_MouseDown" />
+        </Grid>
+        -->
+        <Grid x:Name="gridValveLeft" Grid.Row="3" Grid.Column="0" Width="auto" Height="auto" Margin="8,0,8,0">
+            <UCs:UcGrValve x:Name="ValveLeft"   HorizontalAlignment="Center"  VerticalAlignment="Bottom" Height="46" Width="45" 
+                       DpValveHMI="{Binding ElementName=UcHydVandAnSens, Path=DpDevValveLeft}" Margin="0,0,0,-5" />
+
+            <Rectangle x:Name="rectValveLeft" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Transparent" MouseDown="RectValveLeft_MouseDown" />
+        </Grid>
+
+
+        <Grid x:Name="gridValveRight" Grid.Row="3" Grid.Column="1" Width="auto" Height="auto" Margin="{Binding ElementName=gridValveLeft, Path=Margin}" >
+            <UCs:UcGrValve x:Name="ValveRight"  HorizontalAlignment="Center" VerticalAlignment="Bottom" 
+                           Height="{Binding ElementName=ValveLeft, Path=Height}" 
+                           Width ="{Binding ElementName=ValveLeft, Path=Width}" 
+                           Margin="{Binding ElementName=ValveLeft, Path=Margin}"
+                       DpValveHMI="{Binding ElementName=UcHydVandAnSens, Path=DpDevValveRight}"  />
+
+            <Rectangle x:Name="rectValveRight" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Fill="Transparent" MouseDown="RectValveRight_MouseDown" />
+        </Grid>
+
+
+
+
+    </Grid>
+</UserControl>

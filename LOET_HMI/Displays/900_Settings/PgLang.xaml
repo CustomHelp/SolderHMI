@@ -1,0 +1,256 @@
+﻿<Page x:Class="LOET_HMI.Displays.PgLang"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LOET_HMI.Displays"
+      mc:Ignorable="d"            
+      xmlns:prop="clr-namespace:LOET_HMI.Properties"
+      d:DesignHeight="{StaticResource frameHeight}" d:DesignWidth="{StaticResource frameWidth}"        
+      Title="PgLang">
+
+    <Grid>
+        <!--  Alt
+        <GroupBox Height="200" Width="350"  Style="{StaticResource RENA_GroupBox_Style}"
+                                  HorizontalAlignment="Right" VerticalAlignment="Top" Header="Language" Margin="0,148,1140,0" 
+                                    >
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+                <Button x:Name="btnDeutsch" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Height="80" Click="BtnDeutsch_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_deutschland.png" />
+                    </Button.Background>
+
+                </Button>
+
+
+                <Button x:Name="btnEnglish" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Top" Width="120" Height="80" Click="BtnEnglish_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_usa.png"/>
+                    </Button.Background>
+                </Button>
+
+            </StackPanel>
+
+        </GroupBox>
+        -->
+
+
+        <GroupBox Height="200" Width="900"  Style="{StaticResource RENA_GroupBox_Style}"
+                                  HorizontalAlignment="Left" VerticalAlignment="Top" Header="{x:Static prop:Resources.PgLang_Header}" Margin="100,100,0,0">
+
+            
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+               
+                 <!--Detusche Flagge für die Lötanlage auskommentiert-->
+                <!--<Button x:Name="btnDeutsch" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120" Height="80" Click="BtnDeutsch_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_deutsch.png" />
+                    </Button.Background>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>-->
+                
+
+                <Button x:Name="btnEnglish" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Center" Width="120" Height="80" Click="BtnEnglish_Click" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_english.png"/>
+                    </Button.Background>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <!--<Button x:Name="btnSlovak" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Top" Width="120" Height="80" Click="BtnSlovak_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_slovak.png"/>
+                    </Button.Background>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>-->
+
+                <!--<Button x:Name="btnChinese" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Top" Width="120" Height="80" Click="BtnChinese_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_chinese.png"/>
+                    </Button.Background>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>-->
+
+                <!--<a href="https://www.flaticon.com/free-icons/united-arab-emirates" title="united arab emirates icons">United arab emirates icons created by IYAHICON - Flaticon</a>-->
+                <Button x:Name="btnArabic" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Top" Width="120" Height="120" Click="BtnArabic_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_UAE.png"/>
+                    </Button.Background>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+
+                <!--<a href="https://www.flaticon.com/free-icons/botswana" title="botswana icons">Botswana icons created by Freepik - Flaticon</a>-->
+                <Button x:Name="btnBotswana" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Center" Width="120" Height="120" Click="BtnBotswana_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_Botswana.png"/>
+                    </Button.Background>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+                <Button x:Name="btnFrench" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Center" Width="120" Height="80" Click="BtnFrench_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/France.png"/>
+                    </Button.Background>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+
+                <Button x:Name="btnSpanish" HorizontalAlignment="Left" Margin="35,0,0,0" VerticalAlignment="Center" Width="120" Height="80" Click="BtnSpanish_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/LOET_HMI;component/Resources/flag_mexiko.png"/>
+                    </Button.Background>
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="Transparent"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="Transparent"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </StackPanel>
+
+        </GroupBox>
+
+    </Grid>
+</Page>

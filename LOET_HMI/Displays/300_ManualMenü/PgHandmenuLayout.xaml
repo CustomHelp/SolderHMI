@@ -1,0 +1,72 @@
+﻿<Page xmlns:LOET_HMI="clr-namespace:LOET_HMI"  x:Class="LOET_HMI.Displays.PgHandmenuLayout"
+      x:Name="pgLayout"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LOET_HMI.Displays"
+      mc:Ignorable="d" 
+      d:DesignHeight="{StaticResource frameHeight}" d:DesignWidth="{StaticResource frameWidth}"
+      Title="PageLayout">
+
+    <Grid>
+
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+
+            <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="40,20,-20,0" >
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="/LOET_HMI;component/Images/Gesamtuebersicht.jpg" Stretch="Uniform"/>
+                </Rectangle.Fill>
+            </Rectangle>
+
+
+
+            <LOET_HMI:UcButtonHandmenu Content="Laser"  DpStationsID="M1_04_Laser" 
+                    Style="{StaticResource ButtonStyleHandmenu}" Click="BtnSt50_Laser_Click"
+                    Margin="749,191,799,543" Height="88" >
+            </LOET_HMI:UcButtonHandmenu>
+
+            <LOET_HMI:UcButtonHandmenu  Content="Karton-aufsteller" DpStationsID="M2_01_Kartonaufsteller" 
+                    Style="{StaticResource ButtonStyleHandmenu}" Click="UcButtonHandmenu_Click" 
+                    Margin="606,148,966,604" Height="70" >
+            </LOET_HMI:UcButtonHandmenu>
+
+            <LOET_HMI:UcButtonHandmenu Content="Dosenumsetzer" DpStationsID="M2_02_Dosenumsetzer"  
+                    Style="{StaticResource ButtonStyleHandmenu}"  Click="UcButtonHandmenu_Click"
+                    Margin="535,224,961,551" Height="47" >
+            </LOET_HMI:UcButtonHandmenu>
+
+            <LOET_HMI:UcButtonHandmenu Content="Karton-verschließer" DpStationsID="M2_07_Kartonverschließer"  
+                    Style="{StaticResource ButtonStyleHandmenu}"  Click="UcButtonHandmenu_Click"
+                    Margin="489,258,1064,495" Height="69" >
+            </LOET_HMI:UcButtonHandmenu>
+
+            <LOET_HMI:UcButtonHandmenu Content="CO2 Laser" DpStationsID="M2_08_CO2Laser"  
+                    Style="{StaticResource ButtonStyleHandmenu}"  Click="UcButtonHandmenu_Click"
+                    Margin="429,316,1124,465" Height="41" >
+            </LOET_HMI:UcButtonHandmenu>
+
+
+            <LOET_HMI:UcButtonHandmenu Content="Etikettierer" DpStationsID="M2_09_Etikettierer"  
+                    Style="{StaticResource ButtonStyleHandmenu}"  Click="UcButtonHandmenu_Click"
+                    Margin="427,362,1165,409" Height="51" >
+            </LOET_HMI:UcButtonHandmenu>
+
+            <LOET_HMI:UcButtonHandmenu Content="Karton-bereit-stellung" DpStationsID="M2_10_KartonBereitstellung"  
+                Style="{StaticResource ButtonStyleHandmenu}"  Click="UcButtonHandmenu_Click"
+                Margin="502,351,1079,398" Height="73" >
+            </LOET_HMI:UcButtonHandmenu>
+
+            <LOET_HMI:UcButtonHandmenu Content="Roboter" DpStationsID="M3_01_Roboter"  
+                Style="{StaticResource ButtonStyleHandmenu}"  Click="UcButtonHandmenu_Click"
+                Margin="536,403,1045,341" Height="78" >
+            </LOET_HMI:UcButtonHandmenu>
+
+            <LOET_HMI:UcButtonHandmenu Content="Wickler" DpStationsID="M3_02_Wickler"  
+                Style="{StaticResource ButtonStyleHandmenu}"  Click="UcButtonHandmenu_Click"
+                Margin="863,401,671,342" Height="79" >
+            </LOET_HMI:UcButtonHandmenu>
+        </Grid>
+
+    </Grid>
+</Page>

@@ -1,0 +1,28 @@
+﻿<!-- Die Basisklasse <UserControl ...></UserControl>    wurde auf  <Button ...></Button> geändert. -->
+<!-- x:Class        wurde geändert.    Urpsürnglich: x:Class="LOET_HMI.UserControls.Button.UcButton"              -->
+<!-- xmlns:local    wurde geändert.    Ursprünglich: xmlns:local="clr-namespace:LOET_HMI.UserControls.Button"    -->
+
+
+<Button x:Class="LOET_HMI.UcButton"
+        x:Name="UcBtn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:LOET_HMI"
+        mc:Ignorable="d" 
+        d:DesignHeight="30" d:DesignWidth="80" 
+        
+        Loaded="UcBtn_Loaded" Unloaded="UcBtn_Unloaded"
+        
+        Content         ="{Binding ElementName=UcBtn, Path=DpButtonHMI.strNameHMI}" 
+        IsEnabled       ="{Binding ElementName=UcBtn, Path=DpButtonHMI.bAllowedHMI}"
+        Background      ="{Binding ElementName=UcBtn, Path=DpButtonHMI.BrushBtnBackground, UpdateSourceTrigger=PropertyChanged}"        
+   
+        
+      
+        Click="UcBtn_Click" 
+     
+        >
+    
+</Button>

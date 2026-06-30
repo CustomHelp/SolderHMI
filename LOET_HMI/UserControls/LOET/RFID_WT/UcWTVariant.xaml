@@ -1,0 +1,297 @@
+﻿<UserControl xmlns:LOET_HMI="clr-namespace:LOET_HMI"  
+             x:Class="LOET_HMI.UserControls.UcWTVariant"
+             x:Name="ucRFID"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LOET_HMI.UserControls"
+             mc:Ignorable="d" 
+             xmlns:prop="clr-namespace:LOET_HMI.Properties"
+             Loaded="UcRFID_Loaded" Unloaded="UcRFID_Unloaded" >
+
+    <UserControl.Resources>
+
+
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="col0" Width="*"/>
+            <ColumnDefinition x:Name="col1" Width="*" />
+        </Grid.ColumnDefinitions>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+            <RowDefinition  Height="auto" />
+
+
+        </Grid.RowDefinitions>
+
+        <Rectangle x:Name="rectBackground" Grid.RowSpan="30" Grid.ColumnSpan="30" Fill="LightGray" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
+        <Button x:Name="focusBtn" Visibility="Hidden" Grid.Column="0" Grid.Row="0"/>
+        
+
+        <!-- ******************************************************************************* -->
+        <!-- ****************************** Column 0 *************************************** -->
+        <!-- ******************************************************************************* -->
+      
+        <StackPanel Grid.Row="1" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- General -->
+            <TextBlock Grid.Row="01" Grid.Column="0" Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_Enabled}"       />
+            <TextBlock Grid.Row="01" Grid.Column="0" Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_Name}"           />
+        </StackPanel>
+        
+        
+        <StackPanel Grid.Row="2" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- Temp -->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_TemperatrueMelt}"     />
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_TemperatureSolder}"   />
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_TemperatureTune}"     />
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_TemperatureRelease}"  />
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_TemperatureOffset}"  />
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_LegalInductor}"  Visibility="Collapsed" />
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_ReheatTime}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}">
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_CopperMeasurement}" />
+            <!-- PreCooling-->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_PreCoolingOn}" />
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_PreCoolingPower}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- Cooling-->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_CoolingOn}" />
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_CoolingPower}"/>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_CoolingType}"/>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="5" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}" Visibility="Collapsed">
+            <!-- Clamps-->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}"  >
+                <Run Text="{x:Static prop:Resources.ProjWT_Clamp}"/>                                
+                <Run Text="1"/>
+                <Run Text="{x:Static prop:Resources.ProjWT_Enabled}"/>
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}"  >
+                <Run Text="{x:Static prop:Resources.ProjWT_Clamp}"/>                                
+                <Run Text="2"/>
+                <Run Text="{x:Static prop:Resources.ProjWT_Enabled}"/>
+            </TextBlock>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="6" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- DVS1-->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}">
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="1"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_Enabled}"/>
+            </TextBlock>
+            <!--<TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}">
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="2"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_Enabled}"/>
+            </TextBlock>-->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text=""  />
+                <Run Text="{x:Static prop:Resources.ProjWT_Speed}"/>                
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text=""  />
+                <Run Text="{x:Static prop:Resources.ProjWT_FeedLength}"/>                
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text=""  />
+                <Run Text="{x:Static prop:Resources.ProjWT_DrawbackLength}"/>                
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="7" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}" Visibility="Visible">
+            <!-- DVS2-->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}">
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="2"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_Enabled}"/>
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="2"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_Speed}"/>
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="2"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_FeedLength}"/>
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="2"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_DrawbackLength}"/>
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="8" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}" Visibility="Collapsed">
+            <!-- DVS3-->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}">
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="3"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_Enabled}"/>
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="3"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_Speed}"/>
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="3"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_FeedLength}"/>
+            </TextBlock>
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" >
+                <Run Text="{x:Static prop:Resources.ProjWT_DVS}"  />                              
+                <Run Text="3"  />
+                <Run Text="{x:Static prop:Resources.ProjWT_DrawbackLength}"/>
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel Grid.Row="9" Grid.Column="0" Style="{StaticResource spStyle_RFID_LOET}">
+            <!--Override-->
+            <TextBlock Style="{StaticResource tblockStyle_RFID_LOET_Entries}" Text="{x:Static prop:Resources.ProjWT_Override}"  />
+        </StackPanel>
+
+
+
+        <!-- ******************************************************************************* -->
+        <!-- ****************************** Column 1 *************************************** -->
+        <!-- ******************************************************************************* -->
+        <TextBlock x:Name="tbVariantName" Grid.Row="0" Grid.Column="1" Text="Variant Name" HorizontalAlignment="Center" FontSize="16" FontWeight="Bold" Margin="0,0,0,10"/>
+
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- General -->
+            <Grid>
+                <ToggleButton       x:Name="btnEnabled" Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" Checked="BtnEnabled_Checked" Unchecked="BtnEnabled_Unchecked" />
+                <LOET_HMI:UcLamp    x:Name="lampEnabled" Margin="0,-2,0,-2" Style="{StaticResource lampStyle_RFID_LOET_Entries}" />
+            </Grid>
+            <TextBox x:Name="tbName"             Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- Temp -->
+            <TextBox x:Name="tbTempMelt"        Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbTempSolder"      Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbTempTune"        Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbTempRelease"     Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbTempOffset"     Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbLegalInductor"   Style="{StaticResource tboxStyle_RFID_LOET_Entries}" Visibility="Collapsed"/>
+            <TextBox x:Name="tbReheatTime"   Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}">
+            <Grid >
+                <ToggleButton    x:Name="btnCopperMeasOn"   Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" />
+                <LOET_HMI:UcLamp x:Name="lampCopperMeasOn"       Style="{StaticResource lampStyle_RFID_LOET_Entries}" />
+            </Grid>
+            <!-- PreCooling-->
+            <Grid >
+                <ToggleButton    x:Name="btnPreCoolOn"   Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" />
+                <LOET_HMI:UcLamp x:Name="lampPreCoolOn"       Style="{StaticResource lampStyle_RFID_LOET_Entries}" />
+            </Grid>
+            <TextBox x:Name="tbPowerPreCool"         Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <!--<TextBox x:Name="tbPowerPreCool"         Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />-->
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- Cooling-->
+            <Grid>
+                <ToggleButton   x:Name="btnCoolOn"   Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" />
+                <LOET_HMI:UcLamp x:Name="lampCoolOn"      Style="{StaticResource lampStyle_RFID_LOET_Entries}"  />
+            </Grid>
+            <TextBox x:Name="tbPowerCool"         Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbCoolType"         Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+        </StackPanel>
+
+
+
+
+        <StackPanel Grid.Row="5" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}" Visibility="Collapsed">
+            <!-- Clamps-->
+            <Grid>
+                <ToggleButton   x:Name="btnClamp1"    Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" Checked="BtnDVS1_Checked" Unchecked="BtnDVS1_Unchecked"/>
+                <LOET_HMI:UcLamp x:Name="lampClamp1"  Style="{StaticResource lampStyle_RFID_LOET_Entries}"  />
+            </Grid>
+            <Grid>
+                <ToggleButton   x:Name="btnClamp2"    Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" Checked="BtnDVS1_Checked" Unchecked="BtnDVS1_Unchecked"/>
+                <LOET_HMI:UcLamp x:Name="lampClamp2"  Style="{StaticResource lampStyle_RFID_LOET_Entries}"  />
+            </Grid>
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="6" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- DVS1-->
+            <Grid>
+                <ToggleButton   x:Name="btnDVS1"    Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" Checked="BtnDVS1_Checked" Unchecked="BtnDVS1_Unchecked"/>
+                <LOET_HMI:UcLamp x:Name="lampDVS1"  Style="{StaticResource lampStyle_RFID_LOET_Entries}"  />
+            </Grid>
+            <!--<Grid>
+                <ToggleButton   x:Name="btnDVS2"    Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" Checked="BtnDVS2_Checked" Unchecked="BtnDVS2_Unchecked"/>
+                <LOET_HMI:UcLamp x:Name="lampDVS2"  Style="{StaticResource lampStyle_RFID_LOET_Entries}"  />
+            </Grid>-->
+            <TextBox x:Name="tbDVS1Speed"       Style="{StaticResource tboxStyle_RFID_LOET_Entries}"  />
+            <TextBox x:Name="tbDVS1FeedLength"  Style="{StaticResource tboxStyle_RFID_LOET_Entries}"  />
+            <TextBox x:Name="tbDVS1DrawbLength" Style="{StaticResource tboxStyle_RFID_LOET_Entries}"  />
+        </StackPanel>
+
+        <StackPanel Grid.Row="7" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}" Visibility="Visible">
+            <Grid>
+                <ToggleButton   x:Name="btnDVS2"   Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" Checked="BtnDVS2_Checked" Unchecked="BtnDVS2_Unchecked"/>
+                <LOET_HMI:UcLamp x:Name="lampDVS2" Style="{StaticResource lampStyle_RFID_LOET_Entries}"  />
+            </Grid>
+            <TextBox x:Name="tbDVS2Speed"       Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbDVS2FeedLength"  Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbDVS2DrawbLength" Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+        </StackPanel>
+        
+        <StackPanel Grid.Row="8" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}" Visibility="Collapsed">
+            <!-- DVS3-->
+            <Grid>
+                <ToggleButton   x:Name="btnDVS3"    Style="{StaticResource togbtnStyle_local_RFID_LOET_Entries}" Checked="BtnDVS3_Checked" Unchecked="BtnDVS3_Unchecked"/>
+                <LOET_HMI:UcLamp x:Name="lampDVS3"  Style="{StaticResource lampStyle_RFID_LOET_Entries}" />
+            </Grid>
+            <TextBox x:Name="tbDVS3Speed"       Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbDVS3FeedLength"  Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+            <TextBox x:Name="tbDVS3DrawbLength" Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+        </StackPanel>
+        
+        <StackPanel Grid.Row="9" Grid.Column="1" Style="{StaticResource spStyle_RFID_LOET}">
+            <!-- Override-->
+            <TextBox x:Name="tbOverride"       Style="{StaticResource tboxStyle_RFID_LOET_Entries}" />
+        </StackPanel>
+
+
+
+ 
+
+
+
+ 
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,235 @@
+﻿
+<Window        
+    x:Name="MainW" 
+    x:Class="LOET_HMI.MainWindow"  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:LOET_HMI"
+    
+    xmlns:UserControls="clr-namespace:LOET_HMI.UserControls" 
+    mc:Ignorable="d"   d:DesignWidth="1920" d:DesignHeight="1080"
+    Title="MainWindow" FontSize="16" Background="#F5F5F5" 
+
+    MinHeight="600" MinWidth="800" 
+    Closing="MainW_Closing"  WindowStartupLocation="CenterScreen" WindowStyle="None"  WindowState="Maximized"  ResizeMode="NoResize" ShowInTaskbar="True"
+    Loaded="MainW_Loaded" Unloaded="MainW_Unloaded" StateChanged="MainW_StateChanged" 
+    xmlns:prop="clr-namespace:LOET_HMI.Properties">
+
+
+    <Grid x:Name="MainGrid" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="260"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <!-- 
+            "Auto" means size to column content and
+            "*" means size proportional to grid
+            -->
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+
+        <Rectangle x:Name="RectHeaderBackgr" Fill="{StaticResource CHP_ColorBrush}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"    />
+        <Rectangle x:Name="RectLogo"                        Grid.Row="0" Grid.Column="0"     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,-5,5,5" >
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="Resources/CHP_Bubbles_White.png" Stretch="Uniform" AlignmentX="Left" />
+            </Rectangle.Fill>
+        </Rectangle>
+        
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="1" Text="w w w . C u s t o m H e l p . d e" FontSize="14" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+
+
+        <Grid Grid.Row="0" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="182"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="FirstRow" Height="*" />
+                <RowDefinition x:Name="SecondRow" Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock x:Name="tbActTime"     Grid.Row="0" Grid.Column="0" Text="01.01.2019 10:10 AM"  Foreground="White" FontSize="18" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="24" Margin="0,7" Width="172"       />
+
+            <TextBlock x:Name="tbMachineName" x:Uid="tbMachineName" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Text="{x:Static prop:Resources.Main_MachineName}"   Foreground="White" FontSize="28" HorizontalAlignment="Center" VerticalAlignment="Center"  FontWeight="Bold"  Margin="244,2,248,2"   />
+
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Right"  >
+                <TextBlock x:Name="tbInitNotFinished"  Text="{x:Static prop:Resources.Main_InitNotFinished}" Foreground="White" VerticalAlignment="Center" />
+                <Label Width="40"/>
+                <TextBlock x:Name="tbInfoText" Text="ADS Items: " Foreground="White" VerticalAlignment="Center" />
+                <TextBlock x:Name="tbADSItemCount"  Foreground="White" VerticalAlignment="Center"  Width="50"/>
+            </StackPanel>
+
+            <Grid x:Name="gridLogin"  Grid.Row="0" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Panel.ZIndex="2" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Button x:Name="btnShutDown" Grid.Column="1" Grid.Row="0"  Height="30" Width="30" Margin="0,0,10,0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"  Foreground="White" BorderThickness="0" Click="BtnShutDown_Click" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="Resources/shut-down-icon.png" RenderOptions.BitmapScalingMode="Linear" Stretch="Uniform"  />
+                    </Button.Background>
+                </Button>
+                
+                <Button x:Name="btnGoToWindows" Grid.Column="2" Grid.Row="0"  Height="30" Width="30" Margin="0,0,10,0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"  Foreground="White" BorderThickness="0" Click="BtnGoToWindows_Click" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="Images/WinLogo_226771.png" RenderOptions.BitmapScalingMode="Linear" Stretch="Uniform"  />
+                    </Button.Background>
+                </Button>
+
+                <Button x:Name="btnESC"    Grid.Column="3"  Grid.Row="0"  Height="30" Width="30" Margin="0,0,5,0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Foreground="White" BorderThickness="0" Click="BtnESC_Click" >
+                    <Button.Background>
+                        <ImageBrush ImageSource="Images/x-button-icon-20_2.png" Stretch="UniformToFill"/>
+                    </Button.Background>
+                </Button>
+            </Grid>
+
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="220"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="220"/>
+                </Grid.ColumnDefinitions>
+
+                <ComboBox x:Name="manualCB" IsEditable="False" IsReadOnly="True" SelectedIndex="0" Grid.Column="0" Margin="20,5" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="ManualCB_SelectionChanged">
+                    <ComboBoxItem Visibility="Collapsed" Content="{x:Static prop:Resources.Main_cbManuals}" />
+                </ComboBox>
+
+                <ComboBox x:Name="videoCB" IsEditable="False" IsReadOnly="True" SelectedIndex="0" Grid.Column="2" Margin="20,5" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="VideoCB_SelectionChanged">
+                    <ComboBoxItem Visibility="Collapsed" Content="{x:Static prop:Resources.Main_cbVideoInstructions}"/>
+                </ComboBox>
+            </Grid>
+
+            <Button x:Name="btnLoginInMain" Content="Login"   
+                    Grid.Row="1" Grid.Column="2" Margin="2" Background="Transparent" Foreground="White" BorderThickness="0" 
+                    Panel.ZIndex="2"
+                    Click="BtnLoginClick">
+            </Button>
+        </Grid>
+
+
+
+
+
+
+        <StackPanel x:Name="stackpanelNavVert"  Grid.Row="1" Grid.RowSpan="3" Margin="5,5,5,0">
+            
+            
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="tbNavigation" Grid.Column="0" Text="Navigation"  HorizontalAlignment="Stretch" Margin="0,0,5,0" FontSize="12" />
+                <Separator  Grid.Column="1" >
+                    <Separator.LayoutTransform>
+                        <RotateTransform Angle="0" />
+                    </Separator.LayoutTransform>
+                </Separator>
+            </Grid>
+            
+            
+            
+
+            <!-- 
+            <Button x:Name="Button01" Content="{Binding rena_HMI.Machine.Modulname}"   Click="BtnClick_Machine"   Style="{StaticResource RENA_NavButtonStyle}"/>
+            <Button x:Name="Button11" Content="{Binding rena_HMI.Modul1.Modulname}"   Click="BtnClick_PageStat1" Style="{StaticResource RENA_NavButtonStyle}"/>
+            <Button x:Name="Button12" Content=" Station 2"  Click="BtnClick_PageStat2" Style="{StaticResource RENA_NavButtonStyle}"/>
+            <Button x:Name="Button13" Content=" Station 3"  Click="BtnClick_PageStat3" Style="{StaticResource RENA_NavButtonStyle}"/>
+            <Button x:Name="Button14" Content=" Station 4"  Click="BtnClick_PageStat4" Style="{StaticResource RENA_NavButtonStyle}" />
+            <Button x:Name="Button15" Content=" Station 5"      Style="{StaticResource RENA_NavButtonStyle}" />
+
+
+            <Button x:Name="btResWeld"   Content=" Resistance welding"    Style="{StaticResource RENA_NavButtonStyle}"   />
+            <Button x:Name="btLasWeld"   Content=" Laser welding"         Style="{StaticResource RENA_NavButtonStyle}"   />
+            <Button x:Name="btTool"      Content=" Tool"     Style="{StaticResource RENA_NavButtonStyle}"   />
+            <Button x:Name="btTransport" Content=" Transport Unit"     Style="{StaticResource RENA_NavButtonStyle}"   />
+            -->
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" VerticalAlignment="Bottom" Margin="5,0,5,50">
+            <Button x:Name="btnEvaluation1" Click="BtnEvaluation1_Click" Content="{x:Static prop:Resources.NavVert_btnEvalStat1}" Style="{StaticResource RENA_NavButtonStyle}" />
+            <Button x:Name="btnEvaluation2" Click="BtnEvaluation2_Click" Content="{x:Static prop:Resources.NavVert_btnEvalStat2}" Style="{StaticResource RENA_NavButtonStyle}"  />
+
+            <UserControls:UcValueInOut x:Name="MeasurementLH" UCWidthValue="90" UCMode="Read" UCFontSize="15" UCHeight="40" UCTextLabel="{x:Static prop:Resources.Proj_StNameStation1}" UCWidthLabel="150" Margin="0,10,0,0" BorderThickness="2" BorderBrush="Black"></UserControls:UcValueInOut>
+            <UserControls:UcValueInOut x:Name="MeasurementRH" UCWidthValue="90" UCMode="Read" UCFontSize="15" UCHeight="40" UCTextLabel="{x:Static prop:Resources.Proj_StNameStation2}" UCWidthLabel="150" Margin="0,10,0,0" BorderThickness="2" BorderBrush="Black"></UserControls:UcValueInOut>
+            <UserControls:UcValueInOut x:Name="MeasurementInsertLH" UCWidthValue="90" UCMode="Read" UCFontSize="13" UCHeight="40" UCTextLabel="{x:Static prop:Resources.NavVert_PartInsertLH}" UCWidthLabel="150" Margin="0,10,0,0" BorderThickness="2" BorderBrush="Black"></UserControls:UcValueInOut>
+            <UserControls:UcValueInOut x:Name="MeasurementInsertRH" UCWidthValue="90" UCMode="Read" UCFontSize="13" UCHeight="40" UCTextLabel="{x:Static prop:Resources.NavVart_PartInsertRH}" UCWidthLabel="150" Margin="0,10,0,0" BorderThickness="2" BorderBrush="Black"></UserControls:UcValueInOut>
+        </StackPanel>
+
+
+
+        <Border Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Margin="5,5,5,5" BorderThickness="1" BorderBrush="#FFA0A0A0"/>
+
+        <UserControls:UcNavWorksp x:Name="HorizNav"  Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="5,5,5,0" />
+
+        <Frame x:Name="TheFrame"  Content="{Binding Path=Frame_of_Nav.Content, ElementName=HorizNav}" Grid.Row="2" Grid.RowSpan="2" Grid.Column="1"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Margin="5,0,5,5" NavigationUIVisibility="Hidden"   />
+
+
+        <Separator  Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" Margin="5,0,5,0" Height="1" >
+            <!-- horizontale Linie zur Gliederung-->
+            <Separator.LayoutTransform>
+                <RotateTransform Angle="0" />
+            </Separator.LayoutTransform>
+        </Separator>
+
+
+        <!--
+        <StackPanel x:Name="NavigationB" Orientation="Horizontal" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch" >
+            <Button x:Name="btnStartddd"   Margin="5,0,0,2"  Content="Start"      Background="#003F86" Foreground="White" Click="BtnStart_Click"/>
+            <Button x:Name="btnStopddd"    Margin="2,0,0,2"  Content="Stop"       Background="#003F86" Foreground="White" Click="BtnStop_Click" HorizontalAlignment="Right"/>
+        </StackPanel>
+        -->
+
+
+        <Grid Grid.Row="3" Grid.Column="0" Margin="4,5,4,5" Visibility="Collapsed">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <!-- 
+                <ColumnDefinition Width="*"/>
+                -->
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- 
+            <Button x:Name="btnAnalysis" Margin="1,0,1,0" Content="{x:Static prop:Resources.Main_btnAnalysis}"  Grid.Column="1" Background="#FF003480" Foreground="White"   />
+            -->
+
+        </Grid>
+
+
+
+
+        <TextBlock x:Name="tbNoCon" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Visibility="Visible" Text="{x:Static prop:Resources.Main_lblWaitForConnection}" FontSize="72" Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+
+
+        <Rectangle x:Name="rectAnimationBusy" Grid.Row="2" Grid.Column="1" Visibility="Collapsed">
+            
+        </Rectangle>
+
+
+        <UserControls:UcAnimationBusy x:Name="ucAnimationBusy" Grid.RowSpan="10" Grid.ColumnSpan="10" Visibility="Collapsed" />
+
+
+
+        <!-- 
+        <Rectangle Fill="Blue" Grid.Row="1" Grid.RowSpan="5" Grid.ColumnSpan="5" Panel.ZIndex="1"  />
+        -->
+
+    </Grid>
+
+
+</Window>
+    

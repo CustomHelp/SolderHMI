@@ -1,0 +1,1023 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="BtnOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="Btn_Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="Btn_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Btn_Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="DataGridAlarm_Ackn" xml:space="preserve">
+    <value>Quittiert</value>
+  </data>
+  <data name="DataGridAlarm_btnAckn" xml:space="preserve">
+    <value>Alles quittieren</value>
+  </data>
+  <data name="DataGridAlarm_btnExport" xml:space="preserve">
+    <value>Exportieren</value>
+  </data>
+  <data name="DataGridAlarm_btnLineDown" xml:space="preserve">
+    <value>Abwärts</value>
+  </data>
+  <data name="DataGridAlarm_btnLineUp" xml:space="preserve">
+    <value>Aufwärts</value>
+  </data>
+  <data name="DataGridAlarm_btnPageDown" xml:space="preserve">
+    <value>Bild ab</value>
+  </data>
+  <data name="DataGridAlarm_btnPageUp" xml:space="preserve">
+    <value>Bild auf</value>
+  </data>
+  <data name="DataGridAlarm_btnQuitHorn" xml:space="preserve">
+    <value>Hupe aus</value>
+  </data>
+  <data name="DataGridAlarm_Come" xml:space="preserve">
+    <value>Gekommen</value>
+  </data>
+  <data name="DataGridAlarm_Gone" xml:space="preserve">
+    <value>Gegangen</value>
+  </data>
+  <data name="DataGridAlarm_Stat" xml:space="preserve">
+    <value>Station</value>
+  </data>
+  <data name="DataGridAlarm_Text" xml:space="preserve">
+    <value>Meldung</value>
+  </data>
+  <data name="DataGridParam_CreatedBy" xml:space="preserve">
+    <value>Erstellt durch</value>
+  </data>
+  <data name="DataGridParam_CreatedOn" xml:space="preserve">
+    <value>Erstellt am</value>
+  </data>
+  <data name="DataGridParam_Descritpion" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="DataGridParam_LastModified" xml:space="preserve">
+    <value>Letzte Änderung</value>
+  </data>
+  <data name="DataGridParam_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DataGridParam_RangeMax" xml:space="preserve">
+    <value>Obere Grenze</value>
+  </data>
+  <data name="DataGridParam_RangeMin" xml:space="preserve">
+    <value>Untere Grenze</value>
+  </data>
+  <data name="DataGridParam_Unit" xml:space="preserve">
+    <value>Einheit</value>
+  </data>
+  <data name="DataGridParam_Value" xml:space="preserve">
+    <value>Wert</value>
+  </data>
+  <data name="DataGridParam_ValuePLC" xml:space="preserve">
+    <value>Wert SPS</value>
+  </data>
+  <data name="DBDescr_A1" xml:space="preserve">
+    <value>Widerstandsschweißen - Anzahl Schweißungen nach Elektroden-Wechsel/-Reinigung</value>
+  </data>
+  <data name="DBDescr_FIx_AdjustFact" xml:space="preserve">
+    <value>Korrekturfaktor</value>
+  </data>
+  <data name="DBDescr_FIx_SwitchOffset" xml:space="preserve">
+    <value>Offset für Umschaltung in Feindosiermodus</value>
+  </data>
+  <data name="DBDescr_FIx_Toff" xml:space="preserve">
+    <value>Finedosierung - Ventil EIN Dauer</value>
+  </data>
+  <data name="DBDescr_FIx_Ton" xml:space="preserve">
+    <value>Finedosierung - Ventil AUS Dauer</value>
+  </data>
+  <data name="DBDescr_TM" xml:space="preserve">
+    <value>Temperatur - Betriebstemperatur Medien</value>
+  </data>
+  <data name="DBDescr_V1" xml:space="preserve">
+    <value>Spülmenge SO2l - Spülen über Dosiertank nach Verpressen 1</value>
+  </data>
+  <data name="DBDescr_X01" xml:space="preserve">
+    <value>Vakuumleitung - Max. zulässiger Druck</value>
+  </data>
+  <data name="DBDescr_X02" xml:space="preserve">
+    <value>Evakuierung Zellen - Zieldruck</value>
+  </data>
+  <data name="DBDescr_X03" xml:space="preserve">
+    <value>Dichtheitsprüfung - Max. zulässiger Druck</value>
+  </data>
+  <data name="DBDescr_X04" xml:space="preserve">
+    <value>Gegendruck Wastetank</value>
+  </data>
+  <data name="DBDescr_X05" xml:space="preserve">
+    <value>Gegendruck Puffertank Elektrolyt 1</value>
+  </data>
+  <data name="DBDescr_X06" xml:space="preserve">
+    <value>Gegendruck Puffertank Elektrolyt 2</value>
+  </data>
+  <data name="DBDescr_X07" xml:space="preserve">
+    <value>Gegendruck Puffertank SO2fl</value>
+  </data>
+  <data name="DBDescr_X08" xml:space="preserve">
+    <value>Verpressen 1 - Druck </value>
+  </data>
+  <data name="DBDescr_X09" xml:space="preserve">
+    <value>Verpressen 1 - Druckdifferenz beim Umschalten</value>
+  </data>
+  <data name="DBDescr_X10" xml:space="preserve">
+    <value>Dichtheitsprüfung Zellen trocken - Max. zulässiger Druck</value>
+  </data>
+  <data name="DBDescr_X11" xml:space="preserve">
+    <value>Dichtheitsprüfung verschlossene Röhrchen - Max. zulässiger Druck</value>
+  </data>
+  <data name="DBDescr_X12" xml:space="preserve">
+    <value>Evakuierung verschlossene Röhrchen - Zieldruck</value>
+  </data>
+  <data name="DBDescr_X13" xml:space="preserve">
+    <value>SO2 Gas Dosierung - Druck</value>
+  </data>
+  <data name="DBDescr_X14" xml:space="preserve">
+    <value>Befüllung Zellen mit N2 - Zieldruck</value>
+  </data>
+  <data name="DBDescr_X15" xml:space="preserve">
+    <value>Abschneiden Zieldruck</value>
+  </data>
+  <data name="DBDescr_X16" xml:space="preserve">
+    <value>Hydraulikaggregat Zieldruck </value>
+  </data>
+  <data name="DBDescr_X17" xml:space="preserve">
+    <value>Hub 2 (an Befülladapter andocken) Zieldruck </value>
+  </data>
+  <data name="DBDescr_X18" xml:space="preserve">
+    <value>Hub 1 (an Presswerkzeug anlegen)  Zieldruck </value>
+  </data>
+  <data name="DBDescr_Z01" xml:space="preserve">
+    <value>Dauer - Dosierbehälter über Min-Level befüllen</value>
+  </data>
+  <data name="DBDescr_Z02" xml:space="preserve">
+    <value>Maximale Zeit Erzeugung Vorvakuum</value>
+  </data>
+  <data name="DBDescr_Z03" xml:space="preserve">
+    <value>Dichtheitsprüfung Anlage - Dauer</value>
+  </data>
+  <data name="DBDescr_Z04" xml:space="preserve">
+    <value>Timeout - Evakuieren verpresste Röhren - Druck "X2" erreichen</value>
+  </data>
+  <data name="DBDescr_Z05" xml:space="preserve">
+    <value>Timeout - Erreichen Lx.1.1, Lx.1.2 beim Erstbefüllen</value>
+  </data>
+  <data name="DBDescr_Z06" xml:space="preserve">
+    <value>Timeout - Entleeren Dosierbehälter auf Referenzstand</value>
+  </data>
+  <data name="DBDescr_Z07" xml:space="preserve">
+    <value>Timeout - Aufheizen aller Heizungen</value>
+  </data>
+  <data name="DBDescr_Z08" xml:space="preserve">
+    <value>Zeit für Spülen mit SO2fl nach kleiner Wartung</value>
+  </data>
+  <data name="DBDescr_Z09" xml:space="preserve">
+    <value>Zeit für Spülen Blockventil mit N2</value>
+  </data>
+  <data name="DBDescr_Z10" xml:space="preserve">
+    <value>Zeit für Belüften Dosierbehälter nach Vakuum</value>
+  </data>
+  <data name="DBDescr_Z11" xml:space="preserve">
+    <value>Timeout - Verpressen 1 - Druck "X8" muss erreicht sein</value>
+  </data>
+  <data name="DBDescr_Z12" xml:space="preserve">
+    <value>Timeout - Endlagensensoren beim Andocken</value>
+  </data>
+  <data name="DBDescr_Z13" xml:space="preserve">
+    <value>*** nicht eindeutige Zuordnung *** max. Zeit in der der Solldruck "X10" nicht überschritten werden darf</value>
+  </data>
+  <data name="DBDescr_Z14" xml:space="preserve">
+    <value>*** nicht eindeutige Zuordnung *** Zeit, in der der gemessene Druck gem. SPEC &lt;= dem einstellbaren Druck „X3“ bleiben bleiben muss</value>
+  </data>
+  <data name="DBDescr_Z15" xml:space="preserve">
+    <value>*** entfernen, in Rezept *** Max. zul. Zeit für Dosierung Elektrolyt</value>
+  </data>
+  <data name="DBDescr_Z16" xml:space="preserve">
+    <value>*** entfernen, in Rezept *** Timer für Dosierung SO2 flüssig</value>
+  </data>
+  <data name="DBDescr_Z17" xml:space="preserve">
+    <value>Nachdruck SO2 Gas - Zeit für das Erreichen des Drucks "X10"</value>
+  </data>
+  <data name="DBDescr_Z18" xml:space="preserve">
+    <value>*** entfernen, da Vol.-gesteuert *** Zeit gem. SPEC, um SO2 in den Drain zu spülen</value>
+  </data>
+  <data name="DBDescr_Z19" xml:space="preserve">
+    <value>*** entfernen, in Rezept *** Rinse 1 Dauer Zeit für Spülen auswählbar zwischen SO2 flüssig, SO2 gasförmig, N2</value>
+  </data>
+  <data name="DBDescr_Z20" xml:space="preserve">
+    <value>Dichtheitsprüfung verschlossene Röhrchen - Dauer </value>
+  </data>
+  <data name="DBDescr_Z21" xml:space="preserve">
+    <value>Evakuierung Zellen - Timeout</value>
+  </data>
+  <data name="DBDescr_Z22" xml:space="preserve">
+    <value>Evakuierung verschlossene Röhrchen - Timeout</value>
+  </data>
+  <data name="DBDescr_Z23" xml:space="preserve">
+    <value>*** keine Zuordnung *** Timeout - Endlagensensoren beim Abdocken</value>
+  </data>
+  <data name="DBDescr_Z24" xml:space="preserve">
+    <value>Dauer - Blockventile mit SO2 Gas spülen</value>
+  </data>
+  <data name="DBDescr_Z25" xml:space="preserve">
+    <value>Timeout - Befüllen mit N2 - "X14" nicht erreicht</value>
+  </data>
+  <data name="DBDescr_Z26" xml:space="preserve">
+    <value>Dauer - Entlüften nach dem Befüllen mit N2 </value>
+  </data>
+  <data name="DBDescr_Z27" xml:space="preserve">
+    <value>Timeout - Befüllen Dosierbehälter </value>
+  </data>
+  <data name="DBDescr_Z28" xml:space="preserve">
+    <value>Dauer - Dos.behälter entleeren - Warten nach dem Signal von Lx.1.2 </value>
+  </data>
+  <data name="DBDescr_Z29" xml:space="preserve">
+    <value>Dauer - Dos.behälter entleeren - Be- und Entlüften am Ende</value>
+  </data>
+  <data name="DBDescr_Z30" xml:space="preserve">
+    <value>Dauer - Dos.behälter entleeren - Spülen Dos.behälter El. mit SO2fl</value>
+  </data>
+  <data name="DBDescr_Z31" xml:space="preserve">
+    <value>Dauer - Dos.behälter entleeren - Spülen Dos.behälter El. mit N2</value>
+  </data>
+  <data name="DBDescr_Z32" xml:space="preserve">
+    <value>Timeout - Anlage mit N2 fluten - 2,5 bar nicht erreicht</value>
+  </data>
+  <data name="DBDescr_Z33" xml:space="preserve">
+    <value>Timeout - Zuleitungen mit Medien fluten - N2 3,5 bar nicht erreicht</value>
+  </data>
+  <data name="DBDescr_Z34" xml:space="preserve">
+    <value>Dauer - Verpressen 2 Haltezeit</value>
+  </data>
+  <data name="DBDescr_Z35" xml:space="preserve">
+    <value>Timeout - Alle Hydraulikzyl. - Druck nicht erreicht </value>
+  </data>
+  <data name="DBDescr_Z36" xml:space="preserve">
+    <value>Dauer - Abschneiden Haltezeit</value>
+  </data>
+  <data name="DBDescr_Z37" xml:space="preserve">
+    <value>Dauer - Röhrchen abholen - Greifer offen, abwerfen</value>
+  </data>
+  <data name="DBDescr_Z38" xml:space="preserve">
+    <value>Dauer - Argon - Vor-/Nachlauf</value>
+  </data>
+  <data name="DBDescr_Z39" xml:space="preserve">
+    <value>Dauer - Entlüften Puffertanks auf 3,5 bar</value>
+  </data>
+  <data name="DBDescr_ZM" xml:space="preserve">
+    <value>Timeout - Fluten Puffertanks</value>
+  </data>
+  <data name="DBDosingStrategyRough" xml:space="preserve">
+    <value>Dosierungsstrategie - Grobdosierung</value>
+  </data>
+  <data name="DBRecipeName_Afterpressure" xml:space="preserve">
+    <value>Nachdrücken</value>
+  </data>
+  <data name="DBRecipeName_Afterrinse1" xml:space="preserve">
+    <value>Nachspülen 1</value>
+  </data>
+  <data name="DBRecipeName_Afterrinse2" xml:space="preserve">
+    <value>Nachspülen 2</value>
+  </data>
+  <data name="DBRecipeName_CellType" xml:space="preserve">
+    <value>Zelltyp</value>
+  </data>
+  <data name="DBRecipeName_Filling" xml:space="preserve">
+    <value>Befüllen</value>
+  </data>
+  <data name="DBRecipeName_IntermedEvac1" xml:space="preserve">
+    <value>Zwischenevakuieren 1</value>
+  </data>
+  <data name="DBRecipeName_IntermedEvac2" xml:space="preserve">
+    <value>Zwischenevakuieren 2</value>
+  </data>
+  <data name="DBRecipeName_LaserWeld" xml:space="preserve">
+    <value>Laserschweißen</value>
+  </data>
+  <data name="DBRecipeName_Pressing3" xml:space="preserve">
+    <value>Verpresssen 3</value>
+  </data>
+  <data name="DBRecipeName_ResistWeld" xml:space="preserve">
+    <value>Widerstandsschweißen</value>
+  </data>
+  <data name="DBRecipeName_TimeAfterrinse1" xml:space="preserve">
+    <value>Nachspülen 1 - Zeit</value>
+  </data>
+  <data name="DBRecipeName_TimeAfterrinse2" xml:space="preserve">
+    <value>Nachspülen 2 - Zeit</value>
+  </data>
+  <data name="DBRecipeName_TimeElect" xml:space="preserve">
+    <value>Füllzeit - Elektrolyt</value>
+  </data>
+  <data name="DBRecipeName_TimeSO2" xml:space="preserve">
+    <value>Füllzeit - SO2</value>
+  </data>
+  <data name="DBRecipeName_VolElect" xml:space="preserve">
+    <value>Füllmenge - Elektrolyt</value>
+  </data>
+  <data name="DBRecipeName_VolSO2" xml:space="preserve">
+    <value>Füllmenge - SO2</value>
+  </data>
+  <data name="DlgParamset_lblActName" xml:space="preserve">
+    <value>Aktueller Name:</value>
+  </data>
+  <data name="DlgParamset_lblNameOfCopy" xml:space="preserve">
+    <value>Name der Kopie:</value>
+  </data>
+  <data name="DlgParamset_lblNameOfOrig" xml:space="preserve">
+    <value>Name des ausgewählten Parametersatzes:</value>
+  </data>
+  <data name="DlgParamset_lblNewName" xml:space="preserve">
+    <value>Neuer Name:</value>
+  </data>
+  <data name="DlgParamset_lblReallyDelete" xml:space="preserve">
+    <value>Wollen Sie diesen Parametersatz wirklich löschen?</value>
+  </data>
+  <data name="DlgParamset_lblTitleCopy" xml:space="preserve">
+    <value>Parametersatz kopieren</value>
+  </data>
+  <data name="DlgParamset_lblTitleDelete" xml:space="preserve">
+    <value>Parametersatz löschen</value>
+  </data>
+  <data name="DlgParamset_lblTitleNew" xml:space="preserve">
+    <value>Neuer Parametersatz</value>
+  </data>
+  <data name="DlgParamset_lblTitleRename" xml:space="preserve">
+    <value>Parametersatz umbenennen</value>
+  </data>
+  <data name="DlgResWeld_ElectChangeHeader" xml:space="preserve">
+    <value>Elektroden-Wechsel/-Reinigung</value>
+  </data>
+  <data name="DlgResWeld_ElectChangeText" xml:space="preserve">
+    <value>Das Schweißprogramm wird vorübergehend gewechselt. Wollen Sie fortfahren?</value>
+  </data>
+  <data name="DlgResWeld_ReferenceHeader" xml:space="preserve">
+    <value>Referenzfahrt Widerstandsschweißen</value>
+  </data>
+  <data name="DlgResWeld_ReferenceText" xml:space="preserve">
+    <value>Wollen Sie die Referenzfahrt starten?</value>
+  </data>
+  <data name="DlgSetVal_btnSet" xml:space="preserve">
+    <value>Setzen</value>
+  </data>
+  <data name="DlgSetVal_tbCurrentVal" xml:space="preserve">
+    <value>Akt. Wert:</value>
+  </data>
+  <data name="DlgSetVal_tbNewVal" xml:space="preserve">
+    <value>Neuer Wert:</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMax" xml:space="preserve">
+    <value>Obere Grenze:</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMin" xml:space="preserve">
+    <value>Untere Grenze:</value>
+  </data>
+  <data name="DlgSetVal_Titel" xml:space="preserve">
+    <value>Wert setzen</value>
+  </data>
+  <data name="DlgUser_lblSelectAUser" xml:space="preserve">
+    <value>Wählen Sie einen Benutzer aus</value>
+  </data>
+  <data name="DlgUser_lblUserlevel" xml:space="preserve">
+    <value>Berechtigungsstufe</value>
+  </data>
+  <data name="DlgUser_lblUsername" xml:space="preserve">
+    <value>Benutzername</value>
+  </data>
+  <data name="DlgUser_tbLevel" xml:space="preserve">
+    <value>[Benutzerlevel]</value>
+  </data>
+  <data name="DlgUser_tbName" xml:space="preserve">
+    <value>Kein Benutzer</value>
+  </data>
+  <data name="DlgUser_tbPasswort" xml:space="preserve">
+    <value>Kennwort</value>
+  </data>
+  <data name="DlgUser_txtReallyDelete" xml:space="preserve">
+    <value>Wollen Sie diesen Benutzer wirklich löschen?</value>
+  </data>
+  <data name="Filling_btnEvacuateCell" xml:space="preserve">
+    <value>Evakuieren Zelle</value>
+  </data>
+  <data name="Filling_btnEvacuatePipe" xml:space="preserve">
+    <value>Evakuieren Röhrchen</value>
+  </data>
+  <data name="Filling_btnFillCell" xml:space="preserve">
+    <value>Zelle befüllen</value>
+  </data>
+  <data name="Filling_btnFillDosTank" xml:space="preserve">
+    <value>Dosiertank befüllen</value>
+  </data>
+  <data name="Filling_btnLeakTestCell" xml:space="preserve">
+    <value>Dichtheitsprüfung Zelle</value>
+  </data>
+  <data name="Filling_btnLeaktestPipe" xml:space="preserve">
+    <value>Dichtheitsprüfung Röhrchen</value>
+  </data>
+  <data name="Filling_btnRinse" xml:space="preserve">
+    <value>Spülen</value>
+  </data>
+  <data name="Filling_btnRinseRestSO2toWaste" xml:space="preserve">
+    <value>Rest-SO2 in Waste spülen</value>
+  </data>
+  <data name="Filling_btnStoproutineCloseAllValves" xml:space="preserve">
+    <value>Stop Routine / Alle Ventile schließen</value>
+  </data>
+  <data name="Filling_lblBlockvalve" xml:space="preserve">
+    <value>Blockventil</value>
+  </data>
+  <data name="Filling_lblElect" xml:space="preserve">
+    <value>Elektrolyt</value>
+  </data>
+  <data name="Filling_lblSO2g" xml:space="preserve">
+    <value>SO2g</value>
+  </data>
+  <data name="Filling_lblSO2l" xml:space="preserve">
+    <value>SO2fl</value>
+  </data>
+  <data name="Filling_lblVacuum" xml:space="preserve">
+    <value>Vakuum</value>
+  </data>
+  <data name="Filling_lblWaste" xml:space="preserve">
+    <value>Waste</value>
+  </data>
+  <data name="Main_btnAlarms" xml:space="preserve">
+    <value>Meldungen</value>
+  </data>
+  <data name="Main_btnAnalysis" xml:space="preserve">
+    <value>Analyse</value>
+  </data>
+  <data name="Main_BtnLogin" xml:space="preserve">
+    <value>Anmelden</value>
+  </data>
+  <data name="Main_btnQuitHorn" xml:space="preserve">
+    <value>Hupe aus</value>
+  </data>
+  <data name="Main_btnResetAll" xml:space="preserve">
+    <value>Schritte zurücksetzen</value>
+  </data>
+  <data name="Main_btnSettings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Main_btnTipOP" xml:space="preserve">
+    <value>Tipbetrieb</value>
+  </data>
+  <data name="Main_lblNavigation" xml:space="preserve">
+    <value>Navigation</value>
+  </data>
+  <data name="Main_lblProduction" xml:space="preserve">
+    <value>Produktion</value>
+  </data>
+  <data name="Main_lblService" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="Main_MachineName" xml:space="preserve">
+    <value>Elektrolytbefüllung</value>
+  </data>
+  <data name="ManFunc_btnElectChange" xml:space="preserve">
+    <value>Elektroden-Wechsel /-Reinigung</value>
+  </data>
+  <data name="ManFunc_btnRerefrence" xml:space="preserve">
+    <value>Referenzfahrt</value>
+  </data>
+  <data name="ManFunc_btnStartWeld" xml:space="preserve">
+    <value>Start Schweißen</value>
+  </data>
+  <data name="ManFunc_lblChiller" xml:space="preserve">
+    <value>Kühler</value>
+  </data>
+  <data name="ManFunc_lblCutting" xml:space="preserve">
+    <value>Schneiden</value>
+  </data>
+  <data name="ManFunc_lblLaserWelding" xml:space="preserve">
+    <value>Laserschweißen</value>
+  </data>
+  <data name="ManFunc_lblLeft" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="ManFunc_lblPressing2" xml:space="preserve">
+    <value>Verpressen 2</value>
+  </data>
+  <data name="ManFunc_lblPressing3" xml:space="preserve">
+    <value>Verpressen 3</value>
+  </data>
+  <data name="ManFunc_lblResistWeld" xml:space="preserve">
+    <value>Widerstandsschweißen</value>
+  </data>
+  <data name="ManFunc_lblRight" xml:space="preserve">
+    <value>Rechts</value>
+  </data>
+  <data name="ManFunc_lblShutter1" xml:space="preserve">
+    <value>Shutter 1</value>
+  </data>
+  <data name="ManFunc_lblShutter2" xml:space="preserve">
+    <value>Shutter 2</value>
+  </data>
+  <data name="ManFunc_lblVentilationFlap" xml:space="preserve">
+    <value>Lüftungsklappe</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedCaption" xml:space="preserve">
+    <value>Zugriff verweigert</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedText" xml:space="preserve">
+    <value>Sie haben keine Berechtigung, diese Operation auszuführen.</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionCaption" xml:space="preserve">
+    <value>Auswahl</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionText" xml:space="preserve">
+    <value>Kein Benuter ist ausgewählt.</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Caption" xml:space="preserve">
+    <value>Sprache ausgewählt</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Text" xml:space="preserve">
+    <value>Das HMI startet mit der ausgewählten Sprache neu.</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Caption" xml:space="preserve">
+    <value>Anmeldung</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Text" xml:space="preserve">
+    <value>Bitte melden Sie sich zuerst an.</value>
+  </data>
+  <data name="NavHoriz_btnChargeRec" xml:space="preserve">
+    <value>Rezept laden</value>
+  </data>
+  <data name="NavHoriz_btnCurrentAlarms" xml:space="preserve">
+    <value>Aktuelle Alarme</value>
+  </data>
+  <data name="NavHoriz_btnDisposal" xml:space="preserve">
+    <value>Entsorgung</value>
+  </data>
+  <data name="NavHoriz_btnDoorsSO2EMO" xml:space="preserve">
+    <value>Türe/SO2/Not-Aus</value>
+  </data>
+  <data name="NavHoriz_btnFill" xml:space="preserve">
+    <value>Füllen</value>
+  </data>
+  <data name="NavHoriz_btnFillingOverview" xml:space="preserve">
+    <value>Befüllen Übersicht</value>
+  </data>
+  <data name="NavHoriz_btnGeneral" xml:space="preserve">
+    <value>Allgemeines</value>
+  </data>
+  <data name="NavHoriz_btnHeatings" xml:space="preserve">
+    <value>Heizungen</value>
+  </data>
+  <data name="NavHoriz_btnHistAlarms" xml:space="preserve">
+    <value>Vergangene Alarme</value>
+  </data>
+  <data name="NavHoriz_btnHydr" xml:space="preserve">
+    <value>Hydraulik</value>
+  </data>
+  <data name="NavHoriz_btnManFunc" xml:space="preserve">
+    <value>Handfunktionen</value>
+  </data>
+  <data name="NavHoriz_btnMsgs" xml:space="preserve">
+    <value>Meldungen</value>
+  </data>
+  <data name="NavHoriz_btnOverview" xml:space="preserve">
+    <value>Übersicht</value>
+  </data>
+  <data name="NavHoriz_btnParameters" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="NavHoriz_btnPress1" xml:space="preserve">
+    <value>Pressen 1</value>
+  </data>
+  <data name="NavHoriz_btnSupply" xml:space="preserve">
+    <value>Versorgung</value>
+  </data>
+  <data name="NavHoriz_btnTeach" xml:space="preserve">
+    <value>Teach</value>
+  </data>
+  <data name="NavHoriz_btnTools" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="NavHoriz_btnUserAdmin" xml:space="preserve">
+    <value>Benutzerverwaltung</value>
+  </data>
+  <data name="NavVert_btn1LoadUnload" xml:space="preserve">
+    <value>1. Eingabe / Ausgabe</value>
+  </data>
+  <data name="NavVert_btn2Glovebox" xml:space="preserve">
+    <value>2. Glovebox</value>
+  </data>
+  <data name="NavVert_btn3FillPress1" xml:space="preserve">
+    <value>3. Befüllen / Verpressen 1</value>
+  </data>
+  <data name="NavVert_btn4ResWeldCut" xml:space="preserve">
+    <value>4. Wid.schweißen / Abschneiden</value>
+  </data>
+  <data name="NavVert_btn5LasWeld" xml:space="preserve">
+    <value>5. Laserschweißen</value>
+  </data>
+  <data name="NavVert_btnAlarms" xml:space="preserve">
+    <value>Meldungen</value>
+  </data>
+  <data name="NavVert_btnMachine" xml:space="preserve">
+    <value>Maschine</value>
+  </data>
+  <data name="NavVert_btnSettings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="NavVert_btnTool" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="NavVert_btnTransport" xml:space="preserve">
+    <value>Transporteinheit</value>
+  </data>
+  <data name="ParamMsgBox_InPLCFound" xml:space="preserve">
+    <value>Der in die SPS geladene Parametersatz wurde in der Datenbank gefunden.</value>
+  </data>
+  <data name="ParamMsgBox_InPLCHeader" xml:space="preserve">
+    <value>Parametersatz in der SPS</value>
+  </data>
+  <data name="ParamMsgBox_InPLCNotFound" xml:space="preserve">
+    <value>Der in die SPS geladene Parametersatz wurde in der Datenbank NICHT gefunden.</value>
+  </data>
+  <data name="ParamMsgBox_NoParSetAtAll" xml:space="preserve">
+    <value>In der Datenbank wurde kein Parametersatz gefunden.</value>
+  </data>
+  <data name="ParamMsgBox_Selected" xml:space="preserve">
+    <value>Der aktuell ausgewählte Parametersatz:</value>
+  </data>
+  <data name="Paramset_btnCopy" xml:space="preserve">
+    <value>Kopieren</value>
+  </data>
+  <data name="Paramset_btnDelete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="Paramset_btnLoadToPLC" xml:space="preserve">
+    <value>In SPS laden</value>
+  </data>
+  <data name="Paramset_btnNew" xml:space="preserve">
+    <value>Neu</value>
+  </data>
+  <data name="Paramset_btnRename" xml:space="preserve">
+    <value>Umbenennen</value>
+  </data>
+  <data name="Paramset_btnSelectCurrent" xml:space="preserve">
+    <value>Geladenen Parametersatz anzeigen</value>
+  </data>
+  <data name="Paramset_gbHeader" xml:space="preserve">
+    <value>Parametersätze</value>
+  </data>
+  <data name="Param_btnEditAll" xml:space="preserve">
+    <value>Alle Parameter bearbeiten</value>
+  </data>
+  <data name="Param_btnExportToCSV" xml:space="preserve">
+    <value>In CSV exportieren</value>
+  </data>
+  <data name="Param_gbHeader" xml:space="preserve">
+    <value>Parameter (nach der aktuellen Station gefiltert)</value>
+  </data>
+  <data name="StateModul_0" xml:space="preserve">
+    <value>Aus</value>
+  </data>
+  <data name="StateModul_1" xml:space="preserve">
+    <value>Aus</value>
+  </data>
+  <data name="StateModul_2" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="StateModul_3" xml:space="preserve">
+    <value>Handbetrieb</value>
+  </data>
+  <data name="StateModul_4" xml:space="preserve">
+    <value>Tippen aktiv</value>
+  </data>
+  <data name="StateModul_5" xml:space="preserve">
+    <value>Automatik AUS</value>
+  </data>
+  <data name="StateModul_6" xml:space="preserve">
+    <value>Automatik EIN</value>
+  </data>
+  <data name="StateModul_7" xml:space="preserve">
+    <value>Automatik EIN</value>
+  </data>
+  <data name="StateOff" xml:space="preserve">
+    <value>AUS</value>
+  </data>
+  <data name="StateOn" xml:space="preserve">
+    <value>EIN</value>
+  </data>
+  <data name="StateStandby" xml:space="preserve">
+    <value>Standby</value>
+  </data>
+  <data name="Teach_btnSaveData" xml:space="preserve">
+    <value>Daten in der DB speichern und in die SPS laden</value>
+  </data>
+  <data name="Teach_HeaderAxisControl" xml:space="preserve">
+    <value>Achssteuerung</value>
+  </data>
+  <data name="Teach_HeaderPos" xml:space="preserve">
+    <value>Teach-Positionen</value>
+  </data>
+  <data name="Teach_lblActAxisPos" xml:space="preserve">
+    <value>Aktuelle Position x-Achse</value>
+  </data>
+  <data name="Teach_lblCartXAxis" xml:space="preserve">
+    <value>Wagen x-Achse</value>
+  </data>
+  <data name="Teach_lblOffsetDescreption" xml:space="preserve">
+    <value>Röhrchen</value>
+  </data>
+  <data name="Teach_lblRowNameLarge" xml:space="preserve">
+    <value>Einfach klein (HPC, HPCM)</value>
+  </data>
+  <data name="Teach_lblRowNameSmall" xml:space="preserve">
+    <value>Einfach groß (LFC), mehrfach (ESM8)</value>
+  </data>
+  <data name="Teach_lblX1" xml:space="preserve">
+    <value>Eingabe/Ausgabe</value>
+  </data>
+  <data name="Teach_lblX2" xml:space="preserve">
+    <value>Glovebox</value>
+  </data>
+  <data name="Teach_lblX3" xml:space="preserve">
+    <value>Filling</value>
+  </data>
+  <data name="Teach_lblX4" xml:space="preserve">
+    <value>Verpressen 2</value>
+  </data>
+  <data name="Teach_lblX5" xml:space="preserve">
+    <value>Laserschweißen</value>
+  </data>
+  <data name="Tool_btnCloseAllValves" xml:space="preserve">
+    <value>Alle Ventile schließen</value>
+  </data>
+  <data name="Tool_btnLockAllDoors" xml:space="preserve">
+    <value>Alle Türe verriegeln</value>
+  </data>
+  <data name="Tool_btnReleaseAllDoors" xml:space="preserve">
+    <value>Alle Türe entriegeln</value>
+  </data>
+  <data name="Tool_lblDoorError" xml:space="preserve">
+    <value>Schutztür Störung</value>
+  </data>
+  <data name="Tool_lblDoorOk" xml:space="preserve">
+    <value>Schutztür OK</value>
+  </data>
+  <data name="Tool_lblDoorOpen" xml:space="preserve">
+    <value>Schutztür offen</value>
+  </data>
+  <data name="Tool_lblDoorReleased" xml:space="preserve">
+    <value>Schutztür entriegelt</value>
+  </data>
+  <data name="Tool_lblEMO_Error" xml:space="preserve">
+    <value>Not-Aus Störung</value>
+  </data>
+  <data name="Tool_lblEMO_OK" xml:space="preserve">
+    <value>Not-Aus OK</value>
+  </data>
+  <data name="Tool_lblEMO_Pressed" xml:space="preserve">
+    <value>Not-Aus gedrückt</value>
+  </data>
+  <data name="UcAx_btnReleaseController" xml:space="preserve">
+    <value>Freigabe Regler</value>
+  </data>
+  <data name="UcAx_gbRelease" xml:space="preserve">
+    <value>Freigaben</value>
+  </data>
+  <data name="UcAx_gbReleaseManual" xml:space="preserve">
+    <value>Freigaben Handbetrieb</value>
+  </data>
+  <data name="UcAx_gbStatusLog" xml:space="preserve">
+    <value>Status (log.)</value>
+  </data>
+  <data name="UcAx_gbStatusPhys" xml:space="preserve">
+    <value>Status (phys.)</value>
+  </data>
+  <data name="UcAx_lblActPos" xml:space="preserve">
+    <value>Akt.-Position</value>
+  </data>
+  <data name="UcAx_lblActSpeed" xml:space="preserve">
+    <value>Ist-Geschwindigkeit</value>
+  </data>
+  <data name="UcAx_lblController" xml:space="preserve">
+    <value>Regler</value>
+  </data>
+  <data name="UcAx_lblCoupled" xml:space="preserve">
+    <value>Gekoppelt</value>
+  </data>
+  <data name="UcAx_lblCuttingOpen" xml:space="preserve">
+    <value>Schneiden offen</value>
+  </data>
+  <data name="UcAx_lblError" xml:space="preserve">
+    <value>Fehler</value>
+  </data>
+  <data name="UcAx_lblHasJob" xml:space="preserve">
+    <value>Hat Auftrag</value>
+  </data>
+  <data name="UcAx_lblInTargetArea" xml:space="preserve">
+    <value>In Pos.Bereich</value>
+  </data>
+  <data name="UcAx_lblInTargetPos" xml:space="preserve">
+    <value>In Zielposition</value>
+  </data>
+  <data name="UcAx_lblLift2Down" xml:space="preserve">
+    <value>Lift 2 unten</value>
+  </data>
+  <data name="UcAx_lblLimitNeg" xml:space="preserve">
+    <value>Vorschub -</value>
+  </data>
+  <data name="UcAx_lblLimitPos" xml:space="preserve">
+    <value>Vorschub +</value>
+  </data>
+  <data name="UcAx_lblMovesNeg" xml:space="preserve">
+    <value>Fährt negativ</value>
+  </data>
+  <data name="UcAx_lblMovesPos" xml:space="preserve">
+    <value>Fährt positiv</value>
+  </data>
+  <data name="UcAx_lblNotMoving" xml:space="preserve">
+    <value>Fährt NICHT</value>
+  </data>
+  <data name="UcAx_lblOverride" xml:space="preserve">
+    <value>Override</value>
+  </data>
+  <data name="UcAx_lblPosLag" xml:space="preserve">
+    <value>Schleppabstand (min/max)</value>
+  </data>
+  <data name="UcAx_lblPress2Open" xml:space="preserve">
+    <value>Pressen 2 offen</value>
+  </data>
+  <data name="UcAx_lblPress3Open" xml:space="preserve">
+    <value>Pressen 3 offen</value>
+  </data>
+  <data name="UcAx_lblReady" xml:space="preserve">
+    <value>Bereit</value>
+  </data>
+  <data name="UcAx_lblRefOK" xml:space="preserve">
+    <value>Referenziert</value>
+  </data>
+  <data name="UcAx_lblResWeldOpen" xml:space="preserve">
+    <value>Schweißkopf offen</value>
+  </data>
+  <data name="UcAx_lblSetPointPos" xml:space="preserve">
+    <value>Soll-Position</value>
+  </data>
+  <data name="UcAx_lblSetPointSpeed" xml:space="preserve">
+    <value>Soll-Geschwindigkeit</value>
+  </data>
+  <data name="UcAx_lblShutter1Up" xml:space="preserve">
+    <value>Shutter 1 oben</value>
+  </data>
+  <data name="UcAx_lblShutter2Up" xml:space="preserve">
+    <value>Shutter 2 oben</value>
+  </data>
+  <data name="UcAx_lblTargetPos" xml:space="preserve">
+    <value>Ziel-Position</value>
+  </data>
+  <data name="UcAx_lblTargetSpeed" xml:space="preserve">
+    <value>Ziel-Geschwindigkeit</value>
+  </data>
+  <data name="UserAdmin_btnDeleteUser" xml:space="preserve">
+    <value>Benutzer löschen</value>
+  </data>
+  <data name="UserAdmin_btnEdituser" xml:space="preserve">
+    <value>Benutzer bearbeiten</value>
+  </data>
+  <data name="UserAdmin_btnNewUser" xml:space="preserve">
+    <value>Neuer Benutzer</value>
+  </data>
+  <data name="UserAdmin_dgheaderUserlevel" xml:space="preserve">
+    <value>Berechtigungsstufe</value>
+  </data>
+  <data name="UserAdmin_gbHeader" xml:space="preserve">
+    <value>Benutzer</value>
+  </data>
+  <data name="PgLang_Header" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+</root>

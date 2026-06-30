@@ -1,0 +1,45 @@
+﻿<Window x:Class="LOET_HMI.WindowNewUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOET_HMI"
+        mc:Ignorable="d"
+        Height="450" Width="400"
+        
+        Title="{x:Static prop:Resources.UserAdmin_btnNewUser}" 
+        Style="{StaticResource RENA_PopUpStlye}" 
+        WindowStartupLocation="CenterScreen" 
+
+        xmlns:prop="clr-namespace:LOET_HMI.Properties"
+        >
+
+    <Grid>
+
+
+        <StackPanel x:Name="StackStatus" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical" Width="300"  >
+            <TextBlock x:Name="tblUser"  Margin="00,10,0,0" Text="{x:Static prop:Resources.DlgUser_lblUsername}" Style="{StaticResource RENA_TextBlockStyle_PopUp}"   />
+            <TextBox x:Name="tbUserName"  Margin="00,00,0,0" Style="{StaticResource RENA_TextBoxStyle_PopUp}" GotFocus="TbUserName_GotFocus"/>
+            <TextBlock x:Name="tblLevel"  Margin="00,10,0,0" Text="{x:Static prop:Resources.DlgUser_lblUserlevel}" Style="{StaticResource RENA_TextBlockStyle_PopUp}"  />
+            <ComboBox x:Name="cbLevel"  Margin="00,00,0,0" FontSize="18" Height="30"/>
+            <TextBlock x:Name="tblPasswort"  Margin="00,10,0,0" Text="{x:Static prop:Resources.DlgUser_tbPasswort}" Style="{StaticResource RENA_TextBlockStyle_PopUp}"  />
+            <PasswordBox x:Name="passwordBox"  Margin="00,00,0,0" FontFamily="Arial" FontSize="24" GotFocus="PasswordBox_GotFocus"/>
+            <!-- 
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <Button x:Name="BtnOk" Content="Anlegen" Click="BtnOk_Click"  Height="50" Width="120" Margin="5,20,20,0" Style="{StaticResource StyleCHP_ControlButton}" />
+                <Button x:Name="BtnCancel" Content="Abbrechen" Click="BtnCancel_Click"  Height="50" Width="120" Margin="0,20,5,0" Style="{StaticResource StyleCHP_ControlButton}" />
+            </StackPanel>
+            -->
+            <Grid Margin="0,20,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="BtnOk" Grid.Column="0" Content="{x:Static prop:Resources.BtnOK}" IsDefault="True" Click="BtnOk_Click"   Style="{StaticResource RENA_ButtonStyle_PopUp}"   />
+                <Button x:Name="BtnCancel"  Grid.Column="1" Content="{x:Static prop:Resources.BtnCancel}" IsCancel="True" Click="BtnCancel_Click"  Style="{StaticResource RENA_ButtonStyle_PopUp}" />
+            </Grid>
+        </StackPanel>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,101 @@
+﻿<Page xmlns:LOET_HMI="clr-namespace:LOET_HMI"  x:Class="LOET_HMI.Displays.PgSpecialFunctions"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LOET_HMI.Displays"
+      mc:Ignorable="d" 
+      
+      d:DesignHeight="{StaticResource frameHeight}" d:DesignWidth="{StaticResource frameWidth}"
+      x:Name="pgSpecFunc"
+      xmlns:UCs="clr-namespace:LOET_HMI.UserControls"
+      Loaded="PgStat_Loaded" Unloaded="PgStat_Unloaded"      
+           
+      Title="PgSpecialFunctions">
+    <Page.Resources>
+        
+    </Page.Resources>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Allgmein" Grid.Column="0" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+            <Grid>
+
+                <StackPanel Margin="30,30,30,30" VerticalAlignment="Top" HorizontalAlignment="Center">
+                    <LOET_HMI:UcButton x:Name="btn1"  Style="{StaticResource CHPButtonStyle}"                                                                                           
+                               DpButtonHMI="{Binding ElementName=pgSpecFunc, Path=BtnList[0]}"
+                                       
+                               >
+                    </LOET_HMI:UcButton>
+
+
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Modul 1" Grid.Column="1" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" Background="#FFE6E6E6" >
+            <Grid>
+
+          
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Modul 2" Grid.Column="2" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <LOET_HMI:UcButton x:Name="btn2" Style="{StaticResource CHPButtonStyle}"                              
+                               DpButtonHMI="{Binding ElementName=pgSpecFunc, Path=BtnList[1]}"  
+                               
+                               >
+                    </LOET_HMI:UcButton>
+
+                    <LOET_HMI:UcButton x:Name="btn3" Style="{StaticResource CHPButtonStyle}"
+                               DpButtonHMI="{Binding ElementName=pgSpecFunc, Path=BtnList[2]}"  
+                               >
+                    </LOET_HMI:UcButton>
+
+                    <LOET_HMI:UcButton x:Name="btn4" Style="{StaticResource CHPButtonStyle}"
+                               DpButtonHMI="{Binding ElementName=pgSpecFunc, Path=BtnList[3]}"  
+                               >
+                    </LOET_HMI:UcButton>
+
+                    <LOET_HMI:UcButton x:Name="btn5" Style="{StaticResource CHPButtonStyle}"
+                               DpButtonHMI="{Binding ElementName=pgSpecFunc, Path=BtnList[4]}"  
+                               >
+                    </LOET_HMI:UcButton>
+
+                    <LOET_HMI:UcButton x:Name="btn6" Style="{StaticResource CHPButtonStyle}"
+                               DpButtonHMI="{Binding ElementName=pgSpecFunc, Path=BtnList[5]}"  
+                               >
+                    </LOET_HMI:UcButton>
+
+
+                </StackPanel>
+
+  
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Modul 3" Grid.Column="3" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+            <Grid>
+                <StackPanel Orientation="Vertical">
+                    <LOET_HMI:UcButton x:Name="btn7" Style="{StaticResource CHPButtonStyle}"
+                                   DpButtonHMI="{Binding ElementName=pgSpecFunc, Path=BtnList[6]}"  
+                                   >
+                    </LOET_HMI:UcButton>
+
+                    <LOET_HMI:UcButton x:Name="btn8" Style="{StaticResource CHPButtonStyle}"
+                                   DpButtonHMI="{Binding ElementName=pgSpecFunc, Path=BtnList[7]}"  
+                                   >
+                    </LOET_HMI:UcButton>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Page>

@@ -1,0 +1,1093 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="BtnOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Btn_Delete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="Btn_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Btn_Yes" xml:space="preserve">
+    <value>Sí</value>
+  </data>
+  <data name="ComponentState_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ComponentState_ManualMode" xml:space="preserve">
+    <value>Modo manual</value>
+  </data>
+  <data name="ComponentState_Message" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="ComponentState_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ComponentState_Wait" xml:space="preserve">
+    <value>En espera</value>
+  </data>
+  <data name="ComponentState_Warning" xml:space="preserve">
+    <value>Advertencia</value>
+  </data>
+  <data name="DataGridAlarm_Come" xml:space="preserve">
+    <value>Llegado</value>
+  </data>
+  <data name="DataGridAlarm_Gone" xml:space="preserve">
+    <value>Salido</value>
+  </data>
+  <data name="DataGridAlarm_Stat" xml:space="preserve">
+    <value>Estación</value>
+  </data>
+  <data name="DataGridAlarm_Text" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="DataGridParam_CreatedBy" xml:space="preserve">
+    <value>Creado por</value>
+  </data>
+  <data name="DataGridParam_CreatedOn" xml:space="preserve">
+    <value>Creado el</value>
+  </data>
+  <data name="DataGridParam_Descritpion" xml:space="preserve">
+    <value>Descripción</value>
+  </data>
+  <data name="DataGridParam_LastModified" xml:space="preserve">
+    <value>Último cambio</value>
+  </data>
+  <data name="DataGridParam_Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="DataGridParam_RangeMax" xml:space="preserve">
+    <value>Límite superior</value>
+  </data>
+  <data name="DataGridParam_RangeMin" xml:space="preserve">
+    <value>Límite inferior</value>
+  </data>
+  <data name="DataGridParam_Unit" xml:space="preserve">
+    <value>Unidad</value>
+  </data>
+  <data name="DataGridParam_Value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="DataGridParam_ValuePLC" xml:space="preserve">
+    <value>Valor PLC</value>
+  </data>
+  <data name="DgCol_Acknowledged" xml:space="preserve">
+    <value>Acusado</value>
+    <comment>Neu</comment>
+  </data>
+  <data name="DgCol_AddedBy" xml:space="preserve">
+    <value>Añadido a la cola por</value>
+  </data>
+  <data name="DgCol_AddedOn" xml:space="preserve">
+    <value>Añadido a la cola el</value>
+  </data>
+  <data name="DgCol_BMK" xml:space="preserve">
+    <value>BMK</value>
+  </data>
+  <data name="DgCol_CancelledOn" xml:space="preserve">
+    <value>Cancelado el</value>
+  </data>
+  <data name="DgCol_Error" xml:space="preserve">
+    <value>Mensaje de error</value>
+  </data>
+  <data name="DgCol_FinishedOn" xml:space="preserve">
+    <value>Finalizado el</value>
+  </data>
+  <data name="DgCol_Gone" xml:space="preserve">
+    <value>Salido</value>
+  </data>
+  <data name="DgCol_LoadedOn" xml:space="preserve">
+    <value>Cargado en PLC el</value>
+  </data>
+  <data name="DgCol_Message" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="DgCol_Modul" xml:space="preserve">
+    <value>Módulo</value>
+  </data>
+  <data name="DgCol_Occurred" xml:space="preserve">
+    <value>Ocurrido</value>
+  </data>
+  <data name="DgCol_OrderName" xml:space="preserve">
+    <value>Nombre de la ordern</value>
+  </data>
+  <data name="DgCol_ParamSetID" xml:space="preserve">
+    <value>ID del grupo de parámetros</value>
+  </data>
+  <data name="DgCol_ParamSetName" xml:space="preserve">
+    <value>Nombre del grupo de parámetros</value>
+  </data>
+  <data name="DgCol_PiecesDone" xml:space="preserve">
+    <value>Piezas fabricadas</value>
+  </data>
+  <data name="DgCol_PlacedBy" xml:space="preserve">
+    <value>Creado por</value>
+  </data>
+  <data name="DgCol_PosInQueue" xml:space="preserve">
+    <value>Número en la cola</value>
+  </data>
+  <data name="DgCol_Quantity" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="DgCol_StartedOn" xml:space="preserve">
+    <value>Inicidado el</value>
+  </data>
+  <data name="DgCol_State" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="DgCol_Station" xml:space="preserve">
+    <value>Estación</value>
+  </data>
+  <data name="DgCol_StillActiveInPLC" xml:space="preserve">
+    <value>Todavía activo en PLC</value>
+  </data>
+  <data name="DgCol_Target" xml:space="preserve">
+    <value>Destino</value>
+  </data>
+  <data name="DgCol_User" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="DlgParamset_lblActName" xml:space="preserve">
+    <value>Nombre actual:</value>
+  </data>
+  <data name="DlgParamset_lblNameOfCopy" xml:space="preserve">
+    <value>Nombre de la copia:</value>
+  </data>
+  <data name="DlgParamset_lblNameOfOrig" xml:space="preserve">
+    <value>Nombre del grupo de parámetros seleccionado:</value>
+  </data>
+  <data name="DlgParamset_lblNewName" xml:space="preserve">
+    <value>Nuevo nombre:</value>
+  </data>
+  <data name="DlgParamset_lblReallyDelete" xml:space="preserve">
+    <value>¿Desea eliminar realmente este grupo de parámetros?</value>
+  </data>
+  <data name="DlgParamset_lblTitleCopy" xml:space="preserve">
+    <value>Copiar el grupo de parámetros</value>
+  </data>
+  <data name="DlgParamset_lblTitleDelete" xml:space="preserve">
+    <value>Eliminar el grupo de parámetros</value>
+  </data>
+  <data name="DlgParamset_lblTitleNew" xml:space="preserve">
+    <value>Nuevo grupo de parámetros</value>
+  </data>
+  <data name="DlgParamset_lblTitleRename" xml:space="preserve">
+    <value>Renombrar el grupo de parámetros</value>
+  </data>
+  <data name="DlgSetVal_btnSet" xml:space="preserve">
+    <value>Establecer</value>
+    <comment>Neu</comment>
+  </data>
+  <data name="DlgSetVal_tbCurrentVal" xml:space="preserve">
+    <value>Valor actual:</value>
+  </data>
+  <data name="DlgSetVal_tbNewVal" xml:space="preserve">
+    <value>Nuevo valor:</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMax" xml:space="preserve">
+    <value>Límite superior:</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMin" xml:space="preserve">
+    <value>Límite inferior:</value>
+  </data>
+  <data name="DlgSetVal_Titel" xml:space="preserve">
+    <value>Definir el valor</value>
+  </data>
+  <data name="DlgUser_lblSelectAUser" xml:space="preserve">
+    <value>Seleccionar un usario</value>
+  </data>
+  <data name="DlgUser_lblUserlevel" xml:space="preserve">
+    <value>Nivel de autorización</value>
+  </data>
+  <data name="DlgUser_lblUsername" xml:space="preserve">
+    <value>Nombre del usario</value>
+  </data>
+  <data name="DlgUser_tbName" xml:space="preserve">
+    <value>Ningún usario</value>
+  </data>
+  <data name="DlgUser_tbPasswort" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="DlgUser_txtReallyDelete" xml:space="preserve">
+    <value>¿Desea eliminar realmente este usuario?</value>
+  </data>
+  <data name="Main_BtnLogin" xml:space="preserve">
+    <value>Iniciar sesión</value>
+  </data>
+  <data name="Main_btnSettings" xml:space="preserve">
+    <value>Parámetros</value>
+  </data>
+  <data name="Main_cbManuals" xml:space="preserve">
+    <value>Instrucciones de uso</value>
+  </data>
+  <data name="Main_cbVideoInstructions" xml:space="preserve">
+    <value>Instrucciones en vídeo</value>
+  </data>
+  <data name="Main_InitNotFinished" xml:space="preserve">
+    <value>Iniciado sin completar</value>
+  </data>
+  <data name="Main_lblNavigation" xml:space="preserve">
+    <value>Navegación</value>
+  </data>
+  <data name="Main_lblWaitForConnection" xml:space="preserve">
+    <value>Esperando conexión con el PLC</value>
+  </data>
+  <data name="Main_MachineName" xml:space="preserve">
+    <value>Kroschu - Material de soldadura</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedCaption" xml:space="preserve">
+    <value>Acceso denegado</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedText" xml:space="preserve">
+    <value>No tiene permiso para realizar esta operación.</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionCaption" xml:space="preserve">
+    <value>Selección</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionText" xml:space="preserve">
+    <value>No hay ningún usario seleccionado.</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Caption" xml:space="preserve">
+    <value>Idioma seleccionado</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Text" xml:space="preserve">
+    <value>La HMI se reinicia con el idioma seleccionado.</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Caption" xml:space="preserve">
+    <value>Conexión</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Text" xml:space="preserve">
+    <value>Por favor, conéctese primero.</value>
+  </data>
+  <data name="NavHoriz_btnAllMachinePar" xml:space="preserve">
+    <value>Total de parámetros de la máquina</value>
+  </data>
+  <data name="NavHoriz_btnDVS" xml:space="preserve">
+    <value>DVS</value>
+  </data>
+  <data name="NavHoriz_btnEvaluation" xml:space="preserve">
+    <value>Evaluación</value>
+  </data>
+  <data name="NavHoriz_btnLanguage" xml:space="preserve">
+    <value>Cambio de idioma</value>
+  </data>
+  <data name="NavHoriz_btnMessageArchiv" xml:space="preserve">
+    <value>Archivo de mensajes</value>
+  </data>
+  <data name="NavHoriz_btnMessages" xml:space="preserve">
+    <value>Mensajes</value>
+  </data>
+  <data name="NavHoriz_btnParameters" xml:space="preserve">
+    <value>Parámetro</value>
+  </data>
+  <data name="NavHoriz_btnRFID_IND" xml:space="preserve">
+    <value>RFID IND</value>
+  </data>
+  <data name="NavHoriz_btnRFID_WT" xml:space="preserve">
+    <value>RFID WT</value>
+  </data>
+  <data name="NavHoriz_btnTypePar" xml:space="preserve">
+    <value>Parámetros del tipo</value>
+  </data>
+  <data name="NavHoriz_btnUserManagement" xml:space="preserve">
+    <value>Gestión de usuarios</value>
+  </data>
+  <data name="NavVert_btnCounter" xml:space="preserve">
+    <value>Contador</value>
+  </data>
+  <data name="NavVert_btnEvalStat1" xml:space="preserve">
+    <value>Evaluación 1 (izquierda)</value>
+  </data>
+  <data name="NavVert_btnEvalStat2" xml:space="preserve">
+    <value>Evaluación 2 (derecha)</value>
+  </data>
+  <data name="NavVert_btnGlobal" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="NavVert_btnKROSY" xml:space="preserve">
+    <value>KROSY</value>
+  </data>
+  <data name="NavVert_btnMachine" xml:space="preserve">
+    <value>Máquina</value>
+  </data>
+  <data name="NavVert_btnManualMenu" xml:space="preserve">
+    <value>Funciones manuales</value>
+  </data>
+  <data name="NavVert_btnSettings" xml:space="preserve">
+    <value>Parámetros</value>
+  </data>
+  <data name="NavVert_btnSpecialFunctions" xml:space="preserve">
+    <value>Características especiales</value>
+  </data>
+  <data name="ParamMsgBox_InPLCFound" xml:space="preserve">
+    <value>El grupo de parámetros cargado en el PLC se ha encontrado en la base de datos.</value>
+  </data>
+  <data name="ParamMsgBox_InPLCHeader" xml:space="preserve">
+    <value>Grupo de parámetros en PLC</value>
+  </data>
+  <data name="ParamMsgBox_InPLCNotFound" xml:space="preserve">
+    <value>El grupo de parámetros cargado en PLC NO se ha encontrado en la base de datos.</value>
+    <comment>Neu</comment>
+  </data>
+  <data name="ParamMsgBox_NoParSetAtAll" xml:space="preserve">
+    <value>No se ha encontrado ningún grupo de parámetros en la base de datos.</value>
+  </data>
+  <data name="ParamMsgBox_Selected" xml:space="preserve">
+    <value>Grupo de parámetros seleccionado actualmente:</value>
+  </data>
+  <data name="Paramset_btnCopy" xml:space="preserve">
+    <value>Copiar</value>
+  </data>
+  <data name="Paramset_btnDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="Paramset_btnLoadToPLC" xml:space="preserve">
+    <value>Cargar en PLC</value>
+  </data>
+  <data name="Paramset_btnNew" xml:space="preserve">
+    <value>Nuevo</value>
+  </data>
+  <data name="Paramset_btnRename" xml:space="preserve">
+    <value>Renombrar</value>
+  </data>
+  <data name="Paramset_btnSelectCurrent" xml:space="preserve">
+    <value>Mostrar el grupo de parámetros cargado</value>
+  </data>
+  <data name="Paramset_gbHeader" xml:space="preserve">
+    <value>Grupo de parámetros</value>
+  </data>
+  <data name="Param_btnEditAll" xml:space="preserve">
+    <value>Modificar todos los parámetros</value>
+  </data>
+  <data name="Param_btnExportToCSV" xml:space="preserve">
+    <value>Exportar a CSV</value>
+  </data>
+  <data name="Param_gbHeader" xml:space="preserve">
+    <value>Parámetros (filtrados por la estación actual)</value>
+  </data>
+  <data name="PgLang_Header" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="PgMsgArch_btnFilterApply" xml:space="preserve">
+    <value>Aplicar el filtro</value>
+  </data>
+  <data name="PgMsgArch_btnFilterReset" xml:space="preserve">
+    <value>Restablecer el filtro</value>
+  </data>
+  <data name="PgMsgArch_btnSearch" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="PgMsgArch_btnTakeOverValue" xml:space="preserve">
+    <value>Valor prioritario</value>
+  </data>
+  <data name="PgMsgArch_Condition" xml:space="preserve">
+    <value>Condición</value>
+  </data>
+  <data name="PgMsgArch_Date" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="PgMsgArch_From" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="PgMsgArch_gbFilter" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="PgMsgArch_gbTimeModul" xml:space="preserve">
+    <value>Restricciones de fecha y hora</value>
+  </data>
+  <data name="PgMsgArch_MsgText" xml:space="preserve">
+    <value>Texto del mensaje</value>
+  </data>
+  <data name="PgMsgArch_MsgType" xml:space="preserve">
+    <value>Tipo de mensaje</value>
+  </data>
+  <data name="PgMsgArch_SelectedMsg" xml:space="preserve">
+    <value>Mensaje seleccionado</value>
+  </data>
+  <data name="PgMsgArch_Time" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="PgMsgArch_Until" xml:space="preserve">
+    <value>hasta</value>
+  </data>
+  <data name="ProjEval_DiagramTitle" xml:space="preserve">
+    <value>Curvas de termperatura y potencia</value>
+  </data>
+  <data name="ProjEval_Melt" xml:space="preserve">
+    <value>Fusión </value>
+  </data>
+  <data name="ProjEval_Power" xml:space="preserve">
+    <value>Poder</value>
+  </data>
+  <data name="ProjEval_Solder" xml:space="preserve">
+    <value>Potencia</value>
+  </data>
+  <data name="ProjEval_Temperature" xml:space="preserve">
+    <value>Temperatura</value>
+  </data>
+  <data name="ProjEval_Time" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="ProjKROSY_Amount" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="ProjKROSY_AmountOK" xml:space="preserve">
+    <value>Cantidad OK</value>
+  </data>
+  <data name="ProjKROSY_btnReset" xml:space="preserve">
+    <value>Reiniciar</value>
+  </data>
+  <data name="ProjKROSY_DeviceName" xml:space="preserve">
+    <value>Nombre del dispositivo</value>
+  </data>
+  <data name="ProjKROSY_Heartbeats" xml:space="preserve">
+    <value>Impulsos</value>
+  </data>
+  <data name="ProjKROSY_Hostname" xml:space="preserve">
+    <value>Nombre del invitado</value>
+  </data>
+  <data name="ProjKROSY_InfoKROSY" xml:space="preserve">
+    <value>KROSY Info</value>
+  </data>
+  <data name="ProjKROSY_InfoOrder" xml:space="preserve">
+    <value>Información sobre el pedido</value>
+  </data>
+  <data name="ProjKROSY_InfoPLC" xml:space="preserve">
+    <value>PLC Info</value>
+  </data>
+  <data name="ProjKROSY_IO" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ProjKROSY_IP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="ProjKROSY_KROSY" xml:space="preserve">
+    <value>KROSY</value>
+  </data>
+  <data name="ProjKROSY_KROSYState" xml:space="preserve">
+    <value>KROSY Estado</value>
+  </data>
+  <data name="ProjKROSY_KSIDENT" xml:space="preserve">
+    <value>KSIDENT</value>
+  </data>
+  <data name="ProjKROSY_ksidnet" xml:space="preserve">
+    <value>ksidnet</value>
+  </data>
+  <data name="ProjKROSY_Lang" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="ProjKROSY_Max" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="ProjKROSY_NIO" xml:space="preserve">
+    <value>NOK</value>
+  </data>
+  <data name="ProjKROSY_Object" xml:space="preserve">
+    <value>Objecto</value>
+  </data>
+  <data name="ProjKROSY_On" xml:space="preserve">
+    <value>Encendido</value>
+  </data>
+  <data name="ProjKROSY_Order" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="ProjKROSY_OrderData" xml:space="preserve">
+    <value>Detalles del pedido</value>
+  </data>
+  <data name="ProjKROSY_PLC" xml:space="preserve">
+    <value>PLC</value>
+  </data>
+  <data name="ProjKROSY_PLCState" xml:space="preserve">
+    <value>Estado del PLC</value>
+  </data>
+  <data name="ProjKROSY_Scancode" xml:space="preserve">
+    <value>Escenear código</value>
+  </data>
+  <data name="ProjKROSY_State" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="ProjKROSY_Station" xml:space="preserve">
+    <value>Estación</value>
+  </data>
+  <data name="ProjKROSY_Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="ProjKROSY_Version" xml:space="preserve">
+    <value>Ver versión completa</value>
+  </data>
+  <data name="ProjRFID_Dataversion" xml:space="preserve">
+    <value>Versión de datos</value>
+  </data>
+  <data name="ProjRFID_Inductor" xml:space="preserve">
+    <value>Inductor</value>
+  </data>
+  <data name="ProjRFID_Number" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="ProjRFID_Present" xml:space="preserve">
+    <value>Presente</value>
+  </data>
+  <data name="ProjRFID_WT" xml:space="preserve">
+    <value>WT</value>
+  </data>
+  <data name="ProjWT_btnClearAll" xml:space="preserve">
+    <value>Eliminar todo</value>
+  </data>
+  <data name="ProjWT_btnSetReadData" xml:space="preserve">
+    <value>Definir datos cargados</value>
+  </data>
+  <data name="ProjWT_btnWrite" xml:space="preserve">
+    <value>Escribir en</value>
+  </data>
+  <data name="ProjWT_Clamp" xml:space="preserve">
+    <value>Pinza</value>
+  </data>
+  <data name="ProjWT_CoolingOn" xml:space="preserve">
+    <value>Enfriamiento en</value>
+  </data>
+  <data name="ProjWT_CoolingPower" xml:space="preserve">
+    <value>Rendimiento de enfriamiento</value>
+  </data>
+  <data name="ProjWT_DrawbackLength" xml:space="preserve">
+    <value>Longitud de descarga</value>
+    <comment>Neu</comment>
+  </data>
+  <data name="ProjWT_DVS" xml:space="preserve">
+    <value>DVS</value>
+  </data>
+  <data name="ProjWT_Enable" xml:space="preserve">
+    <value>Activar</value>
+  </data>
+  <data name="ProjWT_Enabled" xml:space="preserve">
+    <value>Autorizado</value>
+  </data>
+  <data name="ProjWT_FeedLength" xml:space="preserve">
+    <value>Longitud de avance [mm]</value>
+  </data>
+  <data name="ProjWT_LegalInductor" xml:space="preserve">
+    <value>Inductor admisible</value>
+  </data>
+  <data name="ProjWT_Name" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="ProjWT_Override" xml:space="preserve">
+    <value>Ir a</value>
+  </data>
+  <data name="ProjWT_PreCoolingOn" xml:space="preserve">
+    <value>Preenfriamiento activado</value>
+  </data>
+  <data name="ProjWT_PreCoolingPower" xml:space="preserve">
+    <value>Rendimiento del preenfriamiento</value>
+  </data>
+  <data name="ProjWT_Speed" xml:space="preserve">
+    <value>Velocidad</value>
+  </data>
+  <data name="ProjWT_TemperatrueMelt" xml:space="preserve">
+    <value>Temperatura de fusión</value>
+  </data>
+  <data name="ProjWT_TemperatureRelease" xml:space="preserve">
+    <value>Temperatura de liberación</value>
+  </data>
+  <data name="ProjWT_TemperatureSolder" xml:space="preserve">
+    <value>Temperatura de soldadura</value>
+  </data>
+  <data name="ProjWT_TemperatureTune" xml:space="preserve">
+    <value>Ajuste de temperatura</value>
+  </data>
+  <data name="Proj_StNameModul1" xml:space="preserve">
+    <value>Módulo 1</value>
+  </data>
+  <data name="Proj_StNameStation1" xml:space="preserve">
+    <value>Estación 1 (izquierda)</value>
+  </data>
+  <data name="Proj_StNameStation2" xml:space="preserve">
+    <value>Estación 2 (derecha)</value>
+  </data>
+  <data name="UcAx_btnReleaseController" xml:space="preserve">
+    <value>Activación del controlador</value>
+  </data>
+  <data name="UcAx_gbRelease" xml:space="preserve">
+    <value>Activar</value>
+  </data>
+  <data name="UcAx_gbReleaseManual" xml:space="preserve">
+    <value>Activa el funcionamiento manual</value>
+  </data>
+  <data name="UcAx_gbStatusLog" xml:space="preserve">
+    <value>Estado (log.)</value>
+  </data>
+  <data name="UcAx_gbStatusPhys" xml:space="preserve">
+    <value>Estado (fís.)</value>
+  </data>
+  <data name="UcAx_lblActPos" xml:space="preserve">
+    <value>Posición real</value>
+  </data>
+  <data name="UcAx_lblActSpeed" xml:space="preserve">
+    <value>Velocidad real</value>
+  </data>
+  <data name="UcAx_lblController" xml:space="preserve">
+    <value>Controlador</value>
+  </data>
+  <data name="UcAx_lblCoupled" xml:space="preserve">
+    <value>Acoplado</value>
+  </data>
+  <data name="UcAx_lblError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="UcAx_lblHasJob" xml:space="preserve">
+    <value>A la orden</value>
+  </data>
+  <data name="UcAx_lblInTargetArea" xml:space="preserve">
+    <value>En el rango de pos.</value>
+  </data>
+  <data name="UcAx_lblInTargetPos" xml:space="preserve">
+    <value>En la posición objetivo</value>
+  </data>
+  <data name="UcAx_lblLimitNeg" xml:space="preserve">
+    <value>Avance -</value>
+  </data>
+  <data name="UcAx_lblLimitPos" xml:space="preserve">
+    <value>Avance +</value>
+  </data>
+  <data name="UcAx_lblMovesNeg" xml:space="preserve">
+    <value>Desplazamientos negativos</value>
+  </data>
+  <data name="UcAx_lblMovesPos" xml:space="preserve">
+    <value>Desplazamientos positivo</value>
+  </data>
+  <data name="UcAx_lblNotMoving" xml:space="preserve">
+    <value>No se desplaza</value>
+  </data>
+  <data name="UcAx_lblOverride" xml:space="preserve">
+    <value>Override</value>
+  </data>
+  <data name="UcAx_lblPosLag" xml:space="preserve">
+    <value>Distancia de seguimieno (mín/máx)</value>
+  </data>
+  <data name="UcAx_lblReady" xml:space="preserve">
+    <value>Listo</value>
+  </data>
+  <data name="UcAx_lblRefOK" xml:space="preserve">
+    <value>Referenciado</value>
+  </data>
+  <data name="UcAx_lblSetPointPos" xml:space="preserve">
+    <value>n.A.</value>
+  </data>
+  <data name="UcAx_lblSetPointSpeed" xml:space="preserve">
+    <value>Velocidad objectivo</value>
+  </data>
+  <data name="UcAx_lblTargetPos" xml:space="preserve">
+    <value>Posición del objective</value>
+  </data>
+  <data name="UcAx_lblTargetSpeed" xml:space="preserve">
+    <value>Velocidad objectivo</value>
+  </data>
+  <data name="UcCyl_Forerun" xml:space="preserve">
+    <value>Prevenir</value>
+  </data>
+  <data name="UcCyl_Restpos" xml:space="preserve">
+    <value>Posición silenciosa</value>
+  </data>
+  <data name="UcCyl_SlideCylOf" xml:space="preserve">
+    <value>Rodillo deslizante de</value>
+  </data>
+  <data name="UcDevOnOff_Output" xml:space="preserve">
+    <value>Recuperado de</value>
+  </data>
+  <data name="UcDevOnOff_PushButton" xml:space="preserve">
+    <value>Pulsar el botón</value>
+  </data>
+  <data name="UcDevOnOff_SwitchLogic" xml:space="preserve">
+    <value>Lógica de conmutación</value>
+  </data>
+  <data name="UcDevOnOff_ToggleSwitch" xml:space="preserve">
+    <value>Interruptor</value>
+  </data>
+  <data name="UcMsgErr_Update" xml:space="preserve">
+    <value>Error durante la actualización </value>
+  </data>
+  <data name="UserAdmin_btnDeleteUser" xml:space="preserve">
+    <value>Eliminar el usuario</value>
+  </data>
+  <data name="UserAdmin_btnEdituser" xml:space="preserve">
+    <value>Modificar el usuario</value>
+  </data>
+  <data name="UserAdmin_btnNewUser" xml:space="preserve">
+    <value>Nuevo usuario</value>
+  </data>
+  <data name="UserAdmin_dgheaderUserlevel" xml:space="preserve">
+    <value>Nivel de autorización</value>
+  </data>
+  <data name="UserAdmin_gbHeader" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="UserLevel_Administrator" xml:space="preserve">
+    <value>Administrador</value>
+  </data>
+  <data name="UserLevel_DefaultUser" xml:space="preserve">
+    <value>Usuario predeterminado</value>
+  </data>
+  <data name="UserLevel_Maintenance" xml:space="preserve">
+    <value>Mantenimiento</value>
+  </data>
+  <data name="UserLevel_Supervisor" xml:space="preserve">
+    <value>Supervisor</value>
+  </data>
+  <data name="ProjWT_CoolingType" xml:space="preserve">
+    <value>Tipo de enfriamiento</value>
+  </data>
+  <data name="QuitSt10NIO" xml:space="preserve">
+    <value>Estación 10 Salir NOK</value>
+  </data>
+  <data name="QuitSt20NIO" xml:space="preserve">
+    <value>Estación 20 Salir NOK</value>
+  </data>
+  <data name="UserLevel_Operator" xml:space="preserve">
+    <value>Operador</value>
+  </data>
+  <data name="UserLevel_Quality" xml:space="preserve">
+    <value>Calidad</value>
+  </data>
+  <data name="UserLevel_Service" xml:space="preserve">
+    <value>Servico</value>
+  </data>
+  <data name="ProjWT_TemperatureOffset" xml:space="preserve">
+    <value>Desviación de temperatura</value>
+  </data>
+  <data name="ProjWT_CopperMeasurement" xml:space="preserve">
+    <value>Medición de cobre</value>
+  </data>
+  <data name="ProjWT_ReheatTime" xml:space="preserve">
+    <value>Tiempo de calentamiento [ms]</value>
+  </data>
+  <data name="NavVart_PartInsertRH" xml:space="preserve">
+    <value>Est. 2 insertada (derecha)</value>
+  </data>
+  <data name="NavVert_PartInsertLH" xml:space="preserve">
+    <value>Est. 1 insertada (izquierda)</value>
+  </data>
+  <data name="NavHoriz_btnOrder" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="NavHoriz_btnOrderArchive" xml:space="preserve">
+    <value>Archivo de pedidos</value>
+  </data>
+  <data name="NavVert_btnOrder" xml:space="preserve">
+    <value>Pedido</value>
+  </data>
+  <data name="PgOrderArchive_activeInPLC" xml:space="preserve">
+    <value>Activo en PLC</value>
+  </data>
+  <data name="PgOrderArchive_AddedBy" xml:space="preserve">
+    <value>Creado por</value>
+  </data>
+  <data name="PgOrderArchive_AddedOn" xml:space="preserve">
+    <value>Creado el</value>
+  </data>
+  <data name="PgOrderArchive_BtnUpdate" xml:space="preserve">
+    <value>Actualizar</value>
+  </data>
+  <data name="PgOrderArchive_CancelledOn" xml:space="preserve">
+    <value>Cancelado el</value>
+  </data>
+  <data name="PgOrderArchive_CartonsDone" xml:space="preserve">
+    <value>Cajas realizadas</value>
+  </data>
+  <data name="PgOrderArchive_CartonsPerPallet" xml:space="preserve">
+    <value>Cajas por palet</value>
+  </data>
+  <data name="PgOrderArchive_FinishedOn" xml:space="preserve">
+    <value>Finalizado el</value>
+  </data>
+  <data name="PgOrderArchive_gb_Header" xml:space="preserve">
+    <value>Historial de pedidos</value>
+  </data>
+  <data name="PgOrderArchive_LoadedOn" xml:space="preserve">
+    <value>Cargado el</value>
+  </data>
+  <data name="PgOrderArchive_paramset" xml:space="preserve">
+    <value>Grupo de parámetros</value>
+  </data>
+  <data name="PgOrderArchive_PartsDone" xml:space="preserve">
+    <value>Cantidad realizada</value>
+  </data>
+  <data name="PgOrderArchive_StartedOn" xml:space="preserve">
+    <value>Iniciado el</value>
+  </data>
+  <data name="PgOrderArchive_State" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="PgOrderArchive_Target" xml:space="preserve">
+    <value>Cantidad objetivo</value>
+  </data>
+  <data name="PgOrder_autoStart" xml:space="preserve">
+    <value>Cargar pedido automáticamente al PLC e iniciarla</value>
+  </data>
+  <data name="PgOrder_BoxesProduced" xml:space="preserve">
+    <value>Cajas hechas:</value>
+  </data>
+  <data name="PgOrder_BtnCancel" xml:space="preserve">
+    <value>Cancelar pedido</value>
+  </data>
+  <data name="PgOrder_BtnDelete" xml:space="preserve">
+    <value>Eliminar pedido seleccionado de la cola</value>
+  </data>
+  <data name="PgOrder_BtnLoad" xml:space="preserve">
+    <value>Cargar e iniciar pedido seleccionado</value>
+  </data>
+  <data name="PgOrder_db_addedbyUser" xml:space="preserve">
+    <value>Creado por:</value>
+  </data>
+  <data name="PgOrder_db_addedonTimestamp" xml:space="preserve">
+    <value>Creado el:</value>
+  </data>
+  <data name="PgOrder_db_cancelledonTimestamp" xml:space="preserve">
+    <value>Cancelado el:</value>
+  </data>
+  <data name="PgOrder_db_Current" xml:space="preserve">
+    <value>Pedido actual</value>
+  </data>
+  <data name="PgOrder_db_finishedonTimestamp" xml:space="preserve">
+    <value>Terminado el:</value>
+  </data>
+  <data name="PgOrder_db_loadedonTimestamp" xml:space="preserve">
+    <value>Cargado en PLC el:</value>
+  </data>
+  <data name="PgOrder_db_Paramsetname" xml:space="preserve">
+    <value>Nombre del grupo de parámetros:</value>
+  </data>
+  <data name="PgOrder_db_Previous" xml:space="preserve">
+    <value>Pedido anterior</value>
+  </data>
+  <data name="PgOrder_db_quantityDone" xml:space="preserve">
+    <value>Piezas hechas:</value>
+  </data>
+  <data name="PgOrder_db_quantityTarget" xml:space="preserve">
+    <value>Cantidad prevista:</value>
+  </data>
+  <data name="PgOrder_db_startedonTimestamp" xml:space="preserve">
+    <value>Iniciado el:</value>
+  </data>
+  <data name="PgOrder_db_State" xml:space="preserve">
+    <value>Estado:</value>
+  </data>
+  <data name="PgOrder_Done" xml:space="preserve">
+    <value>Pedido realizado:</value>
+  </data>
+  <data name="PgOrder_gbDatabase" xml:space="preserve">
+    <value>Historial de pedidos</value>
+  </data>
+  <data name="PgOrder_gbPLC" xml:space="preserve">
+    <value>PLC</value>
+  </data>
+  <data name="PgOrder_gbQueue" xml:space="preserve">
+    <value>Cola</value>
+  </data>
+  <data name="PgOrder_manualStart" xml:space="preserve">
+    <value>Cargar pedido manualmente al PLC e iniciarla</value>
+  </data>
+  <data name="PgOrder_NumberOfPieces" xml:space="preserve">
+    <value>Piezas hechas:</value>
+  </data>
+  <data name="PgOrder_OrderName" xml:space="preserve">
+    <value>Nombre del pedido:</value>
+  </data>
+  <data name="PgOrder_PopUp_Cancel_Header" xml:space="preserve">
+    <value>Cancelar pedido actual</value>
+  </data>
+  <data name="PgOrder_PopUp_Cancel_Text" xml:space="preserve">
+    <value>¿De verdad quieres cancelar el pedido actual?</value>
+  </data>
+  <data name="PgOrder_q_addedBy" xml:space="preserve">
+    <value>Añadido a la cola por el usuario</value>
+  </data>
+  <data name="PgOrder_q_addedOn" xml:space="preserve">
+    <value>Añadido a la cola el</value>
+  </data>
+  <data name="PgOrder_q_cartonsPerPallet" xml:space="preserve">
+    <value>Cajas por palet</value>
+  </data>
+  <data name="PgOrder_q_number" xml:space="preserve">
+    <value>Posición en la cola</value>
+  </data>
+  <data name="PgOrder_q_paramset" xml:space="preserve">
+    <value>Nombre del grupo de parámetros</value>
+  </data>
+  <data name="PgOrder_q_paramsetId" xml:space="preserve">
+    <value>ID del grupo de parámetros</value>
+  </data>
+  <data name="PgOrder_q_quantity" xml:space="preserve">
+    <value>Cantidad prevista</value>
+  </data>
+  <data name="PgOrder_ReadyForNewOrder" xml:space="preserve">
+    <value>Listo para nuevo pedido:</value>
+  </data>
+  <data name="PgOrder_Started" xml:space="preserve">
+    <value>Iniciado el:</value>
+  </data>
+  <data name="PgOrder_strHeaderStart" xml:space="preserve">
+    <value>Inicio de la siguiente pedido</value>
+  </data>
+  <data name="PopUpDeleteOrder_Header" xml:space="preserve">
+    <value>Eliminar pedido</value>
+  </data>
+  <data name="PopUpDeleteOrder_Hint" xml:space="preserve">
+    <value>¿Desea eliminar este pedido?</value>
+  </data>
+  <data name="PopUpNewOrder_Header" xml:space="preserve">
+    <value>Nuevo pedido</value>
+  </data>
+  <data name="PopUpNewOrder_Name" xml:space="preserve">
+    <value>Nombre del pedido:</value>
+  </data>
+  <data name="PopUpStartOrder_BtnStart" xml:space="preserve">
+    <value>Iniciar</value>
+  </data>
+  <data name="PopUpStartOrder_CartonsPerPallet" xml:space="preserve">
+    <value>Cajas por palé:</value>
+  </data>
+  <data name="PopUpStartOrder_CreatedBy" xml:space="preserve">
+    <value>Creado por el usuario:</value>
+  </data>
+  <data name="PopUpStartOrder_CreatedOn" xml:space="preserve">
+    <value>Creado el:</value>
+  </data>
+  <data name="PopUpStartOrder_Header" xml:space="preserve">
+    <value>Cargar e iniciar el siguiente pedido</value>
+  </data>
+  <data name="PopUpStartOrder_Hint" xml:space="preserve">
+    <value>¿Desea iniciar y cargar el pedido?</value>
+  </data>
+  <data name="PopUpStartOrder_NextOrder" xml:space="preserve">
+    <value>Siguiente pedido:</value>
+  </data>
+  <data name="PopUpStartOrder_Paramsetname" xml:space="preserve">
+    <value>Nombre del grupo de parámetros:</value>
+  </data>
+  <data name="PopUpStartOrder_Target" xml:space="preserve">
+    <value>Cantidad objetivo:</value>
+  </data>
+</root>

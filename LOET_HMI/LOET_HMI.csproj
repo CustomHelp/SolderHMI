@@ -1,0 +1,1217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.UI.Xaml.2.4.3\build\Microsoft.UI.Xaml.props" Condition="Exists('..\packages\Microsoft.UI.Xaml.2.4.3\build\Microsoft.UI.Xaml.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F985C58A-D83D-4422-A279-98EC73F7FA04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LOET_HMI</RootNamespace>
+    <AssemblyName>LOET_HMI</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CHP_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.3.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.3.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.6.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.6.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.17\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.EntityFramework.8.0.17\lib\net452\MySql.Data.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot, Version=2.0.0.0, Culture=neutral, PublicKeyToken=638079a8f0bd61e9, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Core.2.0.0\lib\net45\OxyPlot.dll</HintPath>
+    </Reference>
+    <Reference Include="OxyPlot.Wpf, Version=2.0.0.0, Culture=neutral, PublicKeyToken=75e952ba404cdbb0, processorArchitecture=MSIL">
+      <HintPath>..\packages\OxyPlot.Wpf.2.0.0\lib\net45\OxyPlot.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero2, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\PresentationFramework.Aero2.1.0.1\lib\PresentationFramework.Aero2.dll</HintPath>
+    </Reference>
+    <Reference Include="ReachFramework" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>..\packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TwinCAT.Ads, Version=4.4.0.0, Culture=neutral, PublicKeyToken=180016cd49e5e8c3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Beckhoff.TwinCAT.Ads.4.4.7\lib\Net40-full\TwinCAT.Ads.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.3.1.0\lib\net45\Vlc.DotNet.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Core.Interops, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Core.Interops.3.1.0\lib\net45\Vlc.DotNet.Core.Interops.dll</HintPath>
+    </Reference>
+    <Reference Include="Vlc.DotNet.Wpf, Version=3.1.0.0, Culture=neutral, PublicKeyToken=84529da31f4eb963, processorArchitecture=MSIL">
+      <HintPath>..\packages\Vlc.DotNet.Wpf.3.1.0\lib\net45\Vlc.DotNet.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ADS_Com\ADSConnection.cs" />
+    <Compile Include="ADS_Com\ADSService.cs" />
+    <Compile Include="CHP_MySQLModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHP_MySQLModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHP_MySQLModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHP_MySQLModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CHP_MySQLModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Config\HWConstants.cs" />
+    <Compile Include="db_actual.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_config.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_manuallog.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_message.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_orderarchiv.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_orderqueue.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_parameter.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_parameterlog.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_paramset.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_project.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_user.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_userlevel.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="db_userlog.cs">
+      <DependentUpon>CHP_MySQLModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\100_Machine\PgAllPar.xaml.cs">
+      <DependentUpon>PgAllPar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\100_Machine\PgMessages.xaml.cs">
+      <DependentUpon>PgMessages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\200_Order\PgOrder.xaml.cs">
+      <DependentUpon>PgOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\200_Order\PgOrderArchiv.xaml.cs">
+      <DependentUpon>PgOrderArchiv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\200_Order\PgTypPar.xaml.cs">
+      <DependentUpon>PgTypPar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\300_ManualMenü\PgHandmenuLayout.xaml.cs">
+      <DependentUpon>PgHandmenuLayout.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\850_Zaehler\PgCounter.xaml.cs">
+      <DependentUpon>PgCounter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\900_Settings\PgLang.xaml.cs">
+      <DependentUpon>PgLang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\10_Station\PgDVS.xaml.cs">
+      <DependentUpon>PgDVS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\10_Station\PgSt10_ManFunc.xaml.cs">
+      <DependentUpon>PgSt10_ManFunc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\10_Station\PgTempPowerDiagramm.xaml.cs">
+      <DependentUpon>PgTempPowerDiagramm.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\20_Global\PgSt20_ManFunc.xaml.cs">
+      <DependentUpon>PgSt20_ManFunc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\PgCHP.xaml.cs">
+      <DependentUpon>PgCHP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\10_Station\PgSt1_Par.xaml.cs">
+      <DependentUpon>PgSt1_Par.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\800_SpecialFunctions\PgSpecialFunctions.xaml.cs">
+      <DependentUpon>PgSpecialFunctions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\PgCHPManFunc.xaml.cs">
+      <DependentUpon>PgCHPManFunc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\OverviewTemplateTest.xaml.cs">
+      <DependentUpon>OverviewTemplateTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\100_Machine\PgMessageArchiv.xaml.cs">
+      <DependentUpon>PgMessageArchiv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\alt\PgSt1_RFID_WT.xaml.cs">
+      <DependentUpon>PgSt1_RFID_WT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\alt\PgSt2_RFID_WT.xaml.cs">
+      <DependentUpon>PgSt2_RFID_WT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\20_Global\PgCooling.xaml.cs">
+      <DependentUpon>PgCooling.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\alt\PgSt1_RFID_IND.xaml.cs">
+      <DependentUpon>PgSt1_RFID_IND.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\alt\PgSt2_RFID_IND.xaml.cs">
+      <DependentUpon>PgSt2_RFID_IND.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\10_Station\PgRFID_WT.xaml.cs">
+      <DependentUpon>PgRFID_WT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\10_Station\PgRFID_IND.xaml.cs">
+      <DependentUpon>PgRFID_IND.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\999_Project\PgKROSY.xaml.cs">
+      <DependentUpon>PgKROSY.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Graphs\StArrPLC.cs" />
+    <Compile Include="Helper\DBLogger.cs" />
+    <Compile Include="Helper\DBOrderHandler.cs" />
+    <Compile Include="Helper\DBParamHandler.cs" />
+    <Compile Include="Helper\Enums.cs" />
+    <Compile Include="Helper\GlobalVar.cs" />
+    <Compile Include="Helper\MessageArchivist.cs" />
+    <Compile Include="PLC_Com_Classes\999_Project\StKROSY.cs" />
+    <Compile Include="PLC_Com_Classes\StCounter.cs" />
+    <Compile Include="PLC_Com_Classes\999_Project\StHU5000.cs" />
+    <Compile Include="PLC_Com_Classes\StOrder.cs" />
+    <Compile Include="PLC_Com_Classes\999_Project\StRFID_WT.cs" />
+    <Compile Include="PLC_Com_Classes\999_Project\StRFID_IND.cs" />
+    <Compile Include="PLC_Com_Classes\StPLCArraySyncron.cs" />
+    <Compile Include="SystemPages\PopUps\Order\WindowPopUpNewOrder.xaml.cs">
+      <DependentUpon>WindowPopUpNewOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\Order\Window_DeleteOrder.xaml.cs">
+      <DependentUpon>Window_DeleteOrder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\Order\Window_StartNextOrderManually.xaml.cs">
+      <DependentUpon>Window_StartNextOrderManually.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpLogo.xaml.cs">
+      <DependentUpon>WindowPopUpLogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpManualReader.xaml.cs">
+      <DependentUpon>WindowPopUpManualReader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpVideoPlayer.xaml.cs">
+      <DependentUpon>WindowPopUpVideoPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Button\UcButtonHandmenu.xaml.cs">
+      <DependentUpon>UcButtonHandmenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HOPA Devices\UcCylinderMin.xaml.cs">
+      <DependentUpon>UcCylinderMin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HOPA Devices\UcSensBOOL.xaml.cs">
+      <DependentUpon>UcSensBOOL.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LOET\LOET_RFID.cs" />
+    <Compile Include="UserControls\LOET\KROSY\UcStation.xaml.cs">
+      <DependentUpon>UcStation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TimeControl.xaml.cs">
+      <DependentUpon>TimeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcAnimationBusy.xaml.cs">
+      <DependentUpon>UcAnimationBusy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcCounter.xaml.cs">
+      <DependentUpon>UcCounter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LiveCharts\UcLineChart.xaml.cs">
+      <DependentUpon>UcLineChart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LOET\RFID_WT\UcWTVariant.xaml.cs">
+      <DependentUpon>UcWTVariant.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LOET\RFID_IND\UcRFID_IND.xaml.cs">
+      <DependentUpon>UcRFID_IND.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LOET\UcHU5000.xaml.cs">
+      <DependentUpon>UcHU5000.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcTimePickerCHP.xaml.cs">
+      <DependentUpon>UcTimePickerCHP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LOET\RFID_WT\UcRFID_WT.xaml.cs">
+      <DependentUpon>UcRFID_WT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcValueInOut.xaml.cs">
+      <DependentUpon>UcValueInOut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML Converter\DropDownParamConverter.cs" />
+    <Compile Include="XAML Converter\ObjectToTypeStringConverter.cs" />
+    <Compile Include="Helper\Translate.cs" />
+    <Compile Include="Helper\User.cs" />
+    <Compile Include="Helper\Archiv\PageInOutputs.cs" />
+    <Compile Include="Helper\Archiv\PageOverview.cs" />
+    <Compile Include="Helper\Archiv\RENA_FillingDisplays.cs" />
+    <Compile Include="Helper\Archiv\RENA_Message.cs" />
+    <Compile Include="Helper\Archiv\RENA_User.cs" />
+    <Compile Include="Helper\GlobalFunc.cs" />
+    <Compile Include="Helper\DataProjekt.cs" />
+    <Compile Include="XAML Converter\MathConverter.cs" />
+    <Compile Include="PLC_Com_Classes\EnumsPLC.cs" />
+    <Compile Include="PLC_Com_Classes\RelayCommand.cs" />
+    <Compile Include="PLC_Com_Classes\StParamPLCDB.cs" />
+    <Compile Include="PLC_Com_Classes\StBeckhoffAxis.cs" />
+    <Compile Include="PLC_Com_Classes\StButton.cs" />
+    <Compile Include="PLC_Com_Classes\StCylinder.cs" />
+    <Compile Include="PLC_Com_Classes\StDeviceOnOff.cs" />
+    <Compile Include="PLC_Com_Classes\Nicht verwendet %28HOMS, REEB%29\StFluidValve.cs" />
+    <Compile Include="PLC_Com_Classes\Nicht verwendet %28HOMS, REEB%29\StGrCylinderHMI.cs" />
+    <Compile Include="PLC_Com_Classes\StPanelDialog.cs" />
+    <Compile Include="PLC_Com_Classes\StSensor.cs" />
+    <Compile Include="PLC_Com_Classes\Nicht verwendet %28HOMS, REEB%29\ST_MessageWindow.cs" />
+    <Compile Include="SystemPages\PopUps\Parameter\Window_CopyParamSet.xaml.cs">
+      <DependentUpon>Window_CopyParamSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\Parameter\Window_DeleteParamSet.xaml.cs">
+      <DependentUpon>Window_DeleteParamSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\Parameter\Window_NewParamSet.xaml.cs">
+      <DependentUpon>Window_NewParamSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\Parameter\Window_RenameParamSet.xaml.cs">
+      <DependentUpon>Window_RenameParamSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\User\WindowChangeUser.xaml.cs">
+      <DependentUpon>WindowChangeUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\User\WindowNewUser.xaml.cs">
+      <DependentUpon>WindowNewUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\User\Window_DeleteUser.xaml.cs">
+      <DependentUpon>Window_DeleteUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\User\Window_LogIn.xaml.cs">
+      <DependentUpon>Window_LogIn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowInputNum.xaml.cs">
+      <DependentUpon>WindowInputNum.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowInputVirtualKeyboard.xaml.cs">
+      <DependentUpon>WindowInputVirtualKeyboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpButton.xaml.cs">
+      <DependentUpon>WindowPopUpButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpDialog.xaml.cs">
+      <DependentUpon>WindowPopUpDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpSetValue.xaml.cs">
+      <DependentUpon>WindowPopUpSetValue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\PopUps\WindowPopUpTemplate.xaml.cs">
+      <DependentUpon>WindowPopUpTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\HORSCH Archiv\Logs\PageSettManualLog.xaml.cs">
+      <DependentUpon>PageSettManualLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\HORSCH Archiv\Logs\PageSettMessArchiv.xaml.cs">
+      <DependentUpon>PageSettMessArchiv.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\HORSCH Archiv\Logs\PageSettParamLog.xaml.cs">
+      <DependentUpon>PageSettParamLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPages\HORSCH Archiv\Logs\PageSettUserLog.xaml.cs">
+      <DependentUpon>PageSettUserLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Displays\900_Settings\PgUserManagement.xaml.cs">
+      <DependentUpon>PgUserManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Button\UcButton.xaml.cs">
+      <DependentUpon>UcButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Alt\Cylinder.xaml.cs">
+      <DependentUpon>Cylinder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcMessage.xaml.cs">
+      <DependentUpon>UcMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Sonstiges\UcOverviewDispl.xaml.cs">
+      <DependentUpon>UcOverviewDispl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcParamDataGrid.xaml.cs">
+      <DependentUpon>UcParamDataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrHeater.xaml.cs">
+      <DependentUpon>UcGrHeater.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrPumpe.xaml.cs">
+      <DependentUpon>UcGrPumpe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrValve.xaml.cs">
+      <DependentUpon>UcGrValve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcDosingTank.xaml.cs">
+      <DependentUpon>UcDosingTank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcEmergencyStop.xaml.cs">
+      <DependentUpon>UcEmergencyStop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcPressureReducingValve.xaml.cs">
+      <DependentUpon>UcPressureReducingValve.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcSwitchSymbol.xaml.cs">
+      <DependentUpon>UcSwitchSymbol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcTank.xaml.cs">
+      <DependentUpon>UcTank.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\Uc4-3HydrValveAndAnSens.xaml.cs">
+      <DependentUpon>Uc4-3HydrValveAndAnSens.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\UcGrCylControl.xaml.cs">
+      <DependentUpon>UcGrCylControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\UcGrCylinder.xaml.cs">
+      <DependentUpon>UcGrCylinder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\UcGrSensorAnalog.xaml.cs">
+      <DependentUpon>UcGrSensorAnalog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\UcGrSensorDigital.xaml.cs">
+      <DependentUpon>UcGrSensorDigital.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\UcGrSettingAnalogDINT.xaml.cs">
+      <DependentUpon>UcGrSettingAnalogDINT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\UcPipeTriangle.xaml.cs">
+      <DependentUpon>UcPipeTriangle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\UcPnCylControl.xaml.cs">
+      <DependentUpon>UcPnCylControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Graphical UCs\UcValveFunctions.cs" />
+    <Compile Include="UserControls\Frank\UcBarValue.xaml.cs">
+      <DependentUpon>UcBarValue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Frank\UcLamp.xaml.cs">
+      <DependentUpon>UcLamp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Frank\UcLampText.xaml.cs">
+      <DependentUpon>UcLampText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Frank\UcStationButton.xaml.cs">
+      <DependentUpon>UcStationButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Frank\UcValue.xaml.cs">
+      <DependentUpon>UcValue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Alt\TextBoxNewRecipe.cs" />
+    <Compile Include="UserControls\HOPA Devices\UcBeckhoffAxis.xaml.cs">
+      <DependentUpon>UcBeckhoffAxis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcContainer.xaml.cs">
+      <DependentUpon>UcContainer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HOPA Devices\UcCylinder.xaml.cs">
+      <DependentUpon>UcCylinder.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\HOPA Devices\UcDeviceOnOff.xaml.cs">
+      <DependentUpon>UcDeviceOnOff.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Sonstiges\UcInOutsDatagrid.xaml.cs">
+      <DependentUpon>UcInOutsDatagrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UcNavWorksp.xaml.cs">
+      <DependentUpon>UcNavWorksp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Alt\UcSettingDINT.xaml.cs">
+      <DependentUpon>UcSettingDINT.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Alt\UcSettingDINT_RENA.xaml.cs">
+      <DependentUpon>UcSettingDINT_RENA.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Alt\UcSettingString.xaml.cs">
+      <DependentUpon>UcSettingString.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RENA - Sonstiges\UcStateBlock.xaml.cs">
+      <DependentUpon>UcStateBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XAML Converter\EnumOrderStateConverter.cs" />
+    <Compile Include="XAML Converter\YesNoTextConverter.cs" />
+    <Page Include="Displays\100_Machine\PgAllPar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\100_Machine\PgMessages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\200_Order\PgOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\200_Order\PgOrderArchiv.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\200_Order\PgTypPar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\300_ManualMenü\PgHandmenuLayout.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\850_Zaehler\PgCounter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\900_Settings\PgLang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\10_Station\PgDVS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\10_Station\PgSt10_ManFunc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\10_Station\PgTempPowerDiagramm.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Displays\999_Project\20_Global\PgSt20_ManFunc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\PgCHP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\10_Station\PgSt1_Par.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\800_SpecialFunctions\PgSpecialFunctions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\PgCHPManFunc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\OverviewTemplateTest.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Displays\100_Machine\PgMessageArchiv.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\alt\PgSt1_RFID_WT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\alt\PgSt2_RFID_WT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\20_Global\PgCooling.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\alt\PgSt1_RFID_IND.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\alt\PgSt2_RFID_IND.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\10_Station\PgRFID_WT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\10_Station\PgRFID_IND.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Displays\999_Project\PgKROSY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="ResourceDictionaries\CHP_Style_2020.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionaries\GlobConstants.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceDictionaries\StlyesLOET.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\Order\Window_DeleteOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\Order\Window_StartNextOrderManually.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\Parameter\Window_CopyParamSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\Parameter\Window_DeleteParamSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\Parameter\Window_NewParamSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\Parameter\Window_RenameParamSet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\User\WindowChangeUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\User\WindowNewUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\User\Window_DeleteUser.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\User\Window_LogIn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowInputNum.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowInputVirtualKeyboard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\Order\WindowPopUpNewOrder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpLogo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpManualReader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpSetValue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>XamlIntelliSenseFileGenerator</Generator>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\PopUps\WindowPopUpVideoPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemPages\HORSCH Archiv\Logs\PageSettManualLog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\HORSCH Archiv\Logs\PageSettMessArchiv.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\HORSCH Archiv\Logs\PageSettParamLog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SystemPages\HORSCH Archiv\Logs\PageSettUserLog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Displays\900_Settings\PgUserManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Button\UcButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Alt\Cylinder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Button\UcButtonHandmenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\HOPA Devices\UcCylinderMin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\HOPA Devices\UcSensBOOL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LOET\KROSY\UcStation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\TimeControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UcAnimationBusy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UcCounter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LiveCharts\UcLineChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LOET\UcHU5000.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UcMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\RENA - Sonstiges\UcOverviewDispl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\UcParamDataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrHeater.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrPumpe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\DevicesOnOff\UcGrValve.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcDosingTank.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcEmergencyStop.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcPressureReducingValve.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcSwitchSymbol.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\PassiveComponents\UcTank.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\Uc4-3HydrValveAndAnSens.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\UcGrCylControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\UcGrCylinder.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\UcGrSensorAnalog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\UcGrSensorDigital.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\UcGrSettingAnalogDINT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\UcPipeTriangle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Graphical UCs\UcPnCylControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Frank\UcBarValue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Frank\UcLamp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Frank\UcLampText.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Frank\UcStationButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Frank\UcValue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Alt\TextBoxNewRecipe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\HOPA Devices\UcBeckhoffAxis.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\UcContainer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\HOPA Devices\UcCylinder.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\HOPA Devices\UcDeviceOnOff.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\RENA - Sonstiges\UcInOutsDatagrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\UcNavWorksp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Alt\UcSettingDINT.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Alt\UcSettingDINT_RENA.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Alt\UcSettingString.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\RENA - Sonstiges\UcStateBlock.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\LOET\RFID_WT\UcWTVariant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LOET\RFID_IND\UcRFID_IND.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UcTimePickerCHP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\LOET\RFID_WT\UcRFID_WT.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UcValueInOut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.ar-AE.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.fr-FR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.sk-SK.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EntityDeploy Include="CHP_MySQLModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CHP_MySQLModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="CHP_MySQLModel.edmx.diagram">
+      <DependentUpon>CHP_MySQLModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\PressWerkzeug2_90Grad.png" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\PressWerkzeug2_90Grad.tif" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug3.PNG" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug4.png" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug5.png" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug6.jpg" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug6.png" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Presswerkzeug7Paint.png" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\PW.png" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Rena_Logo.PNG" />
+    <Resource Include="UserControls\RENA - Graphical UCs\UcImages\Rena_Logo2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Arrow Down.png" />
+    <Resource Include="Resources\Arrow Left.png" />
+    <Resource Include="Resources\Arrow Right.png" />
+    <Resource Include="Resources\Arrow Up.png" />
+    <Resource Include="Resources\Camera.png" />
+    <Resource Include="Resources\Check Bad.png" />
+    <Resource Include="Resources\Check Gray.png" />
+    <Resource Include="Resources\Check Green.png" />
+    <Resource Include="Resources\CHP.png" />
+    <Resource Include="Resources\CHPBackground1.png" />
+    <Resource Include="Resources\CHPBackground43.png" />
+    <Resource Include="Resources\CHP_Logo.png" />
+    <Resource Include="Resources\ControlBackground.png" />
+    <Resource Include="Resources\Counter1.png" />
+    <Resource Include="Resources\Error.png" />
+    <Resource Include="Resources\flag_deutschland.png" />
+    <Resource Include="Resources\flag_mexiko.png" />
+    <Resource Include="Resources\flag_usa.png" />
+    <Resource Include="Resources\FräserAusrichten.jpg" />
+    <Resource Include="Resources\Go to last Page.png" />
+    <Resource Include="Resources\Info.png" />
+    <Resource Include="Resources\InOut.png" />
+    <Resource Include="Resources\LEDs\11949892282132520602led_circle_green.svg.hi.png" />
+    <Resource Include="Resources\LEDs\1194989228908147779led_circle_grey.svg.thumb.png" />
+    <Resource Include="Resources\LEDs\1194989232184685632led_circle_yellow.svg.hi.png" />
+    <Resource Include="Resources\LEDs\1194989232184685632led_circle_yellow.svg.thumb.png" />
+    <Resource Include="Resources\LEDs\green-led-off-hi.png" />
+    <Resource Include="Resources\LEDs\green-led-off-th.png" />
+    <Resource Include="Resources\LEDs\grey-led-hi.png" />
+    <Resource Include="Resources\LEDs\grey-led-small.png" />
+    <Resource Include="Resources\LEDs\led-green-hi.png" />
+    <Resource Include="Resources\LEDs\led-green-th.png" />
+    <Resource Include="Resources\LEDs\led-yellow-circle-hi.png" />
+    <Resource Include="Resources\LEDs\led-yellow-circle-th.png" />
+    <Resource Include="Resources\LEDs\on-off-green-light-hi.png" />
+    <Resource Include="Resources\LEDs\Snow-PNG-Transparent-Image.png" />
+    <Resource Include="Resources\Loding.png" />
+    <Resource Include="Resources\Log In.png" />
+    <Resource Include="Resources\Log Out.png" />
+    <Resource Include="Resources\Löschen.png" />
+    <Resource Include="Resources\Main.png" />
+    <Resource Include="Resources\Manual Mode - Select.png" />
+    <Resource Include="Resources\Manual Mode - Select_White.png" />
+    <Resource Include="Resources\Manual Mode.png" />
+    <Resource Include="Resources\Manual Mode_White.png" />
+    <Resource Include="Resources\Manual_MainButton.png" />
+    <Resource Include="Resources\Minus 64.png" />
+    <Resource Include="Resources\Minus Minus 64.png" />
+    <Resource Include="Resources\Minus Minus.png" />
+    <Resource Include="Resources\Minus.png" />
+    <Resource Include="Resources\OP0NotAus.png" />
+    <Resource Include="Resources\OP1SystemOFF.png" />
+    <Resource Include="Resources\OP2StartUP.png" />
+    <Resource Include="Resources\OP3Manual.png" />
+    <Resource Include="Resources\OP4StepMode.png" />
+    <Resource Include="Resources\OP5AutomaticOFF.png" />
+    <Resource Include="Resources\OP6AutomaticONLC.png" />
+    <Resource Include="Resources\OP7AutomaticON.png" />
+    <Resource Include="Resources\Order Management.png" />
+    <Resource Include="Resources\Plus 64.png" />
+    <Resource Include="Resources\Plus Plus 64.png" />
+    <Resource Include="Resources\Plus Plus.png" />
+    <Resource Include="Resources\Plus.png" />
+    <Resource Include="Resources\Quit.png" />
+    <Resource Include="Resources\Ref.png" />
+    <Resource Include="Resources\Report.png" />
+    <Resource Include="Resources\Reset.png" />
+    <Resource Include="Resources\Robot_Symb.png" />
+    <Resource Include="Resources\Settings.png" />
+    <Resource Include="Resources\Speichern.png" />
+    <Resource Include="Resources\Start UP.png" />
+    <Resource Include="Resources\Start.png" />
+    <Resource Include="Resources\Start_MainButton.png" />
+    <Resource Include="Resources\Step Mode1 - Kopie.png" />
+    <Resource Include="Resources\Step Mode1.png" />
+    <Resource Include="Resources\Stop.png" />
+    <Resource Include="Resources\StopQuit_MainButton.png" />
+    <Resource Include="Resources\User Managament.png" />
+    <Resource Include="Resources\Warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserControls\Display UCs\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\000_CHP\001_MsgAndPanel\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\000_CHP\009_Counter\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\000_CHP\010_Order\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\000_CHP\020_Button\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\100_Device\101_Axis\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\100_Device\102_Cylinder\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\100_Device\105_Sensor\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\100_Device\120_DeviceOnOff\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\200_Parameter_Settings\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\700_Logging\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\800_User\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\900_General\901_Lamp\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\900_General\910_Value\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\900_General\920_BarValue\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\1_COM\900_General\980_Container\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\000_CHP\001_MsgAndPanel\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\000_CHP\009_Counter\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\000_CHP\010_Order\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\000_CHP\020_Button\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\100_Device\101_Axis\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\100_Device\102_Cylinder\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\100_Device\105_Sensor\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\100_Device\120_DeviceOnOff\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\200_Parameter_Settings\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\700_Logging\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\800_User\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\900_General\901_Lamp\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\900_General\910_Value\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\900_General\920_BarValue\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\2_CONTR\900_General\980_Container\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\000_CHP\001_MsgAndPanel\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\000_CHP\009_Counter\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\000_CHP\010_Order\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\000_CHP\020_Button\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\100_Device\101_Axis\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\100_Device\102_Cylinder\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\100_Device\105_Sensor\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\100_Device\120_DeviceOnOff\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\200_Parameter_Settings\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\700_Logging\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\800_User\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\900_General\901_Lamp\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\900_General\910_Value\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\900_General\920_BarValue\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\3_DIALOG\900_General\980_Container\" />
+    <Folder Include="_NEUE_ORDNERSTRUKTUR\4_PROJECT\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Windows_logo_-_2012_2.png" />
+    <Resource Include="Images\WinLogo_226771.png" />
+    <Resource Include="Images\x-button-icon-20.png" />
+    <Resource Include="Images\x-button-icon-20_2.png" />
+    <Resource Include="Images\Windows_logo_-_2012.png" />
+    <Resource Include="Resources\Logo_mit_Icons.tif" />
+    <Resource Include="Resources\Logo_mit_Icons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\shut-down-icon.png" />
+    <Resource Include="Resources\France.png" />
+    <Resource Include="Images\Global.jpg" />
+    <Resource Include="Resources\Global.jpg" />
+    <Resource Include="Images\Handmenu_ST10.jpg" />
+    <Resource Include="Images\Handmenu_ST20.jpg" />
+    <Resource Include="CHP_Icon.ico" />
+    <Content Include="CHP_MySQLModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CHP_MySQLModel.Context.cs</LastGenOutput>
+      <DependentUpon>CHP_MySQLModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="CHP_MySQLModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CHP_MySQLModel.edmx</DependentUpon>
+      <LastGenOutput>CHP_MySQLModel.cs</LastGenOutput>
+    </Content>
+    <Resource Include="Resources\flag_botswana.png" />
+    <Resource Include="Resources\flag_UAE.png" />
+    <Resource Include="Resources\Filter - Delete 64 h g.gif" />
+    <Resource Include="Resources\x_button.png" />
+    <Resource Include="Resources\arrow_right.png" />
+    <Resource Include="Resources\flag_slovak.png" />
+    <Resource Include="Resources\flag_english.png" />
+    <Resource Include="Resources\flag_deutsch.png" />
+    <Resource Include="Resources\flag_chinese.png" />
+    <Resource Include="Resources\Backward_disabled_grey.png" />
+    <Resource Include="Resources\Backward_disabled_grey_gespiegelt.png" />
+    <Resource Include="Resources\StatusPause_grey_100.png" />
+    <Resource Include="Resources\StatusRun_grey_100.png" />
+    <Resource Include="Resources\StatusStop_grey_100.png" />
+    <Resource Include="Images\Explosionszeichnung9B.png" />
+    <Resource Include="Images\Explosionszeichnung3.png" />
+    <Resource Include="Images\Explosionszeichnung.png" />
+    <Resource Include="Images\Stückliste.PNG" />
+    <Resource Include="Images\Lötanlage_unterer Aufbau.jpg" />
+    <Resource Include="Images\Lötanlage_Kühlung_Zylinder.jpg" />
+    <Resource Include="Images\Drahtvorschub_V2.jpg" />
+    <Resource Include="Resources\ZFGesamt.bmp" />
+    <Resource Include="Resources\ZF Aufnahme.jpg" />
+    <Resource Include="Resources\Untitled.jpg" />
+    <Resource Include="Resources\CHP_Bubbles_White.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.UI.Xaml.2.4.3\build\Microsoft.UI.Xaml.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.UI.Xaml.2.4.3\build\Microsoft.UI.Xaml.props'))" />
+  </Target>
+</Project>

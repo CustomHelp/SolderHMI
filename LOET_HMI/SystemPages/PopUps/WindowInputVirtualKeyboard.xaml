@@ -1,0 +1,105 @@
+﻿<Window x:Class="LOET_HMI.SystemPages.PopUps.VirtualKeyboard"
+        x:Name="keyboardWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LOET_HMI.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="1300" SizeToContent="WidthAndHeight"  ResizeMode="NoResize"
+            Loaded="Window_Loaded" 
+            Unloaded="Window_Unloaded"
+        ContentRendered="KeyboardWindow_ContentRendered"
+            
+        >
+
+    <Grid x:Name="mainGrid" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="130"/>
+            <ColumnDefinition Width="27"/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+
+
+        <TextBox x:Name="txtAnswer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" FontSize="26" Margin="0,0,0,1" HorizontalContentAlignment="Center" GotFocus="TxtAnswer_GotFocus" SelectionChanged="TxtAnswer_SelectionChanged" />
+        <PasswordBox x:Name="pswAnswer" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" FontSize="26" Margin="0,0,0,1" HorizontalContentAlignment="Center" />
+
+        <StackPanel x:Name="spMaxChar" Grid.Row="1" Grid.ColumnSpan="5" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="Max. Zeichen: "                  FontSize="14"  FontStyle="Italic"        />
+            <TextBlock x:Name="tbMaxChar" Text="....."        FontSize="14"  FontStyle="Italic"         />
+        </StackPanel>
+
+
+
+        <StackPanel Grid.Column="0" Grid.Row="2" >
+            <Button x:Name="btnESC"      Content="ESC"          Style="{StaticResource VirtualKeyboardButtonStyle}"  IsCancel="True" Click="BtnESC_Click"     PreviewTouchDown="BtnESC_PreviewTouchDown" HorizontalAlignment="Left" Margin="2,2,0,2" Width="120" />
+            <Button x:Name="btnCapsLock" Content="Caps Lock"    Style="{StaticResource VirtualKeyboardButtonStyle}"                 Click="BtnCapsLock_Click" PreviewTouchDown="BtnCapsLock_PreviewTouchDown" Width="120" />
+            <Button x:Name="btnSymbols"  Content="+ - ( ) / #"  Style="{StaticResource VirtualKeyboardButtonStyle}"                 Click="BtnSymbols_Click"  PreviewTouchDown="BtnSymbols_PreviewTouchDown" Width="120" />
+
+
+        </StackPanel>
+
+
+        <StackPanel x:Name="StackPanelVertical" Grid.Row="2" Grid.Column="1"  >
+
+            <StackPanel x:Name="StackPanel1" Orientation="Horizontal" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="612" />
+            <!-- Height-Prop. und Width-Prop. wird im Code gelöscht -->
+            <StackPanel x:Name="StackPanel2" Orientation="Horizontal" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="612" />
+            <!-- Height-Prop.und Width-Prop. wird im Code gelöscht -->
+            <StackPanel x:Name="StackPanel3" Orientation="Horizontal" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="612" />
+            <!-- Height-Prop. und Width-Prop. wird im Code gelöscht -->
+
+            <StackPanel x:Name="StackPanel4Symb" Orientation="Horizontal" HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="612" />
+            <!-- Height-Prop. und Width-Prop. wird im Code gelöscht -->
+            <StackPanel x:Name="StackPanel5Symb" Orientation="Horizontal" HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="612" />
+            <!-- Height-Prop. und Width-Prop. wird im Code gelöscht -->
+            <StackPanel x:Name="StackPanel6Symb" Orientation="Horizontal" HorizontalAlignment="Center" Height="40" VerticalAlignment="Top" Width="612" />
+            <!-- Height-Prop. und Width-Prop. wird im Code gelöscht -->
+
+
+            <Button x:Name="btnSpace" Content=" "  
+                        Style="{StaticResource VirtualKeyboardButtonStyle}" 
+                        HorizontalAlignment="Stretch"
+                        Width="{Binding ElementName=StackPanel3, Path=ActualWidth}"
+ 
+                        Click="BtnSpace_Click" 
+                        PreviewTouchDown="BtnSpace_PreviewTouchDown"
+                         />
+
+
+        </StackPanel>
+
+        <StackPanel x:Name="StackpanelSpecialButtons" Grid.Column="2" Grid.Row="2" FocusManager.FocusedElement="{Binding ElementName=btnOK}" >
+
+            <Button x:Name="btnClear" Content="Clear" Style="{StaticResource VirtualKeyboardButtonStyle}"   Click="BtnClear_Click" PreviewTouchDown="BtnClear_PreviewTouchDown" Width="120" />
+            <Button x:Name="btnBack"  Content="Backspace"  Style="{StaticResource VirtualKeyboardButtonStyle}" Click="BtnBack_Click" PreviewTouchDown="BtnBack_PreviewTouchDown" Width="120" />
+            <Button x:Name="btnOK"    Content="OK"   Style="{StaticResource VirtualKeyboardButtonStyle}"  Click="BtnOK_Click" PreviewTouchDown="BtnOK_PreviewTouchDown" IsDefault="True"  Height="116" Width="120" Margin="5,2" 
+                    
+                    
+                    ></Button>
+
+        </StackPanel>
+
+        <StackPanel x:Name="stackPanNumVertical" Grid.Row="2" Grid.Column="4"   >
+
+            <StackPanel x:Name="stackPanNumRow3" Orientation="Horizontal" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="300" />
+            <!-- Height-Prop. und Width-Prop. wird im Code gelöscht -->
+            <StackPanel x:Name="stackPanNumRow2" Orientation="Horizontal" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="300" />
+            <!-- Height-Prop.und Width-Prop. wird im Code gelöscht -->
+            <StackPanel x:Name="stackPanNumRow1" Orientation="Horizontal" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="300" />
+            <!-- Height-Prop. und Width-Prop. wird im Code gelöscht -->
+            <StackPanel x:Name="stackPanNumRow0" Orientation="Horizontal" HorizontalAlignment="Left" Height="40" VerticalAlignment="Top" Width="300" />
+            <!-- Height-Prop. und Width-Prop. wird im Code gelöscht -->
+
+        </StackPanel>
+
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns:LOET_HMI="clr-namespace:LOET_HMI"  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"                    
+                    xmlns:System="clr-namespace:System;assembly=mscorlib"
+                    >
+
+    <!-- Display-Größe -->
+    <System:Double x:Key="frameWidth">1650</System:Double>
+    <System:Double x:Key="frameHeight">822.12</System:Double>
+
+
+    <System:Double x:Key="frameWidth_Navigation2Row">1650</System:Double>
+    <System:Double x:Key="frameHeight_Navigation2Row">790.84</System:Double>
+    
+    
+    <!-- Stackpanel-Breite der Meldungs-Datagrids -->
+    <System:Double x:Key="spWidthMsg">666</System:Double>
+
+    <BitmapImage x:Key="DefaultManFuncImg" UriSource="/LOET_HMI;component/Resources/Manual Mode.png" />
+    
+    
+    
+</ResourceDictionary>

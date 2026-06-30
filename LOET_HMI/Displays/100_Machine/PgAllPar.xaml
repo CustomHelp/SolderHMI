@@ -1,0 +1,17 @@
+﻿<Page x:Class="LOET_HMI.Displays.PgAllMP"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LOET_HMI.Displays"
+      mc:Ignorable="d" 
+            
+      d:DesignHeight="{StaticResource frameHeight}" d:DesignWidth="{StaticResource frameWidth}"
+      xmlns:ucGrid="clr-namespace:LOET_HMI"
+      
+      Title="PgAllPar">
+
+    <Grid>
+        <ucGrid:UcParamDataGrid Margin="0,0,0,1" ParameterSetType="Machine"  />
+    </Grid>
+</Page>

@@ -1,0 +1,34 @@
+﻿<Window xmlns:UserControls="clr-namespace:LOET_HMI.UserControls"  
+        x:Class="LOET_HMI.SystemPages.PopUps.WindowPopUpButton"
+        x:Name="winDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOET_HMI.SystemPages.PopUps"
+        mc:Ignorable="d"
+        
+        Title="Bestätigung"        
+        Style="{StaticResource RENA_PopUpStlye}" 
+        WindowStartupLocation="CenterScreen" Height="550"
+        FontSize="18"  Loaded="Window_Loaded" WindowStyle="None">
+    <!-- Das obige "FontSize" Property setzt den Default-FontSize-Wert der Child-Elementen -->
+
+
+    <Grid x:Name="grMyGrid" Height="auto"  >
+        
+        <StackPanel x:Name="spMyStackP" Grid.Row="0" Margin="30,0,30,30" VerticalAlignment="Top" Height="auto">
+            <TextBlock x:Name="tbHeader" Text="Header" TextAlignment="Center" FontSize="24" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="0,20,0,30" TextWrapping="Wrap" />
+           
+            <TextBlock x:Name="tbText1" Text="text1"   HorizontalAlignment="Left"  VerticalAlignment="Top" TextWrapping="Wrap" Margin="0,20,0,0" />
+
+            <Label x:Name="labelOffset1ForBinding" Height="40" />
+        </StackPanel>
+        
+        <StackPanel VerticalAlignment="Bottom" Margin="0,0,0,50">
+            <Button x:Name="btnYes"  Content="OK"    Click="BtnYes_Click" Style="{StaticResource RENA_ButtonStyle_PopUp}"  Width="400" Margin="0,0,0,15"   />
+            <Button x:Name="btnBack" Content="Zurück"  Click="BtnBack_Click" Style="{StaticResource RENA_ButtonStyle_PopUp}"  Width="400" Margin="0,0,0,15"   />
+        </StackPanel>
+        
+    </Grid>
+</Window>

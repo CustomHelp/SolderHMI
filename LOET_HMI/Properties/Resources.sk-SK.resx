@@ -1,0 +1,1095 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="BtnOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="Btn_Delete" xml:space="preserve">
+    <value>Odstrániť</value>
+  </data>
+  <data name="Btn_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Btn_Yes" xml:space="preserve">
+    <value>Áno</value>
+  </data>
+  <data name="ComponentState_Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="ComponentState_ManualMode" xml:space="preserve">
+    <value>Manuálny režim</value>
+  </data>
+  <data name="ComponentState_Message" xml:space="preserve">
+    <value>Hlásenie</value>
+  </data>
+  <data name="ComponentState_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ComponentState_Wait" xml:space="preserve">
+    <value>Čakať</value>
+  </data>
+  <data name="ComponentState_Warning" xml:space="preserve">
+    <value>Výstraha</value>
+  </data>
+  <data name="DataGridAlarm_Come" xml:space="preserve">
+    <value>Ďalej</value>
+  </data>
+  <data name="DataGridAlarm_Gone" xml:space="preserve">
+    <value>Minulý</value>
+  </data>
+  <data name="DataGridAlarm_Stat" xml:space="preserve">
+    <value>Stanica</value>
+  </data>
+  <data name="DataGridAlarm_Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="DataGridParam_CreatedBy" xml:space="preserve">
+    <value>Vytvoril</value>
+  </data>
+  <data name="DataGridParam_CreatedOn" xml:space="preserve">
+    <value>Vytvorené dňa</value>
+  </data>
+  <data name="DataGridParam_Descritpion" xml:space="preserve">
+    <value>Popis</value>
+  </data>
+  <data name="DataGridParam_LastModified" xml:space="preserve">
+    <value>Naposledy zmenené</value>
+  </data>
+  <data name="DataGridParam_Name" xml:space="preserve">
+    <value>Meno</value>
+  </data>
+  <data name="DataGridParam_RangeMax" xml:space="preserve">
+    <value>Rozsah max</value>
+  </data>
+  <data name="DataGridParam_RangeMin" xml:space="preserve">
+    <value>Rozsah min</value>
+  </data>
+  <data name="DataGridParam_Unit" xml:space="preserve">
+    <value>Jednotka</value>
+  </data>
+  <data name="DataGridParam_Value" xml:space="preserve">
+    <value>Hodnota</value>
+  </data>
+  <data name="DataGridParam_ValuePLC" xml:space="preserve">
+    <value>Hodnota PLC</value>
+  </data>
+  <data name="DgCol_Acknowledged" xml:space="preserve">
+    <value>Potvrdený</value>
+    <comment>Neu</comment>
+  </data>
+  <data name="DgCol_AddedBy" xml:space="preserve">
+    <value>Pridal do poradia</value>
+  </data>
+  <data name="DgCol_AddedOn" xml:space="preserve">
+    <value>Pridané do poradia dňa</value>
+  </data>
+  <data name="DgCol_BMK" xml:space="preserve">
+    <value>BMK</value>
+  </data>
+  <data name="DgCol_CancelledOn" xml:space="preserve">
+    <value>Zrušené dňa</value>
+  </data>
+  <data name="DgCol_Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="DgCol_FinishedOn" xml:space="preserve">
+    <value>Skončené dňa</value>
+  </data>
+  <data name="DgCol_Gone" xml:space="preserve">
+    <value>Minulý</value>
+  </data>
+  <data name="DgCol_LoadedOn" xml:space="preserve">
+    <value>Načítané do PLC dňa</value>
+  </data>
+  <data name="DgCol_Message" xml:space="preserve">
+    <value>Hlásenie</value>
+  </data>
+  <data name="DgCol_Modul" xml:space="preserve">
+    <value>Modul</value>
+  </data>
+  <data name="DgCol_Occurred" xml:space="preserve">
+    <value>Došlo</value>
+  </data>
+  <data name="DgCol_OrderName" xml:space="preserve">
+    <value>Názov objednávky</value>
+  </data>
+  <data name="DgCol_ParamSetID" xml:space="preserve">
+    <value>ID sady parametrov</value>
+  </data>
+  <data name="DgCol_ParamSetName" xml:space="preserve">
+    <value>Názov sady parametrov</value>
+  </data>
+  <data name="DgCol_PiecesDone" xml:space="preserve">
+    <value>Kusy hotové</value>
+  </data>
+  <data name="DgCol_PlacedBy" xml:space="preserve">
+    <value>Umiestnil</value>
+  </data>
+  <data name="DgCol_PosInQueue" xml:space="preserve">
+    <value>Pozícia v poradí</value>
+  </data>
+  <data name="DgCol_Quantity" xml:space="preserve">
+    <value>Množstvo</value>
+  </data>
+  <data name="DgCol_StartedOn" xml:space="preserve">
+    <value>Začaté dňa</value>
+  </data>
+  <data name="DgCol_State" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="DgCol_Station" xml:space="preserve">
+    <value>Stanica</value>
+  </data>
+  <data name="DgCol_StillActiveInPLC" xml:space="preserve">
+    <value>Stále aktívne v PLC</value>
+  </data>
+  <data name="DgCol_Target" xml:space="preserve">
+    <value>Cieľové množstvo</value>
+  </data>
+  <data name="DgCol_User" xml:space="preserve">
+    <value>Používateľ</value>
+  </data>
+  <data name="DlgParamset_lblActName" xml:space="preserve">
+    <value>Súčasný názov:</value>
+  </data>
+  <data name="DlgParamset_lblNameOfCopy" xml:space="preserve">
+    <value>Názov kópie:</value>
+  </data>
+  <data name="DlgParamset_lblNameOfOrig" xml:space="preserve">
+    <value>Názov originálu:</value>
+  </data>
+  <data name="DlgParamset_lblNewName" xml:space="preserve">
+    <value>Nový názov:</value>
+  </data>
+  <data name="DlgParamset_lblReallyDelete" xml:space="preserve">
+    <value>Naozaj chcete odstrániť túto sadu parametrov?</value>
+  </data>
+  <data name="DlgParamset_lblTitleCopy" xml:space="preserve">
+    <value>Skopírujte sadu parametrov</value>
+  </data>
+  <data name="DlgParamset_lblTitleDelete" xml:space="preserve">
+    <value>Odstráňte sadu parametrov</value>
+  </data>
+  <data name="DlgParamset_lblTitleNew" xml:space="preserve">
+    <value>Nová sada parametrov</value>
+  </data>
+  <data name="DlgParamset_lblTitleRename" xml:space="preserve">
+    <value>Premenovať sadu parametrov</value>
+  </data>
+  <data name="DlgSetVal_btnSet" xml:space="preserve">
+    <value>Sada</value>
+    <comment>Neu</comment>
+  </data>
+  <data name="DlgSetVal_tbCurrentVal" xml:space="preserve">
+    <value>Aktuálna hodnota:</value>
+  </data>
+  <data name="DlgSetVal_tbNewVal" xml:space="preserve">
+    <value>Nová hodnota:</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMax" xml:space="preserve">
+    <value>Rozsah max:</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMin" xml:space="preserve">
+    <value>Rozsah min:</value>
+  </data>
+  <data name="DlgSetVal_Titel" xml:space="preserve">
+    <value>Nastavte hodnotu</value>
+  </data>
+  <data name="DlgUser_lblSelectAUser" xml:space="preserve">
+    <value>Vyberte používateľa</value>
+  </data>
+  <data name="DlgUser_lblUserlevel" xml:space="preserve">
+    <value>Úroveň používateľa</value>
+  </data>
+  <data name="DlgUser_lblUsername" xml:space="preserve">
+    <value>Meno používateľa</value>
+  </data>
+  <data name="DlgUser_tbName" xml:space="preserve">
+    <value>Žiadny používateľ</value>
+  </data>
+  <data name="DlgUser_tbPasswort" xml:space="preserve">
+    <value>Heslo</value>
+  </data>
+  <data name="DlgUser_txtReallyDelete" xml:space="preserve">
+    <value>Naozaj chcete odstrániť tohto používateľa?</value>
+  </data>
+  <data name="Main_BtnLogin" xml:space="preserve">
+    <value>Prihlásenie</value>
+  </data>
+  <data name="Main_btnSettings" xml:space="preserve">
+    <value>Nastavenia</value>
+  </data>
+  <data name="Main_cbManuals" xml:space="preserve">
+    <value>Manuals</value>
+    <comment>X</comment>
+  </data>
+  <data name="Main_cbVideoInstructions" xml:space="preserve">
+    <value>Video-Instructions</value>
+    <comment>X</comment>
+  </data>
+  <data name="Main_InitNotFinished" xml:space="preserve">
+    <value>Init. nedokončené</value>
+  </data>
+  <data name="Main_lblNavigation" xml:space="preserve">
+    <value>Navigácia</value>
+  </data>
+  <data name="Main_lblWaitForConnection" xml:space="preserve">
+    <value>Počkajte na pripojenie k PLC</value>
+  </data>
+  <data name="Main_MachineName" xml:space="preserve">
+    <value>Kroschu - spájkovacie zariadenie</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedCaption" xml:space="preserve">
+    <value>Prístup zamietnutý</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedText" xml:space="preserve">
+    <value>Na vykonanie tejto operácie nemáte povolenie.</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionCaption" xml:space="preserve">
+    <value>Výber</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionText" xml:space="preserve">
+    <value>Nie je vybraté žiadne zadanie.</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Caption" xml:space="preserve">
+    <value>Vybratý jazyk</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Text" xml:space="preserve">
+    <value>HMI sa reštartuje s vybraným jazykom. Prosím čakajte.</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Caption" xml:space="preserve">
+    <value>Prihlásenie</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Text" xml:space="preserve">
+    <value>Prosím najprv sa prihláste</value>
+  </data>
+  <data name="NavHoriz_btnAllMachinePar" xml:space="preserve">
+    <value>Všetky parametre stroja</value>
+  </data>
+  <data name="NavHoriz_btnDVS" xml:space="preserve">
+    <value>DVS</value>
+  </data>
+  <data name="NavHoriz_btnEvaluation" xml:space="preserve">
+    <value>Vyhodnotenie</value>
+  </data>
+  <data name="NavHoriz_btnLanguage" xml:space="preserve">
+    <value>Jazyk</value>
+  </data>
+  <data name="NavHoriz_btnMessageArchiv" xml:space="preserve">
+    <value>Archív hlásení</value>
+  </data>
+  <data name="NavHoriz_btnMessages" xml:space="preserve">
+    <value>Hlásenia</value>
+  </data>
+  <data name="NavHoriz_btnParameters" xml:space="preserve">
+    <value>Parametre</value>
+  </data>
+  <data name="NavHoriz_btnRFID_IND" xml:space="preserve">
+    <value>RFID IND</value>
+  </data>
+  <data name="NavHoriz_btnRFID_WT" xml:space="preserve">
+    <value>RFID WT</value>
+  </data>
+  <data name="NavHoriz_btnTypePar" xml:space="preserve">
+    <value>Druh parametra</value>
+  </data>
+  <data name="NavHoriz_btnUserManagement" xml:space="preserve">
+    <value>Správa používateľov</value>
+  </data>
+  <data name="NavVert_btnCounter" xml:space="preserve">
+    <value>Počítadlo</value>
+  </data>
+  <data name="NavVert_btnEvalStat1" xml:space="preserve">
+    <value>Vyhodnotenie 1 (vľavo)</value>
+  </data>
+  <data name="NavVert_btnEvalStat2" xml:space="preserve">
+    <value>Vyhodnotenie 2 (vpravo)</value>
+  </data>
+  <data name="NavVert_btnGlobal" xml:space="preserve">
+    <value>Globálne</value>
+  </data>
+  <data name="NavVert_btnKROSY" xml:space="preserve">
+    <value>KROSY</value>
+  </data>
+  <data name="NavVert_btnMachine" xml:space="preserve">
+    <value>Stroj</value>
+  </data>
+  <data name="NavVert_btnManualMenu" xml:space="preserve">
+    <value>Manuál ponuka</value>
+  </data>
+  <data name="NavVert_btnSettings" xml:space="preserve">
+    <value>Nastavenia</value>
+  </data>
+  <data name="NavVert_btnSpecialFunctions" xml:space="preserve">
+    <value>Špeciálne funkcie</value>
+  </data>
+  <data name="ParamMsgBox_InPLCFound" xml:space="preserve">
+    <value>Sada parametrov načítaná do PLC sa našla v databáze.</value>
+  </data>
+  <data name="ParamMsgBox_InPLCHeader" xml:space="preserve">
+    <value>Sada parametrov v PLC</value>
+  </data>
+  <data name="ParamMsgBox_InPLCNotFound" xml:space="preserve">
+    <value>Sada parametrov načítaná do PLC sa v databáze NENAŠLA.</value>
+    <comment>Neu</comment>
+  </data>
+  <data name="ParamMsgBox_NoParSetAtAll" xml:space="preserve">
+    <value>V databáze sa nenašla žiadna sada parametrov.</value>
+  </data>
+  <data name="ParamMsgBox_Selected" xml:space="preserve">
+    <value>Aktuálne zvolená sada parametrov je:</value>
+  </data>
+  <data name="Paramset_btnCopy" xml:space="preserve">
+    <value>Kopírovať</value>
+  </data>
+  <data name="Paramset_btnDelete" xml:space="preserve">
+    <value>Odstrániť</value>
+  </data>
+  <data name="Paramset_btnLoadToPLC" xml:space="preserve">
+    <value>Načítať do PLC</value>
+  </data>
+  <data name="Paramset_btnNew" xml:space="preserve">
+    <value>Nový</value>
+  </data>
+  <data name="Paramset_btnRename" xml:space="preserve">
+    <value>Premenovať</value>
+  </data>
+  <data name="Paramset_btnSelectCurrent" xml:space="preserve">
+    <value>Zobraziť načítanú sadu parametrov</value>
+  </data>
+  <data name="Paramset_gbHeader" xml:space="preserve">
+    <value>Sady parametrov</value>
+  </data>
+  <data name="Param_btnEditAll" xml:space="preserve">
+    <value>Upravte všetky parametre</value>
+  </data>
+  <data name="Param_btnExportToCSV" xml:space="preserve">
+    <value>Export do CSV</value>
+  </data>
+  <data name="Param_gbHeader" xml:space="preserve">
+    <value>Parameter (filtrovaný na aktuálnu stanicu)</value>
+  </data>
+  <data name="PgLang_Header" xml:space="preserve">
+    <value>Jazyk</value>
+  </data>
+  <data name="PgMsgArch_btnFilterApply" xml:space="preserve">
+    <value>Použiť filter</value>
+  </data>
+  <data name="PgMsgArch_btnFilterReset" xml:space="preserve">
+    <value>Reset filter</value>
+  </data>
+  <data name="PgMsgArch_btnSearch" xml:space="preserve">
+    <value>Vyhľadávanie</value>
+  </data>
+  <data name="PgMsgArch_btnTakeOverValue" xml:space="preserve">
+    <value>Prebrať hodnotu</value>
+  </data>
+  <data name="PgMsgArch_Condition" xml:space="preserve">
+    <value>Podmienka</value>
+  </data>
+  <data name="PgMsgArch_Date" xml:space="preserve">
+    <value>Dátum</value>
+  </data>
+  <data name="PgMsgArch_From" xml:space="preserve">
+    <value>Z</value>
+  </data>
+  <data name="PgMsgArch_gbFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="PgMsgArch_gbTimeModul" xml:space="preserve">
+    <value>Obmedzenie času a dátumu</value>
+  </data>
+  <data name="PgMsgArch_MsgText" xml:space="preserve">
+    <value>Text hlásenia</value>
+  </data>
+  <data name="PgMsgArch_MsgType" xml:space="preserve">
+    <value>Druh hlásenia</value>
+  </data>
+  <data name="PgMsgArch_SelectedMsg" xml:space="preserve">
+    <value>Vybraté hlásenie</value>
+  </data>
+  <data name="PgMsgArch_Time" xml:space="preserve">
+    <value>Čas</value>
+  </data>
+  <data name="PgMsgArch_Until" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="ProjEval_DiagramTitle" xml:space="preserve">
+    <value>Krivky teploty a výkonu</value>
+  </data>
+  <data name="ProjEval_Melt" xml:space="preserve">
+    <value>Tavenie</value>
+  </data>
+  <data name="ProjEval_Power" xml:space="preserve">
+    <value>Výkon</value>
+  </data>
+  <data name="ProjEval_Solder" xml:space="preserve">
+    <value>Spájka</value>
+  </data>
+  <data name="ProjEval_Temperature" xml:space="preserve">
+    <value>Teplota</value>
+  </data>
+  <data name="ProjEval_Time" xml:space="preserve">
+    <value>Čas</value>
+  </data>
+  <data name="ProjKROSY_Amount" xml:space="preserve">
+    <value>Množstvo</value>
+  </data>
+  <data name="ProjKROSY_AmountOK" xml:space="preserve">
+    <value>Množstvo OK</value>
+  </data>
+  <data name="ProjKROSY_btnReset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="ProjKROSY_DeviceName" xml:space="preserve">
+    <value>Názov zariadenia</value>
+  </data>
+  <data name="ProjKROSY_Heartbeats" xml:space="preserve">
+    <value>Pulzy</value>
+  </data>
+  <data name="ProjKROSY_Hostname" xml:space="preserve">
+    <value>Meno hosťa</value>
+  </data>
+  <data name="ProjKROSY_InfoKROSY" xml:space="preserve">
+    <value>KROSY Info</value>
+  </data>
+  <data name="ProjKROSY_InfoOrder" xml:space="preserve">
+    <value>Info objednávka</value>
+  </data>
+  <data name="ProjKROSY_InfoPLC" xml:space="preserve">
+    <value>PLC Info</value>
+  </data>
+  <data name="ProjKROSY_IO" xml:space="preserve">
+    <value>IO</value>
+  </data>
+  <data name="ProjKROSY_IP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="ProjKROSY_KROSY" xml:space="preserve">
+    <value>KROSY</value>
+  </data>
+  <data name="ProjKROSY_KROSYState" xml:space="preserve">
+    <value>KROSY stav</value>
+  </data>
+  <data name="ProjKROSY_KSIDENT" xml:space="preserve">
+    <value>KSIDENT</value>
+  </data>
+  <data name="ProjKROSY_ksidnet" xml:space="preserve">
+    <value>ksidnet</value>
+  </data>
+  <data name="ProjKROSY_Lang" xml:space="preserve">
+    <value>Jazyk</value>
+  </data>
+  <data name="ProjKROSY_Max" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="ProjKROSY_NIO" xml:space="preserve">
+    <value>NIO</value>
+  </data>
+  <data name="ProjKROSY_Object" xml:space="preserve">
+    <value>Objekt</value>
+  </data>
+  <data name="ProjKROSY_On" xml:space="preserve">
+    <value>Dňa</value>
+  </data>
+  <data name="ProjKROSY_Order" xml:space="preserve">
+    <value>Objednávka</value>
+  </data>
+  <data name="ProjKROSY_OrderData" xml:space="preserve">
+    <value>Objednávka údaje</value>
+  </data>
+  <data name="ProjKROSY_PLC" xml:space="preserve">
+    <value>PLC</value>
+  </data>
+  <data name="ProjKROSY_PLCState" xml:space="preserve">
+    <value>PLC stav</value>
+  </data>
+  <data name="ProjKROSY_Scancode" xml:space="preserve">
+    <value>Skenovať kód</value>
+  </data>
+  <data name="ProjKROSY_State" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="ProjKROSY_Station" xml:space="preserve">
+    <value>Stanica</value>
+  </data>
+  <data name="ProjKROSY_Type" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="ProjKROSY_Version" xml:space="preserve">
+    <value>Verzia</value>
+  </data>
+  <data name="ProjRFID_Dataversion" xml:space="preserve">
+    <value>Verzia údajov</value>
+  </data>
+  <data name="ProjRFID_Inductor" xml:space="preserve">
+    <value>Induktor</value>
+  </data>
+  <data name="ProjRFID_Number" xml:space="preserve">
+    <value>Číslo</value>
+  </data>
+  <data name="ProjRFID_Present" xml:space="preserve">
+    <value>Prítomný</value>
+  </data>
+  <data name="ProjRFID_WT" xml:space="preserve">
+    <value>WT</value>
+  </data>
+  <data name="ProjWT_btnClearAll" xml:space="preserve">
+    <value>Vymazať všetko</value>
+  </data>
+  <data name="ProjWT_btnSetReadData" xml:space="preserve">
+    <value>Nastaviť načítané údaje</value>
+  </data>
+  <data name="ProjWT_btnWrite" xml:space="preserve">
+    <value>Napísať</value>
+  </data>
+  <data name="ProjWT_Clamp" xml:space="preserve">
+    <value>Svorka</value>
+  </data>
+  <data name="ProjWT_CoolingOn" xml:space="preserve">
+    <value>Chladenie ZAP</value>
+  </data>
+  <data name="ProjWT_CoolingPower" xml:space="preserve">
+    <value>Chladiaci výkon</value>
+  </data>
+  <data name="ProjWT_DrawbackLength" xml:space="preserve">
+    <value>Stiahnuť dĺžku</value>
+    <comment>Neu</comment>
+  </data>
+  <data name="ProjWT_DVS" xml:space="preserve">
+    <value>DVS</value>
+  </data>
+  <data name="ProjWT_Enable" xml:space="preserve">
+    <value>Povoliť</value>
+  </data>
+  <data name="ProjWT_Enabled" xml:space="preserve">
+    <value>Povolené</value>
+  </data>
+  <data name="ProjWT_FeedLength" xml:space="preserve">
+    <value>Dĺžka podávania</value>
+  </data>
+  <data name="ProjWT_LegalInductor" xml:space="preserve">
+    <value>Povolený induktor</value>
+  </data>
+  <data name="ProjWT_Name" xml:space="preserve">
+    <value>Meno</value>
+  </data>
+  <data name="ProjWT_Override" xml:space="preserve">
+    <value>Prejsť</value>
+  </data>
+  <data name="ProjWT_PreCoolingOn" xml:space="preserve">
+    <value>Predchladenie ZAP</value>
+  </data>
+  <data name="ProjWT_PreCoolingPower" xml:space="preserve">
+    <value>Predchladenie výkon</value>
+  </data>
+  <data name="ProjWT_Speed" xml:space="preserve">
+    <value>Rýchlosť</value>
+  </data>
+  <data name="ProjWT_TemperatrueMelt" xml:space="preserve">
+    <value>Teplota tavenia</value>
+  </data>
+  <data name="ProjWT_TemperatureRelease" xml:space="preserve">
+    <value>Teplota uvoľnenia</value>
+  </data>
+  <data name="ProjWT_TemperatureSolder" xml:space="preserve">
+    <value>Teplota spájkovania</value>
+  </data>
+  <data name="ProjWT_TemperatureTune" xml:space="preserve">
+    <value>Teplota Tune</value>
+  </data>
+  <data name="Proj_StNameModul1" xml:space="preserve">
+    <value>Modul 1</value>
+  </data>
+  <data name="Proj_StNameStation1" xml:space="preserve">
+    <value>Stanica 1 (vľavo)</value>
+  </data>
+  <data name="Proj_StNameStation2" xml:space="preserve">
+    <value>Stanica 2 (vpravo)</value>
+  </data>
+  <data name="UcAx_btnReleaseController" xml:space="preserve">
+    <value>Uvoľniť ovládač</value>
+  </data>
+  <data name="UcAx_gbRelease" xml:space="preserve">
+    <value>Uvoľniť</value>
+  </data>
+  <data name="UcAx_gbReleaseManual" xml:space="preserve">
+    <value>Uvoľniť manuálne</value>
+  </data>
+  <data name="UcAx_gbStatusLog" xml:space="preserve">
+    <value>Stav (log.)</value>
+  </data>
+  <data name="UcAx_gbStatusPhys" xml:space="preserve">
+    <value>Stav (fyz.)</value>
+  </data>
+  <data name="UcAx_lblActPos" xml:space="preserve">
+    <value>Akt. poloh.</value>
+  </data>
+  <data name="UcAx_lblActSpeed" xml:space="preserve">
+    <value>Akt. rýchlosť</value>
+  </data>
+  <data name="UcAx_lblController" xml:space="preserve">
+    <value>Kontrolér</value>
+  </data>
+  <data name="UcAx_lblCoupled" xml:space="preserve">
+    <value>Spojený</value>
+  </data>
+  <data name="UcAx_lblError" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="UcAx_lblHasJob" xml:space="preserve">
+    <value>Má prácu</value>
+  </data>
+  <data name="UcAx_lblInTargetArea" xml:space="preserve">
+    <value>Cieľová oblasť</value>
+  </data>
+  <data name="UcAx_lblInTargetPos" xml:space="preserve">
+    <value>Cieľová poz.</value>
+  </data>
+  <data name="UcAx_lblLimitNeg" xml:space="preserve">
+    <value>Obmedzenie -</value>
+  </data>
+  <data name="UcAx_lblLimitPos" xml:space="preserve">
+    <value>Obmedzenie +</value>
+  </data>
+  <data name="UcAx_lblMovesNeg" xml:space="preserve">
+    <value>Pohyby negatívne</value>
+  </data>
+  <data name="UcAx_lblMovesPos" xml:space="preserve">
+    <value>Pohyby pozitívne</value>
+  </data>
+  <data name="UcAx_lblNotMoving" xml:space="preserve">
+    <value>Nie je pohyb</value>
+  </data>
+  <data name="UcAx_lblOverride" xml:space="preserve">
+    <value>Prejsť</value>
+  </data>
+  <data name="UcAx_lblPosLag" xml:space="preserve">
+    <value>Oneskorenie polohy</value>
+  </data>
+  <data name="UcAx_lblReady" xml:space="preserve">
+    <value>Pripravený</value>
+  </data>
+  <data name="UcAx_lblRefOK" xml:space="preserve">
+    <value>Referencovaný</value>
+  </data>
+  <data name="UcAx_lblSetPointPos" xml:space="preserve">
+    <value>Žiadaná poloha</value>
+  </data>
+  <data name="UcAx_lblSetPointSpeed" xml:space="preserve">
+    <value>Žiadaná rýchlosť</value>
+  </data>
+  <data name="UcAx_lblTargetPos" xml:space="preserve">
+    <value>Skutočná poz</value>
+  </data>
+  <data name="UcAx_lblTargetSpeed" xml:space="preserve">
+    <value>Skutočná rýchlosť</value>
+  </data>
+  <data name="UcCyl_Forerun" xml:space="preserve">
+    <value>Predstih</value>
+  </data>
+  <data name="UcCyl_Restpos" xml:space="preserve">
+    <value>Kľudová poloha</value>
+  </data>
+  <data name="UcCyl_SlideCylOf" xml:space="preserve">
+    <value>Posuvný valec z</value>
+  </data>
+  <data name="UcDevOnOff_Output" xml:space="preserve">
+    <value>Výstup</value>
+  </data>
+  <data name="UcDevOnOff_PushButton" xml:space="preserve">
+    <value>Stlačte tlačidlo</value>
+  </data>
+  <data name="UcDevOnOff_SwitchLogic" xml:space="preserve">
+    <value>Prepnúť logiku</value>
+  </data>
+  <data name="UcDevOnOff_ToggleSwitch" xml:space="preserve">
+    <value>Prepínač</value>
+  </data>
+  <data name="UcMsgErr_Update" xml:space="preserve">
+    <value>Chyba pri aktualizácii</value>
+  </data>
+  <data name="UserAdmin_btnDeleteUser" xml:space="preserve">
+    <value>Odstrániť používateľa</value>
+  </data>
+  <data name="UserAdmin_btnEdituser" xml:space="preserve">
+    <value>Upraviť používateľa</value>
+  </data>
+  <data name="UserAdmin_btnNewUser" xml:space="preserve">
+    <value>Nový používateľ</value>
+  </data>
+  <data name="UserAdmin_dgheaderUserlevel" xml:space="preserve">
+    <value>Úroveň používateľa</value>
+  </data>
+  <data name="UserAdmin_gbHeader" xml:space="preserve">
+    <value>Používateľ</value>
+  </data>
+  <data name="UserLevel_Administrator" xml:space="preserve">
+    <value>Administrátor</value>
+  </data>
+  <data name="UserLevel_DefaultUser" xml:space="preserve">
+    <value>Predvolený používateľ</value>
+  </data>
+  <data name="UserLevel_Maintenance" xml:space="preserve">
+    <value>Údržba</value>
+  </data>
+  <data name="UserLevel_Supervisor" xml:space="preserve">
+    <value>Supervízor</value>
+  </data>
+  <data name="ProjWT_CoolingType" xml:space="preserve">
+    <value>Cooling type</value>
+  </data>
+  <data name="QuitSt10NIO" xml:space="preserve">
+    <value>Station 10 Quit NOK</value>
+  </data>
+  <data name="QuitSt20NIO" xml:space="preserve">
+    <value>Station 20 Quit NOK</value>
+  </data>
+  <data name="UserLevel_Operator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="UserLevel_Quality" xml:space="preserve">
+    <value>Quality</value>
+  </data>
+  <data name="UserLevel_Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="ProjWT_TemperatureOffset" xml:space="preserve">
+    <value>Teplota Offset</value>
+  </data>
+  <data name="ProjWT_CopperMeasurement" xml:space="preserve">
+    <value>Copper Measurement</value>
+  </data>
+  <data name="ProjWT_ReheatTime" xml:space="preserve">
+    <value>Reheat Time [ms]</value>
+  </data>
+  <data name="NavVart_PartInsertRH" xml:space="preserve">
+    <value>St. 2 vložená (vpravo)</value>
+  </data>
+  <data name="NavVert_PartInsertLH" xml:space="preserve">
+    <value>St. 1 vložená (vľavo)</value>
+  </data>
+  <data name="NavHoriz_btnOrder" xml:space="preserve">
+    <value>Objednávka</value>
+  </data>
+  <data name="NavHoriz_btnOrderArchive" xml:space="preserve">
+    <value>Archív objednávok</value>
+  </data>
+  <data name="NavVert_btnOrder" xml:space="preserve">
+    <value>Objednávka</value>
+  </data>
+  <data name="PgOrderArchive_activeInPLC" xml:space="preserve">
+    <value>Aktuálne aktívne v PLC</value>
+  </data>
+  <data name="PgOrderArchive_AddedBy" xml:space="preserve">
+    <value>Pridané do fronty používateľom</value>
+  </data>
+  <data name="PgOrderArchive_AddedOn" xml:space="preserve">
+    <value>Pridané do fronty v čase</value>
+  </data>
+  <data name="PgOrderArchive_BtnUpdate" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="PgOrderArchive_CancelledOn" xml:space="preserve">
+    <value>Zrušené v čase</value>
+  </data>
+  <data name="PgOrderArchive_CartonsDone" xml:space="preserve">
+    <value>Vykonané krabice</value>
+  </data>
+  <data name="PgOrderArchive_CartonsPerPallet" xml:space="preserve">
+    <value>Krabice na palete</value>
+  </data>
+  <data name="PgOrderArchive_FinishedOn" xml:space="preserve">
+    <value>Dokončené v čase</value>
+  </data>
+  <data name="PgOrderArchive_gb_Header" xml:space="preserve">
+    <value>História načítaných objednávok</value>
+  </data>
+  <data name="PgOrderArchive_LoadedOn" xml:space="preserve">
+    <value>Načítané do PLC v čase</value>
+  </data>
+  <data name="PgOrderArchive_paramset" xml:space="preserve">
+    <value>Názov parametrov</value>
+  </data>
+  <data name="PgOrderArchive_PartsDone" xml:space="preserve">
+    <value>Vykonané časti</value>
+  </data>
+  <data name="PgOrderArchive_StartedOn" xml:space="preserve">
+    <value>Spustené v čase</value>
+  </data>
+  <data name="PgOrderArchive_State" xml:space="preserve">
+    <value>Stav</value>
+  </data>
+  <data name="PgOrderArchive_Target" xml:space="preserve">
+    <value>Cieľové množstvo</value>
+  </data>
+  <data name="PgOrder_autoStart" xml:space="preserve">
+    <value>Načítať a spustiť ďalšiu objednávku automaticky</value>
+  </data>
+  <data name="PgOrder_BoxesProduced" xml:space="preserve">
+    <value>Vyrobené kartóny:</value>
+  </data>
+  <data name="PgOrder_BtnCancel" xml:space="preserve">
+    <value>Zrušiť objednávku</value>
+  </data>
+  <data name="PgOrder_BtnDelete" xml:space="preserve">
+    <value>Odstrániť objednávku</value>
+  </data>
+  <data name="PgOrder_BtnLoad" xml:space="preserve">
+    <value>Načítať a spustiť ďalšiu objednávku</value>
+  </data>
+  <data name="PgOrder_db_addedbyUser" xml:space="preserve">
+    <value>Pridané do čakárne používateľom:</value>
+  </data>
+  <data name="PgOrder_db_addedonTimestamp" xml:space="preserve">
+    <value>Pridané do fronty:</value>
+  </data>
+  <data name="PgOrder_db_cancelledonTimestamp" xml:space="preserve">
+    <value>Zrušené:</value>
+  </data>
+  <data name="PgOrder_db_Current" xml:space="preserve">
+    <value>Aktuálne načítané v PLC</value>
+  </data>
+  <data name="PgOrder_db_finishedonTimestamp" xml:space="preserve">
+    <value>Dokončené:</value>
+  </data>
+  <data name="PgOrder_db_loadedonTimestamp" xml:space="preserve">
+    <value>Načítané do PLC:</value>
+  </data>
+  <data name="PgOrder_db_Paramsetname" xml:space="preserve">
+    <value>Názov súboru parametrov:</value>
+  </data>
+  <data name="PgOrder_db_Previous" xml:space="preserve">
+    <value>Predtým načítané do PLC</value>
+  </data>
+  <data name="PgOrder_db_quantityDone" xml:space="preserve">
+    <value>Vyrobené diely:</value>
+  </data>
+  <data name="PgOrder_db_quantityTarget" xml:space="preserve">
+    <value>Cieľové množstvo:</value>
+  </data>
+  <data name="PgOrder_db_startedonTimestamp" xml:space="preserve">
+    <value>Začaté:</value>
+  </data>
+  <data name="PgOrder_db_State" xml:space="preserve">
+    <value>Stav:</value>
+  </data>
+  <data name="PgOrder_Done" xml:space="preserve">
+    <value>Objednávka dokončená:</value>
+  </data>
+  <data name="PgOrder_gbDatabase" xml:space="preserve">
+    <value>Databáza</value>
+  </data>
+  <data name="PgOrder_gbPLC" xml:space="preserve">
+    <value>PLC</value>
+  </data>
+  <data name="PgOrder_gbQueue" xml:space="preserve">
+    <value>Čakáreň</value>
+  </data>
+  <data name="PgOrder_manualStart" xml:space="preserve">
+    <value>Načítať a spustiť ďalšiu objednávku manuálne</value>
+  </data>
+  <data name="PgOrder_NumberOfPieces" xml:space="preserve">
+    <value>Vyrobené diely:</value>
+  </data>
+  <data name="PgOrder_OrderName" xml:space="preserve">
+    <value>Názov objednávky:</value>
+  </data>
+  <data name="PgOrder_PopUp_Cancel_Header" xml:space="preserve">
+    <value>Zrušiť aktuálnu objednávku</value>
+  </data>
+  <data name="PgOrder_PopUp_Cancel_Text" xml:space="preserve">
+    <value>Naozaj chcete zrušiť aktuálnu objednávku?</value>
+  </data>
+  <data name="PgOrder_q_addedBy" xml:space="preserve">
+    <value>Pridané používateľom</value>
+  </data>
+  <data name="PgOrder_q_addedOn" xml:space="preserve">
+    <value>Pridané</value>
+  </data>
+  <data name="PgOrder_q_cartonsPerPallet" xml:space="preserve">
+    <value>Kartóny na palete</value>
+  </data>
+  <data name="PgOrder_q_number" xml:space="preserve">
+    <value>Pozícia vo fronte</value>
+  </data>
+  <data name="PgOrder_q_paramset" xml:space="preserve">
+    <value>Názov parametrov</value>
+  </data>
+  <data name="PgOrder_q_paramsetId" xml:space="preserve">
+    <value>ID parametrov</value>
+  </data>
+  <data name="PgOrder_q_quantity" xml:space="preserve">
+    <value>Množstvo</value>
+  </data>
+  <data name="PgOrder_ReadyForNewOrder" xml:space="preserve">
+    <value>Pripravené na novú objednávku:</value>
+  </data>
+  <data name="PgOrder_Started" xml:space="preserve">
+    <value>Začiatok objednávky:</value>
+  </data>
+  <data name="PgOrder_strHeaderStart" xml:space="preserve">
+    <value>Spustiť ďalšiu objednávku</value>
+  </data>
+  <data name="PopUpDeleteOrder_Header" xml:space="preserve">
+    <value>Odstrániť objednávku</value>
+  </data>
+  <data name="PopUpDeleteOrder_Hint" xml:space="preserve">
+    <value>Chcete odstrániť túto objednávku?</value>
+  </data>
+  <data name="PopUpNewOrder_Header" xml:space="preserve">
+    <value>Nová objednávka</value>
+  </data>
+  <data name="PopUpNewOrder_Name" xml:space="preserve">
+    <value>Názov objednávky:</value>
+  </data>
+  <data name="PopUpStartOrder_BtnStart" xml:space="preserve">
+    <value>Spustiť</value>
+  </data>
+  <data name="PopUpStartOrder_CartonsPerPallet" xml:space="preserve">
+    <value>Kartóny na palete:</value>
+  </data>
+  <data name="PopUpStartOrder_CreatedBy" xml:space="preserve">
+    <value>Vytvoril používateľ:</value>
+  </data>
+  <data name="PopUpStartOrder_CreatedOn" xml:space="preserve">
+    <value>Vytvorené:</value>
+  </data>
+  <data name="PopUpStartOrder_Header" xml:space="preserve">
+    <value>Načítať a spustiť ďalšiu objednávku</value>
+  </data>
+  <data name="PopUpStartOrder_Hint" xml:space="preserve">
+    <value>Chcete spustiť a načítať objednávku?</value>
+  </data>
+  <data name="PopUpStartOrder_NextOrder" xml:space="preserve">
+    <value>Ďalšia objednávka:</value>
+  </data>
+  <data name="PopUpStartOrder_Paramsetname" xml:space="preserve">
+    <value>Názov súboru parametrov:</value>
+  </data>
+  <data name="PopUpStartOrder_Target" xml:space="preserve">
+    <value>Cieľové množstvo:</value>
+  </data>
+</root>

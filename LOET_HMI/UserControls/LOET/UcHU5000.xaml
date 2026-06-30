@@ -1,0 +1,110 @@
+﻿<UserControl xmlns:LOET_HMI="clr-namespace:LOET_HMI"  
+             x:Class="LOET_HMI.UserControls.UcHU5000"
+             x:Name="ucHU5000"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LOET_HMI.UserControls"
+             xmlns:prop="clr-namespace:LOET_HMI.Properties"
+
+             mc:Ignorable="d" Width="400" Height="460"
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  x:Name="Col0" />
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Himmel HU5000" Grid.Column="0"
+                  Width="{Binding Width, ElementName=Col0}" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition  Height="auto" />
+                    <RowDefinition  Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"  />
+                    <ColumnDefinition Width="*"  />
+                </Grid.ColumnDefinitions>
+
+                <GroupBox Header="Control" Grid.Row="0" Grid.Column="0" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+                    <StackPanel>
+                        <StackPanel x:Name="spControl1" Height="120" VerticalAlignment="Top">
+                            <LOET_HMI:UcLampText sText="HF1 IN Control"  bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bHF1_Ein_Control}" eLEDColor="Green"/>
+                            <LOET_HMI:UcLampText sText="HF2 IN Control"  bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bHF2_Ein_Control}" eLEDColor="Green"/>
+                            <LOET_HMI:UcLampText sText="HF1 OUT Control" bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bHF_AUS_Control}"  eLEDColor="Green" />
+                        </StackPanel>
+
+                        <StackPanel x:Name="spControl2"  Orientation="Horizontal" Margin="0,2,0,0">
+                            <TextBlock   Text="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.iActPower_Control}" Width="40" TextAlignment="Center" Background="DimGray" />
+                            <TextBlock   Text="Act. Power Control" Margin="5,0,0,0"/>
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+
+                <GroupBox Header="Feedback" Grid.Row="0" Grid.Column="1" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+                    <StackPanel>
+                        <StackPanel x:Name="spFeedback1"  Height="{Binding ElementName=spControl1, Path=Height}" VerticalAlignment="Top">
+                            <LOET_HMI:UcLampText sText="HF1 IN"         bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bHF1_Ein}"     eLEDColor="Green"/>
+                            <LOET_HMI:UcLampText sText="HF2 IN"         bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bHF2_Ein}"     eLEDColor="Green"/>
+                            <LOET_HMI:UcLampText sText="Ready"          bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bBereit}"      eLEDColor="Green"/>
+                            <LOET_HMI:UcLampText sText="Error"          bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bFehler}"      eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Telegramm OK"   bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bTelegrammOK}" eLEDColor="Green"/>
+                        </StackPanel>
+
+                        <StackPanel x:Name="spFeedback2">
+                            <StackPanel Orientation="Horizontal" Margin="0,2,0,0" >
+                                <TextBlock   Text="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.iActPower}" TextAlignment="Center" Background="DimGray" Width="40"/>
+                                <TextBlock   Text="Act. Power" Margin="5,0,0,0"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
+                                <TextBlock   Text="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.iActCurrent}" TextAlignment="Center" Background="DimGray" Width="40"/>
+                                <TextBlock   Text="Act. Current" Margin="5,0,0,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="0,2,0,0">
+                                <TextBlock   Text="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.iActFrequence}" TextAlignment="Center" Background="DimGray" Width="40"/>
+                                <TextBlock   Text="Act. Frequence" Margin="5,0,0,0"/>
+                            </StackPanel>
+
+                        </StackPanel>
+
+                    </StackPanel>
+                    
+                </GroupBox>
+
+
+
+                <GroupBox Header="Errorbits" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="0" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical">
+                            <LOET_HMI:UcLampText sText="Error Cooler"          bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bErrorCooler}"       eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Min. Frequency"        bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bMinFreuqency}"      eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Limit Frequency"       bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bLimitFreqency}"      eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Limit Current"         bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bLimitCurrent}"      eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Overcurrent"           bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bOverCurrent}"      eLEDColor="Red"/>
+                         </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="80,0,0,0">
+                            <LOET_HMI:UcLampText sText="Cable current"         bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bCableCurrent}"      eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Cable current 1"       bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bCableCurrent_1}"      eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Undervoltage"          bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bUnderVoltage}"      eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Power supply"          bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bPowerSupply}"      eLEDColor="Red"/>
+                            <LOET_HMI:UcLampText sText="Temperature"           bIsON="{Binding ElementName=ucHU5000, Path=DpHU5000HMI.bTemperature}"      eLEDColor="Red"/>
+                        </StackPanel>
+                    </StackPanel>
+                    
+
+                </GroupBox>
+               
+            </Grid>
+
+
+
+        </GroupBox>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,582 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CHP_HMIModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="db_actual">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="iTypeparamSetID" Type="int" Nullable="false" />
+          <Property Name="iMachineparamSetID" Type="int" Nullable="false" />
+          <Property Name="iManualParamSetId" Type="int" Nullable="false" />
+          <Property Name="iOrderStartMode" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_config">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_manuallog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sComponentName" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sAction" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sParameter" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sUserName" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="dtTime" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_message">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sMessage" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="dtCome" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="dtGone" Type="datetime" Precision="0" />
+          <Property Name="dtQuit" Type="datetime" Precision="0" />
+          <Property Name="iType" Type="int" Nullable="false" />
+          <Property Name="sUserName" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sStation" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="sBMK" Type="varchar" MaxLength="15" Nullable="false" />
+          <Property Name="bActive" Type="bit" Nullable="false" />
+          <Property Name="iModul" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_orderarchiv">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sParamsetName" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="iQuantityTarget" Type="int" Nullable="false" />
+          <Property Name="iQuantityDone" Type="int" Nullable="false" />
+          <Property Name="iCartonQuantProPallet" Type="int" Nullable="false" />
+          <Property Name="iCartonDone" Type="int" Nullable="false" />
+          <Property Name="sAddedByToQueue" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="dtAddedOnToQueue" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="dtLoadedToPLCOn" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="dtStartedOn" Type="datetime" Precision="0" />
+          <Property Name="dtFinishedOn" Type="datetime" Precision="0" />
+          <Property Name="dtCancelledOn" Type="datetime" Precision="0" />
+          <Property Name="iState" Type="int" Nullable="false" />
+          <Property Name="bActiveInPLC" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_orderqueue">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="iParamSetId" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="iParamSetId" Type="int" Nullable="false" />
+          <Property Name="iNrInQueue" Type="int" Nullable="false" />
+          <Property Name="iQuantity" Type="int" Nullable="false" />
+          <Property Name="iCartonQuantProPallet" Type="int" Nullable="false" />
+          <Property Name="sAddedBy" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="dtAddedOn" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_parameter">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="iParamSetId" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="iParamSetId" Type="int" Nullable="false" />
+          <Property Name="sADSName" Type="varchar" MaxLength="60" Nullable="false" />
+          <Property Name="sValue" Type="varchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_parameterlog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dtTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="sOldValue" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sNewValue" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sParamSetName" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sParamSetType" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sParameterName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="sAction" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sUserName" Type="varchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_paramset">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sName" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="iType" Type="int" Nullable="false" />
+          <Property Name="dtCreatedOn" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="sCreatedBy" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="dtLastModified" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_project">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="iSerialNumber" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_user">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sUserName" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sPassword" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="iUserLevel" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_userlevel">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="iLevel" Type="int" Nullable="false" />
+          <Property Name="sLevel" Type="varchar" MaxLength="45" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_userlog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dtTime" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="sAction" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="sUserName" Type="varchar" MaxLength="45" Nullable="false" />
+          <Property Name="iUserLevel" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="fk_db_Order_db_ParamSet">
+          <End Role="db_paramset" Type="Self.db_paramset" Multiplicity="1" />
+          <End Role="db_orderqueue" Type="Self.db_orderqueue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="db_paramset">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="db_orderqueue">
+              <PropertyRef Name="iParamSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_db_Parameter_db_Recipe1">
+          <End Role="db_paramset" Type="Self.db_paramset" Multiplicity="1" />
+          <End Role="db_parameter" Type="Self.db_parameter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="db_paramset">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="db_parameter">
+              <PropertyRef Name="iParamSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CHP_HMIModelStoreContainer">
+          <EntitySet Name="db_actual" EntityType="Self.db_actual" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_config" EntityType="Self.db_config" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_manuallog" EntityType="Self.db_manuallog" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_message" EntityType="Self.db_message" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_orderarchiv" EntityType="Self.db_orderarchiv" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_orderqueue" EntityType="Self.db_orderqueue" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_parameter" EntityType="Self.db_parameter" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_parameterlog" EntityType="Self.db_parameterlog" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_paramset" EntityType="Self.db_paramset" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_project" EntityType="Self.db_project" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_user" EntityType="Self.db_user" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_userlevel" EntityType="Self.db_userlevel" Schema="chp_hmi" store:Type="Tables" />
+          <EntitySet Name="db_userlog" EntityType="Self.db_userlog" Schema="chp_hmi" store:Type="Tables" />
+          <AssociationSet Name="fk_db_Order_db_ParamSet" Association="Self.fk_db_Order_db_ParamSet">
+            <End Role="db_paramset" EntitySet="db_paramset" />
+            <End Role="db_orderqueue" EntitySet="db_orderqueue" />
+          </AssociationSet>
+          <AssociationSet Name="fk_db_Parameter_db_Recipe1" Association="Self.fk_db_Parameter_db_Recipe1">
+            <End Role="db_paramset" EntitySet="db_paramset" />
+            <End Role="db_parameter" EntitySet="db_parameter" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CHP_HMIModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="CHP_HMIEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="db_actual" EntityType="CHP_HMIModel.db_actual" />
+          <EntitySet Name="db_config" EntityType="CHP_HMIModel.db_config" />
+          <EntitySet Name="db_manuallog" EntityType="CHP_HMIModel.db_manuallog" />
+          <EntitySet Name="db_message" EntityType="CHP_HMIModel.db_message" />
+          <EntitySet Name="db_orderarchiv" EntityType="CHP_HMIModel.db_orderarchiv" />
+          <EntitySet Name="db_orderqueue" EntityType="CHP_HMIModel.db_orderqueue" />
+          <EntitySet Name="db_parameter" EntityType="CHP_HMIModel.db_parameter" />
+          <EntitySet Name="db_parameterlog" EntityType="CHP_HMIModel.db_parameterlog" />
+          <EntitySet Name="db_paramset" EntityType="CHP_HMIModel.db_paramset" />
+          <EntitySet Name="db_project" EntityType="CHP_HMIModel.db_project" />
+          <EntitySet Name="db_user" EntityType="CHP_HMIModel.db_user" />
+          <EntitySet Name="db_userlevel" EntityType="CHP_HMIModel.db_userlevel" />
+          <EntitySet Name="db_userlog" EntityType="CHP_HMIModel.db_userlog" />
+          <AssociationSet Name="fk_db_Order_db_ParamSet" Association="CHP_HMIModel.fk_db_Order_db_ParamSet">
+            <End Role="db_paramset" EntitySet="db_paramset" />
+            <End Role="db_orderqueue" EntitySet="db_orderqueue" />
+          </AssociationSet>
+          <AssociationSet Name="fk_db_Parameter_db_Recipe1" Association="CHP_HMIModel.fk_db_Parameter_db_Recipe1">
+            <End Role="db_paramset" EntitySet="db_paramset" />
+            <End Role="db_parameter" EntitySet="db_parameter" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="db_actual">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="iTypeparamSetID" Type="Int32" Nullable="false" />
+          <Property Name="iMachineparamSetID" Type="Int32" Nullable="false" />
+          <Property Name="iManualParamSetId" Type="Int32" Nullable="false" />
+          <Property Name="iOrderStartMode" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_config">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
+        <EntityType Name="db_manuallog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sComponentName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sAction" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sParameter" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sUserName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="dtTime" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_message">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sMessage" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="dtCome" Type="DateTime" Nullable="false" />
+          <Property Name="dtGone" Type="DateTime" />
+          <Property Name="dtQuit" Type="DateTime" />
+          <Property Name="iType" Type="Int32" Nullable="false" />
+          <Property Name="sUserName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sStation" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="sBMK" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="bActive" Type="Boolean" Nullable="false" />
+          <Property Name="iModul" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_orderarchiv">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sParamsetName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="iQuantityTarget" Type="Int32" Nullable="false" />
+          <Property Name="iQuantityDone" Type="Int32" Nullable="false" />
+          <Property Name="iCartonQuantProPallet" Type="Int32" Nullable="false" />
+          <Property Name="iCartonDone" Type="Int32" Nullable="false" />
+          <Property Name="sAddedByToQueue" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="dtAddedOnToQueue" Type="DateTime" Nullable="false" />
+          <Property Name="dtLoadedToPLCOn" Type="DateTime" Nullable="false" />
+          <Property Name="dtStartedOn" Type="DateTime" />
+          <Property Name="dtFinishedOn" Type="DateTime" />
+          <Property Name="dtCancelledOn" Type="DateTime" />
+          <Property Name="iState" Type="Int32" Nullable="false" />
+          <Property Name="bActiveInPLC" Type="Boolean" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_orderqueue">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="iParamSetId" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="iParamSetId" Type="Int32" Nullable="false" />
+          <Property Name="iNrInQueue" Type="Int32" Nullable="false" />
+          <Property Name="iQuantity" Type="Int32" Nullable="false" />
+          <Property Name="iCartonQuantProPallet" Type="Int32" Nullable="false" />
+          <Property Name="sAddedBy" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="dtAddedOn" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="db_paramset" Relationship="CHP_HMIModel.fk_db_Order_db_ParamSet" FromRole="db_orderqueue" ToRole="db_paramset" />
+        </EntityType>
+        <EntityType Name="db_parameter">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="iParamSetId" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="iParamSetId" Type="Int32" Nullable="false" />
+          <Property Name="sADSName" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="sValue" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="db_paramset" Relationship="CHP_HMIModel.fk_db_Parameter_db_Recipe1" FromRole="db_parameter" ToRole="db_paramset" />
+        </EntityType>
+        <EntityType Name="db_parameterlog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dtTime" Type="DateTime" Nullable="false" />
+          <Property Name="sOldValue" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sNewValue" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sParamSetName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sParamSetType" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sParameterName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="sAction" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sUserName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="db_paramset">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="iType" Type="Int32" Nullable="false" />
+          <Property Name="dtCreatedOn" Type="DateTime" Nullable="false" />
+          <Property Name="sCreatedBy" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="dtLastModified" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="db_orderqueue" Relationship="CHP_HMIModel.fk_db_Order_db_ParamSet" FromRole="db_paramset" ToRole="db_orderqueue" />
+          <NavigationProperty Name="db_parameter" Relationship="CHP_HMIModel.fk_db_Parameter_db_Recipe1" FromRole="db_paramset" ToRole="db_parameter" />
+        </EntityType>
+        <EntityType Name="db_project">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="iSerialNumber" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_user">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sUserName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sPassword" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="iUserLevel" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="db_userlevel">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="iLevel" Type="Int32" Nullable="false" />
+          <Property Name="sLevel" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="db_userlog">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dtTime" Type="DateTime" Nullable="false" />
+          <Property Name="sAction" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="sUserName" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="iUserLevel" Type="Int32" Nullable="false" />
+        </EntityType>
+        <Association Name="fk_db_Order_db_ParamSet">
+          <End Type="CHP_HMIModel.db_paramset" Role="db_paramset" Multiplicity="1" />
+          <End Type="CHP_HMIModel.db_orderqueue" Role="db_orderqueue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="db_paramset">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="db_orderqueue">
+              <PropertyRef Name="iParamSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_db_Parameter_db_Recipe1">
+          <End Type="CHP_HMIModel.db_paramset" Role="db_paramset" Multiplicity="1" />
+          <End Type="CHP_HMIModel.db_parameter" Role="db_parameter" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="db_paramset">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="db_parameter">
+              <PropertyRef Name="iParamSetId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CHP_HMIModelStoreContainer" CdmEntityContainer="CHP_HMIEntities">
+          <EntitySetMapping Name="db_actual">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_actual">
+              <MappingFragment StoreEntitySet="db_actual">
+                <ScalarProperty Name="iOrderStartMode" ColumnName="iOrderStartMode" />
+                <ScalarProperty Name="iManualParamSetId" ColumnName="iManualParamSetId" />
+                <ScalarProperty Name="iMachineparamSetID" ColumnName="iMachineparamSetID" />
+                <ScalarProperty Name="iTypeparamSetID" ColumnName="iTypeparamSetID" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_config">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_config">
+              <MappingFragment StoreEntitySet="db_config">
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_manuallog">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_manuallog">
+              <MappingFragment StoreEntitySet="db_manuallog">
+                <ScalarProperty Name="dtTime" ColumnName="dtTime" />
+                <ScalarProperty Name="sUserName" ColumnName="sUserName" />
+                <ScalarProperty Name="sParameter" ColumnName="sParameter" />
+                <ScalarProperty Name="sAction" ColumnName="sAction" />
+                <ScalarProperty Name="sComponentName" ColumnName="sComponentName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_message">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_message">
+              <MappingFragment StoreEntitySet="db_message">
+                <ScalarProperty Name="iModul" ColumnName="iModul" />
+                <ScalarProperty Name="bActive" ColumnName="bActive" />
+                <ScalarProperty Name="sBMK" ColumnName="sBMK" />
+                <ScalarProperty Name="sStation" ColumnName="sStation" />
+                <ScalarProperty Name="sUserName" ColumnName="sUserName" />
+                <ScalarProperty Name="iType" ColumnName="iType" />
+                <ScalarProperty Name="dtQuit" ColumnName="dtQuit" />
+                <ScalarProperty Name="dtGone" ColumnName="dtGone" />
+                <ScalarProperty Name="dtCome" ColumnName="dtCome" />
+                <ScalarProperty Name="sMessage" ColumnName="sMessage" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_orderarchiv">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_orderarchiv">
+              <MappingFragment StoreEntitySet="db_orderarchiv">
+                <ScalarProperty Name="bActiveInPLC" ColumnName="bActiveInPLC" />
+                <ScalarProperty Name="iState" ColumnName="iState" />
+                <ScalarProperty Name="dtCancelledOn" ColumnName="dtCancelledOn" />
+                <ScalarProperty Name="dtFinishedOn" ColumnName="dtFinishedOn" />
+                <ScalarProperty Name="dtStartedOn" ColumnName="dtStartedOn" />
+                <ScalarProperty Name="dtLoadedToPLCOn" ColumnName="dtLoadedToPLCOn" />
+                <ScalarProperty Name="dtAddedOnToQueue" ColumnName="dtAddedOnToQueue" />
+                <ScalarProperty Name="sAddedByToQueue" ColumnName="sAddedByToQueue" />
+                <ScalarProperty Name="iCartonDone" ColumnName="iCartonDone" />
+                <ScalarProperty Name="iCartonQuantProPallet" ColumnName="iCartonQuantProPallet" />
+                <ScalarProperty Name="iQuantityDone" ColumnName="iQuantityDone" />
+                <ScalarProperty Name="iQuantityTarget" ColumnName="iQuantityTarget" />
+                <ScalarProperty Name="sParamsetName" ColumnName="sParamsetName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_orderqueue">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_orderqueue">
+              <MappingFragment StoreEntitySet="db_orderqueue">
+                <ScalarProperty Name="dtAddedOn" ColumnName="dtAddedOn" />
+                <ScalarProperty Name="sAddedBy" ColumnName="sAddedBy" />
+                <ScalarProperty Name="iCartonQuantProPallet" ColumnName="iCartonQuantProPallet" />
+                <ScalarProperty Name="iQuantity" ColumnName="iQuantity" />
+                <ScalarProperty Name="iNrInQueue" ColumnName="iNrInQueue" />
+                <ScalarProperty Name="iParamSetId" ColumnName="iParamSetId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_parameter">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_parameter">
+              <MappingFragment StoreEntitySet="db_parameter">
+                <ScalarProperty Name="sValue" ColumnName="sValue" />
+                <ScalarProperty Name="sADSName" ColumnName="sADSName" />
+                <ScalarProperty Name="iParamSetId" ColumnName="iParamSetId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_parameterlog">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_parameterlog">
+              <MappingFragment StoreEntitySet="db_parameterlog">
+                <ScalarProperty Name="sUserName" ColumnName="sUserName" />
+                <ScalarProperty Name="sAction" ColumnName="sAction" />
+                <ScalarProperty Name="sParameterName" ColumnName="sParameterName" />
+                <ScalarProperty Name="sParamSetType" ColumnName="sParamSetType" />
+                <ScalarProperty Name="sParamSetName" ColumnName="sParamSetName" />
+                <ScalarProperty Name="sNewValue" ColumnName="sNewValue" />
+                <ScalarProperty Name="sOldValue" ColumnName="sOldValue" />
+                <ScalarProperty Name="dtTime" ColumnName="dtTime" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_paramset">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_paramset">
+              <MappingFragment StoreEntitySet="db_paramset">
+                <ScalarProperty Name="dtLastModified" ColumnName="dtLastModified" />
+                <ScalarProperty Name="sCreatedBy" ColumnName="sCreatedBy" />
+                <ScalarProperty Name="dtCreatedOn" ColumnName="dtCreatedOn" />
+                <ScalarProperty Name="iType" ColumnName="iType" />
+                <ScalarProperty Name="sName" ColumnName="sName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_project">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_project">
+              <MappingFragment StoreEntitySet="db_project">
+                <ScalarProperty Name="iSerialNumber" ColumnName="iSerialNumber" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_user">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_user">
+              <MappingFragment StoreEntitySet="db_user">
+                <ScalarProperty Name="iUserLevel" ColumnName="iUserLevel" />
+                <ScalarProperty Name="sPassword" ColumnName="sPassword" />
+                <ScalarProperty Name="sUserName" ColumnName="sUserName" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_userlevel">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_userlevel">
+              <MappingFragment StoreEntitySet="db_userlevel">
+                <ScalarProperty Name="sLevel" ColumnName="sLevel" />
+                <ScalarProperty Name="iLevel" ColumnName="iLevel" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="db_userlog">
+            <EntityTypeMapping TypeName="CHP_HMIModel.db_userlog">
+              <MappingFragment StoreEntitySet="db_userlog">
+                <ScalarProperty Name="iUserLevel" ColumnName="iUserLevel" />
+                <ScalarProperty Name="sUserName" ColumnName="sUserName" />
+                <ScalarProperty Name="sAction" ColumnName="sAction" />
+                <ScalarProperty Name="dtTime" ColumnName="dtTime" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Kein" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

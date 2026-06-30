@@ -1,0 +1,58 @@
+﻿<Window xmlns:UserControls="clr-namespace:LOET_HMI.UserControls"  
+        x:Class="LOET_HMI.SystemPages.PopUps.WindowPopUpDialog"
+        x:Name="winDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOET_HMI.SystemPages.PopUps"
+        mc:Ignorable="d"
+        Title="Dialog"        
+        Style="{StaticResource RENA_PopUpStlye}" 
+        WindowStartupLocation="CenterScreen" Height="{Binding ElementName=spMyStackP, Path=ActualHeight}"
+        FontSize="18"  Loaded="Window_Loaded" WindowStyle="None">
+    <!-- Das obige "FontSize" Property setzt den Default-FontSize-Wert der Child-Elementen -->
+
+
+    <Grid x:Name="grMyGrid" Height="auto"   >
+        
+        <StackPanel x:Name="spMyStackP" Grid.Row="0" Margin="30,0,30,30" VerticalAlignment="Stretch" Height="auto">
+            <TextBlock x:Name="tbHeader" Text="Header" TextAlignment="Center" FontSize="24" HorizontalAlignment="Center"  VerticalAlignment="Top" Margin="0,20,0,0" TextWrapping="Wrap" />
+
+            <TextBlock x:Name="tbText1" Text="text 1"   HorizontalAlignment="Left"  VerticalAlignment="Top" TextWrapping="Wrap" Margin="0,10,0,0" />
+            <TextBlock x:Name="tbText2" Text="text 2"   HorizontalAlignment="Left"  VerticalAlignment="Top" TextWrapping="Wrap" Margin="0,10,0,0"/>
+            <TextBlock x:Name="tbText3" Text="text 3"   HorizontalAlignment="Left"  VerticalAlignment="Top" TextWrapping="Wrap" Margin="0,10,0,0"/>
+            <TextBlock x:Name="tbText4" Text="text 4"   HorizontalAlignment="Left"  VerticalAlignment="Top" TextWrapping="Wrap" Margin="0,10,0,0"/>
+            <TextBlock x:Name="tbText5" Text="text 5"   HorizontalAlignment="Left"  VerticalAlignment="Top" TextWrapping="Wrap" Margin="0,10,0,0"/>
+            
+            <StackPanel x:Name="spTextBlocks" >
+                <TextBox x:Name="tbTextInput1"  Style="{StaticResource dialogTextBoxStyle}"  />
+                <TextBox x:Name="tbTextInput2"  Style="{StaticResource dialogTextBoxStyle}"  Visibility="Collapsed" />
+                <TextBox x:Name="tbTextInput3"  Style="{StaticResource dialogTextBoxStyle}"  Visibility="Collapsed" />
+                <TextBox x:Name="tbTextInput4"  Style="{StaticResource dialogTextBoxStyle}"  Visibility="Collapsed" />
+                <TextBox x:Name="tbTextInput5"  Style="{StaticResource dialogTextBoxStyle}"  Visibility="Collapsed" />
+                <TextBox x:Name="tbTextInput6"  Style="{StaticResource dialogTextBoxStyle}"  Visibility="Collapsed" />
+                <TextBox x:Name="tbTextInput7"  Style="{StaticResource dialogTextBoxStyle}"  Visibility="Collapsed" />
+                <TextBox x:Name="tbTextInput8"  Style="{StaticResource dialogTextBoxStyle}"  Visibility="Collapsed" />
+            </StackPanel>
+
+
+            <Label x:Name="labelOffset1ForBinding" Height="40" />
+
+            <Button x:Name="Btn1" Content="Btn1"  Click="Btn1_Click" Style="{StaticResource RENA_ButtonStyle_PopUp}"  Width="400" Margin="0,0,0,15"   />
+            <Button x:Name="Btn2" Content="Btn2"  Click="Btn2_Click" Style="{StaticResource RENA_ButtonStyle_PopUp}"  Width="400" Margin="0,0,0,15"  />
+            <Button x:Name="Btn3" Content="Btn3"  Click="Btn3_Click" Style="{StaticResource RENA_ButtonStyle_PopUp}"  Width="400" Margin="0,0,0,15"  />
+            <Button x:Name="Btn4" Content="Btn4"  Click="Btn4_Click" Style="{StaticResource RENA_ButtonStyle_PopUp}"  Width="400" Margin="0,0,0,15"    />
+            <Button x:Name="Btn5" Content="Btn5"  Click="Btn5_Click" Style="{StaticResource RENA_ButtonStyle_PopUp}"  Width="400"                     />
+
+            <Label x:Name="labelOffset2ForBinding" Height="165" />
+            <!-- HINWES:          
+            Die Bindings unter StackPanel-Height, Grid-Height und Window-Height funktionieren grundsätzlich. 
+            Allerdings hat das Window ein Style, in dem das blaue Header defineirt wird. 
+            Dies kommt anscheinend auch zum Window-Height hinzu. Deswegen wird der untere Teil des Fensters leider abgeschnitten.
+            Um dies zu kompensieren, wird durch dieses Label ein Offset eingebaut.
+            -->
+        </StackPanel>
+        
+    </Grid>
+</Window>

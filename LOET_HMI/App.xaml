@@ -1,0 +1,30 @@
+﻿<Application x:Class="LOET_HMI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:LOET_HMI"
+             StartupUri="MainWindow.xaml"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             Startup="Application_Startup"
+             Exit="Application_Exit">
+    
+    
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/LOET_HMI;component/ResourceDictionaries/CHP_Style_2020.xaml" />
+                <ResourceDictionary Source="/LOET_HMI;component/ResourceDictionaries/GlobConstants.xaml" />
+                <ResourceDictionary Source="/LOET_HMI;component/ResourceDictionaries/StlyesLOET.xaml" />
+
+                <!-- ... -->
+                <!-- hier ggf. weitere ResourceDicionary-s hinzufügen -->
+                <!-- ... -->
+
+            </ResourceDictionary.MergedDictionaries>
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+
+

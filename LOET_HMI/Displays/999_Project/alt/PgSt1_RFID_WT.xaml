@@ -1,0 +1,40 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LOET_HMI.Displays"
+      xmlns:UserControls="clr-namespace:LOET_HMI.UserControls"
+      xmlns:uc="clr-namespace:LOET_HMI.UserControls"
+
+      xmlns:LOET_HMI="clr-namespace:LOET_HMI" x:Class="LOET_HMI.Displays.PgSt1_RFID_WT"
+      mc:Ignorable="d" 
+      d:DesignHeight="{StaticResource frameHeight}" d:DesignWidth="{StaticResource frameWidth}"
+
+      x:Name="pgRFID_WT"
+      Title="PgSt1_RFID" Loaded="PgRFID_WT_Loaded" Unloaded="PgRFID_WT_Unloaded">
+
+    <ScrollViewer>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:Name="Col0" Width="auto" />
+                <ColumnDefinition x:Name="Col1" Width="50" />
+                <ColumnDefinition x:Name="Col2" Width="{Binding Width, ElementName=Col0}" />
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Header="Read" Grid.Column="0"
+                  Width="{Binding Width, ElementName=Col0}" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+                <uc:UcRFID_WT x:Name="UcRFID_WT_Read" RFIDMode="Read" iGVLArrInd_Station="1" />
+            </GroupBox>
+
+            <GroupBox Header="Write" Grid.Column="2"
+                  Width="{Binding Width, ElementName=Col0}" Style="{StaticResource RENA_GroupBox_Style}"  Margin="10,10,10,10" >
+                <uc:UcRFID_WT x:Name="UcRFID_WT_Write"  RFIDMode="Write" iGVLArrInd_Station="1"  />
+            </GroupBox>
+
+            <LOET_HMI:UcLamp Grid.Column="1" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top"/>
+
+        </Grid>
+    </ScrollViewer>
+
+</Page>

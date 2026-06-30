@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BtnOK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Btn_Delete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Btn_OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Btn_Yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="ComponentState_Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="ComponentState_ManualMode" xml:space="preserve">
+    <value>手动模式</value>
+  </data>
+  <data name="ComponentState_Message" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="ComponentState_OK" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="ComponentState_Wait" xml:space="preserve">
+    <value>等待</value>
+  </data>
+  <data name="ComponentState_Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="DataGridAlarm_Come" xml:space="preserve">
+    <value>来了</value>
+  </data>
+  <data name="DataGridAlarm_Gone" xml:space="preserve">
+    <value>走了</value>
+  </data>
+  <data name="DataGridAlarm_Stat" xml:space="preserve">
+    <value>车站</value>
+  </data>
+  <data name="DataGridAlarm_Text" xml:space="preserve">
+    <value>文本</value>
+  </data>
+  <data name="DataGridParam_CreatedBy" xml:space="preserve">
+    <value>创建人</value>
+  </data>
+  <data name="DataGridParam_CreatedOn" xml:space="preserve">
+    <value>创建于</value>
+  </data>
+  <data name="DataGridParam_Descritpion" xml:space="preserve">
+    <value>描述</value>
+  </data>
+  <data name="DataGridParam_LastModified" xml:space="preserve">
+    <value>最后修改</value>
+  </data>
+  <data name="DataGridParam_Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="DataGridParam_RangeMax" xml:space="preserve">
+    <value>最大范围</value>
+  </data>
+  <data name="DataGridParam_RangeMin" xml:space="preserve">
+    <value>最小范围</value>
+  </data>
+  <data name="DataGridParam_Unit" xml:space="preserve">
+    <value>单位</value>
+  </data>
+  <data name="DataGridParam_Value" xml:space="preserve">
+    <value>值</value>
+  </data>
+  <data name="DataGridParam_ValuePLC" xml:space="preserve">
+    <value>PLC值</value>
+  </data>
+  <data name="DgCol_Acknowledged" xml:space="preserve">
+    <value>已确认</value>
+  </data>
+  <data name="DgCol_AddedBy" xml:space="preserve">
+    <value>由  添加到队列中</value>
+  </data>
+  <data name="DgCol_AddedOn" xml:space="preserve">
+    <value>于  添加到队列中</value>
+  </data>
+  <data name="DgCol_BMK" xml:space="preserve">
+    <value>BMK</value>
+  </data>
+  <data name="DgCol_CancelledOn" xml:space="preserve">
+    <value>取消于</value>
+  </data>
+  <data name="DgCol_Error" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="DgCol_FinishedOn" xml:space="preserve">
+    <value>完成于</value>
+  </data>
+  <data name="DgCol_Gone" xml:space="preserve">
+    <value>走了</value>
+  </data>
+  <data name="DgCol_LoadedOn" xml:space="preserve">
+    <value>于   加载到PLC中</value>
+  </data>
+  <data name="DgCol_Message" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="DgCol_Modul" xml:space="preserve">
+    <value>模数</value>
+  </data>
+  <data name="DgCol_Occurred" xml:space="preserve">
+    <value>已发生</value>
+  </data>
+  <data name="DgCol_OrderName" xml:space="preserve">
+    <value>命令名称</value>
+  </data>
+  <data name="DgCol_ParamSetID" xml:space="preserve">
+    <value>参数集ID</value>
+  </data>
+  <data name="DgCol_ParamSetName" xml:space="preserve">
+    <value>参数集名称</value>
+  </data>
+  <data name="DgCol_PiecesDone" xml:space="preserve">
+    <value>完成件数</value>
+  </data>
+  <data name="DgCol_PlacedBy" xml:space="preserve">
+    <value>由  放置</value>
+  </data>
+  <data name="DgCol_PosInQueue" xml:space="preserve">
+    <value>队列中的位置</value>
+  </data>
+  <data name="DgCol_Quantity" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="DgCol_StartedOn" xml:space="preserve">
+    <value>开始于</value>
+  </data>
+  <data name="DgCol_State" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="DgCol_Station" xml:space="preserve">
+    <value>站</value>
+  </data>
+  <data name="DgCol_StillActiveInPLC" xml:space="preserve">
+    <value>在PLC中仍处于活动状态</value>
+  </data>
+  <data name="DgCol_Target" xml:space="preserve">
+    <value>目标数量</value>
+  </data>
+  <data name="DgCol_User" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="DlgParamset_lblActName" xml:space="preserve">
+    <value>当前名称：</value>
+  </data>
+  <data name="DlgParamset_lblNameOfCopy" xml:space="preserve">
+    <value>副本名称：</value>
+  </data>
+  <data name="DlgParamset_lblNameOfOrig" xml:space="preserve">
+    <value>原件名称：</value>
+  </data>
+  <data name="DlgParamset_lblNewName" xml:space="preserve">
+    <value>新名称：</value>
+  </data>
+  <data name="DlgParamset_lblReallyDelete" xml:space="preserve">
+    <value>您是否真的要删除此参数集？</value>
+  </data>
+  <data name="DlgParamset_lblTitleCopy" xml:space="preserve">
+    <value>复制参数集</value>
+  </data>
+  <data name="DlgParamset_lblTitleDelete" xml:space="preserve">
+    <value>删除参数集</value>
+  </data>
+  <data name="DlgParamset_lblTitleNew" xml:space="preserve">
+    <value>新参数集</value>
+  </data>
+  <data name="DlgParamset_lblTitleRename" xml:space="preserve">
+    <value>重命名参数集</value>
+  </data>
+  <data name="DlgSetVal_btnSet" xml:space="preserve">
+    <value>设置读取数据</value>
+  </data>
+  <data name="DlgSetVal_tbCurrentVal" xml:space="preserve">
+    <value>当前值：</value>
+  </data>
+  <data name="DlgSetVal_tbNewVal" xml:space="preserve">
+    <value>新值：</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMax" xml:space="preserve">
+    <value>最大范围：</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMin" xml:space="preserve">
+    <value>最小范围：</value>
+  </data>
+  <data name="DlgSetVal_Titel" xml:space="preserve">
+    <value>设定值</value>
+  </data>
+  <data name="DlgUser_lblSelectAUser" xml:space="preserve">
+    <value>选择一个用户</value>
+  </data>
+  <data name="DlgUser_lblUserlevel" xml:space="preserve">
+    <value>用户等级</value>
+  </data>
+  <data name="DlgUser_lblUsername" xml:space="preserve">
+    <value>用户名</value>
+  </data>
+  <data name="DlgUser_tbName" xml:space="preserve">
+    <value>无用户</value>
+  </data>
+  <data name="DlgUser_tbPasswort" xml:space="preserve">
+    <value>密码</value>
+  </data>
+  <data name="DlgUser_txtReallyDelete" xml:space="preserve">
+    <value>您确实要删除此用户吗？</value>
+  </data>
+  <data name="Main_BtnLogin" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="Main_btnSettings" xml:space="preserve">
+    <value>设定值</value>
+  </data>
+  <data name="Main_cbManuals" xml:space="preserve">
+    <value>Manuals</value>
+  </data>
+  <data name="Main_cbVideoInstructions" xml:space="preserve">
+    <value>Video-Instructions</value>
+  </data>
+  <data name="Main_InitNotFinished" xml:space="preserve">
+    <value>初始化未完成</value>
+  </data>
+  <data name="Main_lblNavigation" xml:space="preserve">
+    <value>导航</value>
+  </data>
+  <data name="Main_lblWaitForConnection" xml:space="preserve">
+    <value>等待连接到PLC</value>
+  </data>
+  <data name="Main_MachineName" xml:space="preserve">
+    <value>Kroschu-焊接装置</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedCaption" xml:space="preserve">
+    <value>访问被拒绝</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedText" xml:space="preserve">
+    <value>您无权执行此操作。</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionCaption" xml:space="preserve">
+    <value>选择</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionText" xml:space="preserve">
+    <value>未选择任何条目。</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Caption" xml:space="preserve">
+    <value>选择语言</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Text" xml:space="preserve">
+    <value>HMI将以所选语言重新启动。请稍等。</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Caption" xml:space="preserve">
+    <value>登录</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Text" xml:space="preserve">
+    <value>请先登录</value>
+  </data>
+  <data name="NavHoriz_btnAllMachinePar" xml:space="preserve">
+    <value>所有机器参数</value>
+  </data>
+  <data name="NavHoriz_btnDVS" xml:space="preserve">
+    <value>DVS</value>
+  </data>
+  <data name="NavHoriz_btnEvaluation" xml:space="preserve">
+    <value>评估</value>
+  </data>
+  <data name="NavHoriz_btnLanguage" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="NavHoriz_btnMessageArchiv" xml:space="preserve">
+    <value>消息存档</value>
+  </data>
+  <data name="NavHoriz_btnMessages" xml:space="preserve">
+    <value>消息</value>
+  </data>
+  <data name="NavHoriz_btnParameters" xml:space="preserve">
+    <value>参数</value>
+  </data>
+  <data name="NavHoriz_btnRFID_IND" xml:space="preserve">
+    <value>RFID IND</value>
+  </data>
+  <data name="NavHoriz_btnRFID_WT" xml:space="preserve">
+    <value>RFID WT</value>
+  </data>
+  <data name="NavHoriz_btnTypePar" xml:space="preserve">
+    <value>类型参数</value>
+  </data>
+  <data name="NavHoriz_btnUserManagement" xml:space="preserve">
+    <value>用户管理</value>
+  </data>
+  <data name="NavVert_btnCounter" xml:space="preserve">
+    <value>柜台</value>
+  </data>
+  <data name="NavVert_btnEvalStat1" xml:space="preserve">
+    <value>评估1（左）</value>
+  </data>
+  <data name="NavVert_btnEvalStat2" xml:space="preserve">
+    <value>评估2（右）</value>
+  </data>
+  <data name="NavVert_btnGlobal" xml:space="preserve">
+    <value>全局</value>
+  </data>
+  <data name="NavVert_btnKROSY" xml:space="preserve">
+    <value>KROSY</value>
+  </data>
+  <data name="NavVert_btnMachine" xml:space="preserve">
+    <value>机器</value>
+  </data>
+  <data name="NavVert_btnManualMenu" xml:space="preserve">
+    <value>手动菜单</value>
+  </data>
+  <data name="NavVert_btnSettings" xml:space="preserve">
+    <value>设定值</value>
+  </data>
+  <data name="NavVert_btnSpecialFunctions" xml:space="preserve">
+    <value>特殊功能</value>
+  </data>
+  <data name="ParamMsgBox_InPLCFound" xml:space="preserve">
+    <value>在数据库中找到了加载到PLC的参数集。</value>
+  </data>
+  <data name="ParamMsgBox_InPLCHeader" xml:space="preserve">
+    <value>PLC中的参数集</value>
+  </data>
+  <data name="ParamMsgBox_InPLCNotFound" xml:space="preserve">
+    <value>在数据库中找不到加载到PLC的参数集。</value>
+  </data>
+  <data name="ParamMsgBox_NoParSetAtAll" xml:space="preserve">
+    <value>在数据库中找不到参数集。</value>
+  </data>
+  <data name="ParamMsgBox_Selected" xml:space="preserve">
+    <value>当前选择的参数集为：</value>
+  </data>
+  <data name="Paramset_btnCopy" xml:space="preserve">
+    <value>复制</value>
+  </data>
+  <data name="Paramset_btnDelete" xml:space="preserve">
+    <value>删除</value>
+  </data>
+  <data name="Paramset_btnLoadToPLC" xml:space="preserve">
+    <value>加载到PLC</value>
+  </data>
+  <data name="Paramset_btnNew" xml:space="preserve">
+    <value>新的</value>
+  </data>
+  <data name="Paramset_btnRename" xml:space="preserve">
+    <value>重命名</value>
+  </data>
+  <data name="Paramset_btnSelectCurrent" xml:space="preserve">
+    <value>显示已加载的参数集</value>
+  </data>
+  <data name="Paramset_gbHeader" xml:space="preserve">
+    <value>参数集</value>
+  </data>
+  <data name="Param_btnEditAll" xml:space="preserve">
+    <value>编辑所有参数</value>
+  </data>
+  <data name="Param_btnExportToCSV" xml:space="preserve">
+    <value>导出为CSV</value>
+  </data>
+  <data name="Param_gbHeader" xml:space="preserve">
+    <value>参数（过滤到当前站）</value>
+  </data>
+  <data name="PgLang_Header" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="PgMsgArch_btnFilterApply" xml:space="preserve">
+    <value>应用过滤器</value>
+  </data>
+  <data name="PgMsgArch_btnFilterReset" xml:space="preserve">
+    <value>重置过滤器</value>
+  </data>
+  <data name="PgMsgArch_btnSearch" xml:space="preserve">
+    <value>搜索</value>
+  </data>
+  <data name="PgMsgArch_btnTakeOverValue" xml:space="preserve">
+    <value>接管值</value>
+  </data>
+  <data name="PgMsgArch_Condition" xml:space="preserve">
+    <value>状况</value>
+  </data>
+  <data name="PgMsgArch_Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="PgMsgArch_From" xml:space="preserve">
+    <value>从</value>
+  </data>
+  <data name="PgMsgArch_gbFilter" xml:space="preserve">
+    <value>过滤</value>
+  </data>
+  <data name="PgMsgArch_gbTimeModul" xml:space="preserve">
+    <value>日期和时间限制</value>
+  </data>
+  <data name="PgMsgArch_MsgText" xml:space="preserve">
+    <value>消息正文</value>
+  </data>
+  <data name="PgMsgArch_MsgType" xml:space="preserve">
+    <value>消息类型</value>
+  </data>
+  <data name="PgMsgArch_SelectedMsg" xml:space="preserve">
+    <value>选定的消息</value>
+  </data>
+  <data name="PgMsgArch_Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="PgMsgArch_Until" xml:space="preserve">
+    <value>到</value>
+  </data>
+  <data name="ProjEval_DiagramTitle" xml:space="preserve">
+    <value>温度和功率曲线</value>
+  </data>
+  <data name="ProjEval_Melt" xml:space="preserve">
+    <value>熔化</value>
+  </data>
+  <data name="ProjEval_Power" xml:space="preserve">
+    <value>力量</value>
+  </data>
+  <data name="ProjEval_Solder" xml:space="preserve">
+    <value>焊料</value>
+  </data>
+  <data name="ProjEval_Temperature" xml:space="preserve">
+    <value>温度</value>
+  </data>
+  <data name="ProjEval_Time" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="ProjKROSY_Amount" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="ProjKROSY_AmountOK" xml:space="preserve">
+    <value>数量正常</value>
+  </data>
+  <data name="ProjKROSY_btnReset" xml:space="preserve">
+    <value>重启</value>
+  </data>
+  <data name="ProjKROSY_DeviceName" xml:space="preserve">
+    <value>设备名称</value>
+  </data>
+  <data name="ProjKROSY_Heartbeats" xml:space="preserve">
+    <value>心跳</value>
+  </data>
+  <data name="ProjKROSY_Hostname" xml:space="preserve">
+    <value>主机名</value>
+  </data>
+  <data name="ProjKROSY_InfoKROSY" xml:space="preserve">
+    <value>KROSY信息</value>
+  </data>
+  <data name="ProjKROSY_InfoOrder" xml:space="preserve">
+    <value>命令信息</value>
+  </data>
+  <data name="ProjKROSY_InfoPLC" xml:space="preserve">
+    <value>PLC信息</value>
+  </data>
+  <data name="ProjKROSY_IO" xml:space="preserve">
+    <value>IO</value>
+  </data>
+  <data name="ProjKROSY_IP" xml:space="preserve">
+    <value>知识产权</value>
+  </data>
+  <data name="ProjKROSY_KROSY" xml:space="preserve">
+    <value>KROSY</value>
+  </data>
+  <data name="ProjKROSY_KROSYState" xml:space="preserve">
+    <value>KROSY状态</value>
+  </data>
+  <data name="ProjKROSY_KSIDENT" xml:space="preserve">
+    <value>KSIDENT</value>
+  </data>
+  <data name="ProjKROSY_ksidnet" xml:space="preserve">
+    <value>ksidnet</value>
+  </data>
+  <data name="ProjKROSY_Lang" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="ProjKROSY_Max" xml:space="preserve">
+    <value>最大限度</value>
+  </data>
+  <data name="ProjKROSY_NIO" xml:space="preserve">
+    <value>NIO</value>
+  </data>
+  <data name="ProjKROSY_Object" xml:space="preserve">
+    <value>目的</value>
+  </data>
+  <data name="ProjKROSY_On" xml:space="preserve">
+    <value>于</value>
+  </data>
+  <data name="ProjKROSY_Order" xml:space="preserve">
+    <value>命令</value>
+  </data>
+  <data name="ProjKROSY_OrderData" xml:space="preserve">
+    <value>命令数据</value>
+  </data>
+  <data name="ProjKROSY_PLC" xml:space="preserve">
+    <value>可编程逻辑控制器</value>
+  </data>
+  <data name="ProjKROSY_PLCState" xml:space="preserve">
+    <value>PLC状态</value>
+  </data>
+  <data name="ProjKROSY_Scancode" xml:space="preserve">
+    <value>扫描码</value>
+  </data>
+  <data name="ProjKROSY_State" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="ProjKROSY_Station" xml:space="preserve">
+    <value>站</value>
+  </data>
+  <data name="ProjKROSY_Type" xml:space="preserve">
+    <value>类型</value>
+  </data>
+  <data name="ProjKROSY_Version" xml:space="preserve">
+    <value>版本</value>
+  </data>
+  <data name="ProjRFID_Dataversion" xml:space="preserve">
+    <value>数据版本</value>
+  </data>
+  <data name="ProjRFID_Inductor" xml:space="preserve">
+    <value>感应器</value>
+  </data>
+  <data name="ProjRFID_Number" xml:space="preserve">
+    <value>数字</value>
+  </data>
+  <data name="ProjRFID_Present" xml:space="preserve">
+    <value>展示</value>
+  </data>
+  <data name="ProjRFID_WT" xml:space="preserve">
+    <value>WT</value>
+  </data>
+  <data name="ProjWT_btnClearAll" xml:space="preserve">
+    <value>全部清除</value>
+  </data>
+  <data name="ProjWT_btnSetReadData" xml:space="preserve">
+    <value>设置读取数据</value>
+  </data>
+  <data name="ProjWT_btnWrite" xml:space="preserve">
+    <value>写入</value>
+  </data>
+  <data name="ProjWT_Clamp" xml:space="preserve">
+    <value>夹钳</value>
+  </data>
+  <data name="ProjWT_CoolingOn" xml:space="preserve">
+    <value>冷却中</value>
+  </data>
+  <data name="ProjWT_CoolingPower" xml:space="preserve">
+    <value>冷却功率</value>
+  </data>
+  <data name="ProjWT_DrawbackLength" xml:space="preserve">
+    <value>退刀长度</value>
+  </data>
+  <data name="ProjWT_DVS" xml:space="preserve">
+    <value>DVS</value>
+  </data>
+  <data name="ProjWT_Enable" xml:space="preserve">
+    <value>启用</value>
+  </data>
+  <data name="ProjWT_Enabled" xml:space="preserve">
+    <value>已启用</value>
+  </data>
+  <data name="ProjWT_FeedLength" xml:space="preserve">
+    <value>进料长度</value>
+  </data>
+  <data name="ProjWT_LegalInductor" xml:space="preserve">
+    <value>法定感应器</value>
+  </data>
+  <data name="ProjWT_Name" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="ProjWT_Override" xml:space="preserve">
+    <value>覆写</value>
+  </data>
+  <data name="ProjWT_PreCoolingOn" xml:space="preserve">
+    <value>预冷开启</value>
+  </data>
+  <data name="ProjWT_PreCoolingPower" xml:space="preserve">
+    <value>预冷功率</value>
+  </data>
+  <data name="ProjWT_Speed" xml:space="preserve">
+    <value>速度</value>
+  </data>
+  <data name="ProjWT_TemperatrueMelt" xml:space="preserve">
+    <value>熔化温度</value>
+  </data>
+  <data name="ProjWT_TemperatureRelease" xml:space="preserve">
+    <value>释放温度</value>
+  </data>
+  <data name="ProjWT_TemperatureSolder" xml:space="preserve">
+    <value>焊料温度</value>
+  </data>
+  <data name="ProjWT_TemperatureTune" xml:space="preserve">
+    <value>温度调节</value>
+  </data>
+  <data name="Proj_StNameModul1" xml:space="preserve">
+    <value>模块1</value>
+  </data>
+  <data name="Proj_StNameStation1" xml:space="preserve">
+    <value>站1（左）</value>
+  </data>
+  <data name="Proj_StNameStation2" xml:space="preserve">
+    <value>站2（右）</value>
+  </data>
+  <data name="UcAx_btnReleaseController" xml:space="preserve">
+    <value>释放控制器</value>
+  </data>
+  <data name="UcAx_gbRelease" xml:space="preserve">
+    <value>释放</value>
+  </data>
+  <data name="UcAx_gbReleaseManual" xml:space="preserve">
+    <value>手动释放</value>
+  </data>
+  <data name="UcAx_gbStatusLog" xml:space="preserve">
+    <value>状态（日志）</value>
+  </data>
+  <data name="UcAx_gbStatusPhys" xml:space="preserve">
+    <value>状态（物理）</value>
+  </data>
+  <data name="UcAx_lblActPos" xml:space="preserve">
+    <value>行动位置</value>
+  </data>
+  <data name="UcAx_lblActSpeed" xml:space="preserve">
+    <value>行动速度</value>
+  </data>
+  <data name="UcAx_lblController" xml:space="preserve">
+    <value>控制器</value>
+  </data>
+  <data name="UcAx_lblCoupled" xml:space="preserve">
+    <value>耦合的</value>
+  </data>
+  <data name="UcAx_lblError" xml:space="preserve">
+    <value>错误</value>
+  </data>
+  <data name="UcAx_lblHasJob" xml:space="preserve">
+    <value>有工作</value>
+  </data>
+  <data name="UcAx_lblInTargetArea" xml:space="preserve">
+    <value>目标区域</value>
+  </data>
+  <data name="UcAx_lblInTargetPos" xml:space="preserve">
+    <value>目标位置</value>
+  </data>
+  <data name="UcAx_lblLimitNeg" xml:space="preserve">
+    <value>限制 -</value>
+  </data>
+  <data name="UcAx_lblLimitPos" xml:space="preserve">
+    <value>限制+</value>
+  </data>
+  <data name="UcAx_lblMovesNeg" xml:space="preserve">
+    <value>负方向移动</value>
+  </data>
+  <data name="UcAx_lblMovesPos" xml:space="preserve">
+    <value>正方向移动</value>
+  </data>
+  <data name="UcAx_lblNotMoving" xml:space="preserve">
+    <value>没有移动</value>
+  </data>
+  <data name="UcAx_lblOverride" xml:space="preserve">
+    <value>覆写</value>
+  </data>
+  <data name="UcAx_lblPosLag" xml:space="preserve">
+    <value>位置滞后</value>
+  </data>
+  <data name="UcAx_lblReady" xml:space="preserve">
+    <value>就绪</value>
+  </data>
+  <data name="UcAx_lblRefOK" xml:space="preserve">
+    <value>被引用</value>
+  </data>
+  <data name="UcAx_lblSetPointPos" xml:space="preserve">
+    <value>设定位置</value>
+  </data>
+  <data name="UcAx_lblSetPointSpeed" xml:space="preserve">
+    <value>设定速度</value>
+  </data>
+  <data name="UcAx_lblTargetPos" xml:space="preserve">
+    <value>目标位置</value>
+  </data>
+  <data name="UcAx_lblTargetSpeed" xml:space="preserve">
+    <value>目标速度</value>
+  </data>
+  <data name="UcCyl_Forerun" xml:space="preserve">
+    <value>前驱</value>
+  </data>
+  <data name="UcCyl_Restpos" xml:space="preserve">
+    <value>休息位置</value>
+  </data>
+  <data name="UcCyl_SlideCylOf" xml:space="preserve">
+    <value>的滑动气缸</value>
+  </data>
+  <data name="UcDevOnOff_Output" xml:space="preserve">
+    <value>输出</value>
+  </data>
+  <data name="UcDevOnOff_PushButton" xml:space="preserve">
+    <value>按钮</value>
+  </data>
+  <data name="UcDevOnOff_SwitchLogic" xml:space="preserve">
+    <value>开关逻辑</value>
+  </data>
+  <data name="UcDevOnOff_ToggleSwitch" xml:space="preserve">
+    <value>拨动开关</value>
+  </data>
+  <data name="UcMsgErr_Update" xml:space="preserve">
+    <value>更新时出错</value>
+  </data>
+  <data name="UserAdmin_btnDeleteUser" xml:space="preserve">
+    <value>删除用户</value>
+  </data>
+  <data name="UserAdmin_btnEdituser" xml:space="preserve">
+    <value>编辑用户</value>
+  </data>
+  <data name="UserAdmin_btnNewUser" xml:space="preserve">
+    <value>新用户</value>
+  </data>
+  <data name="UserAdmin_dgheaderUserlevel" xml:space="preserve">
+    <value>用户等级</value>
+  </data>
+  <data name="UserAdmin_gbHeader" xml:space="preserve">
+    <value>用户</value>
+  </data>
+  <data name="UserLevel_Administrator" xml:space="preserve">
+    <value>管理员</value>
+  </data>
+  <data name="UserLevel_DefaultUser" xml:space="preserve">
+    <value>默认用户</value>
+  </data>
+  <data name="UserLevel_Maintenance" xml:space="preserve">
+    <value>维护</value>
+  </data>
+  <data name="UserLevel_Supervisor" xml:space="preserve">
+    <value>监管员</value>
+  </data>
+  <data name="ProjWT_CoolingType" xml:space="preserve">
+    <value>Cooling type</value>
+  </data>
+  <data name="QuitSt10NIO" xml:space="preserve">
+    <value>Station 10 Quit NOK</value>
+  </data>
+  <data name="QuitSt20NIO" xml:space="preserve">
+    <value>Station 20 Quit NOK</value>
+  </data>
+  <data name="UserLevel_Operator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="UserLevel_Quality" xml:space="preserve">
+    <value>Quality</value>
+  </data>
+  <data name="UserLevel_Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="ProjWT_TemperatureOffset" xml:space="preserve">
+    <value>Temperature Offset</value>
+  </data>
+  <data name="ProjWT_CopperMeasurement" xml:space="preserve">
+    <value>Copper Measurement</value>
+  </data>
+  <data name="ProjWT_ReheatTime" xml:space="preserve">
+    <value>Reheat Time [ms]</value>
+  </data>
+  <data name="NavVart_PartInsertRH" xml:space="preserve">
+    <value>第2节插入（右）</value>
+  </data>
+  <data name="NavVert_PartInsertLH" xml:space="preserve">
+    <value>第1节插入（左）</value>
+  </data>
+  <data name="NavHoriz_btnOrder" xml:space="preserve">
+    <value>订单</value>
+  </data>
+  <data name="NavHoriz_btnOrderArchive" xml:space="preserve">
+    <value>订单存档</value>
+  </data>
+  <data name="NavVert_btnOrder" xml:space="preserve">
+    <value>订单</value>
+  </data>
+  <data name="PgOrderArchive_activeInPLC" xml:space="preserve">
+    <value>当前PLC中活动状态</value>
+  </data>
+  <data name="PgOrderArchive_AddedBy" xml:space="preserve">
+    <value>用户添加至队列</value>
+  </data>
+  <data name="PgOrderArchive_AddedOn" xml:space="preserve">
+    <value>添加至队列时间戳</value>
+  </data>
+  <data name="PgOrderArchive_BtnUpdate" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="PgOrderArchive_CancelledOn" xml:space="preserve">
+    <value>取消时间戳</value>
+  </data>
+  <data name="PgOrderArchive_CartonsDone" xml:space="preserve">
+    <value>已完成箱数</value>
+  </data>
+  <data name="PgOrderArchive_CartonsPerPallet" xml:space="preserve">
+    <value>每托盘箱数</value>
+  </data>
+  <data name="PgOrderArchive_FinishedOn" xml:space="preserve">
+    <value>完成时间戳</value>
+  </data>
+  <data name="PgOrderArchive_gb_Header" xml:space="preserve">
+    <value>已加载订单历史记录</value>
+  </data>
+  <data name="PgOrderArchive_LoadedOn" xml:space="preserve">
+    <value>加载至PLC时间戳</value>
+  </data>
+  <data name="PgOrderArchive_paramset" xml:space="preserve">
+    <value>参数集名称</value>
+  </data>
+  <data name="PgOrderArchive_PartsDone" xml:space="preserve">
+    <value>已完成零件</value>
+  </data>
+  <data name="PgOrderArchive_StartedOn" xml:space="preserve">
+    <value>开始时间戳</value>
+  </data>
+  <data name="PgOrderArchive_State" xml:space="preserve">
+    <value>状态</value>
+  </data>
+  <data name="PgOrderArchive_Target" xml:space="preserve">
+    <value>目标数量</value>
+  </data>
+  <data name="PgOrder_autoStart" xml:space="preserve">
+    <value>自动加载并启动下个订单</value>
+  </data>
+  <data name="PgOrder_BoxesProduced" xml:space="preserve">
+    <value>已完成纸箱：</value>
+  </data>
+  <data name="PgOrder_BtnCancel" xml:space="preserve">
+    <value>取消订单</value>
+  </data>
+  <data name="PgOrder_BtnDelete" xml:space="preserve">
+    <value>删除订单</value>
+  </data>
+  <data name="PgOrder_BtnLoad" xml:space="preserve">
+    <value>加载并启动下个订单</value>
+  </data>
+  <data name="PgOrder_db_addedbyUser" xml:space="preserve">
+    <value>用户添加至队列：</value>
+  </data>
+  <data name="PgOrder_db_addedonTimestamp" xml:space="preserve">
+    <value>添加至队列时间：</value>
+  </data>
+  <data name="PgOrder_db_cancelledonTimestamp" xml:space="preserve">
+    <value>取消时间：</value>
+  </data>
+  <data name="PgOrder_db_Current" xml:space="preserve">
+    <value>当前加载于PLC</value>
+  </data>
+  <data name="PgOrder_db_finishedonTimestamp" xml:space="preserve">
+    <value>完成时间：</value>
+  </data>
+  <data name="PgOrder_db_loadedonTimestamp" xml:space="preserve">
+    <value>加载至PLC时间：</value>
+  </data>
+  <data name="PgOrder_db_Paramsetname" xml:space="preserve">
+    <value>参数集名称：</value>
+  </data>
+  <data name="PgOrder_db_Previous" xml:space="preserve">
+    <value>先前加载至PLC</value>
+  </data>
+  <data name="PgOrder_db_quantityDone" xml:space="preserve">
+    <value>已完成零件：</value>
+  </data>
+  <data name="PgOrder_db_quantityTarget" xml:space="preserve">
+    <value>目标数量：</value>
+  </data>
+  <data name="PgOrder_db_startedonTimestamp" xml:space="preserve">
+    <value>启动时间：</value>
+  </data>
+  <data name="PgOrder_db_State" xml:space="preserve">
+    <value>状态：</value>
+  </data>
+  <data name="PgOrder_Done" xml:space="preserve">
+    <value>订单完成时间：</value>
+  </data>
+  <data name="PgOrder_gbDatabase" xml:space="preserve">
+    <value>数据库</value>
+  </data>
+  <data name="PgOrder_gbPLC" xml:space="preserve">
+    <value>PLC</value>
+  </data>
+  <data name="PgOrder_gbQueue" xml:space="preserve">
+    <value>队列</value>
+  </data>
+  <data name="PgOrder_manualStart" xml:space="preserve">
+    <value>手动加载并启动下个订单</value>
+  </data>
+  <data name="PgOrder_NumberOfPieces" xml:space="preserve">
+    <value>已完成零件：</value>
+  </data>
+  <data name="PgOrder_OrderName" xml:space="preserve">
+    <value>订单名称：</value>
+  </data>
+  <data name="PgOrder_PopUp_Cancel_Header" xml:space="preserve">
+    <value>取消当前订单</value>
+  </data>
+  <data name="PgOrder_PopUp_Cancel_Text" xml:space="preserve">
+    <value>是否确定取消当前订单？</value>
+  </data>
+  <data name="PgOrder_q_addedBy" xml:space="preserve">
+    <value>添加者</value>
+  </data>
+  <data name="PgOrder_q_addedOn" xml:space="preserve">
+    <value>添加时间</value>
+  </data>
+  <data name="PgOrder_q_cartonsPerPallet" xml:space="preserve">
+    <value>每托盘箱数</value>
+  </data>
+  <data name="PgOrder_q_number" xml:space="preserve">
+    <value>队列中位置</value>
+  </data>
+  <data name="PgOrder_q_paramset" xml:space="preserve">
+    <value>参数集名称</value>
+  </data>
+  <data name="PgOrder_q_paramsetId" xml:space="preserve">
+    <value>参数集ID</value>
+  </data>
+  <data name="PgOrder_q_quantity" xml:space="preserve">
+    <value>数量</value>
+  </data>
+  <data name="PgOrder_ReadyForNewOrder" xml:space="preserve">
+    <value>准备新订单：</value>
+  </data>
+  <data name="PgOrder_Started" xml:space="preserve">
+    <value>订单开始时间：</value>
+  </data>
+  <data name="PgOrder_strHeaderStart" xml:space="preserve">
+    <value>启动下个订单</value>
+  </data>
+  <data name="PopUpDeleteOrder_Header" xml:space="preserve">
+    <value>删除订单</value>
+  </data>
+  <data name="PopUpDeleteOrder_Hint" xml:space="preserve">
+    <value>是否要删除此订单？</value>
+  </data>
+  <data name="PopUpNewOrder_Header" xml:space="preserve">
+    <value>新订单</value>
+  </data>
+  <data name="PopUpNewOrder_Name" xml:space="preserve">
+    <value>订单名称：</value>
+  </data>
+  <data name="PopUpStartOrder_BtnStart" xml:space="preserve">
+    <value>启动</value>
+  </data>
+  <data name="PopUpStartOrder_CartonsPerPallet" xml:space="preserve">
+    <value>每托盘纸箱数：</value>
+  </data>
+  <data name="PopUpStartOrder_CreatedBy" xml:space="preserve">
+    <value>创建用户：</value>
+  </data>
+  <data name="PopUpStartOrder_CreatedOn" xml:space="preserve">
+    <value>创建日期：</value>
+  </data>
+  <data name="PopUpStartOrder_Header" xml:space="preserve">
+    <value>加载并启动下一个订单</value>
+  </data>
+  <data name="PopUpStartOrder_Hint" xml:space="preserve">
+    <value>是否要启动并加载该订单？</value>
+  </data>
+  <data name="PopUpStartOrder_NextOrder" xml:space="preserve">
+    <value>下一个订单：</value>
+  </data>
+  <data name="PopUpStartOrder_Paramsetname" xml:space="preserve">
+    <value>参数集名称：</value>
+  </data>
+  <data name="PopUpStartOrder_Target" xml:space="preserve">
+    <value>目标数量：</value>
+  </data>
+</root>

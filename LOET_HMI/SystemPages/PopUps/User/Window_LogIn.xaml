@@ -1,0 +1,61 @@
+﻿<Window x:Class="LOET_HMI.Window_LogIn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOET_HMI"
+        mc:Ignorable="d"
+        Title="Log In" 
+        Height="450" Width="800"
+        Style="{StaticResource RENA_PopUpStlye}" 
+        WindowStartupLocation="CenterScreen" 
+        Loaded="Window_Loaded" 
+        Unloaded="Window_Unloaded"
+        xmlns:prop="clr-namespace:LOET_HMI.Properties"
+        PreviewMouseUp="Window_PreviewMouseUp"
+        >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel x:Name="Wrap" Grid.Column="0" HorizontalAlignment="Left" Panel.ZIndex="0" Margin="20,20,20,20">
+            <Button x:Name="BtnTemplate" Style="{StaticResource RENA_ButtonStyle_PopUp}" Margin="5,5,5,5" />
+
+        </WrapPanel>
+
+        <StackPanel x:Name="spStatus" VerticalAlignment="Bottom" Grid.Column="1" HorizontalAlignment="Right" Panel.ZIndex="1" Orientation="Vertical" Margin="0,0,17.286,14.714" Width="270" >
+
+            <TextBlock x:Name="tblName" Margin="00,0,0,10"  Text="{x:Static prop:Resources.DlgUser_tbName}" Style="{StaticResource RENA_TextBlockStyleLARGE_PopUp}" />
+            <TextBlock x:Name="tblLevel" Margin="00,0,0,10" Style="{StaticResource RENA_TextBlockStyle_PopUp}">
+                <Run Text="["  />
+                <Run Text="{x:Static prop:Resources.DlgUser_lblUserlevel}"   />
+                <Run Text="]"  />
+            </TextBlock>
+
+            <Button x:Name="tblLogOut" Margin="10,0,0,30"  Content="LogOut" 
+                    
+                    Style="{StaticResource RENA_ButtonStyle_PopUp}" HorizontalAlignment="Left" 
+                    
+                    Click="TblLogOut_Click" />
+
+
+
+            <TextBlock x:Name="tblPasswort"  Margin="00,10,0,0" Text="{x:Static prop:Resources.DlgUser_tbPasswort}" Style="{StaticResource RENA_TextBlockStyle_PopUp}" />
+            <PasswordBox x:Name="passwordBox" Height="35"  Margin="00,00,0,0" FontFamily="Arial" FontSize="24" PreviewKeyUp="PasswordBox_PreviewKeyUp" PreviewMouseDown="PasswordBox_PreviewMouseDown"/>
+            <Grid Margin="0,40,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="BtnOk" Grid.Column="0" Content="{x:Static prop:Resources.BtnOK}" IsDefault="True" Click="BtnOk_Click"   Style="{StaticResource RENA_ButtonStyle_PopUp}"   />
+                <Button x:Name="BtnCancel"  Grid.Column="1" Content="{x:Static prop:Resources.BtnCancel}" IsCancel="True" Click="BtnCancel_Click"  Style="{StaticResource RENA_ButtonStyle_PopUp}" />
+            </Grid>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

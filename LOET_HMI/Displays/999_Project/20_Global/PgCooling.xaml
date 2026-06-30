@@ -1,0 +1,37 @@
+﻿<Page xmlns:UserControls="clr-namespace:LOET_HMI.UserControls" 
+      x:Name="pgGlobal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:LOET_HMI.Displays"
+      xmlns:LOET_HMI="clr-namespace:LOET_HMI" x:Class="LOET_HMI.Displays.PgGlobal"
+      mc:Ignorable="d" 
+      d:DesignHeight="{StaticResource frameHeight}" d:DesignWidth="{StaticResource frameWidth}"
+      Loaded="Page_Loaded" Unloaded="Page_Unloaded"
+      Title="PgGlob">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/LOET_HMI;component/Images/Global.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+        <UserControls:UcDeviceOnOff x:Name="dev1Vacuum" Margin="1249,136,101,536"  DpDeviceStruct="{Binding ElementName=pgGlobal, Path=DevList[0]}"  />
+        <UserControls:UcDeviceOnOff x:Name="dev2Generator" Margin="633,136,717,536"   DpDeviceStruct="{Binding ElementName=pgGlobal, Path=DevList[1]}" RenderTransformOrigin="0.176,-0.244"      />
+        <UserControls:UcDeviceOnOff x:Name="dev3Cooler" Margin="633,492,717,180" DpDeviceStruct="{Binding ElementName=pgGlobal, Path=DevList[2]}"  />
+
+
+        <UserControls:UcHU5000 x:Name="elemGenerator" DpHU5000HMI="{Binding ElementName=pgGlobal, Path=DpGenerator}" VerticalAlignment="Top" Margin="7,347,1243,0" >
+            <UserControls:UcHU5000.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.186"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.747"/>
+                </TransformGroup>
+            </UserControls:UcHU5000.RenderTransform>
+        </UserControls:UcHU5000>
+
+
+    </Grid>
+</Page>

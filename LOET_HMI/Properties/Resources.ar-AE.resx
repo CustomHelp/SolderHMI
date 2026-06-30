@@ -1,0 +1,1089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>يلغي</value>
+  </data>
+  <data name="BtnOK" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>يلغي</value>
+  </data>
+  <data name="Btn_Delete" xml:space="preserve">
+    <value>يمسح</value>
+  </data>
+  <data name="Btn_OK" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="Btn_Yes" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="ComponentState_Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="ComponentState_ManualMode" xml:space="preserve">
+    <value>الوضع اليدوي</value>
+  </data>
+  <data name="ComponentState_Message" xml:space="preserve">
+    <value>رسالة</value>
+  </data>
+  <data name="ComponentState_OK" xml:space="preserve">
+    <value>نعم</value>
+  </data>
+  <data name="ComponentState_Wait" xml:space="preserve">
+    <value>منتظر</value>
+  </data>
+  <data name="ComponentState_Warning" xml:space="preserve">
+    <value>تحذير</value>
+  </data>
+  <data name="DataGridAlarm_Come" xml:space="preserve">
+    <value>يأتي</value>
+  </data>
+  <data name="DataGridAlarm_Gone" xml:space="preserve">
+    <value>ذهب</value>
+  </data>
+  <data name="DataGridAlarm_Stat" xml:space="preserve">
+    <value>محطة</value>
+  </data>
+  <data name="DataGridAlarm_Text" xml:space="preserve">
+    <value>نص</value>
+  </data>
+  <data name="DataGridParam_CreatedBy" xml:space="preserve">
+    <value>انشأ من قبل</value>
+  </data>
+  <data name="DataGridParam_CreatedOn" xml:space="preserve">
+    <value>تم إنشاؤها على</value>
+  </data>
+  <data name="DataGridParam_Descritpion" xml:space="preserve">
+    <value>وصف</value>
+  </data>
+  <data name="DataGridParam_LastModified" xml:space="preserve">
+    <value>آخر تعديل</value>
+  </data>
+  <data name="DataGridParam_Name" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="DataGridParam_RangeMax" xml:space="preserve">
+    <value>المدى الأقصى</value>
+  </data>
+  <data name="DataGridParam_RangeMin" xml:space="preserve">
+    <value>المدى دقيقة</value>
+  </data>
+  <data name="DataGridParam_Unit" xml:space="preserve">
+    <value>وحدة</value>
+  </data>
+  <data name="DataGridParam_Value" xml:space="preserve">
+    <value>قيمة</value>
+  </data>
+  <data name="DataGridParam_ValuePLC" xml:space="preserve">
+    <value>القيمة PLC</value>
+  </data>
+  <data name="DgCol_Acknowledged" xml:space="preserve">
+    <value>أقر</value>
+  </data>
+  <data name="DgCol_AddedBy" xml:space="preserve">
+    <value>تمت الإضافة إلى قائمة الانتظار بواسطة</value>
+  </data>
+  <data name="DgCol_AddedOn" xml:space="preserve">
+    <value>تمت الإضافة إلى قائمة الانتظار تشغيل</value>
+  </data>
+  <data name="DgCol_BMK" xml:space="preserve">
+    <value>BMK</value>
+  </data>
+  <data name="DgCol_CancelledOn" xml:space="preserve">
+    <value>تم الإلغاء في</value>
+  </data>
+  <data name="DgCol_Error" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="DgCol_FinishedOn" xml:space="preserve">
+    <value>انتهى في</value>
+  </data>
+  <data name="DgCol_Gone" xml:space="preserve">
+    <value>ذهب</value>
+  </data>
+  <data name="DgCol_LoadedOn" xml:space="preserve">
+    <value>تحميلها في PLC على</value>
+  </data>
+  <data name="DgCol_Message" xml:space="preserve">
+    <value>رسالة</value>
+  </data>
+  <data name="DgCol_Modul" xml:space="preserve">
+    <value>مودول</value>
+  </data>
+  <data name="DgCol_Occurred" xml:space="preserve">
+    <value>حصل</value>
+  </data>
+  <data name="DgCol_OrderName" xml:space="preserve">
+    <value>اسم الطلب</value>
+  </data>
+  <data name="DgCol_ParamSetID" xml:space="preserve">
+    <value>معرف مجموعة المعلمات</value>
+  </data>
+  <data name="DgCol_ParamSetName" xml:space="preserve">
+    <value>اسم مجموعة المعلمة</value>
+  </data>
+  <data name="DgCol_PiecesDone" xml:space="preserve">
+    <value>القطع المنجزة</value>
+  </data>
+  <data name="DgCol_PlacedBy" xml:space="preserve">
+    <value>وضعت من قبل</value>
+  </data>
+  <data name="DgCol_PosInQueue" xml:space="preserve">
+    <value>الموقف في الطابور</value>
+  </data>
+  <data name="DgCol_Quantity" xml:space="preserve">
+    <value>كمية</value>
+  </data>
+  <data name="DgCol_StartedOn" xml:space="preserve">
+    <value>بدأ في</value>
+  </data>
+  <data name="DgCol_State" xml:space="preserve">
+    <value>ولاية</value>
+  </data>
+  <data name="DgCol_Station" xml:space="preserve">
+    <value>محطة</value>
+  </data>
+  <data name="DgCol_StillActiveInPLC" xml:space="preserve">
+    <value>لا يزال نشطًا في PLC</value>
+  </data>
+  <data name="DgCol_Target" xml:space="preserve">
+    <value>الكمية المستهدفة</value>
+  </data>
+  <data name="DgCol_User" xml:space="preserve">
+    <value>مستخدم</value>
+  </data>
+  <data name="DlgParamset_lblActName" xml:space="preserve">
+    <value>الاسم الحالي:</value>
+  </data>
+  <data name="DlgParamset_lblNameOfCopy" xml:space="preserve">
+    <value>اسم النسخة:</value>
+  </data>
+  <data name="DlgParamset_lblNameOfOrig" xml:space="preserve">
+    <value>اسم الأصل:</value>
+  </data>
+  <data name="DlgParamset_lblNewName" xml:space="preserve">
+    <value>اسم جديد:</value>
+  </data>
+  <data name="DlgParamset_lblReallyDelete" xml:space="preserve">
+    <value>هل تريد حقًا حذف مجموعة المعلمات هذه؟</value>
+  </data>
+  <data name="DlgParamset_lblTitleCopy" xml:space="preserve">
+    <value>نسخ مجموعة المعلمات</value>
+  </data>
+  <data name="DlgParamset_lblTitleDelete" xml:space="preserve">
+    <value>حذف مجموعة المعلمات</value>
+  </data>
+  <data name="DlgParamset_lblTitleNew" xml:space="preserve">
+    <value>مجموعة معلمات جديدة</value>
+  </data>
+  <data name="DlgParamset_lblTitleRename" xml:space="preserve">
+    <value>إعادة تسمية مجموعة المعلمات</value>
+  </data>
+  <data name="DlgSetVal_btnSet" xml:space="preserve">
+    <value>تعيين</value>
+  </data>
+  <data name="DlgSetVal_tbCurrentVal" xml:space="preserve">
+    <value>القيمة الحالية:</value>
+  </data>
+  <data name="DlgSetVal_tbNewVal" xml:space="preserve">
+    <value>قيمة جديدة:</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMax" xml:space="preserve">
+    <value>النطاق الأقصى:</value>
+  </data>
+  <data name="DlgSetVal_tbRangeMin" xml:space="preserve">
+    <value>النطاق الأدنى:</value>
+  </data>
+  <data name="DlgSetVal_Titel" xml:space="preserve">
+    <value>اضبط القيمة</value>
+  </data>
+  <data name="DlgUser_lblSelectAUser" xml:space="preserve">
+    <value>حدد مستخدمًا</value>
+  </data>
+  <data name="DlgUser_lblUserlevel" xml:space="preserve">
+    <value>مستوى المستخدم</value>
+  </data>
+  <data name="DlgUser_lblUsername" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="DlgUser_tbName" xml:space="preserve">
+    <value>لا يوجد مستخدم</value>
+  </data>
+  <data name="DlgUser_tbPasswort" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="DlgUser_txtReallyDelete" xml:space="preserve">
+    <value>هل تريد حقًا حذف هذا المستخدم؟</value>
+  </data>
+  <data name="Main_BtnLogin" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="Main_btnSettings" xml:space="preserve">
+    <value>إعدادات</value>
+  </data>
+  <data name="Main_cbManuals" xml:space="preserve">
+    <value>Manuals</value>
+  </data>
+  <data name="Main_cbVideoInstructions" xml:space="preserve">
+    <value>Video-Instructions</value>
+  </data>
+  <data name="Main_InitNotFinished" xml:space="preserve">
+    <value>فيه. لم تنته</value>
+  </data>
+  <data name="Main_lblNavigation" xml:space="preserve">
+    <value>ملاحة</value>
+  </data>
+  <data name="Main_lblWaitForConnection" xml:space="preserve">
+    <value>PLC انتظر الاتصال بـ </value>
+  </data>
+  <data name="Main_MachineName" xml:space="preserve">
+    <value>Kroschu - جهاز لحام</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedCaption" xml:space="preserve">
+    <value>تم الرفض</value>
+  </data>
+  <data name="MsgBoxUserLev_AccesDeniedText" xml:space="preserve">
+    <value>ليس لديك إذن للقيام بهذه العملية.</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionCaption" xml:space="preserve">
+    <value>اختيار</value>
+  </data>
+  <data name="MsgBoxUserLev_NoSelectionText" xml:space="preserve">
+    <value>لم يتم تحديد إدخال.</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Caption" xml:space="preserve">
+    <value>اللغة المختارة</value>
+  </data>
+  <data name="MsgBox_LanguageRestart_Text" xml:space="preserve">
+    <value>يتم إعادة تشغيل HMI باللغة المحددة. انتظر من فضلك.</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Caption" xml:space="preserve">
+    <value>تسجيل الدخول</value>
+  </data>
+  <data name="MsgBox_LoginFirst_Text" xml:space="preserve">
+    <value>الرجاء تسجيل الدخول أولا</value>
+  </data>
+  <data name="NavHoriz_btnAllMachinePar" xml:space="preserve">
+    <value>كل معلمة الجهاز</value>
+  </data>
+  <data name="NavHoriz_btnDVS" xml:space="preserve">
+    <value>DVS</value>
+  </data>
+  <data name="NavHoriz_btnEvaluation" xml:space="preserve">
+    <value>تقييم</value>
+  </data>
+  <data name="NavHoriz_btnLanguage" xml:space="preserve">
+    <value>لغة</value>
+  </data>
+  <data name="NavHoriz_btnMessageArchiv" xml:space="preserve">
+    <value>أرشيف الرسائل</value>
+  </data>
+  <data name="NavHoriz_btnMessages" xml:space="preserve">
+    <value>رسائل</value>
+  </data>
+  <data name="NavHoriz_btnParameters" xml:space="preserve">
+    <value>معامل</value>
+  </data>
+  <data name="NavHoriz_btnRFID_IND" xml:space="preserve">
+    <value>RFID IND</value>
+  </data>
+  <data name="NavHoriz_btnRFID_WT" xml:space="preserve">
+    <value>RFID WT</value>
+  </data>
+  <data name="NavHoriz_btnTypePar" xml:space="preserve">
+    <value>النوع</value>
+  </data>
+  <data name="NavHoriz_btnUserManagement" xml:space="preserve">
+    <value>إدارةالمستخدم</value>
+  </data>
+  <data name="NavVert_btnCounter" xml:space="preserve">
+    <value>عداد</value>
+  </data>
+  <data name="NavVert_btnEvalStat1" xml:space="preserve">
+    <value>التقييم 1 (يسار)</value>
+  </data>
+  <data name="NavVert_btnEvalStat2" xml:space="preserve">
+    <value>التقييم 2 (يمين)</value>
+  </data>
+  <data name="NavVert_btnGlobal" xml:space="preserve">
+    <value>عالمي</value>
+  </data>
+  <data name="NavVert_btnKROSY" xml:space="preserve">
+    <value>KROSY</value>
+  </data>
+  <data name="NavVert_btnMachine" xml:space="preserve">
+    <value>آلة</value>
+  </data>
+  <data name="NavVert_btnManualMenu" xml:space="preserve">
+    <value>القائمة اليدوية</value>
+  </data>
+  <data name="NavVert_btnSettings" xml:space="preserve">
+    <value>إعدادات</value>
+  </data>
+  <data name="NavVert_btnSpecialFunctions" xml:space="preserve">
+    <value>وظائف خاصة</value>
+  </data>
+  <data name="ParamMsgBox_InPLCFound" xml:space="preserve">
+    <value>تم العثور على مجموعة المعلمات التي تم تحميلها على PLC في قاعدة البيانات.</value>
+  </data>
+  <data name="ParamMsgBox_InPLCHeader" xml:space="preserve">
+    <value>معلمات في PLC</value>
+  </data>
+  <data name="ParamMsgBox_InPLCNotFound" xml:space="preserve">
+    <value>لم يتم العثور على مجموعة المعلمات التي تم تحميلها على PLC في قاعدة البيانات.</value>
+  </data>
+  <data name="ParamMsgBox_NoParSetAtAll" xml:space="preserve">
+    <value>لم يتم العثور على مجموعة معلمات في قاعدة البيانات.</value>
+  </data>
+  <data name="ParamMsgBox_Selected" xml:space="preserve">
+    <value>مجموعة المعلمات المحددة حاليًا هي:</value>
+  </data>
+  <data name="Paramset_btnCopy" xml:space="preserve">
+    <value>ينسخ</value>
+  </data>
+  <data name="Paramset_btnDelete" xml:space="preserve">
+    <value>يمسح</value>
+  </data>
+  <data name="Paramset_btnLoadToPLC" xml:space="preserve">
+    <value>تحميل إلى PLC</value>
+  </data>
+  <data name="Paramset_btnNew" xml:space="preserve">
+    <value>جديد</value>
+  </data>
+  <data name="Paramset_btnRename" xml:space="preserve">
+    <value>إعادة تسمية</value>
+  </data>
+  <data name="Paramset_btnSelectCurrent" xml:space="preserve">
+    <value>إظهار بارامست محملة</value>
+  </data>
+  <data name="Paramset_gbHeader" xml:space="preserve">
+    <value>معلمات</value>
+  </data>
+  <data name="Param_btnEditAll" xml:space="preserve">
+    <value>قم بتحرير كافة المعلمات</value>
+  </data>
+  <data name="Param_btnExportToCSV" xml:space="preserve">
+    <value>CSV تصدير إلى</value>
+  </data>
+  <data name="Param_gbHeader" xml:space="preserve">
+    <value>المعلمة (تمت تصفيتها إلى المحطة الحالية)</value>
+  </data>
+  <data name="PgLang_Header" xml:space="preserve">
+    <value>لغة</value>
+  </data>
+  <data name="PgMsgArch_btnFilterApply" xml:space="preserve">
+    <value>تطبيق مرشح</value>
+  </data>
+  <data name="PgMsgArch_btnFilterReset" xml:space="preserve">
+    <value>تصفية إعادة تعيين</value>
+  </data>
+  <data name="PgMsgArch_btnSearch" xml:space="preserve">
+    <value>يبحث</value>
+  </data>
+  <data name="PgMsgArch_btnTakeOverValue" xml:space="preserve">
+    <value>استحوذ على القيمة</value>
+  </data>
+  <data name="PgMsgArch_Condition" xml:space="preserve">
+    <value>حالة</value>
+  </data>
+  <data name="PgMsgArch_Date" xml:space="preserve">
+    <value>تاريخ</value>
+  </data>
+  <data name="PgMsgArch_From" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="PgMsgArch_gbFilter" xml:space="preserve">
+    <value>منقي</value>
+  </data>
+  <data name="PgMsgArch_gbTimeModul" xml:space="preserve">
+    <value>تحديد التاريخ والوقت</value>
+  </data>
+  <data name="PgMsgArch_MsgText" xml:space="preserve">
+    <value>رسالة نصية</value>
+  </data>
+  <data name="PgMsgArch_MsgType" xml:space="preserve">
+    <value>نوع الرسالة</value>
+  </data>
+  <data name="PgMsgArch_SelectedMsg" xml:space="preserve">
+    <value>الرسالة المختارة</value>
+  </data>
+  <data name="PgMsgArch_Time" xml:space="preserve">
+    <value>وقت</value>
+  </data>
+  <data name="PgMsgArch_Until" xml:space="preserve">
+    <value>حتى</value>
+  </data>
+  <data name="ProjEval_DiagramTitle" xml:space="preserve">
+    <value>منحنيات درجة الحرارة والطاقة</value>
+  </data>
+  <data name="ProjEval_Melt" xml:space="preserve">
+    <value>إنصهار</value>
+  </data>
+  <data name="ProjEval_Power" xml:space="preserve">
+    <value>قوة</value>
+  </data>
+  <data name="ProjEval_Solder" xml:space="preserve">
+    <value>جندى</value>
+  </data>
+  <data name="ProjEval_Temperature" xml:space="preserve">
+    <value>درجة حرارة</value>
+  </data>
+  <data name="ProjEval_Time" xml:space="preserve">
+    <value>وقت</value>
+  </data>
+  <data name="ProjKROSY_Amount" xml:space="preserve">
+    <value>كمية</value>
+  </data>
+  <data name="ProjKROSY_AmountOK" xml:space="preserve">
+    <value>المبلغ لا بأس به</value>
+  </data>
+  <data name="ProjKROSY_btnReset" xml:space="preserve">
+    <value>إعادة ضبط</value>
+  </data>
+  <data name="ProjKROSY_DeviceName" xml:space="preserve">
+    <value>اسم الجهاز</value>
+  </data>
+  <data name="ProjKROSY_Heartbeats" xml:space="preserve">
+    <value>نبضات القلب</value>
+  </data>
+  <data name="ProjKROSY_Hostname" xml:space="preserve">
+    <value>اسم المضيف</value>
+  </data>
+  <data name="ProjKROSY_InfoKROSY" xml:space="preserve">
+    <value>KROSY معلومات</value>
+  </data>
+  <data name="ProjKROSY_InfoOrder" xml:space="preserve">
+    <value>معلومات الطلب</value>
+  </data>
+  <data name="ProjKROSY_InfoPLC" xml:space="preserve">
+    <value>معلومات PLC</value>
+  </data>
+  <data name="ProjKROSY_IO" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="ProjKROSY_IP" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="ProjKROSY_KROSY" xml:space="preserve">
+    <value>KROSY</value>
+  </data>
+  <data name="ProjKROSY_KROSYState" xml:space="preserve">
+    <value>KROSY ولاية</value>
+  </data>
+  <data name="ProjKROSY_KSIDENT" xml:space="preserve">
+    <value>KSIDENT</value>
+  </data>
+  <data name="ProjKROSY_ksidnet" xml:space="preserve">
+    <value>ksidnet</value>
+  </data>
+  <data name="ProjKROSY_Lang" xml:space="preserve">
+    <value>لغة</value>
+  </data>
+  <data name="ProjKROSY_Max" xml:space="preserve">
+    <value>الأعلى</value>
+  </data>
+  <data name="ProjKROSY_NIO" xml:space="preserve">
+    <value>NOK</value>
+  </data>
+  <data name="ProjKROSY_Object" xml:space="preserve">
+    <value>هدف</value>
+  </data>
+  <data name="ProjKROSY_On" xml:space="preserve">
+    <value>على</value>
+  </data>
+  <data name="ProjKROSY_Order" xml:space="preserve">
+    <value>طلب</value>
+  </data>
+  <data name="ProjKROSY_OrderData" xml:space="preserve">
+    <value>بيانات الطلبيات</value>
+  </data>
+  <data name="ProjKROSY_PLC" xml:space="preserve">
+    <value>PLC</value>
+  </data>
+  <data name="ProjKROSY_PLCState" xml:space="preserve">
+    <value>PLC ولاية</value>
+  </data>
+  <data name="ProjKROSY_Scancode" xml:space="preserve">
+    <value>سكانكود</value>
+  </data>
+  <data name="ProjKROSY_State" xml:space="preserve">
+    <value>ولاية</value>
+  </data>
+  <data name="ProjKROSY_Station" xml:space="preserve">
+    <value>محطة</value>
+  </data>
+  <data name="ProjKROSY_Type" xml:space="preserve">
+    <value>يكتب</value>
+  </data>
+  <data name="ProjKROSY_Version" xml:space="preserve">
+    <value>إصدار</value>
+  </data>
+  <data name="ProjRFID_Dataversion" xml:space="preserve">
+    <value>نسخة البيانات</value>
+  </data>
+  <data name="ProjRFID_Inductor" xml:space="preserve">
+    <value>اداة الحث</value>
+  </data>
+  <data name="ProjRFID_Number" xml:space="preserve">
+    <value>رقم</value>
+  </data>
+  <data name="ProjRFID_Present" xml:space="preserve">
+    <value>حاضر</value>
+  </data>
+  <data name="ProjRFID_WT" xml:space="preserve">
+    <value>WT</value>
+  </data>
+  <data name="ProjWT_btnClearAll" xml:space="preserve">
+    <value>امسح الكل</value>
+  </data>
+  <data name="ProjWT_btnSetReadData" xml:space="preserve">
+    <value>تعيين قراءة البيانات</value>
+  </data>
+  <data name="ProjWT_btnWrite" xml:space="preserve">
+    <value>يكتب</value>
+  </data>
+  <data name="ProjWT_Clamp" xml:space="preserve">
+    <value>المشبك</value>
+  </data>
+  <data name="ProjWT_CoolingOn" xml:space="preserve">
+    <value>التبريد قيد التشغيل</value>
+  </data>
+  <data name="ProjWT_CoolingPower" xml:space="preserve">
+    <value>قوة التبريد</value>
+  </data>
+  <data name="ProjWT_DrawbackLength" xml:space="preserve">
+    <value>طول العيب</value>
+  </data>
+  <data name="ProjWT_DVS" xml:space="preserve">
+    <value>DVS</value>
+  </data>
+  <data name="ProjWT_Enable" xml:space="preserve">
+    <value>يُمكَِن</value>
+  </data>
+  <data name="ProjWT_Enabled" xml:space="preserve">
+    <value>ممكن</value>
+  </data>
+  <data name="ProjWT_FeedLength" xml:space="preserve">
+    <value>طول التغذية</value>
+  </data>
+  <data name="ProjWT_LegalInductor" xml:space="preserve">
+    <value>محث قانوني</value>
+  </data>
+  <data name="ProjWT_Name" xml:space="preserve">
+    <value>اسم</value>
+  </data>
+  <data name="ProjWT_Override" xml:space="preserve">
+    <value>تجاوز</value>
+  </data>
+  <data name="ProjWT_PreCoolingOn" xml:space="preserve">
+    <value>تشغيل التبريد المسبق</value>
+  </data>
+  <data name="ProjWT_PreCoolingPower" xml:space="preserve">
+    <value>قوة التبريد المسبق</value>
+  </data>
+  <data name="ProjWT_Speed" xml:space="preserve">
+    <value>سرعة</value>
+  </data>
+  <data name="ProjWT_TemperatrueMelt" xml:space="preserve">
+    <value>تذوب درجة الحرارة</value>
+  </data>
+  <data name="ProjWT_TemperatureRelease" xml:space="preserve">
+    <value>إطلاق درجة الحرارة</value>
+  </data>
+  <data name="ProjWT_TemperatureSolder" xml:space="preserve">
+    <value>لحام درجة الحرارة</value>
+  </data>
+  <data name="ProjWT_TemperatureTune" xml:space="preserve">
+    <value>ضبط درجة الحرارة</value>
+  </data>
+  <data name="Proj_StNameModul1" xml:space="preserve">
+    <value>مودول 1</value>
+  </data>
+  <data name="Proj_StNameStation1" xml:space="preserve">
+    <value>المحطة 1 (اليسار)</value>
+  </data>
+  <data name="Proj_StNameStation2" xml:space="preserve">
+    <value>المحطة 2 (يمين)</value>
+  </data>
+  <data name="UcAx_btnReleaseController" xml:space="preserve">
+    <value>الافراج عن وحدة التحكم</value>
+  </data>
+  <data name="UcAx_gbRelease" xml:space="preserve">
+    <value>يطلق</value>
+  </data>
+  <data name="UcAx_gbReleaseManual" xml:space="preserve">
+    <value>دليل الإصدار</value>
+  </data>
+  <data name="UcAx_gbStatusLog" xml:space="preserve">
+    <value>الحالة (سجل)</value>
+  </data>
+  <data name="UcAx_gbStatusPhys" xml:space="preserve">
+    <value>الحالة (فزياء)</value>
+  </data>
+  <data name="UcAx_lblActPos" xml:space="preserve">
+    <value>يمثل. نقاط البيع.</value>
+  </data>
+  <data name="UcAx_lblActSpeed" xml:space="preserve">
+    <value>يمثل. سرعة</value>
+  </data>
+  <data name="UcAx_lblController" xml:space="preserve">
+    <value>مراقب</value>
+  </data>
+  <data name="UcAx_lblCoupled" xml:space="preserve">
+    <value>يقترن</value>
+  </data>
+  <data name="UcAx_lblError" xml:space="preserve">
+    <value>خطأ</value>
+  </data>
+  <data name="UcAx_lblHasJob" xml:space="preserve">
+    <value>لديه وظيفة</value>
+  </data>
+  <data name="UcAx_lblInTargetArea" xml:space="preserve">
+    <value>منطقة الهدف</value>
+  </data>
+  <data name="UcAx_lblInTargetPos" xml:space="preserve">
+    <value>الهدف نقاط البيع.</value>
+  </data>
+  <data name="UcAx_lblLimitNeg" xml:space="preserve">
+    <value>حد -</value>
+  </data>
+  <data name="UcAx_lblLimitPos" xml:space="preserve">
+    <value>حد +</value>
+  </data>
+  <data name="UcAx_lblMovesNeg" xml:space="preserve">
+    <value>التحركات السلبية</value>
+  </data>
+  <data name="UcAx_lblMovesPos" xml:space="preserve">
+    <value>التحركات الإيجابية</value>
+  </data>
+  <data name="UcAx_lblNotMoving" xml:space="preserve">
+    <value>لا يتحرك</value>
+  </data>
+  <data name="UcAx_lblOverride" xml:space="preserve">
+    <value>تجاوز</value>
+  </data>
+  <data name="UcAx_lblPosLag" xml:space="preserve">
+    <value>تأخر الموقف</value>
+  </data>
+  <data name="UcAx_lblReady" xml:space="preserve">
+    <value>مستعد</value>
+  </data>
+  <data name="UcAx_lblRefOK" xml:space="preserve">
+    <value>المشار إليها</value>
+  </data>
+  <data name="UcAx_lblSetPointPos" xml:space="preserve">
+    <value>موقف نقطة الضبط</value>
+  </data>
+  <data name="UcAx_lblSetPointSpeed" xml:space="preserve">
+    <value>سرعة نقطة الضبط</value>
+  </data>
+  <data name="UcAx_lblTargetPos" xml:space="preserve">
+    <value>الهدف نقاط البيع</value>
+  </data>
+  <data name="UcAx_lblTargetSpeed" xml:space="preserve">
+    <value>السرعة المستهدفة</value>
+  </data>
+  <data name="UcCyl_Forerun" xml:space="preserve">
+    <value>قائد</value>
+  </data>
+  <data name="UcCyl_Restpos" xml:space="preserve">
+    <value>وضعية الركبة</value>
+  </data>
+  <data name="UcCyl_SlideCylOf" xml:space="preserve">
+    <value>انزلاق الاسطوانة</value>
+  </data>
+  <data name="UcDevOnOff_Output" xml:space="preserve">
+    <value>انتاج |</value>
+  </data>
+  <data name="UcDevOnOff_PushButton" xml:space="preserve">
+    <value>اضغط الزر</value>
+  </data>
+  <data name="UcDevOnOff_SwitchLogic" xml:space="preserve">
+    <value>منطق التبديل</value>
+  </data>
+  <data name="UcDevOnOff_ToggleSwitch" xml:space="preserve">
+    <value>مفتاح الفصل الكهربائي</value>
+  </data>
+  <data name="UcMsgErr_Update" xml:space="preserve">
+    <value>خطأ في التحديث</value>
+  </data>
+  <data name="UserAdmin_btnDeleteUser" xml:space="preserve">
+    <value>مسح المستخدم</value>
+  </data>
+  <data name="UserAdmin_btnEdituser" xml:space="preserve">
+    <value>تحرير العضو</value>
+  </data>
+  <data name="UserAdmin_btnNewUser" xml:space="preserve">
+    <value>مستخدم جديد</value>
+  </data>
+  <data name="UserAdmin_dgheaderUserlevel" xml:space="preserve">
+    <value>مستوى المستخدم</value>
+  </data>
+  <data name="UserAdmin_gbHeader" xml:space="preserve">
+    <value>مستخدم</value>
+  </data>
+  <data name="UserLevel_Administrator" xml:space="preserve">
+    <value>مدير</value>
+  </data>
+  <data name="UserLevel_DefaultUser" xml:space="preserve">
+    <value>المستخدم الافتراضي</value>
+  </data>
+  <data name="UserLevel_Maintenance" xml:space="preserve">
+    <value>صيانة</value>
+  </data>
+  <data name="UserLevel_Supervisor" xml:space="preserve">
+    <value>مشرفs</value>
+  </data>
+  <data name="ProjWT_CoolingType" xml:space="preserve">
+    <value>Cooling type</value>
+  </data>
+  <data name="QuitSt10NIO" xml:space="preserve">
+    <value>Station 10 Quit NOK</value>
+  </data>
+  <data name="QuitSt20NIO" xml:space="preserve">
+    <value>Station 20 Quit NOK</value>
+  </data>
+  <data name="UserLevel_Operator" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="UserLevel_Quality" xml:space="preserve">
+    <value>Quality</value>
+  </data>
+  <data name="UserLevel_Service" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="ProjWT_TemperatureOffset" xml:space="preserve">
+    <value>Temperature Offset</value>
+  </data>
+  <data name="ProjWT_CopperMeasurement" xml:space="preserve">
+    <value>Copper Measurement</value>
+  </data>
+  <data name="ProjWT_ReheatTime" xml:space="preserve">
+    <value>Reheat Time [ms]</value>
+  </data>
+  <data name="NavVart_PartInsertRH" xml:space="preserve">
+    <value>المحطة المُدرجة 2 (يمين)</value>
+  </data>
+  <data name="NavVert_PartInsertLH" xml:space="preserve">
+    <value>المحطة المُدرجة 1 (يسار)</value>
+  </data>
+  <data name="NavHoriz_btnOrder" xml:space="preserve">
+    <value>الطلب</value>
+  </data>
+  <data name="NavHoriz_btnOrderArchive" xml:space="preserve">
+    <value>أرشيف الطلبات</value>
+  </data>
+  <data name="NavVert_btnOrder" xml:space="preserve">
+    <value>الطلب</value>
+  </data>
+  <data name="PgOrderArchive_activeInPLC" xml:space="preserve">
+    <value>نشط حاليًا في PLC</value>
+  </data>
+  <data name="PgOrderArchive_AddedBy" xml:space="preserve">
+    <value>أضيف إلى قائمة الانتظار بواسطة المستخدم</value>
+  </data>
+  <data name="PgOrderArchive_AddedOn" xml:space="preserve">
+    <value>أضيف إلى قائمة الانتظار في التاريخ والوقت</value>
+  </data>
+  <data name="PgOrderArchive_BtnUpdate" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="PgOrderArchive_CancelledOn" xml:space="preserve">
+    <value>ألغي في التاريخ والوقت</value>
+  </data>
+  <data name="PgOrderArchive_CartonsDone" xml:space="preserve">
+    <value>الصناديق المنجزة</value>
+  </data>
+  <data name="PgOrderArchive_CartonsPerPallet" xml:space="preserve">
+    <value>الصناديق لكل منصة نقالة</value>
+  </data>
+  <data name="PgOrderArchive_FinishedOn" xml:space="preserve">
+    <value>انتهى في التاريخ والوقت</value>
+  </data>
+  <data name="PgOrderArchive_gb_Header" xml:space="preserve">
+    <value>سجل الطلبات المحملة</value>
+  </data>
+  <data name="PgOrderArchive_LoadedOn" xml:space="preserve">
+    <value>تم تحميله إلى PLC في التاريخ والوقت</value>
+  </data>
+  <data name="PgOrderArchive_paramset" xml:space="preserve">
+    <value>اسم مجموعة المعلمات</value>
+  </data>
+  <data name="PgOrderArchive_PartsDone" xml:space="preserve">
+    <value>الأجزاء المنجزة</value>
+  </data>
+  <data name="PgOrderArchive_StartedOn" xml:space="preserve">
+    <value>بدأ في التاريخ والوقت</value>
+  </data>
+  <data name="PgOrderArchive_State" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="PgOrderArchive_Target" xml:space="preserve">
+    <value>الكمية المستهدفة</value>
+  </data>
+  <data name="PgOrder_autoStart" xml:space="preserve">
+    <value>تحميل وبدء الطلب التالي تلقائيًا</value>
+  </data>
+  <data name="PgOrder_BoxesProduced" xml:space="preserve">
+    <value>الكرتونات المنجزة:</value>
+  </data>
+  <data name="PgOrder_BtnCancel" xml:space="preserve">
+    <value>إلغاء الطلب</value>
+  </data>
+  <data name="PgOrder_BtnDelete" xml:space="preserve">
+    <value>حذف الطلب</value>
+  </data>
+  <data name="PgOrder_BtnLoad" xml:space="preserve">
+    <value>تحميل وبدء الطلب التالي</value>
+  </data>
+  <data name="PgOrder_db_addedbyUser" xml:space="preserve">
+    <value>أضيف إلى قائمة الانتظار بواسطة المستخدم:</value>
+  </data>
+  <data name="PgOrder_db_addedonTimestamp" xml:space="preserve">
+    <value>أضيف إلى قائمة الانتظار في:</value>
+  </data>
+  <data name="PgOrder_db_cancelledonTimestamp" xml:space="preserve">
+    <value>ألغي في:</value>
+  </data>
+  <data name="PgOrder_db_Current" xml:space="preserve">
+    <value>محمل حاليًا في PLC</value>
+  </data>
+  <data name="PgOrder_db_finishedonTimestamp" xml:space="preserve">
+    <value>انتهى في:</value>
+  </data>
+  <data name="PgOrder_db_loadedonTimestamp" xml:space="preserve">
+    <value>تم تحميله إلى PLC في:</value>
+  </data>
+  <data name="PgOrder_db_Paramsetname" xml:space="preserve">
+    <value>اسم مجموعة المعلمات:</value>
+  </data>
+  <data name="PgOrder_db_Previous" xml:space="preserve">
+    <value>محمل سابقًا إلى PLC</value>
+  </data>
+  <data name="PgOrder_db_quantityDone" xml:space="preserve">
+    <value>الأجزاء المنجزة:</value>
+  </data>
+  <data name="PgOrder_db_quantityTarget" xml:space="preserve">
+    <value>الكمية المستهدفة:</value>
+  </data>
+  <data name="PgOrder_db_startedonTimestamp" xml:space="preserve">
+    <value>بدأ في:</value>
+  </data>
+  <data name="PgOrder_db_State" xml:space="preserve">
+    <value>الحالة:</value>
+  </data>
+  <data name="PgOrder_Done" xml:space="preserve">
+    <value>الطلب منجز:</value>
+  </data>
+  <data name="PgOrder_gbDatabase" xml:space="preserve">
+    <value>قاعدة البيانات</value>
+  </data>
+  <data name="PgOrder_gbPLC" xml:space="preserve">
+    <value>PLC</value>
+  </data>
+  <data name="PgOrder_gbQueue" xml:space="preserve">
+    <value>قائمة الانتظار</value>
+  </data>
+  <data name="PgOrder_manualStart" xml:space="preserve">
+    <value>تحميل وبدء الطلب التالي يدويًا</value>
+  </data>
+  <data name="PgOrder_NumberOfPieces" xml:space="preserve">
+    <value>الأجزاء المنجزة:</value>
+  </data>
+  <data name="PgOrder_OrderName" xml:space="preserve">
+    <value>اسم الطلب:</value>
+  </data>
+  <data name="PgOrder_PopUp_Cancel_Header" xml:space="preserve">
+    <value>إلغاء الطلب الحالي</value>
+  </data>
+  <data name="PgOrder_PopUp_Cancel_Text" xml:space="preserve">
+    <value>هل تريد حقًا إلغاء الطلب الحالي؟</value>
+  </data>
+  <data name="PgOrder_q_addedBy" xml:space="preserve">
+    <value>أضيف بواسطة</value>
+  </data>
+  <data name="PgOrder_q_addedOn" xml:space="preserve">
+    <value>أضيف في</value>
+  </data>
+  <data name="PgOrder_q_cartonsPerPallet" xml:space="preserve">
+    <value>الكرتونات لكل منصة نقالة</value>
+  </data>
+  <data name="PgOrder_q_number" xml:space="preserve">
+    <value>الموضع في قائمة الانتظار</value>
+  </data>
+  <data name="PgOrder_q_paramset" xml:space="preserve">
+    <value>اسم مجموعة المعلمات</value>
+  </data>
+  <data name="PgOrder_q_paramsetId" xml:space="preserve">
+    <value>معرف مجموعة المعلمات</value>
+  </data>
+  <data name="PgOrder_q_quantity" xml:space="preserve">
+    <value>الكمية</value>
+  </data>
+  <data name="PgOrder_ReadyForNewOrder" xml:space="preserve">
+    <value>جاهز لطلب جديد:</value>
+  </data>
+  <data name="PgOrder_Started" xml:space="preserve">
+    <value>بدء الطلب:</value>
+  </data>
+  <data name="PgOrder_strHeaderStart" xml:space="preserve">
+    <value>بدء الطلب التالي</value>
+  </data>
+  <data name="PopUpDeleteOrder_Header" xml:space="preserve">
+    <value>حذف الطلب</value>
+  </data>
+  <data name="PopUpDeleteOrder_Hint" xml:space="preserve">
+    <value>هل تريد حذف هذا الطلب؟</value>
+  </data>
+  <data name="PopUpNewOrder_Header" xml:space="preserve">
+    <value>طلب جديد</value>
+  </data>
+  <data name="PopUpNewOrder_Name" xml:space="preserve">
+    <value>اسم الطلب:</value>
+  </data>
+  <data name="PopUpStartOrder_BtnStart" xml:space="preserve">
+    <value>بدء</value>
+  </data>
+  <data name="PopUpStartOrder_CartonsPerPallet" xml:space="preserve">
+    <value>عدد الكراتين لكل منصة نقالة:</value>
+  </data>
+  <data name="PopUpStartOrder_CreatedBy" xml:space="preserve">
+    <value>تم إنشاؤه بواسطة المستخدم:</value>
+  </data>
+  <data name="PopUpStartOrder_CreatedOn" xml:space="preserve">
+    <value>تم إنشاؤه في:</value>
+  </data>
+  <data name="PopUpStartOrder_Header" xml:space="preserve">
+    <value>تحميل وبدء الطلب التالي</value>
+  </data>
+  <data name="PopUpStartOrder_Hint" xml:space="preserve">
+    <value>هل تريد بدء الطلب وتحميله؟</value>
+  </data>
+  <data name="PopUpStartOrder_NextOrder" xml:space="preserve">
+    <value>الطلب التالي:</value>
+  </data>
+  <data name="PopUpStartOrder_Paramsetname" xml:space="preserve">
+    <value>اسم مجموعة المعلمات:</value>
+  </data>
+  <data name="PopUpStartOrder_Target" xml:space="preserve">
+    <value>الكمية المستهدفة:</value>
+  </data>
+</root>

@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="LOET_HMI.UserControls.UcSettingDINT_RENA"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LOET_HMI.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="20" d:DesignWidth="300" >
+
+    <UserControl.Resources>
+        <Thickness x:Key="myGlobalMargin" Left="2" Top="2" Right="2" Bottom ="2" ></Thickness>
+    </UserControl.Resources>
+
+    <Grid Margin="0,0,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="43*"/>
+            <ColumnDefinition Width="136*"/>
+            <ColumnDefinition Width="121*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="Set_Name" Text="{Binding DpSettingDINT_HMI.sSettingNameHMI, ElementName=UcSettingDINT_UIdef}" FontSize="18" TextAlignment="Center" FontWeight="Bold"
+                   Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"   />
+
+        <TextBox   x:Name="Value"    Text="{Binding DpSettingDINT_HMI.iValHMI, ElementName=UcSettingDINT_UIdef, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" TextAlignment="Center" Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,2,2,4"  />
+
+        <TextBlock x:Name="Unit"     Text="{Binding DpSettingDINT_HMI.sUnitHMI, ElementName=UcSettingDINT_UIdef}" TextAlignment="Center" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
+
+
+
+    </Grid>
+</UserControl>

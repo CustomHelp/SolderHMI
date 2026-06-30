@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="df6656ce090b49f981ddb29b86675940" Name="Diagram1" ZoomLevel="92">
+        <EntityTypeShape EntityType="CHP_HMIModel.db_actual" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_config" Width="1.5" PointX="5.75" PointY="3.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_manuallog" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_message" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_orderarchiv" Width="1.5" PointX="0.75" PointY="7.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_orderqueue" Width="1.5" PointX="3" PointY="3.875" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_parameter" Width="1.5" PointX="3" PointY="1.125" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_parameterlog" Width="1.5" PointX="2.75" PointY="7.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_paramset" Width="1.5" PointX="0.75" PointY="2.5" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_project" Width="1.5" PointX="7.75" PointY="4.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_user" Width="1.5" PointX="7.75" PointY="7.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_userlevel" Width="1.5" PointX="4.75" PointY="8.75" />
+        <EntityTypeShape EntityType="CHP_HMIModel.db_userlog" Width="1.5" PointX="9.75" PointY="0.75" />
+        <AssociationConnector Association="CHP_HMIModel.fk_db_Order_db_ParamSet" />
+        <AssociationConnector Association="CHP_HMIModel.fk_db_Parameter_db_Recipe1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
