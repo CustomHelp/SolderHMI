@@ -258,6 +258,7 @@
     <Compile Include="Helper\DBParamHandler.cs" />
     <Compile Include="Helper\Enums.cs" />
     <Compile Include="Helper\GlobalVar.cs" />
+    <Compile Include="Helper\DocumentationPaths.cs" />
     <Compile Include="Helper\MessageArchivist.cs" />
     <Compile Include="PLC_Com_Classes\999_Project\StKROSY.cs" />
     <Compile Include="PLC_Com_Classes\StCounter.cs" />

@@ -110,36 +110,9 @@ namespace LOET_HMI
             #region Check Instruction Paths
             try
             {
-                if (Directory.Exists(@"D:\Manuals"))
-                {
-                    GlobalVar.manualPath = @"D:\Manuals\";
-                }
-                else
-                {
-                    if (Directory.Exists(@"E:\Manuals"))
-                    {
-                        GlobalVar.manualPath = @"E:\Manuals\";
-                    }
-                    else
-                    {
-                        GlobalVar.manualExists = false;
-                    }
-                }
-                if (Directory.Exists(@"D:\Videos"))
-                {
-                    GlobalVar.videoPath = @"D:\Videos\";
-                }
-                else
-                {
-                    if (Directory.Exists(@"C:\Videos"))
-                    {
-                        GlobalVar.videoPath = @"C:\Videos\";
-                    }
-                    else
-                    {
-                        GlobalVar.videoExists = false;
-                    }
-                }
+                // Laufwerk-Fallback (D: sonst C:) + automatisches Anlegen der
+                // Documentation_Videos\ / Documentation_Documents\-Ordnerstruktur.
+                DocumentationPaths.Initialize();
             }
             catch (Exception ex)
             {
