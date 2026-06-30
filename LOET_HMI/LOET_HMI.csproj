@@ -232,20 +232,8 @@
     <Compile Include="Displays\100_Machine\PgMessageArchiv.xaml.cs">
       <DependentUpon>PgMessageArchiv.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Displays\999_Project\alt\PgSt1_RFID_WT.xaml.cs">
-      <DependentUpon>PgSt1_RFID_WT.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Displays\999_Project\alt\PgSt2_RFID_WT.xaml.cs">
-      <DependentUpon>PgSt2_RFID_WT.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Displays\999_Project\20_Global\PgCooling.xaml.cs">
       <DependentUpon>PgCooling.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Displays\999_Project\alt\PgSt1_RFID_IND.xaml.cs">
-      <DependentUpon>PgSt1_RFID_IND.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Displays\999_Project\alt\PgSt2_RFID_IND.xaml.cs">
-      <DependentUpon>PgSt2_RFID_IND.xaml</DependentUpon>
     </Compile>
     <Compile Include="Displays\999_Project\10_Station\PgRFID_WT.xaml.cs">
       <DependentUpon>PgRFID_WT.xaml</DependentUpon>
@@ -562,23 +550,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Displays\999_Project\alt\PgSt1_RFID_WT.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Displays\999_Project\alt\PgSt2_RFID_WT.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Displays\999_Project\20_Global\PgCooling.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Displays\999_Project\alt\PgSt1_RFID_IND.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Displays\999_Project\alt\PgSt2_RFID_IND.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
