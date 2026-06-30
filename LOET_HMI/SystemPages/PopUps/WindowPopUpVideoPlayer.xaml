@@ -18,8 +18,8 @@
                     <GradientStop Color="Indigo" Offset="1"/>
                 </LinearGradientBrush>
                 <!--<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#66509B" Offset="0"/>
-                    <GradientStop Color="#66509B" Offset="1"/>
+                    <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="0"/>
+                    <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="1"/>
                 </LinearGradientBrush>-->
             </Grid.Background>
             <Grid.RowDefinitions>
