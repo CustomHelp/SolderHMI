@@ -394,18 +394,6 @@
     <Compile Include="SystemPages\PopUps\WindowPopUpTemplate.xaml.cs">
       <DependentUpon>WindowPopUpTemplate.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SystemPages\HORSCH Archiv\Logs\PageSettManualLog.xaml.cs">
-      <DependentUpon>PageSettManualLog.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SystemPages\HORSCH Archiv\Logs\PageSettMessArchiv.xaml.cs">
-      <DependentUpon>PageSettMessArchiv.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SystemPages\HORSCH Archiv\Logs\PageSettParamLog.xaml.cs">
-      <DependentUpon>PageSettParamLog.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="SystemPages\HORSCH Archiv\Logs\PageSettUserLog.xaml.cs">
-      <DependentUpon>PageSettUserLog.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Displays\900_Settings\PgUserManagement.xaml.cs">
       <DependentUpon>PgUserManagement.xaml</DependentUpon>
     </Compile>
@@ -715,22 +703,6 @@
     <Page Include="SystemPages\PopUps\WindowPopUpVideoPlayer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="SystemPages\HORSCH Archiv\Logs\PageSettManualLog.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="SystemPages\HORSCH Archiv\Logs\PageSettMessArchiv.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="SystemPages\HORSCH Archiv\Logs\PageSettParamLog.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="SystemPages\HORSCH Archiv\Logs\PageSettUserLog.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Displays\900_Settings\PgUserManagement.xaml">
       <Generator>MSBuild:Compile</Generator>
