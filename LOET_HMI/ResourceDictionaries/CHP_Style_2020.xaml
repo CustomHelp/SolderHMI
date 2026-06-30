@@ -911,7 +911,11 @@
     <SolidColorBrush x:Key="DataGridBorder" Color="Black"/>
 
     <!-- Progressbar Farbe -->
-    <SolidColorBrush x:Key="ProgressbarForeground" Color="#FF9933FF"/>
+    <!-- Corporate-Design-Verlauf Lila -> Tuerkis -->
+    <LinearGradientBrush x:Key="ProgressbarForeground" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="0.0"/>
+        <GradientStop Color="{StaticResource Brand_SecondaryColor}" Offset="1.0"/>
+    </LinearGradientBrush>
     <SolidColorBrush x:Key="ProgressbarBackground" Color="#FF525252"/>
 
 
