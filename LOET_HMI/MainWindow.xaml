@@ -10,7 +10,7 @@
     
     xmlns:UserControls="clr-namespace:LOET_HMI.UserControls" 
     mc:Ignorable="d"   d:DesignWidth="1920" d:DesignHeight="1080"
-    Title="MainWindow" Icon="Images/CUSTOMHELP_Logo-links_lila.png" FontSize="16" Background="#F5F5F5"
+    Title="MainWindow" Icon="Images/CUSTOMHELP_Logo-links_weiss.png" FontSize="16" Background="#F5F5F5"
 
     MinHeight="600" MinWidth="800" 
     Closing="MainW_Closing"  WindowStartupLocation="CenterScreen" WindowStyle="None"  WindowState="Maximized"  ResizeMode="NoResize" ShowInTaskbar="True"
@@ -39,7 +39,7 @@
         <Rectangle x:Name="RectHeaderBackgr" Fill="{StaticResource CHP_ColorBrush}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"    />
         <Rectangle x:Name="RectLogo"                        Grid.Row="0" Grid.Column="0"     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,-5,5,5" >
             <Rectangle.Fill>
-                <ImageBrush ImageSource="Images/CUSTOMHELP_Logo-links_lila.png" Stretch="Uniform" AlignmentX="Left" />
+                <ImageBrush ImageSource="Images/CUSTOMHELP_Logo-links_weiss.png" Stretch="Uniform" AlignmentX="Left" />
             </Rectangle.Fill>
         </Rectangle>
         
