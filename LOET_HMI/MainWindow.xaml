@@ -36,7 +36,9 @@
         </Grid.RowDefinitions>
 
 
-        <Rectangle x:Name="RectHeaderBackgr" Fill="{StaticResource CHP_ColorBrush}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"    />
+        <Rectangle x:Name="RectHeaderBackgr" Fill="{StaticResource Brand_Dark}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"    />
+        <!-- Header-Trennlinie unten: 3px Lila-Akzent -->
+        <Rectangle x:Name="RectHeaderDivider" Fill="{StaticResource Brand_Primary}" Height="3" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" />
         <Rectangle x:Name="RectLogo"                        Grid.Row="0" Grid.Column="0"     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,-5,5,5" >
             <Rectangle.Fill>
                 <ImageBrush ImageSource="Images/CUSTOMHELP_Logo-links_weiss.png" Stretch="Uniform" AlignmentX="Left" />

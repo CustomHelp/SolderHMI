@@ -27,8 +27,16 @@ namespace LOET_HMI
             string sContentOfClickedBtn = Convert.ToString(btnClicked.Content);
             for (int i = 0; i < GlobalVar.dataLOET.listStatVertNav.Count; i++)
             {
-                if (GlobalVar.dataLOET.listStatVertNav[i].btnVertNav.Content == sContentOfClickedBtn)
+                Button btnVert = GlobalVar.dataLOET.listStatVertNav[i].btnVertNav;
+
+                // Aktiven Menuepunkt visuell markieren (Tag="active" -> Trigger in RENA_NavButtonStyle):
+                // erst alle zuruecksetzen, dann den geklickten aktiv setzen.
+                btnVert.Tag = null;
+
+                if (btnVert.Content == sContentOfClickedBtn)
                 {
+                    btnVert.Tag = "active";
+
                     //*****************************************************
                     //***************** Modul aktualisieren ***************
                     GlobalVar.dataLOET.Act_Station = GlobalVar.dataLOET.listStatVertNav[i];

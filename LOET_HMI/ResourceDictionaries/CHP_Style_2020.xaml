@@ -128,7 +128,7 @@
 
 
     <Style TargetType="{x:Type Button}" x:Key="RENA_NavButtonStyle">
-        <Setter Property="Background" Value="{StaticResource CHP_ColorBrush}" />
+        <Setter Property="Background" Value="{StaticResource Brand_Dark}" />
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="Height" Value="50" />
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
@@ -177,11 +177,18 @@
 
 
                     <ControlTemplate.Triggers>
-                        <!-- Mouse-Over Farben -->
+                        <!-- Mouse-Over: Tuerkis-Akzent (Text + Rahmen), Hintergrund bleibt dunkel -->
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="myBorder" Property="BorderBrush" Value="{StaticResource Brand_Secondary}" />
                             <Setter Property="Foreground" Value="{StaticResource Brand_Secondary}" />
-                            <Setter Property="Background" Value="{StaticResource Brand_Primary}" />
+                            <Setter Property="Background" Value="{StaticResource Brand_Dark}" />
+                        </Trigger>
+
+                        <!-- Aktiver Menuepunkt: 3px Lila-Balken links + leichter Lila-Hintergrund -->
+                        <Trigger Property="Tag" Value="active">
+                            <Setter TargetName="myBorder" Property="Background"      Value="{StaticResource Brand_PrimaryFaint}" />
+                            <Setter TargetName="myBorder" Property="BorderBrush"     Value="{StaticResource Brand_Primary}" />
+                            <Setter TargetName="myBorder" Property="BorderThickness" Value="3,0,0,0" />
                         </Trigger>
 
                         <!-- Animation -->

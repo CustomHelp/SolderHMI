@@ -1550,7 +1550,7 @@ namespace LOET_HMI
             {
                 ComboBoxItem item = new ComboBoxItem();
                 item.Content = category;
-                item.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#66509B"));
+                item.Background = (Brush)Application.Current.FindResource("Brand_Dark");
                 item.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
                 categoryCB.Items.Add(item);
             }
@@ -1597,7 +1597,7 @@ namespace LOET_HMI
                     ComboBoxItem cbI = new ComboBoxItem();
                     cbI.Content = System.IO.Path.GetFileNameWithoutExtension(file.Name);
                     cbI.Tag = file.FullName; // vollstaendiger Pfad zum Oeffnen
-                    cbI.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#66509B"));
+                    cbI.Background = (Brush)Application.Current.FindResource("Brand_Dark");
                     cbI.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
                     fileCB.Items.Add(cbI);
                 }
