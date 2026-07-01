@@ -292,8 +292,10 @@ namespace LOET_HMI
                 else if (ParameterSetType == ParamSetTypes.Machine)
                     idToFind = GlobalVar.ActMachineParamSet.id;
             }
-            catch
-            { }
+            catch (Exception ex)
+            {
+                AppLogger.Log("UcParamDataGrid.ResolveParamSetId", ex);
+            }
 
             string message = "";
             MessageBoxImage image = MessageBoxImage.Information;
@@ -720,7 +722,10 @@ namespace LOET_HMI
                     SelectedParamSet = DBParam.Handler.GetParamSetOverId(TmpParamSet.id);
                     listDBParameter = DBParam.Handler.GetParamListOverId(TmpParamSet.id);
                 }
-                catch {; }
+                catch (Exception ex)
+                {
+                    AppLogger.Log("UcParamDataGrid.ParamSetSelectionChanged", ex);
+                }
 
                 RefreshParameter();
             }
@@ -895,9 +900,9 @@ namespace LOET_HMI
                         );
                 }
             }
-            catch (ThreadAbortException ex)
+            catch (ThreadAbortException)
             {
-
+                // Ladethread wurde bewusst abgebrochen -> erwartetes Verhalten, kein Logging noetig
             }
             //GlobalFunc.PopUp_SetMainWBackgrNormal();
 

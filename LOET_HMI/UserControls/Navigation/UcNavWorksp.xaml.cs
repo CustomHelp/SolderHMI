@@ -231,7 +231,7 @@ namespace LOET_HMI.UserControls
             }
             catch
             {
-                ;
+                // 2. Navi-Reihe kann leer sein (kein ClusterListRow2[0]) -> bewusst ignorieren
             }
 
 

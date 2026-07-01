@@ -107,7 +107,7 @@ namespace LOET_HMI.UserControls
                     ObjectListForSelectedItem[1] = dgSetting.SelectedItem as StParamPLCDB<Int32>;
                     ObjectListForSelectedItem[2] = dgSetting.SelectedItem as StParamPLCDB<float>;
                 }
-                catch {; }
+                catch { /* 'as' wirft nicht -> bewusst kein Handling (toter catch) */ }
 
 
 

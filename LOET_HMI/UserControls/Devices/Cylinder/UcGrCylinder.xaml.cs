@@ -156,7 +156,7 @@ namespace LOET_HMI.UserControls.Graphical_UCs
                     //gridOfSens.SetValue(Grid.RowProperty, 2);
                     //gridOfSens.VerticalAlignment = VerticalAlignment.Bottom;
                 }
-                catch {; }
+                catch { /* UI-Layout/Rotation optional: bei Fehler unveraendert lassen */ }
             }
 
             //7.11.2019
@@ -170,7 +170,7 @@ namespace LOET_HMI.UserControls.Graphical_UCs
                     tbSensBname.RenderTransformOrigin = new Point(0.5, 0.5);
                     tbSensBname.LayoutTransform = new RotateTransform(90);
                 }
-                catch {; }
+                catch { /* UI-Layout/Rotation optional: bei Fehler unveraendert lassen */ }
             }
 
 

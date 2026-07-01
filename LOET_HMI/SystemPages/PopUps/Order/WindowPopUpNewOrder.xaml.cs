@@ -67,9 +67,11 @@ namespace LOET_HMI.SystemPages.PopUps
                 paramPLC_Carton.Register(paramDB_Cartoon.sADSName);
                 paramPLC_Carton.ValDB = (int)Convert.ChangeType(paramDB_Cartoon.sValue, typeof(int), CultureInfo.InvariantCulture);
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.LogError("WindowPopUpNewOrder", ex);
+                MessageBox.Show("Die Kartonanzahl pro Palette konnte nicht geladen werden.\n" + ex.Message,
+                                "Auftrag anlegen", MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
 

@@ -263,9 +263,12 @@ namespace LOET_HMI
                 {
                     userToLogIn = context.db_user.Single(u => u.sUserName == GlobalVar.ActUser.sUserName);
                     //loginUser.db_userlevel = context.db_userlevel.Single(u => u.id == loginUser.Userlevel); //Balog 22.6.2020 DB_TEST!!!
-                    
+
                 }
-                catch { }
+                catch (Exception ex)
+                {
+                    AppLogger.Log("Window_LogIn.Window_Loaded", ex);
+                }
 
             }
 
@@ -290,9 +293,9 @@ namespace LOET_HMI
 
                     tblLogOut.Visibility = Visibility.Visible;
                 }
-                catch
+                catch (Exception ex)
                 {
-                    ;
+                    AppLogger.Log("Window_LogIn.Window_Loaded", ex);
                 }
 
             }

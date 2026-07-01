@@ -354,9 +354,9 @@ namespace LOET_HMI.UserControls
                     btnOP.Background = brush;
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("UcMessage.ItemChanged", ex);
             }
             #endregion
 
@@ -416,9 +416,9 @@ namespace LOET_HMI.UserControls
                                     MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("UcMessage.ItemChanged", ex);
             }
 
 
