@@ -1554,9 +1554,11 @@ namespace LOET_HMI
                 item.Foreground = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffffff"));
                 categoryCB.Items.Add(item);
             }
-            categoryCB.SelectedIndex = -1;
+            // Datei-Dropdown zuruecksetzen, dann erste Kategorie vorauswaehlen.
+            // (Die Vorauswahl loest CategoryCB_SelectionChanged aus und befuellt das Datei-Dropdown.)
             fileCB.Items.Clear();
             fileCB.IsEnabled = false;
+            categoryCB.SelectedIndex = (categoryCB.Items.Count > 0) ? 0 : -1;
         }
 
         /// <summary>Kategorie gewaehlt -> Datei-Dropdown (rechts) passend fuellen.</summary>

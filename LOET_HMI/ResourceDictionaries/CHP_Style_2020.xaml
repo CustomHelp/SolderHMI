@@ -21,8 +21,6 @@
     <!-- NUR noch als Akzent verwendet (aktiver Menuepunkt, Trennlinien, Fokus). -->
     <Color x:Key="Brand_DarkColor">#FF2D2D2D</Color>
     <SolidColorBrush x:Key="Brand_Dark" Color="{StaticResource Brand_DarkColor}" />
-    <!-- Aktiver Menuepunkt: leichter Lila-Hintergrund (entspricht rgba(120,33,130,0.2)) -->
-    <SolidColorBrush x:Key="Brand_PrimaryFaint" Color="#33782182" />
     <!-- ============================================================= -->
 
     <SolidColorBrush x:Key="CHP_ColorBrush" Color="{StaticResource Brand_PrimaryColor}" />
@@ -184,10 +182,10 @@
                             <Setter Property="Background" Value="{StaticResource Brand_Dark}" />
                         </Trigger>
 
-                        <!-- Aktiver Menuepunkt: 3px Lila-Balken links + leichter Lila-Hintergrund -->
+                        <!-- Aktiver Menuepunkt: volles Corporate-Lila + schmaler dunkler Streifen links -->
                         <Trigger Property="Tag" Value="active">
-                            <Setter TargetName="myBorder" Property="Background"      Value="{StaticResource Brand_PrimaryFaint}" />
-                            <Setter TargetName="myBorder" Property="BorderBrush"     Value="{StaticResource Brand_Primary}" />
+                            <Setter TargetName="myBorder" Property="Background"      Value="{StaticResource Brand_Primary}" />
+                            <Setter TargetName="myBorder" Property="BorderBrush"     Value="{StaticResource Brand_Dark}" />
                             <Setter TargetName="myBorder" Property="BorderThickness" Value="3,0,0,0" />
                         </Trigger>
 
@@ -753,15 +751,34 @@
         <Setter Property="Width" Value="120" />
         <Setter Property="Height" Value="40" />
         <Setter Property="HorizontalAlignment" Value="Center" />
-        <!-- Dialog-Buttons: Dunkelgrau mit weissem Text -->
+        <!-- Dialog-/Login-Buttons: Dunkelgrau mit weissem Text. Eigenes Template, damit -->
+        <!-- der Hintergrund auch im Disabled-Zustand dunkel bleibt (kein Default-Hellgrau) -->
+        <!-- und ein ausgewaehlter Eintrag per Background=Lila hervorgehoben werden kann. -->
         <Setter Property="Background" Value="{StaticResource Brand_Dark}" />
         <Setter Property="Foreground" Value="White" />
         <Setter Property="BorderThickness" Value="0" />
-        <Style.Triggers>
-            <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Foreground" Value="{StaticResource Brand_Secondary}" />
-            </Trigger>
-        </Style.Triggers>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border x:Name="bdPopUpBtn"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            SnapsToDevicePixels="True">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Foreground" Value="{StaticResource Brand_Secondary}" />
+                        </Trigger>
+                        <!-- Disabled: Hintergrund bleibt dunkel, nur Text leicht abgedunkelt -->
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Foreground" Value="#FFB0B0B0" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
     </Style>
 
     <Style TargetType="TextBlock" x:Key="RENA_GraphicContainerHeaderStyle" >
@@ -1979,9 +1996,10 @@
     
     <!--ComboBox Style-->
 
+    <!-- ComboBox-Flaeche dunkelgrau, Rand als Lila-Akzent -->
     <LinearGradientBrush x:Key="ComboBox.Static.Background" EndPoint="0,1" StartPoint="0,0">
-        <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="0.0"/>
-        <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="1.0"/>
+        <GradientStop Color="{StaticResource Brand_DarkColor}" Offset="0.0"/>
+        <GradientStop Color="{StaticResource Brand_DarkColor}" Offset="1.0"/>
     </LinearGradientBrush>
     <SolidColorBrush x:Key="ComboBox.Static.Border" Color="{StaticResource Brand_PrimaryColor}"/>
     <SolidColorBrush x:Key="ComboBox.Static.Editable.Background" Color="{StaticResource Brand_PrimaryColor}"/>

@@ -106,6 +106,9 @@ namespace LOET_HMI
                 }
                 bUserSelected = true;
 
+                // Ausgewaehlten User in Lila hervorheben, restliche dunkel
+                HighlightUserButton((Button)sender);
+
                 tblName.Text = userToLogIn.sUserName;
                 //tblLevel.Text = ActUser.db_userlevel.sLevel; // Balog 22.6.2020
                 tblLevel.Text = GlobalVar.Userlevels.list.Single(u => u.iLevel == userToLogIn.iUserLevel).sName; // Balog 22.6.2020 IBN, DB_TEST!!!
@@ -118,6 +121,19 @@ namespace LOET_HMI
                                 MessageBoxImage.Error);
             }
 
+        }
+
+        /// <summary>Hebt den gewaehlten User-Button in Lila hervor, alle anderen bleiben dunkel.</summary>
+        private void HighlightUserButton(Button selected)
+        {
+            Brush brSel = (Brush)Application.Current.FindResource("Brand_Primary");
+            Brush brDef = (Brush)Application.Current.FindResource("Brand_Dark");
+            foreach (object child in Wrap.Children)
+            {
+                Button b = child as Button;
+                if (b != null)
+                    b.Background = ReferenceEquals(b, selected) ? brSel : brDef;
+            }
         }
 
         private void BtnOk_Click(object sender, RoutedEventArgs e)
@@ -262,10 +278,14 @@ namespace LOET_HMI
                     //tblLevel.Text = loginUser.db_userlevel.sLevel.ToString();
                     tblLevel.Text = GlobalVar.Userlevels.list.Single(u => u.iLevel == userToLogIn.iUserLevel).sName; // Balog 22.6.2020
 
+                    Brush brSel = (Brush)Application.Current.FindResource("Brand_Primary");
+                    Brush brDef = (Brush)Application.Current.FindResource("Brand_Dark");
                     for (int i = 0; i < Wrap.Children.Count; i++)
                     {
                         Button btn = Wrap.Children[i] as Button;
                         btn.IsEnabled = false;
+                        // Aktuell eingeloggten User in Lila markieren, restliche dunkel
+                        btn.Background = (btn.Content != null && btn.Content.ToString() == userToLogIn.sUserName) ? brSel : brDef;
                     }
 
                     tblLogOut.Visibility = Visibility.Visible;
@@ -294,10 +314,12 @@ namespace LOET_HMI
             GlobalVar.ActUser = new User("", "", 0);
 
 
+            Brush brDef = (Brush)Application.Current.FindResource("Brand_Dark");
             for (int i = 0; i < Wrap.Children.Count; i++)
             {
                 Button btn = Wrap.Children[i] as Button;
                 btn.IsEnabled = true;
+                btn.Background = brDef; // Hervorhebung zuruecksetzen
             }
 
             tblLogOut.Visibility = Visibility.Collapsed;
