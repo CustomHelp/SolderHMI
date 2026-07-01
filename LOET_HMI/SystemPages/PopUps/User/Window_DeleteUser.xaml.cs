@@ -51,7 +51,12 @@ namespace LOET_HMI
                     context.SaveChanges();
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                AppLogger.LogError("Window_DeleteUser", ex);
+                MessageBox.Show("Benutzer konnte nicht geloescht werden.\n" + ex.Message,
+                                "Benutzer loeschen", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
             this.Close();
         }
 

@@ -167,9 +167,9 @@ namespace LOET_HMI.Displays
                     _listSource[i].sMessage = _listSource[i].sMessage + " " + arrstrMsgSplit[1];
                     _listSource[i].sMessage = _listSource[i].sMessage + " " + arrstrMsgSplit[2];
                 }
-                catch
+                catch (Exception ex)
                 {
-                    ;
+                    AppLogger.Log("PgMessageArchiv.MessageParsing", ex);
                 }
             }
         }
@@ -207,9 +207,9 @@ namespace LOET_HMI.Displays
                     strTmpMsg2 = Tanslater.TransTxt(arrstrMsgSplit[1], eFBType.fb_Message);
                     strTmpMsg3 = Tanslater.TransTxt(arrstrMsgSplit[2], eFBType.fb_Message);
                 }
-                catch
+                catch (Exception ex)
                 {
-                    ;
+                    AppLogger.Log("PgMessageArchiv.MessageParsing", ex);
                 }
                 //tmpDBMessage.sMessage = strTmpMsg1 + " " + strTmpMsg2 + " " + strTmpMsg3;
                 tmpDBMessage.sMessage = GlobalFunc.ConcatenateMessage(strTmpMsg1, strTmpMsg2, strTmpMsg3, GlobalFunc.eConcatenateMessageMode.ForHMI);
@@ -372,9 +372,9 @@ namespace LOET_HMI.Displays
             {
                 cbMsg.Text = msgSelected.sMessage;
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("PgMessageArchiv.BtnGetFromSelRow", ex);
             }
         }
 
@@ -384,9 +384,9 @@ namespace LOET_HMI.Displays
             {
                 cbMsgType.Text = Convert.ToString((eMsgType)msgSelected.iType);
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("PgMessageArchiv.BtnGetFromSelRow", ex);
             }
         }
 
@@ -396,9 +396,9 @@ namespace LOET_HMI.Displays
             {
                 cbStation.Text = msgSelected.sStation;
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("PgMessageArchiv.BtnGetFromSelRow", ex);
             }
         }
 
@@ -408,9 +408,9 @@ namespace LOET_HMI.Displays
             {
                 cbBMK.Text = msgSelected.sBMK;
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("PgMessageArchiv.BtnGetFromSelRow", ex);
             }
         }
 
@@ -420,9 +420,9 @@ namespace LOET_HMI.Displays
             {
                 cbUser.Text = msgSelected.sUserName;
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("PgMessageArchiv.BtnGetFromSelRow", ex);
             }
         }
 

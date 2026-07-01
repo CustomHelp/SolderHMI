@@ -53,6 +53,9 @@ namespace LOET_HMI
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+            // Zentralen Datei-Logger moeglichst frueh initialisieren (wirft nie).
+            AppLogger.Init();
+
             //MessageBox.Show("Programm Opens");
             bool newInstance = false;
             mutex = new Mutex(true, "LOET_HMI", out newInstance);

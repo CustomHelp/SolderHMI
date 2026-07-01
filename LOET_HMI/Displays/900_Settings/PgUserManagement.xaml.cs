@@ -92,9 +92,9 @@ namespace LOET_HMI
                         ListUser = context.db_user.ToList();
                         //ListUserLevel = context.db_userlevel.ToList();
                     }
-                    catch
+                    catch (Exception ex)
                     {
-                        ;
+                        AppLogger.Log("PgUserManagement.Refresh", ex);
                     }
                 }
 

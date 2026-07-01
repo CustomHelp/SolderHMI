@@ -130,7 +130,7 @@ namespace LOET_HMI.SystemPages.PopUps
                 SettingName = stSetting.sSettingNameHMI;
                 Unit = stSetting.sUnitHMI;
             }
-            catch {; }
+            catch { /* dynamic-Fallback V1/V2: der jeweils nicht passende Zweig wirft bewusst */ }
 
             // **********************************************
             // ********* Version 2:  mit Datenbank **********    
@@ -141,7 +141,7 @@ namespace LOET_HMI.SystemPages.PopUps
                 //SettingName = stSetting.sSettingName;
                 //Unit = stSetting.sUnit;
             }
-            catch {; }
+            catch { /* dynamic-Fallback V1/V2: der jeweils nicht passende Zweig wirft bewusst */ }
 
             InitializeComponent();
 

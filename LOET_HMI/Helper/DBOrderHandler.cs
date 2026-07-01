@@ -47,9 +47,11 @@ namespace LOET_HMI
                         iActMaxQueue = context.db_orderqueue.Max(x => x.iNrInQueue);
                     }
                 }
-                catch
+                catch (Exception ex)
                 {
-                    ;
+                    AppLogger.LogError("DBOrderHandler.AddNewOrder", ex);
+                    MessageBox.Show("Fehler beim Ermitteln der Auftrags-Warteschlangennummer.\n" + ex.Message,
+                                    "Auftrag anlegen", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
 
                 db_orderqueue NewOrder = new db_orderqueue();

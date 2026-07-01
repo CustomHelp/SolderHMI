@@ -352,9 +352,9 @@ namespace LOET_HMI.Displays
                     BtnCancelActOrder.IsEnabled = false;
 
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("PgOrder.UpdateOrderButtons", ex);
             }
 
         }

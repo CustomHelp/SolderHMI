@@ -343,9 +343,9 @@ namespace LOET_HMI.PLC_Com_Classes
                     stInduktor_Data.iInduktorNumber = tmp.diInduktorNummber;
                     
                 }
-                catch
+                catch (Exception ex)
                 {
-
+                    AppLogger.Log("StRFID_IND.ItemChanged", ex);
                 }
             }
 

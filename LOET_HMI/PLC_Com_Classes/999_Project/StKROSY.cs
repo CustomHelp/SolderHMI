@@ -801,9 +801,9 @@ namespace LOET_HMI.PLC_Com_Classes
                 stGlobal.iOrderMax = _tmpStGlobal.iOrderMax;
                 stGlobal.iObjectMax = _tmpStGlobal.iObjectMax;
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("StKROSY.UpdateProperties_StGlobal", ex);
             }
         }
 
@@ -816,9 +816,9 @@ namespace LOET_HMI.PLC_Com_Classes
                 arrStation[_iStatIndex].iAmount = _tmpStStation.iamount;
                 arrStation[_iStatIndex].iAmountOK = _tmpStStation.iamountOK;
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("StKROSY.UpdateProperties_StStation", ex);
             }
             
         }
@@ -843,9 +843,9 @@ namespace LOET_HMI.PLC_Com_Classes
                 arrStation[_iStatIndex].arrStationObjects[_iObjIndex].bIO = _tmpStStatObj.bIO;
                 arrStation[_iStatIndex].arrStationObjects[_iObjIndex].bNIO = _tmpStStatObj.bNIO;
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("StKROSY.UpdateProperties_StStationObject", ex);
             }
         }
 

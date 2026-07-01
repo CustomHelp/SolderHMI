@@ -160,9 +160,9 @@ namespace LOET_HMI.PLC_Com_Classes
                     bOrderDone          = tmp.bOrderDone;
                     strOrderName        = tmp.strOrderName;
                 }
-                catch
+                catch (Exception ex)
                 {
-                    ;
+                    AppLogger.Log("StOrder.ItemChanged", ex);
                 }
             }
         }

@@ -213,9 +213,9 @@ namespace LOET_HMI
                     }
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                ;
+                AppLogger.Log("GlobalFunc.DeregisterPgOrder", ex);
             }
         }
 
@@ -277,7 +277,7 @@ namespace LOET_HMI
                     selected_sett_obj = item as StParamPLCDB<bool>;  // Den Objekt vom Typ StSettingDINT_HMI in der ausgewählten DataGrid-Zeile in "sett_obj" ablegen
                 }
                 catch
-                {; }
+                { /* 'as' wirft nicht -> bewusst kein Handling (toter catch) */ }
             }
 
             if (selected_sett_obj == null)
@@ -288,7 +288,7 @@ namespace LOET_HMI
 
                 }
                 catch
-                {; }
+                { /* 'as' wirft nicht -> bewusst kein Handling (toter catch) */ }
             }
 
             if (selected_sett_obj == null)
@@ -298,7 +298,7 @@ namespace LOET_HMI
                     selected_sett_obj = item as StParamPLCDB<float>;  // Den Objekt vom Typ StSettingDINT_HMI in der ausgewählten DataGrid-Zeile in "sett_obj" ablegen
                 }
                 catch
-                {; }
+                { /* 'as' wirft nicht -> bewusst kein Handling (toter catch) */ }
             }
 
             if (selected_sett_obj == null)
@@ -308,7 +308,7 @@ namespace LOET_HMI
                     selected_sett_obj = item as StParamPLCDB<double>;  // Den Objekt vom Typ StSettingDINT_HMI in der ausgewählten DataGrid-Zeile in "sett_obj" ablegen
                 }
                 catch
-                {; }
+                { /* 'as' wirft nicht -> bewusst kein Handling (toter catch) */ }
             }
 
             if (selected_sett_obj == null)
@@ -318,7 +318,7 @@ namespace LOET_HMI
                     selected_sett_obj = item as StParamPLCDB<string>;  // Den Objekt vom Typ StSettingDINT_HMI in der ausgewählten DataGrid-Zeile in "sett_obj" ablegen
                 }
                 catch
-                {; }
+                { /* 'as' wirft nicht -> bewusst kein Handling (toter catch) */ }
             }
 
 
@@ -330,7 +330,7 @@ namespace LOET_HMI
                 ObjectListForSelectedItem[3] = item as StParamPLCDB<double>;
                 ObjectListForSelectedItem[4] = item as StParamPLCDB<string>;
             }
-            catch {; }
+            catch { /* 'as' wirft nicht -> bewusst kein Handling (toter catch) */ }
 
             int ind = -1;
             for (int k = 0; k < ObjectListForSelectedItem.Count; k++)

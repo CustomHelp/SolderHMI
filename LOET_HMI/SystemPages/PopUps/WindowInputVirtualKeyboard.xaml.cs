@@ -753,7 +753,7 @@ namespace LOET_HMI.SystemPages.PopUps
                 GlobalVar.dataLOET.Act_Station.ClusterList1stRow[0].ButtonOfDispl.Focus();
             }
             catch
-            { ; }
+            { /* Fokus-Wiederherstellung optional: bei Fehler ignorieren */ }
             
         }
 

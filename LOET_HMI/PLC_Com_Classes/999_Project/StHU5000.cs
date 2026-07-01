@@ -615,9 +615,9 @@ namespace LOET_HMI.PLC_Com_Classes
                     bTemperature        = tmp.bTemperature;
 
                 }
-                catch
+                catch (Exception ex)
                 {
-
+                    AppLogger.Log("StHU5000.ItemChanged", ex);
                 }
             }
 

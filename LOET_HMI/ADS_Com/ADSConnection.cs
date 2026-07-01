@@ -115,9 +115,9 @@ namespace LOET_HMI
 
                 ItemList[index].Value = e.Value;
             }
-            catch
+            catch (Exception ex)
             {
-
+                AppLogger.Log("ADSConnection.adsClient_AdsNotificationEx", ex);
             }
         }
 
@@ -198,9 +198,9 @@ namespace LOET_HMI
                 int Index = ItemList.FindIndex(s => (s.iHandle == iHandle));
                 ItemList.RemoveAt(Index);
             }
-            catch
+            catch (Exception ex)
             {
-
+                AppLogger.Log("ADSConnection.RemoveItem", ex);
             }
         }
 

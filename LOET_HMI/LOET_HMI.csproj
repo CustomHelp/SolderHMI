@@ -253,6 +253,7 @@
       <DependentUpon>PgKROSY.xaml</DependentUpon>
     </Compile>
     <Compile Include="Graphs\StArrPLC.cs" />
+    <Compile Include="Helper\AppLogger.cs" />
     <Compile Include="Helper\DBLogger.cs" />
     <Compile Include="Helper\DBOrderHandler.cs" />
     <Compile Include="Helper\DBParamHandler.cs" />

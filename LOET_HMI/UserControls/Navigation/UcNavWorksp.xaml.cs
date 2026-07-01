@@ -142,10 +142,38 @@ namespace LOET_HMI.UserControls
         {
             for (int i = 0; i < BaseList.Count; i++)
             {
-                TargetList.Add(BaseList[i]); // Diese Clusters in NavClusterList ablegen.    
+                TargetList.Add(BaseList[i]); // Diese Clusters in NavClusterList ablegen.
                 TargetList[i].ButtonOfDispl.Style = Application.Current.FindResource("RENA_NavWorkspaceButtonStyle") as Style;
+                // Wurzelursache "Access Denied mehrfach": die Button-Objekte sind pro Station persistent und
+                // LoadNavigationRow wird bei jedem Stationswechsel erneut aufgerufen. Ohne vorheriges -=
+                // sammeln sich mehrere Click-Abos an, sodass ein einziger Klick den Handler mehrfach ausloest.
+                TargetList[i].ButtonOfDispl.Click -= btnClickHandler;
                 TargetList[i].ButtonOfDispl.Click += btnClickHandler;
                 stackPanelOfRow.Children.Add(TargetList[i].ButtonOfDispl);
+            }
+        }
+
+        // Verhindert, dass die "Kein Zugriff"-Meldung mehrfach erscheint, falls doch mehrere Events feuern.
+        private bool _accessDeniedShown = false;
+
+        /// <summary>Zeigt die "Kein Zugriff"-Meldung genau EINMAL an. Das Flag wird nach dem Wegklicken zurueckgesetzt.</summary>
+        private void ShowAccessDeniedOnce()
+        {
+            if (_accessDeniedShown)
+                return;
+
+            _accessDeniedShown = true;
+            GlobalFunc.ShowNoAuthorization(); // modal: blockiert bis der Bediener mit OK bestaetigt
+            _accessDeniedShown = false;
+        }
+
+        /// <summary>Nach einer verweigerten Navigation zurueck auf die zuletzt erlaubte Seite (kein Verbleib auf der gesperrten Seite).</summary>
+        private void NavigateBackToAllowedDisplay()
+        {
+            if (ActCluster_InRow1 != null && Frame_of_Nav.Content != ActCluster_InRow1.Display)
+            {
+                Frame_of_Nav.Navigate(ActCluster_InRow1.Display);
+                ActButton_Row1 = ActCluster_InRow1.ButtonOfDispl;
             }
         }
 
@@ -164,7 +192,8 @@ namespace LOET_HMI.UserControls
                     {
                         if(GlobalVar.ActUser.iUserLevel < GlobalVar.Userlevels.Supervisor.iLevel)
                         {
-                            GlobalFunc.ShowNoAuthorization();
+                            ShowAccessDeniedOnce();
+                            NavigateBackToAllowedDisplay();
                             return;
                         }
                     }
@@ -172,7 +201,8 @@ namespace LOET_HMI.UserControls
                     {
                         if(GlobalVar.ActUser.iUserLevel < GlobalVar.Userlevels.Quality.iLevel)
                         {
-                            GlobalFunc.ShowNoAuthorization();
+                            ShowAccessDeniedOnce();
+                            NavigateBackToAllowedDisplay();
                             return;
                         }
                     }
@@ -180,7 +210,8 @@ namespace LOET_HMI.UserControls
                     {
                         if (GlobalVar.ActUser.iUserLevel < GlobalVar.Userlevels.Maintenance.iLevel)
                         {
-                            GlobalFunc.ShowNoAuthorization();
+                            ShowAccessDeniedOnce();
+                            NavigateBackToAllowedDisplay();
                             return;
                         }
                     }
@@ -200,7 +231,7 @@ namespace LOET_HMI.UserControls
             }
             catch
             {
-                ;
+                // 2. Navi-Reihe kann leer sein (kein ClusterListRow2[0]) -> bewusst ignorieren
             }
 
 

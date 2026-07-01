@@ -147,7 +147,7 @@ namespace LOET_HMI.UserControls.Graphical_UCs
                 mainGrid.RenderTransformOrigin = new Point(0.5, valveCenter / mainGrid.ActualHeight);
                 mainGrid.LayoutTransform = rotateTransform1;
             }
-            catch {; }
+            catch { /* UI-Layout/Rotation optional: bei Fehler unveraendert lassen */ }
 
 
 
