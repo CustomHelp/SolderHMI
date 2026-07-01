@@ -1099,8 +1099,8 @@ namespace LOET_HMI.PLC_Com_Classes
                     bWriteBusy = tmpRFID_WT.bWriteBusy;
                     bWriteAllowed = tmpRFID_WT.bWriteAllowed;
                 }
-                catch
-                {   ; }
+                catch (Exception ex)
+                {   AppLogger.Log("StRFID_WT.ItemChanged", ex); }
             }
 
             if (tmpWT_Data != null)
@@ -1111,8 +1111,8 @@ namespace LOET_HMI.PLC_Com_Classes
                     stWT_Data.byDataVersion = tmpWT_Data.byDataVersion;
                     stWT_Data.byWTNummber = tmpWT_Data.byWTNummber;
                 }
-                catch
-                {; }
+                catch (Exception ex)
+                {   AppLogger.Log("StRFID_WT.ItemChanged", ex); }
             }
 
             for(int i = 0; i < aItem3_Variant.Length; i++)
@@ -1165,7 +1165,7 @@ namespace LOET_HMI.PLC_Com_Classes
 
                         stWT_Data.stVariant[i].byOverride = tmpVariant.byOverride;
                     }
-                    catch {; }
+                    catch (Exception ex) { AppLogger.Log("StRFID_WT.ItemChanged", ex); }
                 }
             }
 

@@ -1078,8 +1078,9 @@ namespace LOET_HMI
                     sSoEMessage         = tmp.strSoEMessage;
                     sError              = tmp.strError;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    AppLogger.Log("StBeckhoffAxis.ItemChanged", ex);
 
                 }           
             }

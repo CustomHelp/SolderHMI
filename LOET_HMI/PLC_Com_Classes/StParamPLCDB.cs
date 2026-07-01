@@ -839,8 +839,8 @@ namespace LOET_HMI.PLC_Com_Classes
 
                             bValueChanged = false;
                         }
-                        catch
-                        { }
+                        catch (Exception ex)
+                        { AppLogger.Log("StParamPLCDB.ItemChanged", ex); }
                     }
 
                 }
@@ -887,8 +887,8 @@ namespace LOET_HMI.PLC_Com_Classes
                             
                             bValueChanged = false;
                         }
-                        catch
-                        { }
+                        catch (Exception ex)
+                        { AppLogger.Log("StParamPLCDB.ItemChanged", ex); }
                     }
                 }
                 else if (typeof(T) == typeof(double))
@@ -912,8 +912,8 @@ namespace LOET_HMI.PLC_Com_Classes
 
                             bValueChanged = false;
                         }
-                        catch
-                        { }
+                        catch (Exception ex)
+                        { AppLogger.Log("StParamPLCDB.ItemChanged", ex); }
                     }
                 }
                 else if (typeof(T) == typeof(string))
@@ -937,8 +937,8 @@ namespace LOET_HMI.PLC_Com_Classes
 
                             bValueChanged = false;
                         }
-                        catch
-                        { }
+                        catch (Exception ex)
+                        { AppLogger.Log("StParamPLCDB.ItemChanged", ex); }
                     }
                 }
 

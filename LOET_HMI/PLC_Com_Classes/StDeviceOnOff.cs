@@ -481,8 +481,9 @@ namespace LOET_HMI
                     
                     eState                  = (eComponentState)tmp.byState;
                 }
-                catch
+                catch (Exception ex)
                 {
+                    AppLogger.Log("StDeviceOnOff.ItemChanged", ex);
                 }
             }
         } 

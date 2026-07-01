@@ -265,8 +265,8 @@ namespace LOET_HMI
             
                             bValueChanged = false;
                         }
-                        catch
-                        { }
+                        catch (Exception ex)
+                        { AppLogger.Log("StSensor.ItemChanged", ex); }
                     }
 
                 }
@@ -284,8 +284,8 @@ namespace LOET_HMI
 
                             bValueChanged = false;
                         }
-                        catch
-                        { }
+                        catch (Exception ex)
+                        { AppLogger.Log("StSensor.ItemChanged", ex); }
                     }
                 }
             }

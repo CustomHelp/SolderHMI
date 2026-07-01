@@ -341,9 +341,9 @@ namespace LOET_HMI.PLC_Com_Classes
                     uiAct           = tmp.udiAct;
                     uiTarget        = tmp.udiTarget;
                 }
-                catch
+                catch (Exception ex)
                 {
-                    ;
+                    AppLogger.Log("StCounter.ItemChanged", ex);
                 }
             }
         }
