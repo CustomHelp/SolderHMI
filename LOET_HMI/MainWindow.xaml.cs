@@ -1113,9 +1113,9 @@ namespace LOET_HMI
                         else if (GlobalVar.ActUser.sUserName == "")
                             bLogInDefaultUser = true;
                     }
-                    catch
+                    catch (Exception ex)
                     {
-
+                        AppLogger.Log("MainWindow.LoginDefaultUser", ex);
                     }
 
                     if (bLogInDefaultUser)
@@ -1523,7 +1523,7 @@ namespace LOET_HMI
             }
             catch
             {
-                ;
+                // Navigations-Shortcut: wenn das Ziel nicht verfuegbar ist, bewusst ignorieren
             }
 
         }
@@ -1537,7 +1537,7 @@ namespace LOET_HMI
             }
             catch
             {
-                ;
+                // Navigations-Shortcut: wenn das Ziel nicht verfuegbar ist, bewusst ignorieren
             }
         }
 

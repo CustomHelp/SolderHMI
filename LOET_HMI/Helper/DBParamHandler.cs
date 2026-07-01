@@ -651,9 +651,9 @@ namespace LOET_HMI
                         //LoadParamSetToGlobalVar(_ParamSet.sName, (ParamSetTypes)_ParamSet.iType);
                         LoadParamSetToGlobalVar(_ParamSet.id, (ParamSetTypes)_ParamSet.iType);
                 }
-                catch
+                catch (Exception ex)
                 {
-                    ;
+                    AppLogger.Log("DBParamHandler.AddNotFoundParamToParamSet", ex);
                 }
 
             }
@@ -762,9 +762,9 @@ namespace LOET_HMI
                 {
                     ListParamSets = context.db_paramset.Where(r => (r.iType == (int)paramSet)).ToList();
                 }
-                catch
+                catch (Exception ex)
                 {
-
+                    AppLogger.Log("DBParamHandler.GetParmSetList", ex);
                 }
                 return ListParamSets;
             }
