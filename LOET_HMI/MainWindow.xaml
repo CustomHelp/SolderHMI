@@ -10,7 +10,7 @@
     
     xmlns:UserControls="clr-namespace:LOET_HMI.UserControls" 
     mc:Ignorable="d"   d:DesignWidth="1920" d:DesignHeight="1080"
-    Title="MainWindow" Icon="Images/CUSTOMHELP_Logo-links_lila.png" FontSize="16" Background="#F5F5F5"
+    Title="MainWindow" Icon="Images/CUSTOMHELP_Logo-links_weiss.png" FontSize="16" Background="#F5F5F5"
 
     MinHeight="600" MinWidth="800" 
     Closing="MainW_Closing"  WindowStartupLocation="CenterScreen" WindowStyle="None"  WindowState="Maximized"  ResizeMode="NoResize" ShowInTaskbar="True"
@@ -36,10 +36,12 @@
         </Grid.RowDefinitions>
 
 
-        <Rectangle x:Name="RectHeaderBackgr" Fill="{StaticResource CHP_ColorBrush}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"    />
+        <Rectangle x:Name="RectHeaderBackgr" Fill="{StaticResource Brand_Dark}" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"    />
+        <!-- Header-Trennlinie unten: 3px Lila-Akzent -->
+        <Rectangle x:Name="RectHeaderDivider" Fill="{StaticResource Brand_Primary}" Height="3" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" />
         <Rectangle x:Name="RectLogo"                        Grid.Row="0" Grid.Column="0"     HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,-5,5,5" >
             <Rectangle.Fill>
-                <ImageBrush ImageSource="Images/CUSTOMHELP_Logo-links_lila.png" Stretch="Uniform" AlignmentX="Left" />
+                <ImageBrush ImageSource="Images/CUSTOMHELP_Logo-links_weiss.png" Stretch="Uniform" AlignmentX="Left" />
             </Rectangle.Fill>
         </Rectangle>
         
@@ -56,7 +58,7 @@
                 <RowDefinition x:Name="SecondRow" Height="*" />
             </Grid.RowDefinitions>
 
-            <TextBlock x:Name="tbActTime"     Grid.Row="0" Grid.Column="0" Text="01.01.2019 10:10 AM"  Foreground="White" FontSize="18" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="24" Margin="0,7" Width="172"       />
+            <TextBlock x:Name="tbActTime"     Grid.Row="1" Grid.Column="0" Text="01.01.2019 10:10 AM"  Foreground="White" FontSize="18" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="24" Margin="0,0,15,0" Width="172"       />
 
             <TextBlock x:Name="tbMachineName" x:Uid="tbMachineName" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Text="{x:Static prop:Resources.Main_MachineName}"   Foreground="White" FontSize="28" HorizontalAlignment="Center" VerticalAlignment="Center"  FontWeight="Bold"  Margin="244,2,248,2"   />
 
@@ -96,16 +98,20 @@
 
 
             <!-- Kategorie- und Datei-Dropdown nebeneinander, je mit Beschriftung darueber -->
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0">
-                <StackPanel Orientation="Vertical" Margin="0,0,15,0">
-                    <TextBlock Text="Category" Foreground="White" FontSize="11" Margin="2,0,0,0"/>
-                    <ComboBox x:Name="categoryCB" IsEditable="False" IsReadOnly="True" Width="220" Height="24" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="CategoryCB_SelectionChanged" />
+            <!-- Leichter Rahmen fasst beide ComboBoxen + Ueberschriften zur besseren Lesbarkeit zusammen -->
+            <Border Grid.Row="0" Grid.RowSpan="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0"
+                    BorderBrush="#66FFFFFF" BorderThickness="1" CornerRadius="6" Background="#3A3A3A" Padding="10,4,12,6">
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel Orientation="Vertical" Margin="0,0,15,0">
+                        <TextBlock Text="Category" Foreground="White" FontSize="11" Margin="2,0,0,0"/>
+                        <ComboBox x:Name="categoryCB" IsEditable="False" IsReadOnly="True" Width="220" Height="24" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="CategoryCB_SelectionChanged" />
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Item" Foreground="White" FontSize="11" Margin="2,0,0,0"/>
+                        <ComboBox x:Name="fileCB" IsEditable="False" IsReadOnly="True" Width="220" Height="24" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="FileCB_SelectionChanged" />
+                    </StackPanel>
                 </StackPanel>
-                <StackPanel Orientation="Vertical">
-                    <TextBlock Text="Item" Foreground="White" FontSize="11" Margin="2,0,0,0"/>
-                    <ComboBox x:Name="fileCB" IsEditable="False" IsReadOnly="True" Width="220" Height="24" Style="{DynamicResource ComboBoxStyleCHP}" SelectionChanged="FileCB_SelectionChanged" />
-                </StackPanel>
-            </StackPanel>
+            </Border>
 
             <Button x:Name="btnLoginInMain" Content="Login"   
                     Grid.Row="1" Grid.Column="2" Margin="2" Background="Transparent" Foreground="White" BorderThickness="0" 

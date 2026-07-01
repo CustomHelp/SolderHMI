@@ -24,7 +24,7 @@
         </Grid>
 
         <Grid Grid.Row="1">
-            <Button x:Name="ResetBtn"  Content="Reset Zoom" Click="ResetBtn_Click"  Width="300" Background="{StaticResource CHP_ColorBrush}" Foreground="White" VerticalAlignment="Center"  FontSize="30"/>
+            <Button x:Name="ResetBtn"  Content="Reset Zoom" Click="ResetBtn_Click"  Width="300" Background="{StaticResource Brand_Dark}" Foreground="White" VerticalAlignment="Center"  FontSize="30"/>
         </Grid>
     </Grid>
 </Page>
