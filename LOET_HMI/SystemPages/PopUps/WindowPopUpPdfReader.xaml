@@ -24,14 +24,9 @@
 
             <!-- Header / Toolbar -->
             <Grid Grid.Row="0">
-                <Rectangle Height="80">
-                    <Rectangle.Fill>
-                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                            <GradientStop Color="{StaticResource Brand_PrimaryColor}" Offset="0.368"/>
-                            <GradientStop Color="#DAD4E8" Offset="1"/>
-                        </LinearGradientBrush>
-                    </Rectangle.Fill>
-                </Rectangle>
+                <Rectangle Height="80" Fill="{StaticResource Brand_Dark}" VerticalAlignment="Top" />
+                <!-- Header-Trennlinie unten: 3px Lila-Akzent -->
+                <Rectangle Height="3" Fill="{StaticResource Brand_Primary}" VerticalAlignment="Top" Margin="0,77,0,0" />
                 <Rectangle Margin="10,-25,45,10" Width="180" HorizontalAlignment="Right">
                     <Rectangle.Fill>
                         <ImageBrush ImageSource="/LOET_HMI;component/Images/CUSTOMHELP_Logo-links_weiss.png" Stretch="Uniform" />
